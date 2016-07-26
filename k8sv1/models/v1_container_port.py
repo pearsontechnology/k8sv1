@@ -41,10 +41,10 @@ class V1ContainerPort(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'hostPort': 'int',
-            'containerPort': 'int',
+            'host_port': 'int',
+            'container_port': 'int',
             'protocol': 'str',
-            'hostIP': 'str'
+            'host_ip': 'str'
         }
 
         self.attribute_map = {
@@ -80,50 +80,50 @@ class V1ContainerPort(object):
         self._name = name
 
     @property
-    def hostPort(self):
+    def host_port(self):
         """
-        Gets the hostPort of this V1ContainerPort.
+        Gets the host_port of this V1ContainerPort.
         Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-        :return: The hostPort of this V1ContainerPort.
+        :return: The host_port of this V1ContainerPort.
         :rtype: int
         """
-        return self._hostPort
+        return self._host_port
 
-    @hostPort.setter
-    def hostPort(self, hostPort):
+    @host_port.setter
+    def host_port(self, host_port):
         """
-        Sets the hostPort of this V1ContainerPort.
+        Sets the host_port of this V1ContainerPort.
         Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-        :param hostPort: The hostPort of this V1ContainerPort.
+        :param host_port: The host_port of this V1ContainerPort.
         :type: int
         """
 
-        self._hostPort = hostPort
+        self._host_port = host_port
 
     @property
-    def containerPort(self):
+    def container_port(self):
         """
-        Gets the containerPort of this V1ContainerPort.
+        Gets the container_port of this V1ContainerPort.
         Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
 
-        :return: The containerPort of this V1ContainerPort.
+        :return: The container_port of this V1ContainerPort.
         :rtype: int
         """
-        return self._containerPort
+        return self._container_port
 
-    @containerPort.setter
-    def containerPort(self, containerPort):
+    @container_port.setter
+    def container_port(self, container_port):
         """
-        Sets the containerPort of this V1ContainerPort.
+        Sets the container_port of this V1ContainerPort.
         Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
 
-        :param containerPort: The containerPort of this V1ContainerPort.
+        :param container_port: The container_port of this V1ContainerPort.
         :type: int
         """
 
-        self._containerPort = containerPort
+        self._container_port = container_port
 
     @property
     def protocol(self):
@@ -149,27 +149,27 @@ class V1ContainerPort(object):
         self._protocol = protocol
 
     @property
-    def hostIP(self):
+    def host_ip(self):
         """
-        Gets the hostIP of this V1ContainerPort.
+        Gets the host_ip of this V1ContainerPort.
         What host IP to bind the external port to.
 
-        :return: The hostIP of this V1ContainerPort.
+        :return: The host_ip of this V1ContainerPort.
         :rtype: str
         """
-        return self._hostIP
+        return self._host_ip
 
-    @hostIP.setter
-    def hostIP(self, hostIP):
+    @host_ip.setter
+    def host_ip(self, host_ip):
         """
-        Sets the hostIP of this V1ContainerPort.
+        Sets the host_ip of this V1ContainerPort.
         What host IP to bind the external port to.
 
-        :param hostIP: The hostIP of this V1ContainerPort.
+        :param host_ip: The host_ip of this V1ContainerPort.
         :type: str
         """
 
-        self._hostIP = hostIP
+        self._host_ip = host_ip
 
     def to_dict(self):
         """

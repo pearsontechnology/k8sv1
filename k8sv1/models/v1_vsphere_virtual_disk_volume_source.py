@@ -40,8 +40,8 @@ class V1VsphereVirtualDiskVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'volumePath': 'str',
-            'fsType': 'str'
+            'volume_path': 'str',
+            'fs_type': 'str'
         }
 
         self.attribute_map = {
@@ -51,50 +51,50 @@ class V1VsphereVirtualDiskVolumeSource(object):
 
 
     @property
-    def volumePath(self):
+    def volume_path(self):
         """
-        Gets the volumePath of this V1VsphereVirtualDiskVolumeSource.
+        Gets the volume_path of this V1VsphereVirtualDiskVolumeSource.
         Path that identifies vSphere volume vmdk
 
-        :return: The volumePath of this V1VsphereVirtualDiskVolumeSource.
+        :return: The volume_path of this V1VsphereVirtualDiskVolumeSource.
         :rtype: str
         """
-        return self._volumePath
+        return self._volume_path
 
-    @volumePath.setter
-    def volumePath(self, volumePath):
+    @volume_path.setter
+    def volume_path(self, volume_path):
         """
-        Sets the volumePath of this V1VsphereVirtualDiskVolumeSource.
+        Sets the volume_path of this V1VsphereVirtualDiskVolumeSource.
         Path that identifies vSphere volume vmdk
 
-        :param volumePath: The volumePath of this V1VsphereVirtualDiskVolumeSource.
+        :param volume_path: The volume_path of this V1VsphereVirtualDiskVolumeSource.
         :type: str
         """
 
-        self._volumePath = volumePath
+        self._volume_path = volume_path
 
     @property
-    def fsType(self):
+    def fs_type(self):
         """
-        Gets the fsType of this V1VsphereVirtualDiskVolumeSource.
+        Gets the fs_type of this V1VsphereVirtualDiskVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.
 
-        :return: The fsType of this V1VsphereVirtualDiskVolumeSource.
+        :return: The fs_type of this V1VsphereVirtualDiskVolumeSource.
         :rtype: str
         """
-        return self._fsType
+        return self._fs_type
 
-    @fsType.setter
-    def fsType(self, fsType):
+    @fs_type.setter
+    def fs_type(self, fs_type):
         """
-        Sets the fsType of this V1VsphereVirtualDiskVolumeSource.
+        Sets the fs_type of this V1VsphereVirtualDiskVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.
 
-        :param fsType: The fsType of this V1VsphereVirtualDiskVolumeSource.
+        :param fs_type: The fs_type of this V1VsphereVirtualDiskVolumeSource.
         :type: str
         """
 
-        self._fsType = fsType
+        self._fs_type = fs_type
 
     def to_dict(self):
         """

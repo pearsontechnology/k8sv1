@@ -42,12 +42,12 @@ class V1RBDVolumeSource(object):
         self.swagger_types = {
             'monitors': 'list[str]',
             'image': 'str',
-            'fsType': 'str',
+            'fs_type': 'str',
             'pool': 'str',
             'user': 'str',
             'keyring': 'str',
-            'secretRef': 'V1LocalObjectReference',
-            'readOnly': 'bool'
+            'secret_ref': 'V1LocalObjectReference',
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -109,27 +109,27 @@ class V1RBDVolumeSource(object):
         self._image = image
 
     @property
-    def fsType(self):
+    def fs_type(self):
         """
-        Gets the fsType of this V1RBDVolumeSource.
+        Gets the fs_type of this V1RBDVolumeSource.
         Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#rbd
 
-        :return: The fsType of this V1RBDVolumeSource.
+        :return: The fs_type of this V1RBDVolumeSource.
         :rtype: str
         """
-        return self._fsType
+        return self._fs_type
 
-    @fsType.setter
-    def fsType(self, fsType):
+    @fs_type.setter
+    def fs_type(self, fs_type):
         """
-        Sets the fsType of this V1RBDVolumeSource.
+        Sets the fs_type of this V1RBDVolumeSource.
         Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#rbd
 
-        :param fsType: The fsType of this V1RBDVolumeSource.
+        :param fs_type: The fs_type of this V1RBDVolumeSource.
         :type: str
         """
 
-        self._fsType = fsType
+        self._fs_type = fs_type
 
     @property
     def pool(self):
@@ -201,50 +201,50 @@ class V1RBDVolumeSource(object):
         self._keyring = keyring
 
     @property
-    def secretRef(self):
+    def secret_ref(self):
         """
-        Gets the secretRef of this V1RBDVolumeSource.
+        Gets the secret_ref of this V1RBDVolumeSource.
         SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
 
-        :return: The secretRef of this V1RBDVolumeSource.
+        :return: The secret_ref of this V1RBDVolumeSource.
         :rtype: V1LocalObjectReference
         """
-        return self._secretRef
+        return self._secret_ref
 
-    @secretRef.setter
-    def secretRef(self, secretRef):
+    @secret_ref.setter
+    def secret_ref(self, secret_ref):
         """
-        Sets the secretRef of this V1RBDVolumeSource.
+        Sets the secret_ref of this V1RBDVolumeSource.
         SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
 
-        :param secretRef: The secretRef of this V1RBDVolumeSource.
+        :param secret_ref: The secret_ref of this V1RBDVolumeSource.
         :type: V1LocalObjectReference
         """
 
-        self._secretRef = secretRef
+        self._secret_ref = secret_ref
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1RBDVolumeSource.
+        Gets the read_only of this V1RBDVolumeSource.
         ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
 
-        :return: The readOnly of this V1RBDVolumeSource.
+        :return: The read_only of this V1RBDVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1RBDVolumeSource.
+        Sets the read_only of this V1RBDVolumeSource.
         ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
 
-        :param readOnly: The readOnly of this V1RBDVolumeSource.
+        :param read_only: The read_only of this V1RBDVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

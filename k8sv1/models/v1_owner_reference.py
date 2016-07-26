@@ -40,7 +40,7 @@ class V1OwnerReference(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'apiVersion': 'str',
+            'api_version': 'str',
             'kind': 'str',
             'name': 'str',
             'uid': 'str',
@@ -57,27 +57,27 @@ class V1OwnerReference(object):
 
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1OwnerReference.
+        Gets the api_version of this V1OwnerReference.
         API version of the referent.
 
-        :return: The apiVersion of this V1OwnerReference.
+        :return: The api_version of this V1OwnerReference.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1OwnerReference.
+        Sets the api_version of this V1OwnerReference.
         API version of the referent.
 
-        :param apiVersion: The apiVersion of this V1OwnerReference.
+        :param api_version: The api_version of this V1OwnerReference.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
     def kind(self):

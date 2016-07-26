@@ -41,7 +41,7 @@ class V1EndpointSubset(object):
         """
         self.swagger_types = {
             'addresses': 'list[V1EndpointAddress]',
-            'notReadyAddresses': 'list[V1EndpointAddress]',
+            'not_ready_addresses': 'list[V1EndpointAddress]',
             'ports': 'list[V1EndpointPort]'
         }
 
@@ -76,27 +76,27 @@ class V1EndpointSubset(object):
         self._addresses = addresses
 
     @property
-    def notReadyAddresses(self):
+    def not_ready_addresses(self):
         """
-        Gets the notReadyAddresses of this V1EndpointSubset.
+        Gets the not_ready_addresses of this V1EndpointSubset.
         IP addresses which offer the related ports but are not currently marked as ready because they have not yet finished starting, have recently failed a readiness check, or have recently failed a liveness check.
 
-        :return: The notReadyAddresses of this V1EndpointSubset.
+        :return: The not_ready_addresses of this V1EndpointSubset.
         :rtype: list[V1EndpointAddress]
         """
-        return self._notReadyAddresses
+        return self._not_ready_addresses
 
-    @notReadyAddresses.setter
-    def notReadyAddresses(self, notReadyAddresses):
+    @not_ready_addresses.setter
+    def not_ready_addresses(self, not_ready_addresses):
         """
-        Sets the notReadyAddresses of this V1EndpointSubset.
+        Sets the not_ready_addresses of this V1EndpointSubset.
         IP addresses which offer the related ports but are not currently marked as ready because they have not yet finished starting, have recently failed a readiness check, or have recently failed a liveness check.
 
-        :param notReadyAddresses: The notReadyAddresses of this V1EndpointSubset.
+        :param not_ready_addresses: The not_ready_addresses of this V1EndpointSubset.
         :type: list[V1EndpointAddress]
         """
 
-        self._notReadyAddresses = notReadyAddresses
+        self._not_ready_addresses = not_ready_addresses
 
     @property
     def ports(self):

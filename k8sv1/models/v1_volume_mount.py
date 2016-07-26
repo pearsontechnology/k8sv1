@@ -41,9 +41,9 @@ class V1VolumeMount(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'readOnly': 'bool',
-            'mountPath': 'str',
-            'subPath': 'str'
+            'read_only': 'bool',
+            'mount_path': 'str',
+            'sub_path': 'str'
         }
 
         self.attribute_map = {
@@ -78,73 +78,73 @@ class V1VolumeMount(object):
         self._name = name
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1VolumeMount.
+        Gets the read_only of this V1VolumeMount.
         Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-        :return: The readOnly of this V1VolumeMount.
+        :return: The read_only of this V1VolumeMount.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1VolumeMount.
+        Sets the read_only of this V1VolumeMount.
         Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-        :param readOnly: The readOnly of this V1VolumeMount.
+        :param read_only: The read_only of this V1VolumeMount.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     @property
-    def mountPath(self):
+    def mount_path(self):
         """
-        Gets the mountPath of this V1VolumeMount.
+        Gets the mount_path of this V1VolumeMount.
         Path within the container at which the volume should be mounted.  Must not contain ':'.
 
-        :return: The mountPath of this V1VolumeMount.
+        :return: The mount_path of this V1VolumeMount.
         :rtype: str
         """
-        return self._mountPath
+        return self._mount_path
 
-    @mountPath.setter
-    def mountPath(self, mountPath):
+    @mount_path.setter
+    def mount_path(self, mount_path):
         """
-        Sets the mountPath of this V1VolumeMount.
+        Sets the mount_path of this V1VolumeMount.
         Path within the container at which the volume should be mounted.  Must not contain ':'.
 
-        :param mountPath: The mountPath of this V1VolumeMount.
+        :param mount_path: The mount_path of this V1VolumeMount.
         :type: str
         """
 
-        self._mountPath = mountPath
+        self._mount_path = mount_path
 
     @property
-    def subPath(self):
+    def sub_path(self):
         """
-        Gets the subPath of this V1VolumeMount.
+        Gets the sub_path of this V1VolumeMount.
         Path within the volume from which the container's volume should be mounted. Defaults to \"\" (volume's root).
 
-        :return: The subPath of this V1VolumeMount.
+        :return: The sub_path of this V1VolumeMount.
         :rtype: str
         """
-        return self._subPath
+        return self._sub_path
 
-    @subPath.setter
-    def subPath(self, subPath):
+    @sub_path.setter
+    def sub_path(self, sub_path):
         """
-        Sets the subPath of this V1VolumeMount.
+        Sets the sub_path of this V1VolumeMount.
         Path within the volume from which the container's volume should be mounted. Defaults to \"\" (volume's root).
 
-        :param subPath: The subPath of this V1VolumeMount.
+        :param sub_path: The sub_path of this V1VolumeMount.
         :type: str
         """
 
-        self._subPath = subPath
+        self._sub_path = sub_path
 
     def to_dict(self):
         """

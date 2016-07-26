@@ -40,7 +40,7 @@ class V1DaemonEndpoint(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'Port': 'int'
+            'port': 'int'
         }
 
         self.attribute_map = {
@@ -49,27 +49,27 @@ class V1DaemonEndpoint(object):
 
 
     @property
-    def Port(self):
+    def port(self):
         """
-        Gets the Port of this V1DaemonEndpoint.
+        Gets the port of this V1DaemonEndpoint.
         Port number of the given endpoint.
 
-        :return: The Port of this V1DaemonEndpoint.
+        :return: The port of this V1DaemonEndpoint.
         :rtype: int
         """
-        return self._Port
+        return self._port
 
-    @Port.setter
-    def Port(self, Port):
+    @port.setter
+    def port(self, port):
         """
-        Sets the Port of this V1DaemonEndpoint.
+        Sets the port of this V1DaemonEndpoint.
         Port number of the given endpoint.
 
-        :param Port: The Port of this V1DaemonEndpoint.
+        :param port: The port of this V1DaemonEndpoint.
         :type: int
         """
 
-        self._Port = Port
+        self._port = port
 
     def to_dict(self):
         """

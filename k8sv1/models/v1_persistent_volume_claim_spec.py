@@ -40,10 +40,10 @@ class V1PersistentVolumeClaimSpec(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'accessModes': 'list[V1PersistentVolumeAccessMode]',
+            'access_modes': 'list[V1PersistentVolumeAccessMode]',
             'selector': 'UnversionedLabelSelector',
             'resources': 'V1ResourceRequirements',
-            'volumeName': 'str'
+            'volume_name': 'str'
         }
 
         self.attribute_map = {
@@ -55,27 +55,27 @@ class V1PersistentVolumeClaimSpec(object):
 
 
     @property
-    def accessModes(self):
+    def access_modes(self):
         """
-        Gets the accessModes of this V1PersistentVolumeClaimSpec.
+        Gets the access_modes of this V1PersistentVolumeClaimSpec.
         AccessModes contains the desired access modes the volume should have. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes-1
 
-        :return: The accessModes of this V1PersistentVolumeClaimSpec.
+        :return: The access_modes of this V1PersistentVolumeClaimSpec.
         :rtype: list[V1PersistentVolumeAccessMode]
         """
-        return self._accessModes
+        return self._access_modes
 
-    @accessModes.setter
-    def accessModes(self, accessModes):
+    @access_modes.setter
+    def access_modes(self, access_modes):
         """
-        Sets the accessModes of this V1PersistentVolumeClaimSpec.
+        Sets the access_modes of this V1PersistentVolumeClaimSpec.
         AccessModes contains the desired access modes the volume should have. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes-1
 
-        :param accessModes: The accessModes of this V1PersistentVolumeClaimSpec.
+        :param access_modes: The access_modes of this V1PersistentVolumeClaimSpec.
         :type: list[V1PersistentVolumeAccessMode]
         """
 
-        self._accessModes = accessModes
+        self._access_modes = access_modes
 
     @property
     def selector(self):
@@ -124,27 +124,27 @@ class V1PersistentVolumeClaimSpec(object):
         self._resources = resources
 
     @property
-    def volumeName(self):
+    def volume_name(self):
         """
-        Gets the volumeName of this V1PersistentVolumeClaimSpec.
+        Gets the volume_name of this V1PersistentVolumeClaimSpec.
         VolumeName is the binding reference to the PersistentVolume backing this claim.
 
-        :return: The volumeName of this V1PersistentVolumeClaimSpec.
+        :return: The volume_name of this V1PersistentVolumeClaimSpec.
         :rtype: str
         """
-        return self._volumeName
+        return self._volume_name
 
-    @volumeName.setter
-    def volumeName(self, volumeName):
+    @volume_name.setter
+    def volume_name(self, volume_name):
         """
-        Sets the volumeName of this V1PersistentVolumeClaimSpec.
+        Sets the volume_name of this V1PersistentVolumeClaimSpec.
         VolumeName is the binding reference to the PersistentVolume backing this claim.
 
-        :param volumeName: The volumeName of this V1PersistentVolumeClaimSpec.
+        :param volume_name: The volume_name of this V1PersistentVolumeClaimSpec.
         :type: str
         """
 
-        self._volumeName = volumeName
+        self._volume_name = volume_name
 
     def to_dict(self):
         """

@@ -40,8 +40,8 @@ class V1ObjectFieldSelector(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'apiVersion': 'str',
-            'fieldPath': 'str'
+            'api_version': 'str',
+            'field_path': 'str'
         }
 
         self.attribute_map = {
@@ -51,50 +51,50 @@ class V1ObjectFieldSelector(object):
 
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1ObjectFieldSelector.
+        Gets the api_version of this V1ObjectFieldSelector.
         Version of the schema the FieldPath is written in terms of, defaults to \"v1\".
 
-        :return: The apiVersion of this V1ObjectFieldSelector.
+        :return: The api_version of this V1ObjectFieldSelector.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1ObjectFieldSelector.
+        Sets the api_version of this V1ObjectFieldSelector.
         Version of the schema the FieldPath is written in terms of, defaults to \"v1\".
 
-        :param apiVersion: The apiVersion of this V1ObjectFieldSelector.
+        :param api_version: The api_version of this V1ObjectFieldSelector.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
-    def fieldPath(self):
+    def field_path(self):
         """
-        Gets the fieldPath of this V1ObjectFieldSelector.
+        Gets the field_path of this V1ObjectFieldSelector.
         Path of the field to select in the specified API version.
 
-        :return: The fieldPath of this V1ObjectFieldSelector.
+        :return: The field_path of this V1ObjectFieldSelector.
         :rtype: str
         """
-        return self._fieldPath
+        return self._field_path
 
-    @fieldPath.setter
-    def fieldPath(self, fieldPath):
+    @field_path.setter
+    def field_path(self, field_path):
         """
-        Sets the fieldPath of this V1ObjectFieldSelector.
+        Sets the field_path of this V1ObjectFieldSelector.
         Path of the field to select in the specified API version.
 
-        :param fieldPath: The fieldPath of this V1ObjectFieldSelector.
+        :param field_path: The field_path of this V1ObjectFieldSelector.
         :type: str
         """
 
-        self._fieldPath = fieldPath
+        self._field_path = field_path
 
     def to_dict(self):
         """

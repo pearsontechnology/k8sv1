@@ -42,7 +42,7 @@ class V1EnvVar(object):
         self.swagger_types = {
             'name': 'str',
             'value': 'str',
-            'valueFrom': 'V1EnvVarSource'
+            'value_from': 'V1EnvVarSource'
         }
 
         self.attribute_map = {
@@ -99,27 +99,27 @@ class V1EnvVar(object):
         self._value = value
 
     @property
-    def valueFrom(self):
+    def value_from(self):
         """
-        Gets the valueFrom of this V1EnvVar.
+        Gets the value_from of this V1EnvVar.
         Source for the environment variable's value. Cannot be used if value is not empty.
 
-        :return: The valueFrom of this V1EnvVar.
+        :return: The value_from of this V1EnvVar.
         :rtype: V1EnvVarSource
         """
-        return self._valueFrom
+        return self._value_from
 
-    @valueFrom.setter
-    def valueFrom(self, valueFrom):
+    @value_from.setter
+    def value_from(self, value_from):
         """
-        Sets the valueFrom of this V1EnvVar.
+        Sets the value_from of this V1EnvVar.
         Source for the environment variable's value. Cannot be used if value is not empty.
 
-        :param valueFrom: The valueFrom of this V1EnvVar.
+        :param value_from: The value_from of this V1EnvVar.
         :type: V1EnvVarSource
         """
 
-        self._valueFrom = valueFrom
+        self._value_from = value_from
 
     def to_dict(self):
         """

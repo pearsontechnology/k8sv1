@@ -42,8 +42,8 @@ class V1NodeCondition(object):
         self.swagger_types = {
             'type': 'str',
             'status': 'str',
-            'lastHeartbeatTime': 'datetime',
-            'lastTransitionTime': 'datetime',
+            'last_heartbeat_time': 'datetime',
+            'last_transition_time': 'datetime',
             'reason': 'str',
             'message': 'str'
         }
@@ -105,50 +105,50 @@ class V1NodeCondition(object):
         self._status = status
 
     @property
-    def lastHeartbeatTime(self):
+    def last_heartbeat_time(self):
         """
-        Gets the lastHeartbeatTime of this V1NodeCondition.
+        Gets the last_heartbeat_time of this V1NodeCondition.
         Last time we got an update on a given condition.
 
-        :return: The lastHeartbeatTime of this V1NodeCondition.
+        :return: The last_heartbeat_time of this V1NodeCondition.
         :rtype: datetime
         """
-        return self._lastHeartbeatTime
+        return self._last_heartbeat_time
 
-    @lastHeartbeatTime.setter
-    def lastHeartbeatTime(self, lastHeartbeatTime):
+    @last_heartbeat_time.setter
+    def last_heartbeat_time(self, last_heartbeat_time):
         """
-        Sets the lastHeartbeatTime of this V1NodeCondition.
+        Sets the last_heartbeat_time of this V1NodeCondition.
         Last time we got an update on a given condition.
 
-        :param lastHeartbeatTime: The lastHeartbeatTime of this V1NodeCondition.
+        :param last_heartbeat_time: The last_heartbeat_time of this V1NodeCondition.
         :type: datetime
         """
 
-        self._lastHeartbeatTime = lastHeartbeatTime
+        self._last_heartbeat_time = last_heartbeat_time
 
     @property
-    def lastTransitionTime(self):
+    def last_transition_time(self):
         """
-        Gets the lastTransitionTime of this V1NodeCondition.
+        Gets the last_transition_time of this V1NodeCondition.
         Last time the condition transit from one status to another.
 
-        :return: The lastTransitionTime of this V1NodeCondition.
+        :return: The last_transition_time of this V1NodeCondition.
         :rtype: datetime
         """
-        return self._lastTransitionTime
+        return self._last_transition_time
 
-    @lastTransitionTime.setter
-    def lastTransitionTime(self, lastTransitionTime):
+    @last_transition_time.setter
+    def last_transition_time(self, last_transition_time):
         """
-        Sets the lastTransitionTime of this V1NodeCondition.
+        Sets the last_transition_time of this V1NodeCondition.
         Last time the condition transit from one status to another.
 
-        :param lastTransitionTime: The lastTransitionTime of this V1NodeCondition.
+        :param last_transition_time: The last_transition_time of this V1NodeCondition.
         :type: datetime
         """
 
-        self._lastTransitionTime = lastTransitionTime
+        self._last_transition_time = last_transition_time
 
     @property
     def reason(self):

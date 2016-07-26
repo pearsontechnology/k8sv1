@@ -40,10 +40,10 @@ class V1GCEPersistentDiskVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'pdName': 'str',
-            'fsType': 'str',
+            'pd_name': 'str',
+            'fs_type': 'str',
             'partition': 'int',
-            'readOnly': 'bool'
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -55,50 +55,50 @@ class V1GCEPersistentDiskVolumeSource(object):
 
 
     @property
-    def pdName(self):
+    def pd_name(self):
         """
-        Gets the pdName of this V1GCEPersistentDiskVolumeSource.
+        Gets the pd_name of this V1GCEPersistentDiskVolumeSource.
         Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :return: The pdName of this V1GCEPersistentDiskVolumeSource.
+        :return: The pd_name of this V1GCEPersistentDiskVolumeSource.
         :rtype: str
         """
-        return self._pdName
+        return self._pd_name
 
-    @pdName.setter
-    def pdName(self, pdName):
+    @pd_name.setter
+    def pd_name(self, pd_name):
         """
-        Sets the pdName of this V1GCEPersistentDiskVolumeSource.
+        Sets the pd_name of this V1GCEPersistentDiskVolumeSource.
         Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :param pdName: The pdName of this V1GCEPersistentDiskVolumeSource.
+        :param pd_name: The pd_name of this V1GCEPersistentDiskVolumeSource.
         :type: str
         """
 
-        self._pdName = pdName
+        self._pd_name = pd_name
 
     @property
-    def fsType(self):
+    def fs_type(self):
         """
-        Gets the fsType of this V1GCEPersistentDiskVolumeSource.
+        Gets the fs_type of this V1GCEPersistentDiskVolumeSource.
         Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :return: The fsType of this V1GCEPersistentDiskVolumeSource.
+        :return: The fs_type of this V1GCEPersistentDiskVolumeSource.
         :rtype: str
         """
-        return self._fsType
+        return self._fs_type
 
-    @fsType.setter
-    def fsType(self, fsType):
+    @fs_type.setter
+    def fs_type(self, fs_type):
         """
-        Sets the fsType of this V1GCEPersistentDiskVolumeSource.
+        Sets the fs_type of this V1GCEPersistentDiskVolumeSource.
         Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :param fsType: The fsType of this V1GCEPersistentDiskVolumeSource.
+        :param fs_type: The fs_type of this V1GCEPersistentDiskVolumeSource.
         :type: str
         """
 
-        self._fsType = fsType
+        self._fs_type = fs_type
 
     @property
     def partition(self):
@@ -124,27 +124,27 @@ class V1GCEPersistentDiskVolumeSource(object):
         self._partition = partition
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1GCEPersistentDiskVolumeSource.
+        Gets the read_only of this V1GCEPersistentDiskVolumeSource.
         ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :return: The readOnly of this V1GCEPersistentDiskVolumeSource.
+        :return: The read_only of this V1GCEPersistentDiskVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1GCEPersistentDiskVolumeSource.
+        Sets the read_only of this V1GCEPersistentDiskVolumeSource.
         ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :param readOnly: The readOnly of this V1GCEPersistentDiskVolumeSource.
+        :param read_only: The read_only of this V1GCEPersistentDiskVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

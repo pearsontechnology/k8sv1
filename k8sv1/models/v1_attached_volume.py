@@ -41,7 +41,7 @@ class V1AttachedVolume(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'devicePath': 'str'
+            'device_path': 'str'
         }
 
         self.attribute_map = {
@@ -74,27 +74,27 @@ class V1AttachedVolume(object):
         self._name = name
 
     @property
-    def devicePath(self):
+    def device_path(self):
         """
-        Gets the devicePath of this V1AttachedVolume.
+        Gets the device_path of this V1AttachedVolume.
         DevicePath represents the device path where the volume should be avilable
 
-        :return: The devicePath of this V1AttachedVolume.
+        :return: The device_path of this V1AttachedVolume.
         :rtype: str
         """
-        return self._devicePath
+        return self._device_path
 
-    @devicePath.setter
-    def devicePath(self, devicePath):
+    @device_path.setter
+    def device_path(self, device_path):
         """
-        Sets the devicePath of this V1AttachedVolume.
+        Sets the device_path of this V1AttachedVolume.
         DevicePath represents the device path where the volume should be avilable
 
-        :param devicePath: The devicePath of this V1AttachedVolume.
+        :param device_path: The device_path of this V1AttachedVolume.
         :type: str
         """
 
-        self._devicePath = devicePath
+        self._device_path = device_path
 
     def to_dict(self):
         """

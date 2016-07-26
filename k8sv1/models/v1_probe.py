@@ -40,14 +40,14 @@ class V1Probe(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'exec': 'V1ExecAction',
-            'httpGet': 'V1HTTPGetAction',
-            'tcpSocket': 'V1TCPSocketAction',
-            'initialDelaySeconds': 'int',
-            'timeoutSeconds': 'int',
-            'periodSeconds': 'int',
-            'successThreshold': 'int',
-            'failureThreshold': 'int'
+            '_exec': 'V1ExecAction',
+            'http_get': 'V1HTTPGetAction',
+            'tcp_socket': 'V1TCPSocketAction',
+            'initial_delay_seconds': 'int',
+            'timeout_seconds': 'int',
+            'period_seconds': 'int',
+            'success_threshold': 'int',
+            'failure_threshold': 'int'
         }
 
         self.attribute_map = {
@@ -63,188 +63,188 @@ class V1Probe(object):
 
 
     @property
-    def exec(self):
+    def _exec(self):
         """
-        Gets the exec of this V1Probe.
+        Gets the _exec of this V1Probe.
         One and only one of the following should be specified. Exec specifies the action to take.
 
-        :return: The exec of this V1Probe.
+        :return: The _exec of this V1Probe.
         :rtype: V1ExecAction
         """
-        return self._exec
+        return self.__exec
 
-    @exec.setter
-    def exec(self, exec):
+    @_exec.setter
+    def _exec(self, _exec):
         """
-        Sets the exec of this V1Probe.
+        Sets the _exec of this V1Probe.
         One and only one of the following should be specified. Exec specifies the action to take.
 
-        :param exec: The exec of this V1Probe.
+        :param _exec: The _exec of this V1Probe.
         :type: V1ExecAction
         """
 
-        self._exec = exec
+        self.__exec = _exec
 
     @property
-    def httpGet(self):
+    def http_get(self):
         """
-        Gets the httpGet of this V1Probe.
+        Gets the http_get of this V1Probe.
         HTTPGet specifies the http request to perform.
 
-        :return: The httpGet of this V1Probe.
+        :return: The http_get of this V1Probe.
         :rtype: V1HTTPGetAction
         """
-        return self._httpGet
+        return self._http_get
 
-    @httpGet.setter
-    def httpGet(self, httpGet):
+    @http_get.setter
+    def http_get(self, http_get):
         """
-        Sets the httpGet of this V1Probe.
+        Sets the http_get of this V1Probe.
         HTTPGet specifies the http request to perform.
 
-        :param httpGet: The httpGet of this V1Probe.
+        :param http_get: The http_get of this V1Probe.
         :type: V1HTTPGetAction
         """
 
-        self._httpGet = httpGet
+        self._http_get = http_get
 
     @property
-    def tcpSocket(self):
+    def tcp_socket(self):
         """
-        Gets the tcpSocket of this V1Probe.
+        Gets the tcp_socket of this V1Probe.
         TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
 
-        :return: The tcpSocket of this V1Probe.
+        :return: The tcp_socket of this V1Probe.
         :rtype: V1TCPSocketAction
         """
-        return self._tcpSocket
+        return self._tcp_socket
 
-    @tcpSocket.setter
-    def tcpSocket(self, tcpSocket):
+    @tcp_socket.setter
+    def tcp_socket(self, tcp_socket):
         """
-        Sets the tcpSocket of this V1Probe.
+        Sets the tcp_socket of this V1Probe.
         TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
 
-        :param tcpSocket: The tcpSocket of this V1Probe.
+        :param tcp_socket: The tcp_socket of this V1Probe.
         :type: V1TCPSocketAction
         """
 
-        self._tcpSocket = tcpSocket
+        self._tcp_socket = tcp_socket
 
     @property
-    def initialDelaySeconds(self):
+    def initial_delay_seconds(self):
         """
-        Gets the initialDelaySeconds of this V1Probe.
+        Gets the initial_delay_seconds of this V1Probe.
         Number of seconds after the container has started before liveness probes are initiated. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :return: The initialDelaySeconds of this V1Probe.
+        :return: The initial_delay_seconds of this V1Probe.
         :rtype: int
         """
-        return self._initialDelaySeconds
+        return self._initial_delay_seconds
 
-    @initialDelaySeconds.setter
-    def initialDelaySeconds(self, initialDelaySeconds):
+    @initial_delay_seconds.setter
+    def initial_delay_seconds(self, initial_delay_seconds):
         """
-        Sets the initialDelaySeconds of this V1Probe.
+        Sets the initial_delay_seconds of this V1Probe.
         Number of seconds after the container has started before liveness probes are initiated. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :param initialDelaySeconds: The initialDelaySeconds of this V1Probe.
+        :param initial_delay_seconds: The initial_delay_seconds of this V1Probe.
         :type: int
         """
 
-        self._initialDelaySeconds = initialDelaySeconds
+        self._initial_delay_seconds = initial_delay_seconds
 
     @property
-    def timeoutSeconds(self):
+    def timeout_seconds(self):
         """
-        Gets the timeoutSeconds of this V1Probe.
+        Gets the timeout_seconds of this V1Probe.
         Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :return: The timeoutSeconds of this V1Probe.
+        :return: The timeout_seconds of this V1Probe.
         :rtype: int
         """
-        return self._timeoutSeconds
+        return self._timeout_seconds
 
-    @timeoutSeconds.setter
-    def timeoutSeconds(self, timeoutSeconds):
+    @timeout_seconds.setter
+    def timeout_seconds(self, timeout_seconds):
         """
-        Sets the timeoutSeconds of this V1Probe.
+        Sets the timeout_seconds of this V1Probe.
         Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :param timeoutSeconds: The timeoutSeconds of this V1Probe.
+        :param timeout_seconds: The timeout_seconds of this V1Probe.
         :type: int
         """
 
-        self._timeoutSeconds = timeoutSeconds
+        self._timeout_seconds = timeout_seconds
 
     @property
-    def periodSeconds(self):
+    def period_seconds(self):
         """
-        Gets the periodSeconds of this V1Probe.
+        Gets the period_seconds of this V1Probe.
         How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
 
-        :return: The periodSeconds of this V1Probe.
+        :return: The period_seconds of this V1Probe.
         :rtype: int
         """
-        return self._periodSeconds
+        return self._period_seconds
 
-    @periodSeconds.setter
-    def periodSeconds(self, periodSeconds):
+    @period_seconds.setter
+    def period_seconds(self, period_seconds):
         """
-        Sets the periodSeconds of this V1Probe.
+        Sets the period_seconds of this V1Probe.
         How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
 
-        :param periodSeconds: The periodSeconds of this V1Probe.
+        :param period_seconds: The period_seconds of this V1Probe.
         :type: int
         """
 
-        self._periodSeconds = periodSeconds
+        self._period_seconds = period_seconds
 
     @property
-    def successThreshold(self):
+    def success_threshold(self):
         """
-        Gets the successThreshold of this V1Probe.
+        Gets the success_threshold of this V1Probe.
         Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.
 
-        :return: The successThreshold of this V1Probe.
+        :return: The success_threshold of this V1Probe.
         :rtype: int
         """
-        return self._successThreshold
+        return self._success_threshold
 
-    @successThreshold.setter
-    def successThreshold(self, successThreshold):
+    @success_threshold.setter
+    def success_threshold(self, success_threshold):
         """
-        Sets the successThreshold of this V1Probe.
+        Sets the success_threshold of this V1Probe.
         Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.
 
-        :param successThreshold: The successThreshold of this V1Probe.
+        :param success_threshold: The success_threshold of this V1Probe.
         :type: int
         """
 
-        self._successThreshold = successThreshold
+        self._success_threshold = success_threshold
 
     @property
-    def failureThreshold(self):
+    def failure_threshold(self):
         """
-        Gets the failureThreshold of this V1Probe.
+        Gets the failure_threshold of this V1Probe.
         Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-        :return: The failureThreshold of this V1Probe.
+        :return: The failure_threshold of this V1Probe.
         :rtype: int
         """
-        return self._failureThreshold
+        return self._failure_threshold
 
-    @failureThreshold.setter
-    def failureThreshold(self, failureThreshold):
+    @failure_threshold.setter
+    def failure_threshold(self, failure_threshold):
         """
-        Sets the failureThreshold of this V1Probe.
+        Sets the failure_threshold of this V1Probe.
         Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-        :param failureThreshold: The failureThreshold of this V1Probe.
+        :param failure_threshold: The failure_threshold of this V1Probe.
         :type: int
         """
 
-        self._failureThreshold = failureThreshold
+        self._failure_threshold = failure_threshold
 
     def to_dict(self):
         """

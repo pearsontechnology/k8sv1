@@ -40,7 +40,7 @@ class V1FlockerVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'datasetName': 'str'
+            'dataset_name': 'str'
         }
 
         self.attribute_map = {
@@ -49,27 +49,27 @@ class V1FlockerVolumeSource(object):
 
 
     @property
-    def datasetName(self):
+    def dataset_name(self):
         """
-        Gets the datasetName of this V1FlockerVolumeSource.
+        Gets the dataset_name of this V1FlockerVolumeSource.
         Required: the volume name. This is going to be store on metadata -> name on the payload for Flocker
 
-        :return: The datasetName of this V1FlockerVolumeSource.
+        :return: The dataset_name of this V1FlockerVolumeSource.
         :rtype: str
         """
-        return self._datasetName
+        return self._dataset_name
 
-    @datasetName.setter
-    def datasetName(self, datasetName):
+    @dataset_name.setter
+    def dataset_name(self, dataset_name):
         """
-        Sets the datasetName of this V1FlockerVolumeSource.
+        Sets the dataset_name of this V1FlockerVolumeSource.
         Required: the volume name. This is going to be store on metadata -> name on the payload for Flocker
 
-        :param datasetName: The datasetName of this V1FlockerVolumeSource.
+        :param dataset_name: The dataset_name of this V1FlockerVolumeSource.
         :type: str
         """
 
-        self._datasetName = datasetName
+        self._dataset_name = dataset_name
 
     def to_dict(self):
         """

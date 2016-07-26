@@ -40,13 +40,13 @@ class V1ContainerStateTerminated(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'exitCode': 'int',
+            'exit_code': 'int',
             'signal': 'int',
             'reason': 'str',
             'message': 'str',
-            'startedAt': 'datetime',
-            'finishedAt': 'datetime',
-            'containerID': 'str'
+            'started_at': 'datetime',
+            'finished_at': 'datetime',
+            'container_id': 'str'
         }
 
         self.attribute_map = {
@@ -61,27 +61,27 @@ class V1ContainerStateTerminated(object):
 
 
     @property
-    def exitCode(self):
+    def exit_code(self):
         """
-        Gets the exitCode of this V1ContainerStateTerminated.
+        Gets the exit_code of this V1ContainerStateTerminated.
         Exit status from the last termination of the container
 
-        :return: The exitCode of this V1ContainerStateTerminated.
+        :return: The exit_code of this V1ContainerStateTerminated.
         :rtype: int
         """
-        return self._exitCode
+        return self._exit_code
 
-    @exitCode.setter
-    def exitCode(self, exitCode):
+    @exit_code.setter
+    def exit_code(self, exit_code):
         """
-        Sets the exitCode of this V1ContainerStateTerminated.
+        Sets the exit_code of this V1ContainerStateTerminated.
         Exit status from the last termination of the container
 
-        :param exitCode: The exitCode of this V1ContainerStateTerminated.
+        :param exit_code: The exit_code of this V1ContainerStateTerminated.
         :type: int
         """
 
-        self._exitCode = exitCode
+        self._exit_code = exit_code
 
     @property
     def signal(self):
@@ -153,73 +153,73 @@ class V1ContainerStateTerminated(object):
         self._message = message
 
     @property
-    def startedAt(self):
+    def started_at(self):
         """
-        Gets the startedAt of this V1ContainerStateTerminated.
+        Gets the started_at of this V1ContainerStateTerminated.
         Time at which previous execution of the container started
 
-        :return: The startedAt of this V1ContainerStateTerminated.
+        :return: The started_at of this V1ContainerStateTerminated.
         :rtype: datetime
         """
-        return self._startedAt
+        return self._started_at
 
-    @startedAt.setter
-    def startedAt(self, startedAt):
+    @started_at.setter
+    def started_at(self, started_at):
         """
-        Sets the startedAt of this V1ContainerStateTerminated.
+        Sets the started_at of this V1ContainerStateTerminated.
         Time at which previous execution of the container started
 
-        :param startedAt: The startedAt of this V1ContainerStateTerminated.
+        :param started_at: The started_at of this V1ContainerStateTerminated.
         :type: datetime
         """
 
-        self._startedAt = startedAt
+        self._started_at = started_at
 
     @property
-    def finishedAt(self):
+    def finished_at(self):
         """
-        Gets the finishedAt of this V1ContainerStateTerminated.
+        Gets the finished_at of this V1ContainerStateTerminated.
         Time at which the container last terminated
 
-        :return: The finishedAt of this V1ContainerStateTerminated.
+        :return: The finished_at of this V1ContainerStateTerminated.
         :rtype: datetime
         """
-        return self._finishedAt
+        return self._finished_at
 
-    @finishedAt.setter
-    def finishedAt(self, finishedAt):
+    @finished_at.setter
+    def finished_at(self, finished_at):
         """
-        Sets the finishedAt of this V1ContainerStateTerminated.
+        Sets the finished_at of this V1ContainerStateTerminated.
         Time at which the container last terminated
 
-        :param finishedAt: The finishedAt of this V1ContainerStateTerminated.
+        :param finished_at: The finished_at of this V1ContainerStateTerminated.
         :type: datetime
         """
 
-        self._finishedAt = finishedAt
+        self._finished_at = finished_at
 
     @property
-    def containerID(self):
+    def container_id(self):
         """
-        Gets the containerID of this V1ContainerStateTerminated.
+        Gets the container_id of this V1ContainerStateTerminated.
         Container's ID in the format 'docker://<container_id>'
 
-        :return: The containerID of this V1ContainerStateTerminated.
+        :return: The container_id of this V1ContainerStateTerminated.
         :rtype: str
         """
-        return self._containerID
+        return self._container_id
 
-    @containerID.setter
-    def containerID(self, containerID):
+    @container_id.setter
+    def container_id(self, container_id):
         """
-        Sets the containerID of this V1ContainerStateTerminated.
+        Sets the container_id of this V1ContainerStateTerminated.
         Container's ID in the format 'docker://<container_id>'
 
-        :param containerID: The containerID of this V1ContainerStateTerminated.
+        :param container_id: The container_id of this V1ContainerStateTerminated.
         :type: str
         """
 
-        self._containerID = containerID
+        self._container_id = container_id
 
     def to_dict(self):
         """

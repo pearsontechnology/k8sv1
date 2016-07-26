@@ -40,9 +40,9 @@ class V1AzureFileVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'secretName': 'str',
-            'shareName': 'str',
-            'readOnly': 'bool'
+            'secret_name': 'str',
+            'share_name': 'str',
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -53,73 +53,73 @@ class V1AzureFileVolumeSource(object):
 
 
     @property
-    def secretName(self):
+    def secret_name(self):
         """
-        Gets the secretName of this V1AzureFileVolumeSource.
+        Gets the secret_name of this V1AzureFileVolumeSource.
         the name of secret that contains Azure Storage Account Name and Key
 
-        :return: The secretName of this V1AzureFileVolumeSource.
+        :return: The secret_name of this V1AzureFileVolumeSource.
         :rtype: str
         """
-        return self._secretName
+        return self._secret_name
 
-    @secretName.setter
-    def secretName(self, secretName):
+    @secret_name.setter
+    def secret_name(self, secret_name):
         """
-        Sets the secretName of this V1AzureFileVolumeSource.
+        Sets the secret_name of this V1AzureFileVolumeSource.
         the name of secret that contains Azure Storage Account Name and Key
 
-        :param secretName: The secretName of this V1AzureFileVolumeSource.
+        :param secret_name: The secret_name of this V1AzureFileVolumeSource.
         :type: str
         """
 
-        self._secretName = secretName
+        self._secret_name = secret_name
 
     @property
-    def shareName(self):
+    def share_name(self):
         """
-        Gets the shareName of this V1AzureFileVolumeSource.
+        Gets the share_name of this V1AzureFileVolumeSource.
         Share Name
 
-        :return: The shareName of this V1AzureFileVolumeSource.
+        :return: The share_name of this V1AzureFileVolumeSource.
         :rtype: str
         """
-        return self._shareName
+        return self._share_name
 
-    @shareName.setter
-    def shareName(self, shareName):
+    @share_name.setter
+    def share_name(self, share_name):
         """
-        Sets the shareName of this V1AzureFileVolumeSource.
+        Sets the share_name of this V1AzureFileVolumeSource.
         Share Name
 
-        :param shareName: The shareName of this V1AzureFileVolumeSource.
+        :param share_name: The share_name of this V1AzureFileVolumeSource.
         :type: str
         """
 
-        self._shareName = shareName
+        self._share_name = share_name
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1AzureFileVolumeSource.
+        Gets the read_only of this V1AzureFileVolumeSource.
         Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
 
-        :return: The readOnly of this V1AzureFileVolumeSource.
+        :return: The read_only of this V1AzureFileVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1AzureFileVolumeSource.
+        Sets the read_only of this V1AzureFileVolumeSource.
         Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
 
-        :param readOnly: The readOnly of this V1AzureFileVolumeSource.
+        :param read_only: The read_only of this V1AzureFileVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

@@ -40,7 +40,7 @@ class V1ResourceFieldSelector(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'containerName': 'str',
+            'container_name': 'str',
             'resource': 'str',
             'divisor': 'str'
         }
@@ -53,27 +53,27 @@ class V1ResourceFieldSelector(object):
 
 
     @property
-    def containerName(self):
+    def container_name(self):
         """
-        Gets the containerName of this V1ResourceFieldSelector.
+        Gets the container_name of this V1ResourceFieldSelector.
         Container name: required for volumes, optional for env vars
 
-        :return: The containerName of this V1ResourceFieldSelector.
+        :return: The container_name of this V1ResourceFieldSelector.
         :rtype: str
         """
-        return self._containerName
+        return self._container_name
 
-    @containerName.setter
-    def containerName(self, containerName):
+    @container_name.setter
+    def container_name(self, container_name):
         """
-        Sets the containerName of this V1ResourceFieldSelector.
+        Sets the container_name of this V1ResourceFieldSelector.
         Container name: required for volumes, optional for env vars
 
-        :param containerName: The containerName of this V1ResourceFieldSelector.
+        :param container_name: The container_name of this V1ResourceFieldSelector.
         :type: str
         """
 
-        self._containerName = containerName
+        self._container_name = container_name
 
     @property
     def resource(self):

@@ -41,8 +41,8 @@ class UnversionedAPIResourceList(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
-            'groupVersion': 'str',
+            'api_version': 'str',
+            'group_version': 'str',
             'resources': 'list[UnversionedAPIResource]'
         }
 
@@ -78,50 +78,50 @@ class UnversionedAPIResourceList(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this UnversionedAPIResourceList.
+        Gets the api_version of this UnversionedAPIResourceList.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this UnversionedAPIResourceList.
+        :return: The api_version of this UnversionedAPIResourceList.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this UnversionedAPIResourceList.
+        Sets the api_version of this UnversionedAPIResourceList.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this UnversionedAPIResourceList.
+        :param api_version: The api_version of this UnversionedAPIResourceList.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
-    def groupVersion(self):
+    def group_version(self):
         """
-        Gets the groupVersion of this UnversionedAPIResourceList.
+        Gets the group_version of this UnversionedAPIResourceList.
         groupVersion is the group and version this APIResourceList is for.
 
-        :return: The groupVersion of this UnversionedAPIResourceList.
+        :return: The group_version of this UnversionedAPIResourceList.
         :rtype: str
         """
-        return self._groupVersion
+        return self._group_version
 
-    @groupVersion.setter
-    def groupVersion(self, groupVersion):
+    @group_version.setter
+    def group_version(self, group_version):
         """
-        Sets the groupVersion of this UnversionedAPIResourceList.
+        Sets the group_version of this UnversionedAPIResourceList.
         groupVersion is the group and version this APIResourceList is for.
 
-        :param groupVersion: The groupVersion of this UnversionedAPIResourceList.
+        :param group_version: The group_version of this UnversionedAPIResourceList.
         :type: str
         """
 
-        self._groupVersion = groupVersion
+        self._group_version = group_version
 
     @property
     def resources(self):

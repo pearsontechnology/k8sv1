@@ -42,19 +42,19 @@ class V1PodSpec(object):
         self.swagger_types = {
             'volumes': 'list[V1Volume]',
             'containers': 'list[V1Container]',
-            'restartPolicy': 'str',
-            'terminationGracePeriodSeconds': 'int',
-            'activeDeadlineSeconds': 'int',
-            'dnsPolicy': 'str',
-            'nodeSelector': 'object',
-            'serviceAccountName': 'str',
-            'serviceAccount': 'str',
-            'nodeName': 'str',
-            'hostNetwork': 'bool',
-            'hostPID': 'bool',
-            'hostIPC': 'bool',
-            'securityContext': 'V1PodSecurityContext',
-            'imagePullSecrets': 'list[V1LocalObjectReference]',
+            'restart_policy': 'str',
+            'termination_grace_period_seconds': 'int',
+            'active_deadline_seconds': 'int',
+            'dns_policy': 'str',
+            'node_selector': 'object',
+            'service_account_name': 'str',
+            'service_account': 'str',
+            'node_name': 'str',
+            'host_network': 'bool',
+            'host_pid': 'bool',
+            'host_ipc': 'bool',
+            'security_context': 'V1PodSecurityContext',
+            'image_pull_secrets': 'list[V1LocalObjectReference]',
             'hostname': 'str',
             'subdomain': 'str'
         }
@@ -127,303 +127,303 @@ class V1PodSpec(object):
         self._containers = containers
 
     @property
-    def restartPolicy(self):
+    def restart_policy(self):
         """
-        Gets the restartPolicy of this V1PodSpec.
+        Gets the restart_policy of this V1PodSpec.
         Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default to Always. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#restartpolicy
 
-        :return: The restartPolicy of this V1PodSpec.
+        :return: The restart_policy of this V1PodSpec.
         :rtype: str
         """
-        return self._restartPolicy
+        return self._restart_policy
 
-    @restartPolicy.setter
-    def restartPolicy(self, restartPolicy):
+    @restart_policy.setter
+    def restart_policy(self, restart_policy):
         """
-        Sets the restartPolicy of this V1PodSpec.
+        Sets the restart_policy of this V1PodSpec.
         Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default to Always. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#restartpolicy
 
-        :param restartPolicy: The restartPolicy of this V1PodSpec.
+        :param restart_policy: The restart_policy of this V1PodSpec.
         :type: str
         """
 
-        self._restartPolicy = restartPolicy
+        self._restart_policy = restart_policy
 
     @property
-    def terminationGracePeriodSeconds(self):
+    def termination_grace_period_seconds(self):
         """
-        Gets the terminationGracePeriodSeconds of this V1PodSpec.
+        Gets the termination_grace_period_seconds of this V1PodSpec.
         Optional duration in seconds the pod needs to terminate gracefully. May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds.
 
-        :return: The terminationGracePeriodSeconds of this V1PodSpec.
+        :return: The termination_grace_period_seconds of this V1PodSpec.
         :rtype: int
         """
-        return self._terminationGracePeriodSeconds
+        return self._termination_grace_period_seconds
 
-    @terminationGracePeriodSeconds.setter
-    def terminationGracePeriodSeconds(self, terminationGracePeriodSeconds):
+    @termination_grace_period_seconds.setter
+    def termination_grace_period_seconds(self, termination_grace_period_seconds):
         """
-        Sets the terminationGracePeriodSeconds of this V1PodSpec.
+        Sets the termination_grace_period_seconds of this V1PodSpec.
         Optional duration in seconds the pod needs to terminate gracefully. May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds.
 
-        :param terminationGracePeriodSeconds: The terminationGracePeriodSeconds of this V1PodSpec.
+        :param termination_grace_period_seconds: The termination_grace_period_seconds of this V1PodSpec.
         :type: int
         """
 
-        self._terminationGracePeriodSeconds = terminationGracePeriodSeconds
+        self._termination_grace_period_seconds = termination_grace_period_seconds
 
     @property
-    def activeDeadlineSeconds(self):
+    def active_deadline_seconds(self):
         """
-        Gets the activeDeadlineSeconds of this V1PodSpec.
+        Gets the active_deadline_seconds of this V1PodSpec.
         Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer.
 
-        :return: The activeDeadlineSeconds of this V1PodSpec.
+        :return: The active_deadline_seconds of this V1PodSpec.
         :rtype: int
         """
-        return self._activeDeadlineSeconds
+        return self._active_deadline_seconds
 
-    @activeDeadlineSeconds.setter
-    def activeDeadlineSeconds(self, activeDeadlineSeconds):
+    @active_deadline_seconds.setter
+    def active_deadline_seconds(self, active_deadline_seconds):
         """
-        Sets the activeDeadlineSeconds of this V1PodSpec.
+        Sets the active_deadline_seconds of this V1PodSpec.
         Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer.
 
-        :param activeDeadlineSeconds: The activeDeadlineSeconds of this V1PodSpec.
+        :param active_deadline_seconds: The active_deadline_seconds of this V1PodSpec.
         :type: int
         """
 
-        self._activeDeadlineSeconds = activeDeadlineSeconds
+        self._active_deadline_seconds = active_deadline_seconds
 
     @property
-    def dnsPolicy(self):
+    def dns_policy(self):
         """
-        Gets the dnsPolicy of this V1PodSpec.
+        Gets the dns_policy of this V1PodSpec.
         Set DNS policy for containers within the pod. One of 'ClusterFirst' or 'Default'. Defaults to \"ClusterFirst\".
 
-        :return: The dnsPolicy of this V1PodSpec.
+        :return: The dns_policy of this V1PodSpec.
         :rtype: str
         """
-        return self._dnsPolicy
+        return self._dns_policy
 
-    @dnsPolicy.setter
-    def dnsPolicy(self, dnsPolicy):
+    @dns_policy.setter
+    def dns_policy(self, dns_policy):
         """
-        Sets the dnsPolicy of this V1PodSpec.
+        Sets the dns_policy of this V1PodSpec.
         Set DNS policy for containers within the pod. One of 'ClusterFirst' or 'Default'. Defaults to \"ClusterFirst\".
 
-        :param dnsPolicy: The dnsPolicy of this V1PodSpec.
+        :param dns_policy: The dns_policy of this V1PodSpec.
         :type: str
         """
 
-        self._dnsPolicy = dnsPolicy
+        self._dns_policy = dns_policy
 
     @property
-    def nodeSelector(self):
+    def node_selector(self):
         """
-        Gets the nodeSelector of this V1PodSpec.
+        Gets the node_selector of this V1PodSpec.
         NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: http://releases.k8s.io/HEAD/docs/user-guide/node-selection/README.md
 
-        :return: The nodeSelector of this V1PodSpec.
+        :return: The node_selector of this V1PodSpec.
         :rtype: object
         """
-        return self._nodeSelector
+        return self._node_selector
 
-    @nodeSelector.setter
-    def nodeSelector(self, nodeSelector):
+    @node_selector.setter
+    def node_selector(self, node_selector):
         """
-        Sets the nodeSelector of this V1PodSpec.
+        Sets the node_selector of this V1PodSpec.
         NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: http://releases.k8s.io/HEAD/docs/user-guide/node-selection/README.md
 
-        :param nodeSelector: The nodeSelector of this V1PodSpec.
+        :param node_selector: The node_selector of this V1PodSpec.
         :type: object
         """
 
-        self._nodeSelector = nodeSelector
+        self._node_selector = node_selector
 
     @property
-    def serviceAccountName(self):
+    def service_account_name(self):
         """
-        Gets the serviceAccountName of this V1PodSpec.
+        Gets the service_account_name of this V1PodSpec.
         ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md
 
-        :return: The serviceAccountName of this V1PodSpec.
+        :return: The service_account_name of this V1PodSpec.
         :rtype: str
         """
-        return self._serviceAccountName
+        return self._service_account_name
 
-    @serviceAccountName.setter
-    def serviceAccountName(self, serviceAccountName):
+    @service_account_name.setter
+    def service_account_name(self, service_account_name):
         """
-        Sets the serviceAccountName of this V1PodSpec.
+        Sets the service_account_name of this V1PodSpec.
         ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md
 
-        :param serviceAccountName: The serviceAccountName of this V1PodSpec.
+        :param service_account_name: The service_account_name of this V1PodSpec.
         :type: str
         """
 
-        self._serviceAccountName = serviceAccountName
+        self._service_account_name = service_account_name
 
     @property
-    def serviceAccount(self):
+    def service_account(self):
         """
-        Gets the serviceAccount of this V1PodSpec.
+        Gets the service_account of this V1PodSpec.
         DeprecatedServiceAccount is a depreciated alias for ServiceAccountName. Deprecated: Use serviceAccountName instead.
 
-        :return: The serviceAccount of this V1PodSpec.
+        :return: The service_account of this V1PodSpec.
         :rtype: str
         """
-        return self._serviceAccount
+        return self._service_account
 
-    @serviceAccount.setter
-    def serviceAccount(self, serviceAccount):
+    @service_account.setter
+    def service_account(self, service_account):
         """
-        Sets the serviceAccount of this V1PodSpec.
+        Sets the service_account of this V1PodSpec.
         DeprecatedServiceAccount is a depreciated alias for ServiceAccountName. Deprecated: Use serviceAccountName instead.
 
-        :param serviceAccount: The serviceAccount of this V1PodSpec.
+        :param service_account: The service_account of this V1PodSpec.
         :type: str
         """
 
-        self._serviceAccount = serviceAccount
+        self._service_account = service_account
 
     @property
-    def nodeName(self):
+    def node_name(self):
         """
-        Gets the nodeName of this V1PodSpec.
+        Gets the node_name of this V1PodSpec.
         NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-        :return: The nodeName of this V1PodSpec.
+        :return: The node_name of this V1PodSpec.
         :rtype: str
         """
-        return self._nodeName
+        return self._node_name
 
-    @nodeName.setter
-    def nodeName(self, nodeName):
+    @node_name.setter
+    def node_name(self, node_name):
         """
-        Sets the nodeName of this V1PodSpec.
+        Sets the node_name of this V1PodSpec.
         NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-        :param nodeName: The nodeName of this V1PodSpec.
+        :param node_name: The node_name of this V1PodSpec.
         :type: str
         """
 
-        self._nodeName = nodeName
+        self._node_name = node_name
 
     @property
-    def hostNetwork(self):
+    def host_network(self):
         """
-        Gets the hostNetwork of this V1PodSpec.
+        Gets the host_network of this V1PodSpec.
         Host networking requested for this pod. Use the host's network namespace. If this option is set, the ports that will be used must be specified. Default to false.
 
-        :return: The hostNetwork of this V1PodSpec.
+        :return: The host_network of this V1PodSpec.
         :rtype: bool
         """
-        return self._hostNetwork
+        return self._host_network
 
-    @hostNetwork.setter
-    def hostNetwork(self, hostNetwork):
+    @host_network.setter
+    def host_network(self, host_network):
         """
-        Sets the hostNetwork of this V1PodSpec.
+        Sets the host_network of this V1PodSpec.
         Host networking requested for this pod. Use the host's network namespace. If this option is set, the ports that will be used must be specified. Default to false.
 
-        :param hostNetwork: The hostNetwork of this V1PodSpec.
+        :param host_network: The host_network of this V1PodSpec.
         :type: bool
         """
 
-        self._hostNetwork = hostNetwork
+        self._host_network = host_network
 
     @property
-    def hostPID(self):
+    def host_pid(self):
         """
-        Gets the hostPID of this V1PodSpec.
+        Gets the host_pid of this V1PodSpec.
         Use the host's pid namespace. Optional: Default to false.
 
-        :return: The hostPID of this V1PodSpec.
+        :return: The host_pid of this V1PodSpec.
         :rtype: bool
         """
-        return self._hostPID
+        return self._host_pid
 
-    @hostPID.setter
-    def hostPID(self, hostPID):
+    @host_pid.setter
+    def host_pid(self, host_pid):
         """
-        Sets the hostPID of this V1PodSpec.
+        Sets the host_pid of this V1PodSpec.
         Use the host's pid namespace. Optional: Default to false.
 
-        :param hostPID: The hostPID of this V1PodSpec.
+        :param host_pid: The host_pid of this V1PodSpec.
         :type: bool
         """
 
-        self._hostPID = hostPID
+        self._host_pid = host_pid
 
     @property
-    def hostIPC(self):
+    def host_ipc(self):
         """
-        Gets the hostIPC of this V1PodSpec.
+        Gets the host_ipc of this V1PodSpec.
         Use the host's ipc namespace. Optional: Default to false.
 
-        :return: The hostIPC of this V1PodSpec.
+        :return: The host_ipc of this V1PodSpec.
         :rtype: bool
         """
-        return self._hostIPC
+        return self._host_ipc
 
-    @hostIPC.setter
-    def hostIPC(self, hostIPC):
+    @host_ipc.setter
+    def host_ipc(self, host_ipc):
         """
-        Sets the hostIPC of this V1PodSpec.
+        Sets the host_ipc of this V1PodSpec.
         Use the host's ipc namespace. Optional: Default to false.
 
-        :param hostIPC: The hostIPC of this V1PodSpec.
+        :param host_ipc: The host_ipc of this V1PodSpec.
         :type: bool
         """
 
-        self._hostIPC = hostIPC
+        self._host_ipc = host_ipc
 
     @property
-    def securityContext(self):
+    def security_context(self):
         """
-        Gets the securityContext of this V1PodSpec.
+        Gets the security_context of this V1PodSpec.
         SecurityContext holds pod-level security attributes and common container settings. Optional: Defaults to empty.  See type description for default values of each field.
 
-        :return: The securityContext of this V1PodSpec.
+        :return: The security_context of this V1PodSpec.
         :rtype: V1PodSecurityContext
         """
-        return self._securityContext
+        return self._security_context
 
-    @securityContext.setter
-    def securityContext(self, securityContext):
+    @security_context.setter
+    def security_context(self, security_context):
         """
-        Sets the securityContext of this V1PodSpec.
+        Sets the security_context of this V1PodSpec.
         SecurityContext holds pod-level security attributes and common container settings. Optional: Defaults to empty.  See type description for default values of each field.
 
-        :param securityContext: The securityContext of this V1PodSpec.
+        :param security_context: The security_context of this V1PodSpec.
         :type: V1PodSecurityContext
         """
 
-        self._securityContext = securityContext
+        self._security_context = security_context
 
     @property
-    def imagePullSecrets(self):
+    def image_pull_secrets(self):
         """
-        Gets the imagePullSecrets of this V1PodSpec.
+        Gets the image_pull_secrets of this V1PodSpec.
         ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: http://releases.k8s.io/HEAD/docs/user-guide/images.md#specifying-imagepullsecrets-on-a-pod
 
-        :return: The imagePullSecrets of this V1PodSpec.
+        :return: The image_pull_secrets of this V1PodSpec.
         :rtype: list[V1LocalObjectReference]
         """
-        return self._imagePullSecrets
+        return self._image_pull_secrets
 
-    @imagePullSecrets.setter
-    def imagePullSecrets(self, imagePullSecrets):
+    @image_pull_secrets.setter
+    def image_pull_secrets(self, image_pull_secrets):
         """
-        Sets the imagePullSecrets of this V1PodSpec.
+        Sets the image_pull_secrets of this V1PodSpec.
         ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: http://releases.k8s.io/HEAD/docs/user-guide/images.md#specifying-imagepullsecrets-on-a-pod
 
-        :param imagePullSecrets: The imagePullSecrets of this V1PodSpec.
+        :param image_pull_secrets: The image_pull_secrets of this V1PodSpec.
         :type: list[V1LocalObjectReference]
         """
 
-        self._imagePullSecrets = imagePullSecrets
+        self._image_pull_secrets = image_pull_secrets
 
     @property
     def hostname(self):

@@ -41,10 +41,10 @@ class V1Secret(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
+            'api_version': 'str',
             'metadata': 'V1ObjectMeta',
             'data': 'object',
-            'stringData': 'object',
+            'string_data': 'object',
             'type': 'str'
         }
 
@@ -82,27 +82,27 @@ class V1Secret(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1Secret.
+        Gets the api_version of this V1Secret.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this V1Secret.
+        :return: The api_version of this V1Secret.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1Secret.
+        Sets the api_version of this V1Secret.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this V1Secret.
+        :param api_version: The api_version of this V1Secret.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
     def metadata(self):
@@ -151,27 +151,27 @@ class V1Secret(object):
         self._data = data
 
     @property
-    def stringData(self):
+    def string_data(self):
         """
-        Gets the stringData of this V1Secret.
+        Gets the string_data of this V1Secret.
         stringData allows specifying non-binary secret data in string form. It is provided as a write-only convenience method. All keys and values are merged into the data field on write, overwriting any existing values. It is never output when reading from the API.
 
-        :return: The stringData of this V1Secret.
+        :return: The string_data of this V1Secret.
         :rtype: object
         """
-        return self._stringData
+        return self._string_data
 
-    @stringData.setter
-    def stringData(self, stringData):
+    @string_data.setter
+    def string_data(self, string_data):
         """
-        Sets the stringData of this V1Secret.
+        Sets the string_data of this V1Secret.
         stringData allows specifying non-binary secret data in string form. It is provided as a write-only convenience method. All keys and values are merged into the data field on write, overwriting any existing values. It is never output when reading from the API.
 
-        :param stringData: The stringData of this V1Secret.
+        :param string_data: The string_data of this V1Secret.
         :type: object
         """
 
-        self._stringData = stringData
+        self._string_data = string_data
 
     @property
     def type(self):

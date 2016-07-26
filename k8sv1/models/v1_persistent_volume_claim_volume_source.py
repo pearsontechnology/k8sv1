@@ -40,8 +40,8 @@ class V1PersistentVolumeClaimVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'claimName': 'str',
-            'readOnly': 'bool'
+            'claim_name': 'str',
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -51,50 +51,50 @@ class V1PersistentVolumeClaimVolumeSource(object):
 
 
     @property
-    def claimName(self):
+    def claim_name(self):
         """
-        Gets the claimName of this V1PersistentVolumeClaimVolumeSource.
+        Gets the claim_name of this V1PersistentVolumeClaimVolumeSource.
         ClaimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#persistentvolumeclaims
 
-        :return: The claimName of this V1PersistentVolumeClaimVolumeSource.
+        :return: The claim_name of this V1PersistentVolumeClaimVolumeSource.
         :rtype: str
         """
-        return self._claimName
+        return self._claim_name
 
-    @claimName.setter
-    def claimName(self, claimName):
+    @claim_name.setter
+    def claim_name(self, claim_name):
         """
-        Sets the claimName of this V1PersistentVolumeClaimVolumeSource.
+        Sets the claim_name of this V1PersistentVolumeClaimVolumeSource.
         ClaimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#persistentvolumeclaims
 
-        :param claimName: The claimName of this V1PersistentVolumeClaimVolumeSource.
+        :param claim_name: The claim_name of this V1PersistentVolumeClaimVolumeSource.
         :type: str
         """
 
-        self._claimName = claimName
+        self._claim_name = claim_name
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1PersistentVolumeClaimVolumeSource.
+        Gets the read_only of this V1PersistentVolumeClaimVolumeSource.
         Will force the ReadOnly setting in VolumeMounts. Default false.
 
-        :return: The readOnly of this V1PersistentVolumeClaimVolumeSource.
+        :return: The read_only of this V1PersistentVolumeClaimVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1PersistentVolumeClaimVolumeSource.
+        Sets the read_only of this V1PersistentVolumeClaimVolumeSource.
         Will force the ReadOnly setting in VolumeMounts. Default false.
 
-        :param readOnly: The readOnly of this V1PersistentVolumeClaimVolumeSource.
+        :param read_only: The read_only of this V1PersistentVolumeClaimVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

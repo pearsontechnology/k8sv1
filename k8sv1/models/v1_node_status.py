@@ -45,11 +45,11 @@ class V1NodeStatus(object):
             'phase': 'str',
             'conditions': 'list[V1NodeCondition]',
             'addresses': 'list[V1NodeAddress]',
-            'daemonEndpoints': 'V1NodeDaemonEndpoints',
-            'nodeInfo': 'V1NodeSystemInfo',
+            'daemon_endpoints': 'V1NodeDaemonEndpoints',
+            'node_info': 'V1NodeSystemInfo',
             'images': 'list[V1ContainerImage]',
-            'volumesInUse': 'list[V1UniqueVolumeName]',
-            'volumesAttached': 'list[V1AttachedVolume]'
+            'volumes_in_use': 'list[V1UniqueVolumeName]',
+            'volumes_attached': 'list[V1AttachedVolume]'
         }
 
         self.attribute_map = {
@@ -182,50 +182,50 @@ class V1NodeStatus(object):
         self._addresses = addresses
 
     @property
-    def daemonEndpoints(self):
+    def daemon_endpoints(self):
         """
-        Gets the daemonEndpoints of this V1NodeStatus.
+        Gets the daemon_endpoints of this V1NodeStatus.
         Endpoints of daemons running on the Node.
 
-        :return: The daemonEndpoints of this V1NodeStatus.
+        :return: The daemon_endpoints of this V1NodeStatus.
         :rtype: V1NodeDaemonEndpoints
         """
-        return self._daemonEndpoints
+        return self._daemon_endpoints
 
-    @daemonEndpoints.setter
-    def daemonEndpoints(self, daemonEndpoints):
+    @daemon_endpoints.setter
+    def daemon_endpoints(self, daemon_endpoints):
         """
-        Sets the daemonEndpoints of this V1NodeStatus.
+        Sets the daemon_endpoints of this V1NodeStatus.
         Endpoints of daemons running on the Node.
 
-        :param daemonEndpoints: The daemonEndpoints of this V1NodeStatus.
+        :param daemon_endpoints: The daemon_endpoints of this V1NodeStatus.
         :type: V1NodeDaemonEndpoints
         """
 
-        self._daemonEndpoints = daemonEndpoints
+        self._daemon_endpoints = daemon_endpoints
 
     @property
-    def nodeInfo(self):
+    def node_info(self):
         """
-        Gets the nodeInfo of this V1NodeStatus.
+        Gets the node_info of this V1NodeStatus.
         Set of ids/uuids to uniquely identify the node. More info: http://releases.k8s.io/HEAD/docs/admin/node.md#node-info
 
-        :return: The nodeInfo of this V1NodeStatus.
+        :return: The node_info of this V1NodeStatus.
         :rtype: V1NodeSystemInfo
         """
-        return self._nodeInfo
+        return self._node_info
 
-    @nodeInfo.setter
-    def nodeInfo(self, nodeInfo):
+    @node_info.setter
+    def node_info(self, node_info):
         """
-        Sets the nodeInfo of this V1NodeStatus.
+        Sets the node_info of this V1NodeStatus.
         Set of ids/uuids to uniquely identify the node. More info: http://releases.k8s.io/HEAD/docs/admin/node.md#node-info
 
-        :param nodeInfo: The nodeInfo of this V1NodeStatus.
+        :param node_info: The node_info of this V1NodeStatus.
         :type: V1NodeSystemInfo
         """
 
-        self._nodeInfo = nodeInfo
+        self._node_info = node_info
 
     @property
     def images(self):
@@ -251,50 +251,50 @@ class V1NodeStatus(object):
         self._images = images
 
     @property
-    def volumesInUse(self):
+    def volumes_in_use(self):
         """
-        Gets the volumesInUse of this V1NodeStatus.
+        Gets the volumes_in_use of this V1NodeStatus.
         List of attachable volumes in use (mounted) by the node.
 
-        :return: The volumesInUse of this V1NodeStatus.
+        :return: The volumes_in_use of this V1NodeStatus.
         :rtype: list[V1UniqueVolumeName]
         """
-        return self._volumesInUse
+        return self._volumes_in_use
 
-    @volumesInUse.setter
-    def volumesInUse(self, volumesInUse):
+    @volumes_in_use.setter
+    def volumes_in_use(self, volumes_in_use):
         """
-        Sets the volumesInUse of this V1NodeStatus.
+        Sets the volumes_in_use of this V1NodeStatus.
         List of attachable volumes in use (mounted) by the node.
 
-        :param volumesInUse: The volumesInUse of this V1NodeStatus.
+        :param volumes_in_use: The volumes_in_use of this V1NodeStatus.
         :type: list[V1UniqueVolumeName]
         """
 
-        self._volumesInUse = volumesInUse
+        self._volumes_in_use = volumes_in_use
 
     @property
-    def volumesAttached(self):
+    def volumes_attached(self):
         """
-        Gets the volumesAttached of this V1NodeStatus.
+        Gets the volumes_attached of this V1NodeStatus.
         List of volumes that are attached to the node.
 
-        :return: The volumesAttached of this V1NodeStatus.
+        :return: The volumes_attached of this V1NodeStatus.
         :rtype: list[V1AttachedVolume]
         """
-        return self._volumesAttached
+        return self._volumes_attached
 
-    @volumesAttached.setter
-    def volumesAttached(self, volumesAttached):
+    @volumes_attached.setter
+    def volumes_attached(self, volumes_attached):
         """
-        Sets the volumesAttached of this V1NodeStatus.
+        Sets the volumes_attached of this V1NodeStatus.
         List of volumes that are attached to the node.
 
-        :param volumesAttached: The volumesAttached of this V1NodeStatus.
+        :param volumes_attached: The volumes_attached of this V1NodeStatus.
         :type: list[V1AttachedVolume]
         """
 
-        self._volumesAttached = volumesAttached
+        self._volumes_attached = volumes_attached
 
     def to_dict(self):
         """

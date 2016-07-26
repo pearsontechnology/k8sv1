@@ -40,15 +40,15 @@ class V1NodeSystemInfo(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'machineID': 'str',
-            'systemUUID': 'str',
-            'bootID': 'str',
-            'kernelVersion': 'str',
-            'osImage': 'str',
-            'containerRuntimeVersion': 'str',
-            'kubeletVersion': 'str',
-            'kubeProxyVersion': 'str',
-            'operatingSystem': 'str',
+            'machine_id': 'str',
+            'system_uuid': 'str',
+            'boot_id': 'str',
+            'kernel_version': 'str',
+            'os_image': 'str',
+            'container_runtime_version': 'str',
+            'kubelet_version': 'str',
+            'kube_proxy_version': 'str',
+            'operating_system': 'str',
             'architecture': 'str'
         }
 
@@ -67,211 +67,211 @@ class V1NodeSystemInfo(object):
 
 
     @property
-    def machineID(self):
+    def machine_id(self):
         """
-        Gets the machineID of this V1NodeSystemInfo.
+        Gets the machine_id of this V1NodeSystemInfo.
         Machine ID reported by the node.
 
-        :return: The machineID of this V1NodeSystemInfo.
+        :return: The machine_id of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._machineID
+        return self._machine_id
 
-    @machineID.setter
-    def machineID(self, machineID):
+    @machine_id.setter
+    def machine_id(self, machine_id):
         """
-        Sets the machineID of this V1NodeSystemInfo.
+        Sets the machine_id of this V1NodeSystemInfo.
         Machine ID reported by the node.
 
-        :param machineID: The machineID of this V1NodeSystemInfo.
+        :param machine_id: The machine_id of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._machineID = machineID
+        self._machine_id = machine_id
 
     @property
-    def systemUUID(self):
+    def system_uuid(self):
         """
-        Gets the systemUUID of this V1NodeSystemInfo.
+        Gets the system_uuid of this V1NodeSystemInfo.
         System UUID reported by the node.
 
-        :return: The systemUUID of this V1NodeSystemInfo.
+        :return: The system_uuid of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._systemUUID
+        return self._system_uuid
 
-    @systemUUID.setter
-    def systemUUID(self, systemUUID):
+    @system_uuid.setter
+    def system_uuid(self, system_uuid):
         """
-        Sets the systemUUID of this V1NodeSystemInfo.
+        Sets the system_uuid of this V1NodeSystemInfo.
         System UUID reported by the node.
 
-        :param systemUUID: The systemUUID of this V1NodeSystemInfo.
+        :param system_uuid: The system_uuid of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._systemUUID = systemUUID
+        self._system_uuid = system_uuid
 
     @property
-    def bootID(self):
+    def boot_id(self):
         """
-        Gets the bootID of this V1NodeSystemInfo.
+        Gets the boot_id of this V1NodeSystemInfo.
         Boot ID reported by the node.
 
-        :return: The bootID of this V1NodeSystemInfo.
+        :return: The boot_id of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._bootID
+        return self._boot_id
 
-    @bootID.setter
-    def bootID(self, bootID):
+    @boot_id.setter
+    def boot_id(self, boot_id):
         """
-        Sets the bootID of this V1NodeSystemInfo.
+        Sets the boot_id of this V1NodeSystemInfo.
         Boot ID reported by the node.
 
-        :param bootID: The bootID of this V1NodeSystemInfo.
+        :param boot_id: The boot_id of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._bootID = bootID
+        self._boot_id = boot_id
 
     @property
-    def kernelVersion(self):
+    def kernel_version(self):
         """
-        Gets the kernelVersion of this V1NodeSystemInfo.
+        Gets the kernel_version of this V1NodeSystemInfo.
         Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64).
 
-        :return: The kernelVersion of this V1NodeSystemInfo.
+        :return: The kernel_version of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._kernelVersion
+        return self._kernel_version
 
-    @kernelVersion.setter
-    def kernelVersion(self, kernelVersion):
+    @kernel_version.setter
+    def kernel_version(self, kernel_version):
         """
-        Sets the kernelVersion of this V1NodeSystemInfo.
+        Sets the kernel_version of this V1NodeSystemInfo.
         Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64).
 
-        :param kernelVersion: The kernelVersion of this V1NodeSystemInfo.
+        :param kernel_version: The kernel_version of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._kernelVersion = kernelVersion
+        self._kernel_version = kernel_version
 
     @property
-    def osImage(self):
+    def os_image(self):
         """
-        Gets the osImage of this V1NodeSystemInfo.
+        Gets the os_image of this V1NodeSystemInfo.
         OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (wheezy)).
 
-        :return: The osImage of this V1NodeSystemInfo.
+        :return: The os_image of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._osImage
+        return self._os_image
 
-    @osImage.setter
-    def osImage(self, osImage):
+    @os_image.setter
+    def os_image(self, os_image):
         """
-        Sets the osImage of this V1NodeSystemInfo.
+        Sets the os_image of this V1NodeSystemInfo.
         OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (wheezy)).
 
-        :param osImage: The osImage of this V1NodeSystemInfo.
+        :param os_image: The os_image of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._osImage = osImage
+        self._os_image = os_image
 
     @property
-    def containerRuntimeVersion(self):
+    def container_runtime_version(self):
         """
-        Gets the containerRuntimeVersion of this V1NodeSystemInfo.
+        Gets the container_runtime_version of this V1NodeSystemInfo.
         ContainerRuntime Version reported by the node through runtime remote API (e.g. docker://1.5.0).
 
-        :return: The containerRuntimeVersion of this V1NodeSystemInfo.
+        :return: The container_runtime_version of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._containerRuntimeVersion
+        return self._container_runtime_version
 
-    @containerRuntimeVersion.setter
-    def containerRuntimeVersion(self, containerRuntimeVersion):
+    @container_runtime_version.setter
+    def container_runtime_version(self, container_runtime_version):
         """
-        Sets the containerRuntimeVersion of this V1NodeSystemInfo.
+        Sets the container_runtime_version of this V1NodeSystemInfo.
         ContainerRuntime Version reported by the node through runtime remote API (e.g. docker://1.5.0).
 
-        :param containerRuntimeVersion: The containerRuntimeVersion of this V1NodeSystemInfo.
+        :param container_runtime_version: The container_runtime_version of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._containerRuntimeVersion = containerRuntimeVersion
+        self._container_runtime_version = container_runtime_version
 
     @property
-    def kubeletVersion(self):
+    def kubelet_version(self):
         """
-        Gets the kubeletVersion of this V1NodeSystemInfo.
+        Gets the kubelet_version of this V1NodeSystemInfo.
         Kubelet Version reported by the node.
 
-        :return: The kubeletVersion of this V1NodeSystemInfo.
+        :return: The kubelet_version of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._kubeletVersion
+        return self._kubelet_version
 
-    @kubeletVersion.setter
-    def kubeletVersion(self, kubeletVersion):
+    @kubelet_version.setter
+    def kubelet_version(self, kubelet_version):
         """
-        Sets the kubeletVersion of this V1NodeSystemInfo.
+        Sets the kubelet_version of this V1NodeSystemInfo.
         Kubelet Version reported by the node.
 
-        :param kubeletVersion: The kubeletVersion of this V1NodeSystemInfo.
+        :param kubelet_version: The kubelet_version of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._kubeletVersion = kubeletVersion
+        self._kubelet_version = kubelet_version
 
     @property
-    def kubeProxyVersion(self):
+    def kube_proxy_version(self):
         """
-        Gets the kubeProxyVersion of this V1NodeSystemInfo.
+        Gets the kube_proxy_version of this V1NodeSystemInfo.
         KubeProxy Version reported by the node.
 
-        :return: The kubeProxyVersion of this V1NodeSystemInfo.
+        :return: The kube_proxy_version of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._kubeProxyVersion
+        return self._kube_proxy_version
 
-    @kubeProxyVersion.setter
-    def kubeProxyVersion(self, kubeProxyVersion):
+    @kube_proxy_version.setter
+    def kube_proxy_version(self, kube_proxy_version):
         """
-        Sets the kubeProxyVersion of this V1NodeSystemInfo.
+        Sets the kube_proxy_version of this V1NodeSystemInfo.
         KubeProxy Version reported by the node.
 
-        :param kubeProxyVersion: The kubeProxyVersion of this V1NodeSystemInfo.
+        :param kube_proxy_version: The kube_proxy_version of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._kubeProxyVersion = kubeProxyVersion
+        self._kube_proxy_version = kube_proxy_version
 
     @property
-    def operatingSystem(self):
+    def operating_system(self):
         """
-        Gets the operatingSystem of this V1NodeSystemInfo.
+        Gets the operating_system of this V1NodeSystemInfo.
         The Operating System reported by the node
 
-        :return: The operatingSystem of this V1NodeSystemInfo.
+        :return: The operating_system of this V1NodeSystemInfo.
         :rtype: str
         """
-        return self._operatingSystem
+        return self._operating_system
 
-    @operatingSystem.setter
-    def operatingSystem(self, operatingSystem):
+    @operating_system.setter
+    def operating_system(self, operating_system):
         """
-        Sets the operatingSystem of this V1NodeSystemInfo.
+        Sets the operating_system of this V1NodeSystemInfo.
         The Operating System reported by the node
 
-        :param operatingSystem: The operatingSystem of this V1NodeSystemInfo.
+        :param operating_system: The operating_system of this V1NodeSystemInfo.
         :type: str
         """
 
-        self._operatingSystem = operatingSystem
+        self._operating_system = operating_system
 
     @property
     def architecture(self):

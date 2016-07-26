@@ -40,8 +40,8 @@ class UnversionedLabelSelector(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'matchLabels': 'object',
-            'matchExpressions': 'list[UnversionedLabelSelectorRequirement]'
+            'match_labels': 'object',
+            'match_expressions': 'list[UnversionedLabelSelectorRequirement]'
         }
 
         self.attribute_map = {
@@ -51,50 +51,50 @@ class UnversionedLabelSelector(object):
 
 
     @property
-    def matchLabels(self):
+    def match_labels(self):
         """
-        Gets the matchLabels of this UnversionedLabelSelector.
+        Gets the match_labels of this UnversionedLabelSelector.
         matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.
 
-        :return: The matchLabels of this UnversionedLabelSelector.
+        :return: The match_labels of this UnversionedLabelSelector.
         :rtype: object
         """
-        return self._matchLabels
+        return self._match_labels
 
-    @matchLabels.setter
-    def matchLabels(self, matchLabels):
+    @match_labels.setter
+    def match_labels(self, match_labels):
         """
-        Sets the matchLabels of this UnversionedLabelSelector.
+        Sets the match_labels of this UnversionedLabelSelector.
         matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.
 
-        :param matchLabels: The matchLabels of this UnversionedLabelSelector.
+        :param match_labels: The match_labels of this UnversionedLabelSelector.
         :type: object
         """
 
-        self._matchLabels = matchLabels
+        self._match_labels = match_labels
 
     @property
-    def matchExpressions(self):
+    def match_expressions(self):
         """
-        Gets the matchExpressions of this UnversionedLabelSelector.
+        Gets the match_expressions of this UnversionedLabelSelector.
         matchExpressions is a list of label selector requirements. The requirements are ANDed.
 
-        :return: The matchExpressions of this UnversionedLabelSelector.
+        :return: The match_expressions of this UnversionedLabelSelector.
         :rtype: list[UnversionedLabelSelectorRequirement]
         """
-        return self._matchExpressions
+        return self._match_expressions
 
-    @matchExpressions.setter
-    def matchExpressions(self, matchExpressions):
+    @match_expressions.setter
+    def match_expressions(self, match_expressions):
         """
-        Sets the matchExpressions of this UnversionedLabelSelector.
+        Sets the match_expressions of this UnversionedLabelSelector.
         matchExpressions is a list of label selector requirements. The requirements are ANDed.
 
-        :param matchExpressions: The matchExpressions of this UnversionedLabelSelector.
+        :param match_expressions: The match_expressions of this UnversionedLabelSelector.
         :type: list[UnversionedLabelSelectorRequirement]
         """
 
-        self._matchExpressions = matchExpressions
+        self._match_expressions = match_expressions
 
     def to_dict(self):
         """

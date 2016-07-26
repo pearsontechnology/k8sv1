@@ -41,10 +41,10 @@ class V1ServiceAccount(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
+            'api_version': 'str',
             'metadata': 'V1ObjectMeta',
             'secrets': 'list[V1ObjectReference]',
-            'imagePullSecrets': 'list[V1LocalObjectReference]'
+            'image_pull_secrets': 'list[V1LocalObjectReference]'
         }
 
         self.attribute_map = {
@@ -80,27 +80,27 @@ class V1ServiceAccount(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1ServiceAccount.
+        Gets the api_version of this V1ServiceAccount.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this V1ServiceAccount.
+        :return: The api_version of this V1ServiceAccount.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1ServiceAccount.
+        Sets the api_version of this V1ServiceAccount.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this V1ServiceAccount.
+        :param api_version: The api_version of this V1ServiceAccount.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
     def metadata(self):
@@ -149,27 +149,27 @@ class V1ServiceAccount(object):
         self._secrets = secrets
 
     @property
-    def imagePullSecrets(self):
+    def image_pull_secrets(self):
         """
-        Gets the imagePullSecrets of this V1ServiceAccount.
+        Gets the image_pull_secrets of this V1ServiceAccount.
         ImagePullSecrets is a list of references to secrets in the same namespace to use for pulling any images in pods that reference this ServiceAccount. ImagePullSecrets are distinct from Secrets because Secrets can be mounted in the pod, but ImagePullSecrets are only accessed by the kubelet. More info: http://releases.k8s.io/HEAD/docs/user-guide/secrets.md#manually-specifying-an-imagepullsecret
 
-        :return: The imagePullSecrets of this V1ServiceAccount.
+        :return: The image_pull_secrets of this V1ServiceAccount.
         :rtype: list[V1LocalObjectReference]
         """
-        return self._imagePullSecrets
+        return self._image_pull_secrets
 
-    @imagePullSecrets.setter
-    def imagePullSecrets(self, imagePullSecrets):
+    @image_pull_secrets.setter
+    def image_pull_secrets(self, image_pull_secrets):
         """
-        Sets the imagePullSecrets of this V1ServiceAccount.
+        Sets the image_pull_secrets of this V1ServiceAccount.
         ImagePullSecrets is a list of references to secrets in the same namespace to use for pulling any images in pods that reference this ServiceAccount. ImagePullSecrets are distinct from Secrets because Secrets can be mounted in the pod, but ImagePullSecrets are only accessed by the kubelet. More info: http://releases.k8s.io/HEAD/docs/user-guide/secrets.md#manually-specifying-an-imagepullsecret
 
-        :param imagePullSecrets: The imagePullSecrets of this V1ServiceAccount.
+        :param image_pull_secrets: The image_pull_secrets of this V1ServiceAccount.
         :type: list[V1LocalObjectReference]
         """
 
-        self._imagePullSecrets = imagePullSecrets
+        self._image_pull_secrets = image_pull_secrets
 
     def to_dict(self):
         """

@@ -42,10 +42,10 @@ class V1SecurityContext(object):
         self.swagger_types = {
             'capabilities': 'V1Capabilities',
             'privileged': 'bool',
-            'seLinuxOptions': 'V1SELinuxOptions',
-            'runAsUser': 'int',
-            'runAsNonRoot': 'bool',
-            'readOnlyRootFilesystem': 'bool'
+            'se_linux_options': 'V1SELinuxOptions',
+            'run_as_user': 'int',
+            'run_as_non_root': 'bool',
+            'read_only_root_filesystem': 'bool'
         }
 
         self.attribute_map = {
@@ -105,96 +105,96 @@ class V1SecurityContext(object):
         self._privileged = privileged
 
     @property
-    def seLinuxOptions(self):
+    def se_linux_options(self):
         """
-        Gets the seLinuxOptions of this V1SecurityContext.
+        Gets the se_linux_options of this V1SecurityContext.
         The SELinux context to be applied to the container. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :return: The seLinuxOptions of this V1SecurityContext.
+        :return: The se_linux_options of this V1SecurityContext.
         :rtype: V1SELinuxOptions
         """
-        return self._seLinuxOptions
+        return self._se_linux_options
 
-    @seLinuxOptions.setter
-    def seLinuxOptions(self, seLinuxOptions):
+    @se_linux_options.setter
+    def se_linux_options(self, se_linux_options):
         """
-        Sets the seLinuxOptions of this V1SecurityContext.
+        Sets the se_linux_options of this V1SecurityContext.
         The SELinux context to be applied to the container. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :param seLinuxOptions: The seLinuxOptions of this V1SecurityContext.
+        :param se_linux_options: The se_linux_options of this V1SecurityContext.
         :type: V1SELinuxOptions
         """
 
-        self._seLinuxOptions = seLinuxOptions
+        self._se_linux_options = se_linux_options
 
     @property
-    def runAsUser(self):
+    def run_as_user(self):
         """
-        Gets the runAsUser of this V1SecurityContext.
+        Gets the run_as_user of this V1SecurityContext.
         The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :return: The runAsUser of this V1SecurityContext.
+        :return: The run_as_user of this V1SecurityContext.
         :rtype: int
         """
-        return self._runAsUser
+        return self._run_as_user
 
-    @runAsUser.setter
-    def runAsUser(self, runAsUser):
+    @run_as_user.setter
+    def run_as_user(self, run_as_user):
         """
-        Sets the runAsUser of this V1SecurityContext.
+        Sets the run_as_user of this V1SecurityContext.
         The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :param runAsUser: The runAsUser of this V1SecurityContext.
+        :param run_as_user: The run_as_user of this V1SecurityContext.
         :type: int
         """
 
-        self._runAsUser = runAsUser
+        self._run_as_user = run_as_user
 
     @property
-    def runAsNonRoot(self):
+    def run_as_non_root(self):
         """
-        Gets the runAsNonRoot of this V1SecurityContext.
+        Gets the run_as_non_root of this V1SecurityContext.
         Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :return: The runAsNonRoot of this V1SecurityContext.
+        :return: The run_as_non_root of this V1SecurityContext.
         :rtype: bool
         """
-        return self._runAsNonRoot
+        return self._run_as_non_root
 
-    @runAsNonRoot.setter
-    def runAsNonRoot(self, runAsNonRoot):
+    @run_as_non_root.setter
+    def run_as_non_root(self, run_as_non_root):
         """
-        Sets the runAsNonRoot of this V1SecurityContext.
+        Sets the run_as_non_root of this V1SecurityContext.
         Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :param runAsNonRoot: The runAsNonRoot of this V1SecurityContext.
+        :param run_as_non_root: The run_as_non_root of this V1SecurityContext.
         :type: bool
         """
 
-        self._runAsNonRoot = runAsNonRoot
+        self._run_as_non_root = run_as_non_root
 
     @property
-    def readOnlyRootFilesystem(self):
+    def read_only_root_filesystem(self):
         """
-        Gets the readOnlyRootFilesystem of this V1SecurityContext.
+        Gets the read_only_root_filesystem of this V1SecurityContext.
         Whether this container has a read-only root filesystem. Default is false.
 
-        :return: The readOnlyRootFilesystem of this V1SecurityContext.
+        :return: The read_only_root_filesystem of this V1SecurityContext.
         :rtype: bool
         """
-        return self._readOnlyRootFilesystem
+        return self._read_only_root_filesystem
 
-    @readOnlyRootFilesystem.setter
-    def readOnlyRootFilesystem(self, readOnlyRootFilesystem):
+    @read_only_root_filesystem.setter
+    def read_only_root_filesystem(self, read_only_root_filesystem):
         """
-        Sets the readOnlyRootFilesystem of this V1SecurityContext.
+        Sets the read_only_root_filesystem of this V1SecurityContext.
         Whether this container has a read-only root filesystem. Default is false.
 
-        :param readOnlyRootFilesystem: The readOnlyRootFilesystem of this V1SecurityContext.
+        :param read_only_root_filesystem: The read_only_root_filesystem of this V1SecurityContext.
         :type: bool
         """
 
-        self._readOnlyRootFilesystem = readOnlyRootFilesystem
+        self._read_only_root_filesystem = read_only_root_filesystem
 
     def to_dict(self):
         """

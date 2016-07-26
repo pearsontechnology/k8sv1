@@ -41,7 +41,7 @@ class V1PodList(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
+            'api_version': 'str',
             'metadata': 'UnversionedListMeta',
             'items': 'list[V1Pod]'
         }
@@ -78,27 +78,27 @@ class V1PodList(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1PodList.
+        Gets the api_version of this V1PodList.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this V1PodList.
+        :return: The api_version of this V1PodList.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1PodList.
+        Sets the api_version of this V1PodList.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this V1PodList.
+        :param api_version: The api_version of this V1PodList.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
     def metadata(self):

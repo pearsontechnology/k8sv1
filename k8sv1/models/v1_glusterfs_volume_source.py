@@ -42,7 +42,7 @@ class V1GlusterfsVolumeSource(object):
         self.swagger_types = {
             'endpoints': 'str',
             'path': 'str',
-            'readOnly': 'bool'
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -99,27 +99,27 @@ class V1GlusterfsVolumeSource(object):
         self._path = path
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1GlusterfsVolumeSource.
+        Gets the read_only of this V1GlusterfsVolumeSource.
         ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
 
-        :return: The readOnly of this V1GlusterfsVolumeSource.
+        :return: The read_only of this V1GlusterfsVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1GlusterfsVolumeSource.
+        Sets the read_only of this V1GlusterfsVolumeSource.
         ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
 
-        :param readOnly: The readOnly of this V1GlusterfsVolumeSource.
+        :param read_only: The read_only of this V1GlusterfsVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

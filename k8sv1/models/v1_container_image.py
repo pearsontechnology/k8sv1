@@ -41,7 +41,7 @@ class V1ContainerImage(object):
         """
         self.swagger_types = {
             'names': 'list[str]',
-            'sizeBytes': 'int'
+            'size_bytes': 'int'
         }
 
         self.attribute_map = {
@@ -74,27 +74,27 @@ class V1ContainerImage(object):
         self._names = names
 
     @property
-    def sizeBytes(self):
+    def size_bytes(self):
         """
-        Gets the sizeBytes of this V1ContainerImage.
+        Gets the size_bytes of this V1ContainerImage.
         The size of the image in bytes.
 
-        :return: The sizeBytes of this V1ContainerImage.
+        :return: The size_bytes of this V1ContainerImage.
         :rtype: int
         """
-        return self._sizeBytes
+        return self._size_bytes
 
-    @sizeBytes.setter
-    def sizeBytes(self, sizeBytes):
+    @size_bytes.setter
+    def size_bytes(self, size_bytes):
         """
-        Sets the sizeBytes of this V1ContainerImage.
+        Sets the size_bytes of this V1ContainerImage.
         The size of the image in bytes.
 
-        :param sizeBytes: The sizeBytes of this V1ContainerImage.
+        :param size_bytes: The size_bytes of this V1ContainerImage.
         :type: int
         """
 
-        self._sizeBytes = sizeBytes
+        self._size_bytes = size_bytes
 
     def to_dict(self):
         """

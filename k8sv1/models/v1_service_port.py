@@ -43,8 +43,8 @@ class V1ServicePort(object):
             'name': 'str',
             'protocol': 'str',
             'port': 'int',
-            'targetPort': 'str',
-            'nodePort': 'int'
+            'target_port': 'str',
+            'node_port': 'int'
         }
 
         self.attribute_map = {
@@ -126,50 +126,50 @@ class V1ServicePort(object):
         self._port = port
 
     @property
-    def targetPort(self):
+    def target_port(self):
         """
-        Gets the targetPort of this V1ServicePort.
+        Gets the target_port of this V1ServicePort.
         Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of the 'port' field is used (an identity map). This field is ignored for services with clusterIP=None, and should be omitted or set equal to the 'port' field. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service
 
-        :return: The targetPort of this V1ServicePort.
+        :return: The target_port of this V1ServicePort.
         :rtype: str
         """
-        return self._targetPort
+        return self._target_port
 
-    @targetPort.setter
-    def targetPort(self, targetPort):
+    @target_port.setter
+    def target_port(self, target_port):
         """
-        Sets the targetPort of this V1ServicePort.
+        Sets the target_port of this V1ServicePort.
         Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of the 'port' field is used (an identity map). This field is ignored for services with clusterIP=None, and should be omitted or set equal to the 'port' field. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service
 
-        :param targetPort: The targetPort of this V1ServicePort.
+        :param target_port: The target_port of this V1ServicePort.
         :type: str
         """
 
-        self._targetPort = targetPort
+        self._target_port = target_port
 
     @property
-    def nodePort(self):
+    def node_port(self):
         """
-        Gets the nodePort of this V1ServicePort.
+        Gets the node_port of this V1ServicePort.
         The port on each node on which this service is exposed when type=NodePort or LoadBalancer. Usually assigned by the system. If specified, it will be allocated to the service if unused or else creation of the service will fail. Default is to auto-allocate a port if the ServiceType of this Service requires one. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#type--nodeport
 
-        :return: The nodePort of this V1ServicePort.
+        :return: The node_port of this V1ServicePort.
         :rtype: int
         """
-        return self._nodePort
+        return self._node_port
 
-    @nodePort.setter
-    def nodePort(self, nodePort):
+    @node_port.setter
+    def node_port(self, node_port):
         """
-        Sets the nodePort of this V1ServicePort.
+        Sets the node_port of this V1ServicePort.
         The port on each node on which this service is exposed when type=NodePort or LoadBalancer. Usually assigned by the system. If specified, it will be allocated to the service if unused or else creation of the service will fail. Default is to auto-allocate a port if the ServiceType of this Service requires one. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#type--nodeport
 
-        :param nodePort: The nodePort of this V1ServicePort.
+        :param node_port: The node_port of this V1ServicePort.
         :type: int
         """
 
-        self._nodePort = nodePort
+        self._node_port = node_port
 
     def to_dict(self):
         """

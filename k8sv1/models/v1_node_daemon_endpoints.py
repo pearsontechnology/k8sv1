@@ -40,7 +40,7 @@ class V1NodeDaemonEndpoints(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'kubeletEndpoint': 'V1DaemonEndpoint'
+            'kubelet_endpoint': 'V1DaemonEndpoint'
         }
 
         self.attribute_map = {
@@ -49,27 +49,27 @@ class V1NodeDaemonEndpoints(object):
 
 
     @property
-    def kubeletEndpoint(self):
+    def kubelet_endpoint(self):
         """
-        Gets the kubeletEndpoint of this V1NodeDaemonEndpoints.
+        Gets the kubelet_endpoint of this V1NodeDaemonEndpoints.
         Endpoint on which Kubelet is listening.
 
-        :return: The kubeletEndpoint of this V1NodeDaemonEndpoints.
+        :return: The kubelet_endpoint of this V1NodeDaemonEndpoints.
         :rtype: V1DaemonEndpoint
         """
-        return self._kubeletEndpoint
+        return self._kubelet_endpoint
 
-    @kubeletEndpoint.setter
-    def kubeletEndpoint(self, kubeletEndpoint):
+    @kubelet_endpoint.setter
+    def kubelet_endpoint(self, kubelet_endpoint):
         """
-        Sets the kubeletEndpoint of this V1NodeDaemonEndpoints.
+        Sets the kubelet_endpoint of this V1NodeDaemonEndpoints.
         Endpoint on which Kubelet is listening.
 
-        :param kubeletEndpoint: The kubeletEndpoint of this V1NodeDaemonEndpoints.
+        :param kubelet_endpoint: The kubelet_endpoint of this V1NodeDaemonEndpoints.
         :type: V1DaemonEndpoint
         """
 
-        self._kubeletEndpoint = kubeletEndpoint
+        self._kubelet_endpoint = kubelet_endpoint
 
     def to_dict(self):
         """

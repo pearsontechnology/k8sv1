@@ -41,18 +41,18 @@ class V1ObjectMeta(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'generateName': 'str',
+            'generate_name': 'str',
             'namespace': 'str',
-            'selfLink': 'str',
+            'self_link': 'str',
             'uid': 'str',
-            'resourceVersion': 'str',
+            'resource_version': 'str',
             'generation': 'int',
-            'creationTimestamp': 'datetime',
-            'deletionTimestamp': 'datetime',
-            'deletionGracePeriodSeconds': 'int',
+            'creation_timestamp': 'datetime',
+            'deletion_timestamp': 'datetime',
+            'deletion_grace_period_seconds': 'int',
             'labels': 'object',
             'annotations': 'object',
-            'ownerReferences': 'list[V1OwnerReference]',
+            'owner_references': 'list[V1OwnerReference]',
             'finalizers': 'list[str]'
         }
 
@@ -98,27 +98,27 @@ class V1ObjectMeta(object):
         self._name = name
 
     @property
-    def generateName(self):
+    def generate_name(self):
         """
-        Gets the generateName of this V1ObjectMeta.
+        Gets the generate_name of this V1ObjectMeta.
         GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#idempotency
 
-        :return: The generateName of this V1ObjectMeta.
+        :return: The generate_name of this V1ObjectMeta.
         :rtype: str
         """
-        return self._generateName
+        return self._generate_name
 
-    @generateName.setter
-    def generateName(self, generateName):
+    @generate_name.setter
+    def generate_name(self, generate_name):
         """
-        Sets the generateName of this V1ObjectMeta.
+        Sets the generate_name of this V1ObjectMeta.
         GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#idempotency
 
-        :param generateName: The generateName of this V1ObjectMeta.
+        :param generate_name: The generate_name of this V1ObjectMeta.
         :type: str
         """
 
-        self._generateName = generateName
+        self._generate_name = generate_name
 
     @property
     def namespace(self):
@@ -144,27 +144,27 @@ class V1ObjectMeta(object):
         self._namespace = namespace
 
     @property
-    def selfLink(self):
+    def self_link(self):
         """
-        Gets the selfLink of this V1ObjectMeta.
+        Gets the self_link of this V1ObjectMeta.
         SelfLink is a URL representing this object. Populated by the system. Read-only.
 
-        :return: The selfLink of this V1ObjectMeta.
+        :return: The self_link of this V1ObjectMeta.
         :rtype: str
         """
-        return self._selfLink
+        return self._self_link
 
-    @selfLink.setter
-    def selfLink(self, selfLink):
+    @self_link.setter
+    def self_link(self, self_link):
         """
-        Sets the selfLink of this V1ObjectMeta.
+        Sets the self_link of this V1ObjectMeta.
         SelfLink is a URL representing this object. Populated by the system. Read-only.
 
-        :param selfLink: The selfLink of this V1ObjectMeta.
+        :param self_link: The self_link of this V1ObjectMeta.
         :type: str
         """
 
-        self._selfLink = selfLink
+        self._self_link = self_link
 
     @property
     def uid(self):
@@ -190,27 +190,27 @@ class V1ObjectMeta(object):
         self._uid = uid
 
     @property
-    def resourceVersion(self):
+    def resource_version(self):
         """
-        Gets the resourceVersion of this V1ObjectMeta.
+        Gets the resource_version of this V1ObjectMeta.
         An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#concurrency-control-and-consistency
 
-        :return: The resourceVersion of this V1ObjectMeta.
+        :return: The resource_version of this V1ObjectMeta.
         :rtype: str
         """
-        return self._resourceVersion
+        return self._resource_version
 
-    @resourceVersion.setter
-    def resourceVersion(self, resourceVersion):
+    @resource_version.setter
+    def resource_version(self, resource_version):
         """
-        Sets the resourceVersion of this V1ObjectMeta.
+        Sets the resource_version of this V1ObjectMeta.
         An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#concurrency-control-and-consistency
 
-        :param resourceVersion: The resourceVersion of this V1ObjectMeta.
+        :param resource_version: The resource_version of this V1ObjectMeta.
         :type: str
         """
 
-        self._resourceVersion = resourceVersion
+        self._resource_version = resource_version
 
     @property
     def generation(self):
@@ -236,73 +236,73 @@ class V1ObjectMeta(object):
         self._generation = generation
 
     @property
-    def creationTimestamp(self):
+    def creation_timestamp(self):
         """
-        Gets the creationTimestamp of this V1ObjectMeta.
+        Gets the creation_timestamp of this V1ObjectMeta.
         CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#metadata
 
-        :return: The creationTimestamp of this V1ObjectMeta.
+        :return: The creation_timestamp of this V1ObjectMeta.
         :rtype: datetime
         """
-        return self._creationTimestamp
+        return self._creation_timestamp
 
-    @creationTimestamp.setter
-    def creationTimestamp(self, creationTimestamp):
+    @creation_timestamp.setter
+    def creation_timestamp(self, creation_timestamp):
         """
-        Sets the creationTimestamp of this V1ObjectMeta.
+        Sets the creation_timestamp of this V1ObjectMeta.
         CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.\n\nPopulated by the system. Read-only. Null for lists. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#metadata
 
-        :param creationTimestamp: The creationTimestamp of this V1ObjectMeta.
+        :param creation_timestamp: The creation_timestamp of this V1ObjectMeta.
         :type: datetime
         """
 
-        self._creationTimestamp = creationTimestamp
+        self._creation_timestamp = creation_timestamp
 
     @property
-    def deletionTimestamp(self):
+    def deletion_timestamp(self):
         """
-        Gets the deletionTimestamp of this V1ObjectMeta.
+        Gets the deletion_timestamp of this V1ObjectMeta.
         DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource will be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field. Once set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. Once the resource is deleted in the API, the Kubelet will send a hard termination signal to the container. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#metadata
 
-        :return: The deletionTimestamp of this V1ObjectMeta.
+        :return: The deletion_timestamp of this V1ObjectMeta.
         :rtype: datetime
         """
-        return self._deletionTimestamp
+        return self._deletion_timestamp
 
-    @deletionTimestamp.setter
-    def deletionTimestamp(self, deletionTimestamp):
+    @deletion_timestamp.setter
+    def deletion_timestamp(self, deletion_timestamp):
         """
-        Sets the deletionTimestamp of this V1ObjectMeta.
+        Sets the deletion_timestamp of this V1ObjectMeta.
         DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource will be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field. Once set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. Once the resource is deleted in the API, the Kubelet will send a hard termination signal to the container. If not set, graceful deletion of the object has not been requested.\n\nPopulated by the system when a graceful deletion is requested. Read-only. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#metadata
 
-        :param deletionTimestamp: The deletionTimestamp of this V1ObjectMeta.
+        :param deletion_timestamp: The deletion_timestamp of this V1ObjectMeta.
         :type: datetime
         """
 
-        self._deletionTimestamp = deletionTimestamp
+        self._deletion_timestamp = deletion_timestamp
 
     @property
-    def deletionGracePeriodSeconds(self):
+    def deletion_grace_period_seconds(self):
         """
-        Gets the deletionGracePeriodSeconds of this V1ObjectMeta.
+        Gets the deletion_grace_period_seconds of this V1ObjectMeta.
         Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
 
-        :return: The deletionGracePeriodSeconds of this V1ObjectMeta.
+        :return: The deletion_grace_period_seconds of this V1ObjectMeta.
         :rtype: int
         """
-        return self._deletionGracePeriodSeconds
+        return self._deletion_grace_period_seconds
 
-    @deletionGracePeriodSeconds.setter
-    def deletionGracePeriodSeconds(self, deletionGracePeriodSeconds):
+    @deletion_grace_period_seconds.setter
+    def deletion_grace_period_seconds(self, deletion_grace_period_seconds):
         """
-        Sets the deletionGracePeriodSeconds of this V1ObjectMeta.
+        Sets the deletion_grace_period_seconds of this V1ObjectMeta.
         Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
 
-        :param deletionGracePeriodSeconds: The deletionGracePeriodSeconds of this V1ObjectMeta.
+        :param deletion_grace_period_seconds: The deletion_grace_period_seconds of this V1ObjectMeta.
         :type: int
         """
 
-        self._deletionGracePeriodSeconds = deletionGracePeriodSeconds
+        self._deletion_grace_period_seconds = deletion_grace_period_seconds
 
     @property
     def labels(self):
@@ -351,27 +351,27 @@ class V1ObjectMeta(object):
         self._annotations = annotations
 
     @property
-    def ownerReferences(self):
+    def owner_references(self):
         """
-        Gets the ownerReferences of this V1ObjectMeta.
+        Gets the owner_references of this V1ObjectMeta.
         List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
 
-        :return: The ownerReferences of this V1ObjectMeta.
+        :return: The owner_references of this V1ObjectMeta.
         :rtype: list[V1OwnerReference]
         """
-        return self._ownerReferences
+        return self._owner_references
 
-    @ownerReferences.setter
-    def ownerReferences(self, ownerReferences):
+    @owner_references.setter
+    def owner_references(self, owner_references):
         """
-        Sets the ownerReferences of this V1ObjectMeta.
+        Sets the owner_references of this V1ObjectMeta.
         List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
 
-        :param ownerReferences: The ownerReferences of this V1ObjectMeta.
+        :param owner_references: The owner_references of this V1ObjectMeta.
         :type: list[V1OwnerReference]
         """
 
-        self._ownerReferences = ownerReferences
+        self._owner_references = owner_references
 
     @property
     def finalizers(self):

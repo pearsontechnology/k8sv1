@@ -44,10 +44,10 @@ class V1PodStatus(object):
             'conditions': 'list[V1PodCondition]',
             'message': 'str',
             'reason': 'str',
-            'hostIP': 'str',
-            'podIP': 'str',
-            'startTime': 'datetime',
-            'containerStatuses': 'list[V1ContainerStatus]'
+            'host_ip': 'str',
+            'pod_ip': 'str',
+            'start_time': 'datetime',
+            'container_statuses': 'list[V1ContainerStatus]'
         }
 
         self.attribute_map = {
@@ -155,96 +155,96 @@ class V1PodStatus(object):
         self._reason = reason
 
     @property
-    def hostIP(self):
+    def host_ip(self):
         """
-        Gets the hostIP of this V1PodStatus.
+        Gets the host_ip of this V1PodStatus.
         IP address of the host to which the pod is assigned. Empty if not yet scheduled.
 
-        :return: The hostIP of this V1PodStatus.
+        :return: The host_ip of this V1PodStatus.
         :rtype: str
         """
-        return self._hostIP
+        return self._host_ip
 
-    @hostIP.setter
-    def hostIP(self, hostIP):
+    @host_ip.setter
+    def host_ip(self, host_ip):
         """
-        Sets the hostIP of this V1PodStatus.
+        Sets the host_ip of this V1PodStatus.
         IP address of the host to which the pod is assigned. Empty if not yet scheduled.
 
-        :param hostIP: The hostIP of this V1PodStatus.
+        :param host_ip: The host_ip of this V1PodStatus.
         :type: str
         """
 
-        self._hostIP = hostIP
+        self._host_ip = host_ip
 
     @property
-    def podIP(self):
+    def pod_ip(self):
         """
-        Gets the podIP of this V1PodStatus.
+        Gets the pod_ip of this V1PodStatus.
         IP address allocated to the pod. Routable at least within the cluster. Empty if not yet allocated.
 
-        :return: The podIP of this V1PodStatus.
+        :return: The pod_ip of this V1PodStatus.
         :rtype: str
         """
-        return self._podIP
+        return self._pod_ip
 
-    @podIP.setter
-    def podIP(self, podIP):
+    @pod_ip.setter
+    def pod_ip(self, pod_ip):
         """
-        Sets the podIP of this V1PodStatus.
+        Sets the pod_ip of this V1PodStatus.
         IP address allocated to the pod. Routable at least within the cluster. Empty if not yet allocated.
 
-        :param podIP: The podIP of this V1PodStatus.
+        :param pod_ip: The pod_ip of this V1PodStatus.
         :type: str
         """
 
-        self._podIP = podIP
+        self._pod_ip = pod_ip
 
     @property
-    def startTime(self):
+    def start_time(self):
         """
-        Gets the startTime of this V1PodStatus.
+        Gets the start_time of this V1PodStatus.
         RFC 3339 date and time at which the object was acknowledged by the Kubelet. This is before the Kubelet pulled the container image(s) for the pod.
 
-        :return: The startTime of this V1PodStatus.
+        :return: The start_time of this V1PodStatus.
         :rtype: datetime
         """
-        return self._startTime
+        return self._start_time
 
-    @startTime.setter
-    def startTime(self, startTime):
+    @start_time.setter
+    def start_time(self, start_time):
         """
-        Sets the startTime of this V1PodStatus.
+        Sets the start_time of this V1PodStatus.
         RFC 3339 date and time at which the object was acknowledged by the Kubelet. This is before the Kubelet pulled the container image(s) for the pod.
 
-        :param startTime: The startTime of this V1PodStatus.
+        :param start_time: The start_time of this V1PodStatus.
         :type: datetime
         """
 
-        self._startTime = startTime
+        self._start_time = start_time
 
     @property
-    def containerStatuses(self):
+    def container_statuses(self):
         """
-        Gets the containerStatuses of this V1PodStatus.
+        Gets the container_statuses of this V1PodStatus.
         The list has one entry per container in the manifest. Each entry is currently the output of `docker inspect`. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-statuses
 
-        :return: The containerStatuses of this V1PodStatus.
+        :return: The container_statuses of this V1PodStatus.
         :rtype: list[V1ContainerStatus]
         """
-        return self._containerStatuses
+        return self._container_statuses
 
-    @containerStatuses.setter
-    def containerStatuses(self, containerStatuses):
+    @container_statuses.setter
+    def container_statuses(self, container_statuses):
         """
-        Sets the containerStatuses of this V1PodStatus.
+        Sets the container_statuses of this V1PodStatus.
         The list has one entry per container in the manifest. Each entry is currently the output of `docker inspect`. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-statuses
 
-        :param containerStatuses: The containerStatuses of this V1PodStatus.
+        :param container_statuses: The container_statuses of this V1PodStatus.
         :type: list[V1ContainerStatus]
         """
 
-        self._containerStatuses = containerStatuses
+        self._container_statuses = container_statuses
 
     def to_dict(self):
         """

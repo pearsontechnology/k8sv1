@@ -41,8 +41,8 @@ class V1DownwardAPIVolumeFile(object):
         """
         self.swagger_types = {
             'path': 'str',
-            'fieldRef': 'V1ObjectFieldSelector',
-            'resourceFieldRef': 'V1ResourceFieldSelector'
+            'field_ref': 'V1ObjectFieldSelector',
+            'resource_field_ref': 'V1ResourceFieldSelector'
         }
 
         self.attribute_map = {
@@ -76,50 +76,50 @@ class V1DownwardAPIVolumeFile(object):
         self._path = path
 
     @property
-    def fieldRef(self):
+    def field_ref(self):
         """
-        Gets the fieldRef of this V1DownwardAPIVolumeFile.
+        Gets the field_ref of this V1DownwardAPIVolumeFile.
         Required: Selects a field of the pod: only annotations, labels, name and namespace are supported.
 
-        :return: The fieldRef of this V1DownwardAPIVolumeFile.
+        :return: The field_ref of this V1DownwardAPIVolumeFile.
         :rtype: V1ObjectFieldSelector
         """
-        return self._fieldRef
+        return self._field_ref
 
-    @fieldRef.setter
-    def fieldRef(self, fieldRef):
+    @field_ref.setter
+    def field_ref(self, field_ref):
         """
-        Sets the fieldRef of this V1DownwardAPIVolumeFile.
+        Sets the field_ref of this V1DownwardAPIVolumeFile.
         Required: Selects a field of the pod: only annotations, labels, name and namespace are supported.
 
-        :param fieldRef: The fieldRef of this V1DownwardAPIVolumeFile.
+        :param field_ref: The field_ref of this V1DownwardAPIVolumeFile.
         :type: V1ObjectFieldSelector
         """
 
-        self._fieldRef = fieldRef
+        self._field_ref = field_ref
 
     @property
-    def resourceFieldRef(self):
+    def resource_field_ref(self):
         """
-        Gets the resourceFieldRef of this V1DownwardAPIVolumeFile.
+        Gets the resource_field_ref of this V1DownwardAPIVolumeFile.
         Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.
 
-        :return: The resourceFieldRef of this V1DownwardAPIVolumeFile.
+        :return: The resource_field_ref of this V1DownwardAPIVolumeFile.
         :rtype: V1ResourceFieldSelector
         """
-        return self._resourceFieldRef
+        return self._resource_field_ref
 
-    @resourceFieldRef.setter
-    def resourceFieldRef(self, resourceFieldRef):
+    @resource_field_ref.setter
+    def resource_field_ref(self, resource_field_ref):
         """
-        Sets the resourceFieldRef of this V1DownwardAPIVolumeFile.
+        Sets the resource_field_ref of this V1DownwardAPIVolumeFile.
         Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.
 
-        :param resourceFieldRef: The resourceFieldRef of this V1DownwardAPIVolumeFile.
+        :param resource_field_ref: The resource_field_ref of this V1DownwardAPIVolumeFile.
         :type: V1ResourceFieldSelector
         """
 
-        self._resourceFieldRef = resourceFieldRef
+        self._resource_field_ref = resource_field_ref
 
     def to_dict(self):
         """

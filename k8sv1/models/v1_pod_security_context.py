@@ -40,11 +40,11 @@ class V1PodSecurityContext(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'seLinuxOptions': 'V1SELinuxOptions',
-            'runAsUser': 'int',
-            'runAsNonRoot': 'bool',
-            'supplementalGroups': 'list[int]',
-            'fsGroup': 'int'
+            'se_linux_options': 'V1SELinuxOptions',
+            'run_as_user': 'int',
+            'run_as_non_root': 'bool',
+            'supplemental_groups': 'list[int]',
+            'fs_group': 'int'
         }
 
         self.attribute_map = {
@@ -57,119 +57,119 @@ class V1PodSecurityContext(object):
 
 
     @property
-    def seLinuxOptions(self):
+    def se_linux_options(self):
         """
-        Gets the seLinuxOptions of this V1PodSecurityContext.
+        Gets the se_linux_options of this V1PodSecurityContext.
         The SELinux context to be applied to all containers. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-        :return: The seLinuxOptions of this V1PodSecurityContext.
+        :return: The se_linux_options of this V1PodSecurityContext.
         :rtype: V1SELinuxOptions
         """
-        return self._seLinuxOptions
+        return self._se_linux_options
 
-    @seLinuxOptions.setter
-    def seLinuxOptions(self, seLinuxOptions):
+    @se_linux_options.setter
+    def se_linux_options(self, se_linux_options):
         """
-        Sets the seLinuxOptions of this V1PodSecurityContext.
+        Sets the se_linux_options of this V1PodSecurityContext.
         The SELinux context to be applied to all containers. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-        :param seLinuxOptions: The seLinuxOptions of this V1PodSecurityContext.
+        :param se_linux_options: The se_linux_options of this V1PodSecurityContext.
         :type: V1SELinuxOptions
         """
 
-        self._seLinuxOptions = seLinuxOptions
+        self._se_linux_options = se_linux_options
 
     @property
-    def runAsUser(self):
+    def run_as_user(self):
         """
-        Gets the runAsUser of this V1PodSecurityContext.
+        Gets the run_as_user of this V1PodSecurityContext.
         The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-        :return: The runAsUser of this V1PodSecurityContext.
+        :return: The run_as_user of this V1PodSecurityContext.
         :rtype: int
         """
-        return self._runAsUser
+        return self._run_as_user
 
-    @runAsUser.setter
-    def runAsUser(self, runAsUser):
+    @run_as_user.setter
+    def run_as_user(self, run_as_user):
         """
-        Sets the runAsUser of this V1PodSecurityContext.
+        Sets the run_as_user of this V1PodSecurityContext.
         The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-        :param runAsUser: The runAsUser of this V1PodSecurityContext.
+        :param run_as_user: The run_as_user of this V1PodSecurityContext.
         :type: int
         """
 
-        self._runAsUser = runAsUser
+        self._run_as_user = run_as_user
 
     @property
-    def runAsNonRoot(self):
+    def run_as_non_root(self):
         """
-        Gets the runAsNonRoot of this V1PodSecurityContext.
+        Gets the run_as_non_root of this V1PodSecurityContext.
         Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :return: The runAsNonRoot of this V1PodSecurityContext.
+        :return: The run_as_non_root of this V1PodSecurityContext.
         :rtype: bool
         """
-        return self._runAsNonRoot
+        return self._run_as_non_root
 
-    @runAsNonRoot.setter
-    def runAsNonRoot(self, runAsNonRoot):
+    @run_as_non_root.setter
+    def run_as_non_root(self, run_as_non_root):
         """
-        Sets the runAsNonRoot of this V1PodSecurityContext.
+        Sets the run_as_non_root of this V1PodSecurityContext.
         Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-        :param runAsNonRoot: The runAsNonRoot of this V1PodSecurityContext.
+        :param run_as_non_root: The run_as_non_root of this V1PodSecurityContext.
         :type: bool
         """
 
-        self._runAsNonRoot = runAsNonRoot
+        self._run_as_non_root = run_as_non_root
 
     @property
-    def supplementalGroups(self):
+    def supplemental_groups(self):
         """
-        Gets the supplementalGroups of this V1PodSecurityContext.
+        Gets the supplemental_groups of this V1PodSecurityContext.
         A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
 
-        :return: The supplementalGroups of this V1PodSecurityContext.
+        :return: The supplemental_groups of this V1PodSecurityContext.
         :rtype: list[int]
         """
-        return self._supplementalGroups
+        return self._supplemental_groups
 
-    @supplementalGroups.setter
-    def supplementalGroups(self, supplementalGroups):
+    @supplemental_groups.setter
+    def supplemental_groups(self, supplemental_groups):
         """
-        Sets the supplementalGroups of this V1PodSecurityContext.
+        Sets the supplemental_groups of this V1PodSecurityContext.
         A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container.
 
-        :param supplementalGroups: The supplementalGroups of this V1PodSecurityContext.
+        :param supplemental_groups: The supplemental_groups of this V1PodSecurityContext.
         :type: list[int]
         """
 
-        self._supplementalGroups = supplementalGroups
+        self._supplemental_groups = supplemental_groups
 
     @property
-    def fsGroup(self):
+    def fs_group(self):
         """
-        Gets the fsGroup of this V1PodSecurityContext.
+        Gets the fs_group of this V1PodSecurityContext.
         A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:\n\n1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw 
 
-        :return: The fsGroup of this V1PodSecurityContext.
+        :return: The fs_group of this V1PodSecurityContext.
         :rtype: int
         """
-        return self._fsGroup
+        return self._fs_group
 
-    @fsGroup.setter
-    def fsGroup(self, fsGroup):
+    @fs_group.setter
+    def fs_group(self, fs_group):
         """
-        Sets the fsGroup of this V1PodSecurityContext.
+        Sets the fs_group of this V1PodSecurityContext.
         A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:\n\n1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw 
 
-        :param fsGroup: The fsGroup of this V1PodSecurityContext.
+        :param fs_group: The fs_group of this V1PodSecurityContext.
         :type: int
         """
 
-        self._fsGroup = fsGroup
+        self._fs_group = fs_group
 
     def to_dict(self):
         """

@@ -40,7 +40,7 @@ class V1SecretVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'secretName': 'str',
+            'secret_name': 'str',
             'items': 'list[V1KeyToPath]'
         }
 
@@ -51,27 +51,27 @@ class V1SecretVolumeSource(object):
 
 
     @property
-    def secretName(self):
+    def secret_name(self):
         """
-        Gets the secretName of this V1SecretVolumeSource.
+        Gets the secret_name of this V1SecretVolumeSource.
         Name of the secret in the pod's namespace to use. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#secrets
 
-        :return: The secretName of this V1SecretVolumeSource.
+        :return: The secret_name of this V1SecretVolumeSource.
         :rtype: str
         """
-        return self._secretName
+        return self._secret_name
 
-    @secretName.setter
-    def secretName(self, secretName):
+    @secret_name.setter
+    def secret_name(self, secret_name):
         """
-        Sets the secretName of this V1SecretVolumeSource.
+        Sets the secret_name of this V1SecretVolumeSource.
         Name of the secret in the pod's namespace to use. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#secrets
 
-        :param secretName: The secretName of this V1SecretVolumeSource.
+        :param secret_name: The secret_name of this V1SecretVolumeSource.
         :type: str
         """
 
-        self._secretName = secretName
+        self._secret_name = secret_name
 
     @property
     def items(self):

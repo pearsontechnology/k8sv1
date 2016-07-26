@@ -44,9 +44,9 @@ class V1ObjectReference(object):
             'namespace': 'str',
             'name': 'str',
             'uid': 'str',
-            'apiVersion': 'str',
-            'resourceVersion': 'str',
-            'fieldPath': 'str'
+            'api_version': 'str',
+            'resource_version': 'str',
+            'field_path': 'str'
         }
 
         self.attribute_map = {
@@ -153,73 +153,73 @@ class V1ObjectReference(object):
         self._uid = uid
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1ObjectReference.
+        Gets the api_version of this V1ObjectReference.
         API version of the referent.
 
-        :return: The apiVersion of this V1ObjectReference.
+        :return: The api_version of this V1ObjectReference.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1ObjectReference.
+        Sets the api_version of this V1ObjectReference.
         API version of the referent.
 
-        :param apiVersion: The apiVersion of this V1ObjectReference.
+        :param api_version: The api_version of this V1ObjectReference.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
-    def resourceVersion(self):
+    def resource_version(self):
         """
-        Gets the resourceVersion of this V1ObjectReference.
+        Gets the resource_version of this V1ObjectReference.
         Specific resourceVersion to which this reference is made, if any. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#concurrency-control-and-consistency
 
-        :return: The resourceVersion of this V1ObjectReference.
+        :return: The resource_version of this V1ObjectReference.
         :rtype: str
         """
-        return self._resourceVersion
+        return self._resource_version
 
-    @resourceVersion.setter
-    def resourceVersion(self, resourceVersion):
+    @resource_version.setter
+    def resource_version(self, resource_version):
         """
-        Sets the resourceVersion of this V1ObjectReference.
+        Sets the resource_version of this V1ObjectReference.
         Specific resourceVersion to which this reference is made, if any. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#concurrency-control-and-consistency
 
-        :param resourceVersion: The resourceVersion of this V1ObjectReference.
+        :param resource_version: The resource_version of this V1ObjectReference.
         :type: str
         """
 
-        self._resourceVersion = resourceVersion
+        self._resource_version = resource_version
 
     @property
-    def fieldPath(self):
+    def field_path(self):
         """
-        Gets the fieldPath of this V1ObjectReference.
+        Gets the field_path of this V1ObjectReference.
         If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
 
-        :return: The fieldPath of this V1ObjectReference.
+        :return: The field_path of this V1ObjectReference.
         :rtype: str
         """
-        return self._fieldPath
+        return self._field_path
 
-    @fieldPath.setter
-    def fieldPath(self, fieldPath):
+    @field_path.setter
+    def field_path(self, field_path):
         """
-        Sets the fieldPath of this V1ObjectReference.
+        Sets the field_path of this V1ObjectReference.
         If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object.
 
-        :param fieldPath: The fieldPath of this V1ObjectReference.
+        :param field_path: The field_path of this V1ObjectReference.
         :type: str
         """
 
-        self._fieldPath = fieldPath
+        self._field_path = field_path
 
     def to_dict(self):
         """

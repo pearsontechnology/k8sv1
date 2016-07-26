@@ -42,7 +42,7 @@ class V1NFSVolumeSource(object):
         self.swagger_types = {
             'server': 'str',
             'path': 'str',
-            'readOnly': 'bool'
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -99,27 +99,27 @@ class V1NFSVolumeSource(object):
         self._path = path
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1NFSVolumeSource.
+        Gets the read_only of this V1NFSVolumeSource.
         ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#nfs
 
-        :return: The readOnly of this V1NFSVolumeSource.
+        :return: The read_only of this V1NFSVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1NFSVolumeSource.
+        Sets the read_only of this V1NFSVolumeSource.
         ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#nfs
 
-        :param readOnly: The readOnly of this V1NFSVolumeSource.
+        :param read_only: The read_only of this V1NFSVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

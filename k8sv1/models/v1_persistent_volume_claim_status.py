@@ -41,7 +41,7 @@ class V1PersistentVolumeClaimStatus(object):
         """
         self.swagger_types = {
             'phase': 'str',
-            'accessModes': 'list[V1PersistentVolumeAccessMode]',
+            'access_modes': 'list[V1PersistentVolumeAccessMode]',
             'capacity': 'object'
         }
 
@@ -76,27 +76,27 @@ class V1PersistentVolumeClaimStatus(object):
         self._phase = phase
 
     @property
-    def accessModes(self):
+    def access_modes(self):
         """
-        Gets the accessModes of this V1PersistentVolumeClaimStatus.
+        Gets the access_modes of this V1PersistentVolumeClaimStatus.
         AccessModes contains the actual access modes the volume backing the PVC has. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes-1
 
-        :return: The accessModes of this V1PersistentVolumeClaimStatus.
+        :return: The access_modes of this V1PersistentVolumeClaimStatus.
         :rtype: list[V1PersistentVolumeAccessMode]
         """
-        return self._accessModes
+        return self._access_modes
 
-    @accessModes.setter
-    def accessModes(self, accessModes):
+    @access_modes.setter
+    def access_modes(self, access_modes):
         """
-        Sets the accessModes of this V1PersistentVolumeClaimStatus.
+        Sets the access_modes of this V1PersistentVolumeClaimStatus.
         AccessModes contains the actual access modes the volume backing the PVC has. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes-1
 
-        :param accessModes: The accessModes of this V1PersistentVolumeClaimStatus.
+        :param access_modes: The access_modes of this V1PersistentVolumeClaimStatus.
         :type: list[V1PersistentVolumeAccessMode]
         """
 
-        self._accessModes = accessModes
+        self._access_modes = access_modes
 
     @property
     def capacity(self):

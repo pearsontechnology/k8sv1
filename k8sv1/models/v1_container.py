@@ -44,19 +44,19 @@ class V1Container(object):
             'image': 'str',
             'command': 'list[str]',
             'args': 'list[str]',
-            'workingDir': 'str',
+            'working_dir': 'str',
             'ports': 'list[V1ContainerPort]',
             'env': 'list[V1EnvVar]',
             'resources': 'V1ResourceRequirements',
-            'volumeMounts': 'list[V1VolumeMount]',
-            'livenessProbe': 'V1Probe',
-            'readinessProbe': 'V1Probe',
+            'volume_mounts': 'list[V1VolumeMount]',
+            'liveness_probe': 'V1Probe',
+            'readiness_probe': 'V1Probe',
             'lifecycle': 'V1Lifecycle',
-            'terminationMessagePath': 'str',
-            'imagePullPolicy': 'str',
-            'securityContext': 'V1SecurityContext',
+            'termination_message_path': 'str',
+            'image_pull_policy': 'str',
+            'security_context': 'V1SecurityContext',
             'stdin': 'bool',
-            'stdinOnce': 'bool',
+            'stdin_once': 'bool',
             'tty': 'bool'
         }
 
@@ -175,27 +175,27 @@ class V1Container(object):
         self._args = args
 
     @property
-    def workingDir(self):
+    def working_dir(self):
         """
-        Gets the workingDir of this V1Container.
+        Gets the working_dir of this V1Container.
         Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-        :return: The workingDir of this V1Container.
+        :return: The working_dir of this V1Container.
         :rtype: str
         """
-        return self._workingDir
+        return self._working_dir
 
-    @workingDir.setter
-    def workingDir(self, workingDir):
+    @working_dir.setter
+    def working_dir(self, working_dir):
         """
-        Sets the workingDir of this V1Container.
+        Sets the working_dir of this V1Container.
         Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-        :param workingDir: The workingDir of this V1Container.
+        :param working_dir: The working_dir of this V1Container.
         :type: str
         """
 
-        self._workingDir = workingDir
+        self._working_dir = working_dir
 
     @property
     def ports(self):
@@ -267,73 +267,73 @@ class V1Container(object):
         self._resources = resources
 
     @property
-    def volumeMounts(self):
+    def volume_mounts(self):
         """
-        Gets the volumeMounts of this V1Container.
+        Gets the volume_mounts of this V1Container.
         Pod volumes to mount into the container's filesystem. Cannot be updated.
 
-        :return: The volumeMounts of this V1Container.
+        :return: The volume_mounts of this V1Container.
         :rtype: list[V1VolumeMount]
         """
-        return self._volumeMounts
+        return self._volume_mounts
 
-    @volumeMounts.setter
-    def volumeMounts(self, volumeMounts):
+    @volume_mounts.setter
+    def volume_mounts(self, volume_mounts):
         """
-        Sets the volumeMounts of this V1Container.
+        Sets the volume_mounts of this V1Container.
         Pod volumes to mount into the container's filesystem. Cannot be updated.
 
-        :param volumeMounts: The volumeMounts of this V1Container.
+        :param volume_mounts: The volume_mounts of this V1Container.
         :type: list[V1VolumeMount]
         """
 
-        self._volumeMounts = volumeMounts
+        self._volume_mounts = volume_mounts
 
     @property
-    def livenessProbe(self):
+    def liveness_probe(self):
         """
-        Gets the livenessProbe of this V1Container.
+        Gets the liveness_probe of this V1Container.
         Periodic probe of container liveness. Container will be restarted if the probe fails. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :return: The livenessProbe of this V1Container.
+        :return: The liveness_probe of this V1Container.
         :rtype: V1Probe
         """
-        return self._livenessProbe
+        return self._liveness_probe
 
-    @livenessProbe.setter
-    def livenessProbe(self, livenessProbe):
+    @liveness_probe.setter
+    def liveness_probe(self, liveness_probe):
         """
-        Sets the livenessProbe of this V1Container.
+        Sets the liveness_probe of this V1Container.
         Periodic probe of container liveness. Container will be restarted if the probe fails. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :param livenessProbe: The livenessProbe of this V1Container.
+        :param liveness_probe: The liveness_probe of this V1Container.
         :type: V1Probe
         """
 
-        self._livenessProbe = livenessProbe
+        self._liveness_probe = liveness_probe
 
     @property
-    def readinessProbe(self):
+    def readiness_probe(self):
         """
-        Gets the readinessProbe of this V1Container.
+        Gets the readiness_probe of this V1Container.
         Periodic probe of container service readiness. Container will be removed from service endpoints if the probe fails. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :return: The readinessProbe of this V1Container.
+        :return: The readiness_probe of this V1Container.
         :rtype: V1Probe
         """
-        return self._readinessProbe
+        return self._readiness_probe
 
-    @readinessProbe.setter
-    def readinessProbe(self, readinessProbe):
+    @readiness_probe.setter
+    def readiness_probe(self, readiness_probe):
         """
-        Sets the readinessProbe of this V1Container.
+        Sets the readiness_probe of this V1Container.
         Periodic probe of container service readiness. Container will be removed from service endpoints if the probe fails. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
 
-        :param readinessProbe: The readinessProbe of this V1Container.
+        :param readiness_probe: The readiness_probe of this V1Container.
         :type: V1Probe
         """
 
-        self._readinessProbe = readinessProbe
+        self._readiness_probe = readiness_probe
 
     @property
     def lifecycle(self):
@@ -359,73 +359,73 @@ class V1Container(object):
         self._lifecycle = lifecycle
 
     @property
-    def terminationMessagePath(self):
+    def termination_message_path(self):
         """
-        Gets the terminationMessagePath of this V1Container.
+        Gets the termination_message_path of this V1Container.
         Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-        :return: The terminationMessagePath of this V1Container.
+        :return: The termination_message_path of this V1Container.
         :rtype: str
         """
-        return self._terminationMessagePath
+        return self._termination_message_path
 
-    @terminationMessagePath.setter
-    def terminationMessagePath(self, terminationMessagePath):
+    @termination_message_path.setter
+    def termination_message_path(self, termination_message_path):
         """
-        Sets the terminationMessagePath of this V1Container.
+        Sets the termination_message_path of this V1Container.
         Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-        :param terminationMessagePath: The terminationMessagePath of this V1Container.
+        :param termination_message_path: The termination_message_path of this V1Container.
         :type: str
         """
 
-        self._terminationMessagePath = terminationMessagePath
+        self._termination_message_path = termination_message_path
 
     @property
-    def imagePullPolicy(self):
+    def image_pull_policy(self):
         """
-        Gets the imagePullPolicy of this V1Container.
+        Gets the image_pull_policy of this V1Container.
         Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/images.md#updating-images
 
-        :return: The imagePullPolicy of this V1Container.
+        :return: The image_pull_policy of this V1Container.
         :rtype: str
         """
-        return self._imagePullPolicy
+        return self._image_pull_policy
 
-    @imagePullPolicy.setter
-    def imagePullPolicy(self, imagePullPolicy):
+    @image_pull_policy.setter
+    def image_pull_policy(self, image_pull_policy):
         """
-        Sets the imagePullPolicy of this V1Container.
+        Sets the image_pull_policy of this V1Container.
         Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/images.md#updating-images
 
-        :param imagePullPolicy: The imagePullPolicy of this V1Container.
+        :param image_pull_policy: The image_pull_policy of this V1Container.
         :type: str
         """
 
-        self._imagePullPolicy = imagePullPolicy
+        self._image_pull_policy = image_pull_policy
 
     @property
-    def securityContext(self):
+    def security_context(self):
         """
-        Gets the securityContext of this V1Container.
+        Gets the security_context of this V1Container.
         Security options the pod should run with. More info: http://releases.k8s.io/HEAD/docs/design/security_context.md
 
-        :return: The securityContext of this V1Container.
+        :return: The security_context of this V1Container.
         :rtype: V1SecurityContext
         """
-        return self._securityContext
+        return self._security_context
 
-    @securityContext.setter
-    def securityContext(self, securityContext):
+    @security_context.setter
+    def security_context(self, security_context):
         """
-        Sets the securityContext of this V1Container.
+        Sets the security_context of this V1Container.
         Security options the pod should run with. More info: http://releases.k8s.io/HEAD/docs/design/security_context.md
 
-        :param securityContext: The securityContext of this V1Container.
+        :param security_context: The security_context of this V1Container.
         :type: V1SecurityContext
         """
 
-        self._securityContext = securityContext
+        self._security_context = security_context
 
     @property
     def stdin(self):
@@ -451,27 +451,27 @@ class V1Container(object):
         self._stdin = stdin
 
     @property
-    def stdinOnce(self):
+    def stdin_once(self):
         """
-        Gets the stdinOnce of this V1Container.
+        Gets the stdin_once of this V1Container.
         Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF. Default is false
 
-        :return: The stdinOnce of this V1Container.
+        :return: The stdin_once of this V1Container.
         :rtype: bool
         """
-        return self._stdinOnce
+        return self._stdin_once
 
-    @stdinOnce.setter
-    def stdinOnce(self, stdinOnce):
+    @stdin_once.setter
+    def stdin_once(self, stdin_once):
         """
-        Sets the stdinOnce of this V1Container.
+        Sets the stdin_once of this V1Container.
         Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF. Default is false
 
-        :param stdinOnce: The stdinOnce of this V1Container.
+        :param stdin_once: The stdin_once of this V1Container.
         :type: bool
         """
 
-        self._stdinOnce = stdinOnce
+        self._stdin_once = stdin_once
 
     @property
     def tty(self):

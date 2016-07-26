@@ -42,12 +42,12 @@ class V1ContainerStatus(object):
         self.swagger_types = {
             'name': 'str',
             'state': 'V1ContainerState',
-            'lastState': 'V1ContainerState',
+            'last_state': 'V1ContainerState',
             'ready': 'bool',
-            'restartCount': 'int',
+            'restart_count': 'int',
             'image': 'str',
-            'imageID': 'str',
-            'containerID': 'str'
+            'image_id': 'str',
+            'container_id': 'str'
         }
 
         self.attribute_map = {
@@ -109,27 +109,27 @@ class V1ContainerStatus(object):
         self._state = state
 
     @property
-    def lastState(self):
+    def last_state(self):
         """
-        Gets the lastState of this V1ContainerStatus.
+        Gets the last_state of this V1ContainerStatus.
         Details about the container's last termination condition.
 
-        :return: The lastState of this V1ContainerStatus.
+        :return: The last_state of this V1ContainerStatus.
         :rtype: V1ContainerState
         """
-        return self._lastState
+        return self._last_state
 
-    @lastState.setter
-    def lastState(self, lastState):
+    @last_state.setter
+    def last_state(self, last_state):
         """
-        Sets the lastState of this V1ContainerStatus.
+        Sets the last_state of this V1ContainerStatus.
         Details about the container's last termination condition.
 
-        :param lastState: The lastState of this V1ContainerStatus.
+        :param last_state: The last_state of this V1ContainerStatus.
         :type: V1ContainerState
         """
 
-        self._lastState = lastState
+        self._last_state = last_state
 
     @property
     def ready(self):
@@ -155,27 +155,27 @@ class V1ContainerStatus(object):
         self._ready = ready
 
     @property
-    def restartCount(self):
+    def restart_count(self):
         """
-        Gets the restartCount of this V1ContainerStatus.
+        Gets the restart_count of this V1ContainerStatus.
         The number of times the container has been restarted, currently based on the number of dead containers that have not yet been removed. Note that this is calculated from dead containers. But those containers are subject to garbage collection. This value will get capped at 5 by GC.
 
-        :return: The restartCount of this V1ContainerStatus.
+        :return: The restart_count of this V1ContainerStatus.
         :rtype: int
         """
-        return self._restartCount
+        return self._restart_count
 
-    @restartCount.setter
-    def restartCount(self, restartCount):
+    @restart_count.setter
+    def restart_count(self, restart_count):
         """
-        Sets the restartCount of this V1ContainerStatus.
+        Sets the restart_count of this V1ContainerStatus.
         The number of times the container has been restarted, currently based on the number of dead containers that have not yet been removed. Note that this is calculated from dead containers. But those containers are subject to garbage collection. This value will get capped at 5 by GC.
 
-        :param restartCount: The restartCount of this V1ContainerStatus.
+        :param restart_count: The restart_count of this V1ContainerStatus.
         :type: int
         """
 
-        self._restartCount = restartCount
+        self._restart_count = restart_count
 
     @property
     def image(self):
@@ -201,50 +201,50 @@ class V1ContainerStatus(object):
         self._image = image
 
     @property
-    def imageID(self):
+    def image_id(self):
         """
-        Gets the imageID of this V1ContainerStatus.
+        Gets the image_id of this V1ContainerStatus.
         ImageID of the container's image.
 
-        :return: The imageID of this V1ContainerStatus.
+        :return: The image_id of this V1ContainerStatus.
         :rtype: str
         """
-        return self._imageID
+        return self._image_id
 
-    @imageID.setter
-    def imageID(self, imageID):
+    @image_id.setter
+    def image_id(self, image_id):
         """
-        Sets the imageID of this V1ContainerStatus.
+        Sets the image_id of this V1ContainerStatus.
         ImageID of the container's image.
 
-        :param imageID: The imageID of this V1ContainerStatus.
+        :param image_id: The image_id of this V1ContainerStatus.
         :type: str
         """
 
-        self._imageID = imageID
+        self._image_id = image_id
 
     @property
-    def containerID(self):
+    def container_id(self):
         """
-        Gets the containerID of this V1ContainerStatus.
+        Gets the container_id of this V1ContainerStatus.
         Container's ID in the format 'docker://<container_id>'. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#container-information
 
-        :return: The containerID of this V1ContainerStatus.
+        :return: The container_id of this V1ContainerStatus.
         :rtype: str
         """
-        return self._containerID
+        return self._container_id
 
-    @containerID.setter
-    def containerID(self, containerID):
+    @container_id.setter
+    def container_id(self, container_id):
         """
-        Sets the containerID of this V1ContainerStatus.
+        Sets the container_id of this V1ContainerStatus.
         Container's ID in the format 'docker://<container_id>'. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#container-information
 
-        :param containerID: The containerID of this V1ContainerStatus.
+        :param container_id: The container_id of this V1ContainerStatus.
         :type: str
         """
 
-        self._containerID = containerID
+        self._container_id = container_id
 
     def to_dict(self):
         """

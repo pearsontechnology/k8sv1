@@ -41,26 +41,26 @@ class V1Volume(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'hostPath': 'V1HostPathVolumeSource',
-            'emptyDir': 'V1EmptyDirVolumeSource',
-            'gcePersistentDisk': 'V1GCEPersistentDiskVolumeSource',
-            'awsElasticBlockStore': 'V1AWSElasticBlockStoreVolumeSource',
-            'gitRepo': 'V1GitRepoVolumeSource',
+            'host_path': 'V1HostPathVolumeSource',
+            'empty_dir': 'V1EmptyDirVolumeSource',
+            'gce_persistent_disk': 'V1GCEPersistentDiskVolumeSource',
+            'aws_elastic_block_store': 'V1AWSElasticBlockStoreVolumeSource',
+            'git_repo': 'V1GitRepoVolumeSource',
             'secret': 'V1SecretVolumeSource',
             'nfs': 'V1NFSVolumeSource',
             'iscsi': 'V1ISCSIVolumeSource',
             'glusterfs': 'V1GlusterfsVolumeSource',
-            'persistentVolumeClaim': 'V1PersistentVolumeClaimVolumeSource',
+            'persistent_volume_claim': 'V1PersistentVolumeClaimVolumeSource',
             'rbd': 'V1RBDVolumeSource',
-            'flexVolume': 'V1FlexVolumeSource',
+            'flex_volume': 'V1FlexVolumeSource',
             'cinder': 'V1CinderVolumeSource',
             'cephfs': 'V1CephFSVolumeSource',
             'flocker': 'V1FlockerVolumeSource',
-            'downwardAPI': 'V1DownwardAPIVolumeSource',
+            'downward_api': 'V1DownwardAPIVolumeSource',
             'fc': 'V1FCVolumeSource',
-            'azureFile': 'V1AzureFileVolumeSource',
-            'configMap': 'V1ConfigMapVolumeSource',
-            'vsphereVolume': 'V1VsphereVirtualDiskVolumeSource'
+            'azure_file': 'V1AzureFileVolumeSource',
+            'config_map': 'V1ConfigMapVolumeSource',
+            'vsphere_volume': 'V1VsphereVirtualDiskVolumeSource'
         }
 
         self.attribute_map = {
@@ -112,119 +112,119 @@ class V1Volume(object):
         self._name = name
 
     @property
-    def hostPath(self):
+    def host_path(self):
         """
-        Gets the hostPath of this V1Volume.
+        Gets the host_path of this V1Volume.
         HostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#hostpath
 
-        :return: The hostPath of this V1Volume.
+        :return: The host_path of this V1Volume.
         :rtype: V1HostPathVolumeSource
         """
-        return self._hostPath
+        return self._host_path
 
-    @hostPath.setter
-    def hostPath(self, hostPath):
+    @host_path.setter
+    def host_path(self, host_path):
         """
-        Sets the hostPath of this V1Volume.
+        Sets the host_path of this V1Volume.
         HostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#hostpath
 
-        :param hostPath: The hostPath of this V1Volume.
+        :param host_path: The host_path of this V1Volume.
         :type: V1HostPathVolumeSource
         """
 
-        self._hostPath = hostPath
+        self._host_path = host_path
 
     @property
-    def emptyDir(self):
+    def empty_dir(self):
         """
-        Gets the emptyDir of this V1Volume.
+        Gets the empty_dir of this V1Volume.
         EmptyDir represents a temporary directory that shares a pod's lifetime. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#emptydir
 
-        :return: The emptyDir of this V1Volume.
+        :return: The empty_dir of this V1Volume.
         :rtype: V1EmptyDirVolumeSource
         """
-        return self._emptyDir
+        return self._empty_dir
 
-    @emptyDir.setter
-    def emptyDir(self, emptyDir):
+    @empty_dir.setter
+    def empty_dir(self, empty_dir):
         """
-        Sets the emptyDir of this V1Volume.
+        Sets the empty_dir of this V1Volume.
         EmptyDir represents a temporary directory that shares a pod's lifetime. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#emptydir
 
-        :param emptyDir: The emptyDir of this V1Volume.
+        :param empty_dir: The empty_dir of this V1Volume.
         :type: V1EmptyDirVolumeSource
         """
 
-        self._emptyDir = emptyDir
+        self._empty_dir = empty_dir
 
     @property
-    def gcePersistentDisk(self):
+    def gce_persistent_disk(self):
         """
-        Gets the gcePersistentDisk of this V1Volume.
+        Gets the gce_persistent_disk of this V1Volume.
         GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :return: The gcePersistentDisk of this V1Volume.
+        :return: The gce_persistent_disk of this V1Volume.
         :rtype: V1GCEPersistentDiskVolumeSource
         """
-        return self._gcePersistentDisk
+        return self._gce_persistent_disk
 
-    @gcePersistentDisk.setter
-    def gcePersistentDisk(self, gcePersistentDisk):
+    @gce_persistent_disk.setter
+    def gce_persistent_disk(self, gce_persistent_disk):
         """
-        Sets the gcePersistentDisk of this V1Volume.
+        Sets the gce_persistent_disk of this V1Volume.
         GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
 
-        :param gcePersistentDisk: The gcePersistentDisk of this V1Volume.
+        :param gce_persistent_disk: The gce_persistent_disk of this V1Volume.
         :type: V1GCEPersistentDiskVolumeSource
         """
 
-        self._gcePersistentDisk = gcePersistentDisk
+        self._gce_persistent_disk = gce_persistent_disk
 
     @property
-    def awsElasticBlockStore(self):
+    def aws_elastic_block_store(self):
         """
-        Gets the awsElasticBlockStore of this V1Volume.
+        Gets the aws_elastic_block_store of this V1Volume.
         AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#awselasticblockstore
 
-        :return: The awsElasticBlockStore of this V1Volume.
+        :return: The aws_elastic_block_store of this V1Volume.
         :rtype: V1AWSElasticBlockStoreVolumeSource
         """
-        return self._awsElasticBlockStore
+        return self._aws_elastic_block_store
 
-    @awsElasticBlockStore.setter
-    def awsElasticBlockStore(self, awsElasticBlockStore):
+    @aws_elastic_block_store.setter
+    def aws_elastic_block_store(self, aws_elastic_block_store):
         """
-        Sets the awsElasticBlockStore of this V1Volume.
+        Sets the aws_elastic_block_store of this V1Volume.
         AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#awselasticblockstore
 
-        :param awsElasticBlockStore: The awsElasticBlockStore of this V1Volume.
+        :param aws_elastic_block_store: The aws_elastic_block_store of this V1Volume.
         :type: V1AWSElasticBlockStoreVolumeSource
         """
 
-        self._awsElasticBlockStore = awsElasticBlockStore
+        self._aws_elastic_block_store = aws_elastic_block_store
 
     @property
-    def gitRepo(self):
+    def git_repo(self):
         """
-        Gets the gitRepo of this V1Volume.
+        Gets the git_repo of this V1Volume.
         GitRepo represents a git repository at a particular revision.
 
-        :return: The gitRepo of this V1Volume.
+        :return: The git_repo of this V1Volume.
         :rtype: V1GitRepoVolumeSource
         """
-        return self._gitRepo
+        return self._git_repo
 
-    @gitRepo.setter
-    def gitRepo(self, gitRepo):
+    @git_repo.setter
+    def git_repo(self, git_repo):
         """
-        Sets the gitRepo of this V1Volume.
+        Sets the git_repo of this V1Volume.
         GitRepo represents a git repository at a particular revision.
 
-        :param gitRepo: The gitRepo of this V1Volume.
+        :param git_repo: The git_repo of this V1Volume.
         :type: V1GitRepoVolumeSource
         """
 
-        self._gitRepo = gitRepo
+        self._git_repo = git_repo
 
     @property
     def secret(self):
@@ -319,27 +319,27 @@ class V1Volume(object):
         self._glusterfs = glusterfs
 
     @property
-    def persistentVolumeClaim(self):
+    def persistent_volume_claim(self):
         """
-        Gets the persistentVolumeClaim of this V1Volume.
+        Gets the persistent_volume_claim of this V1Volume.
         PersistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the same namespace. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#persistentvolumeclaims
 
-        :return: The persistentVolumeClaim of this V1Volume.
+        :return: The persistent_volume_claim of this V1Volume.
         :rtype: V1PersistentVolumeClaimVolumeSource
         """
-        return self._persistentVolumeClaim
+        return self._persistent_volume_claim
 
-    @persistentVolumeClaim.setter
-    def persistentVolumeClaim(self, persistentVolumeClaim):
+    @persistent_volume_claim.setter
+    def persistent_volume_claim(self, persistent_volume_claim):
         """
-        Sets the persistentVolumeClaim of this V1Volume.
+        Sets the persistent_volume_claim of this V1Volume.
         PersistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the same namespace. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#persistentvolumeclaims
 
-        :param persistentVolumeClaim: The persistentVolumeClaim of this V1Volume.
+        :param persistent_volume_claim: The persistent_volume_claim of this V1Volume.
         :type: V1PersistentVolumeClaimVolumeSource
         """
 
-        self._persistentVolumeClaim = persistentVolumeClaim
+        self._persistent_volume_claim = persistent_volume_claim
 
     @property
     def rbd(self):
@@ -365,27 +365,27 @@ class V1Volume(object):
         self._rbd = rbd
 
     @property
-    def flexVolume(self):
+    def flex_volume(self):
         """
-        Gets the flexVolume of this V1Volume.
+        Gets the flex_volume of this V1Volume.
         FlexVolume represents a generic volume resource that is provisioned/attached using a exec based plugin. This is an alpha feature and may change in future.
 
-        :return: The flexVolume of this V1Volume.
+        :return: The flex_volume of this V1Volume.
         :rtype: V1FlexVolumeSource
         """
-        return self._flexVolume
+        return self._flex_volume
 
-    @flexVolume.setter
-    def flexVolume(self, flexVolume):
+    @flex_volume.setter
+    def flex_volume(self, flex_volume):
         """
-        Sets the flexVolume of this V1Volume.
+        Sets the flex_volume of this V1Volume.
         FlexVolume represents a generic volume resource that is provisioned/attached using a exec based plugin. This is an alpha feature and may change in future.
 
-        :param flexVolume: The flexVolume of this V1Volume.
+        :param flex_volume: The flex_volume of this V1Volume.
         :type: V1FlexVolumeSource
         """
 
-        self._flexVolume = flexVolume
+        self._flex_volume = flex_volume
 
     @property
     def cinder(self):
@@ -457,27 +457,27 @@ class V1Volume(object):
         self._flocker = flocker
 
     @property
-    def downwardAPI(self):
+    def downward_api(self):
         """
-        Gets the downwardAPI of this V1Volume.
+        Gets the downward_api of this V1Volume.
         DownwardAPI represents downward API about the pod that should populate this volume
 
-        :return: The downwardAPI of this V1Volume.
+        :return: The downward_api of this V1Volume.
         :rtype: V1DownwardAPIVolumeSource
         """
-        return self._downwardAPI
+        return self._downward_api
 
-    @downwardAPI.setter
-    def downwardAPI(self, downwardAPI):
+    @downward_api.setter
+    def downward_api(self, downward_api):
         """
-        Sets the downwardAPI of this V1Volume.
+        Sets the downward_api of this V1Volume.
         DownwardAPI represents downward API about the pod that should populate this volume
 
-        :param downwardAPI: The downwardAPI of this V1Volume.
+        :param downward_api: The downward_api of this V1Volume.
         :type: V1DownwardAPIVolumeSource
         """
 
-        self._downwardAPI = downwardAPI
+        self._downward_api = downward_api
 
     @property
     def fc(self):
@@ -503,73 +503,73 @@ class V1Volume(object):
         self._fc = fc
 
     @property
-    def azureFile(self):
+    def azure_file(self):
         """
-        Gets the azureFile of this V1Volume.
+        Gets the azure_file of this V1Volume.
         AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
 
-        :return: The azureFile of this V1Volume.
+        :return: The azure_file of this V1Volume.
         :rtype: V1AzureFileVolumeSource
         """
-        return self._azureFile
+        return self._azure_file
 
-    @azureFile.setter
-    def azureFile(self, azureFile):
+    @azure_file.setter
+    def azure_file(self, azure_file):
         """
-        Sets the azureFile of this V1Volume.
+        Sets the azure_file of this V1Volume.
         AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
 
-        :param azureFile: The azureFile of this V1Volume.
+        :param azure_file: The azure_file of this V1Volume.
         :type: V1AzureFileVolumeSource
         """
 
-        self._azureFile = azureFile
+        self._azure_file = azure_file
 
     @property
-    def configMap(self):
+    def config_map(self):
         """
-        Gets the configMap of this V1Volume.
+        Gets the config_map of this V1Volume.
         ConfigMap represents a configMap that should populate this volume
 
-        :return: The configMap of this V1Volume.
+        :return: The config_map of this V1Volume.
         :rtype: V1ConfigMapVolumeSource
         """
-        return self._configMap
+        return self._config_map
 
-    @configMap.setter
-    def configMap(self, configMap):
+    @config_map.setter
+    def config_map(self, config_map):
         """
-        Sets the configMap of this V1Volume.
+        Sets the config_map of this V1Volume.
         ConfigMap represents a configMap that should populate this volume
 
-        :param configMap: The configMap of this V1Volume.
+        :param config_map: The config_map of this V1Volume.
         :type: V1ConfigMapVolumeSource
         """
 
-        self._configMap = configMap
+        self._config_map = config_map
 
     @property
-    def vsphereVolume(self):
+    def vsphere_volume(self):
         """
-        Gets the vsphereVolume of this V1Volume.
+        Gets the vsphere_volume of this V1Volume.
         VsphereVolume represents a vSphere volume attached and mounted on kubelets host machine
 
-        :return: The vsphereVolume of this V1Volume.
+        :return: The vsphere_volume of this V1Volume.
         :rtype: V1VsphereVirtualDiskVolumeSource
         """
-        return self._vsphereVolume
+        return self._vsphere_volume
 
-    @vsphereVolume.setter
-    def vsphereVolume(self, vsphereVolume):
+    @vsphere_volume.setter
+    def vsphere_volume(self, vsphere_volume):
         """
-        Sets the vsphereVolume of this V1Volume.
+        Sets the vsphere_volume of this V1Volume.
         VsphereVolume represents a vSphere volume attached and mounted on kubelets host machine
 
-        :param vsphereVolume: The vsphereVolume of this V1Volume.
+        :param vsphere_volume: The vsphere_volume of this V1Volume.
         :type: V1VsphereVirtualDiskVolumeSource
         """
 
-        self._vsphereVolume = vsphereVolume
+        self._vsphere_volume = vsphere_volume
 
     def to_dict(self):
         """

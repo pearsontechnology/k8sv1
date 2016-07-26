@@ -41,7 +41,7 @@ class V1ResourceQuota(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
+            'api_version': 'str',
             'metadata': 'V1ObjectMeta',
             'spec': 'V1ResourceQuotaSpec',
             'status': 'V1ResourceQuotaStatus'
@@ -80,27 +80,27 @@ class V1ResourceQuota(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1ResourceQuota.
+        Gets the api_version of this V1ResourceQuota.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this V1ResourceQuota.
+        :return: The api_version of this V1ResourceQuota.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1ResourceQuota.
+        Sets the api_version of this V1ResourceQuota.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this V1ResourceQuota.
+        :param api_version: The api_version of this V1ResourceQuota.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
     def metadata(self):

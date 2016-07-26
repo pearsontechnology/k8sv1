@@ -44,7 +44,7 @@ class V1HTTPGetAction(object):
             'port': 'str',
             'host': 'str',
             'scheme': 'str',
-            'httpHeaders': 'list[V1HTTPHeader]'
+            'http_headers': 'list[V1HTTPHeader]'
         }
 
         self.attribute_map = {
@@ -149,27 +149,27 @@ class V1HTTPGetAction(object):
         self._scheme = scheme
 
     @property
-    def httpHeaders(self):
+    def http_headers(self):
         """
-        Gets the httpHeaders of this V1HTTPGetAction.
+        Gets the http_headers of this V1HTTPGetAction.
         Custom headers to set in the request. HTTP allows repeated headers.
 
-        :return: The httpHeaders of this V1HTTPGetAction.
+        :return: The http_headers of this V1HTTPGetAction.
         :rtype: list[V1HTTPHeader]
         """
-        return self._httpHeaders
+        return self._http_headers
 
-    @httpHeaders.setter
-    def httpHeaders(self, httpHeaders):
+    @http_headers.setter
+    def http_headers(self, http_headers):
         """
-        Sets the httpHeaders of this V1HTTPGetAction.
+        Sets the http_headers of this V1HTTPGetAction.
         Custom headers to set in the request. HTTP allows repeated headers.
 
-        :param httpHeaders: The httpHeaders of this V1HTTPGetAction.
+        :param http_headers: The http_headers of this V1HTTPGetAction.
         :type: list[V1HTTPHeader]
         """
 
-        self._httpHeaders = httpHeaders
+        self._http_headers = http_headers
 
     def to_dict(self):
         """

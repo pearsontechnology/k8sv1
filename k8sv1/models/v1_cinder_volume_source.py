@@ -40,9 +40,9 @@ class V1CinderVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'volumeID': 'str',
-            'fsType': 'str',
-            'readOnly': 'bool'
+            'volume_id': 'str',
+            'fs_type': 'str',
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -53,73 +53,73 @@ class V1CinderVolumeSource(object):
 
 
     @property
-    def volumeID(self):
+    def volume_id(self):
         """
-        Gets the volumeID of this V1CinderVolumeSource.
+        Gets the volume_id of this V1CinderVolumeSource.
         volume id used to identify the volume in cinder More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
 
-        :return: The volumeID of this V1CinderVolumeSource.
+        :return: The volume_id of this V1CinderVolumeSource.
         :rtype: str
         """
-        return self._volumeID
+        return self._volume_id
 
-    @volumeID.setter
-    def volumeID(self, volumeID):
+    @volume_id.setter
+    def volume_id(self, volume_id):
         """
-        Sets the volumeID of this V1CinderVolumeSource.
+        Sets the volume_id of this V1CinderVolumeSource.
         volume id used to identify the volume in cinder More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
 
-        :param volumeID: The volumeID of this V1CinderVolumeSource.
+        :param volume_id: The volume_id of this V1CinderVolumeSource.
         :type: str
         """
 
-        self._volumeID = volumeID
+        self._volume_id = volume_id
 
     @property
-    def fsType(self):
+    def fs_type(self):
         """
-        Gets the fsType of this V1CinderVolumeSource.
+        Gets the fs_type of this V1CinderVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
 
-        :return: The fsType of this V1CinderVolumeSource.
+        :return: The fs_type of this V1CinderVolumeSource.
         :rtype: str
         """
-        return self._fsType
+        return self._fs_type
 
-    @fsType.setter
-    def fsType(self, fsType):
+    @fs_type.setter
+    def fs_type(self, fs_type):
         """
-        Sets the fsType of this V1CinderVolumeSource.
+        Sets the fs_type of this V1CinderVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
 
-        :param fsType: The fsType of this V1CinderVolumeSource.
+        :param fs_type: The fs_type of this V1CinderVolumeSource.
         :type: str
         """
 
-        self._fsType = fsType
+        self._fs_type = fs_type
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1CinderVolumeSource.
+        Gets the read_only of this V1CinderVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
 
-        :return: The readOnly of this V1CinderVolumeSource.
+        :return: The read_only of this V1CinderVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1CinderVolumeSource.
+        Sets the read_only of this V1CinderVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
 
-        :param readOnly: The readOnly of this V1CinderVolumeSource.
+        :param read_only: The read_only of this V1CinderVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

@@ -41,7 +41,7 @@ class V1ComponentStatus(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
+            'api_version': 'str',
             'metadata': 'V1ObjectMeta',
             'conditions': 'list[V1ComponentCondition]'
         }
@@ -78,27 +78,27 @@ class V1ComponentStatus(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1ComponentStatus.
+        Gets the api_version of this V1ComponentStatus.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this V1ComponentStatus.
+        :return: The api_version of this V1ComponentStatus.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1ComponentStatus.
+        Sets the api_version of this V1ComponentStatus.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this V1ComponentStatus.
+        :param api_version: The api_version of this V1ComponentStatus.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
     def metadata(self):

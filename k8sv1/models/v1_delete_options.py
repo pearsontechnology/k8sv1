@@ -41,10 +41,10 @@ class V1DeleteOptions(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
-            'gracePeriodSeconds': 'int',
+            'api_version': 'str',
+            'grace_period_seconds': 'int',
             'preconditions': 'V1Preconditions',
-            'orphanDependents': 'bool'
+            'orphan_dependents': 'bool'
         }
 
         self.attribute_map = {
@@ -80,50 +80,50 @@ class V1DeleteOptions(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1DeleteOptions.
+        Gets the api_version of this V1DeleteOptions.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this V1DeleteOptions.
+        :return: The api_version of this V1DeleteOptions.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1DeleteOptions.
+        Sets the api_version of this V1DeleteOptions.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this V1DeleteOptions.
+        :param api_version: The api_version of this V1DeleteOptions.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
-    def gracePeriodSeconds(self):
+    def grace_period_seconds(self):
         """
-        Gets the gracePeriodSeconds of this V1DeleteOptions.
+        Gets the grace_period_seconds of this V1DeleteOptions.
         The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately.
 
-        :return: The gracePeriodSeconds of this V1DeleteOptions.
+        :return: The grace_period_seconds of this V1DeleteOptions.
         :rtype: int
         """
-        return self._gracePeriodSeconds
+        return self._grace_period_seconds
 
-    @gracePeriodSeconds.setter
-    def gracePeriodSeconds(self, gracePeriodSeconds):
+    @grace_period_seconds.setter
+    def grace_period_seconds(self, grace_period_seconds):
         """
-        Sets the gracePeriodSeconds of this V1DeleteOptions.
+        Sets the grace_period_seconds of this V1DeleteOptions.
         The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately.
 
-        :param gracePeriodSeconds: The gracePeriodSeconds of this V1DeleteOptions.
+        :param grace_period_seconds: The grace_period_seconds of this V1DeleteOptions.
         :type: int
         """
 
-        self._gracePeriodSeconds = gracePeriodSeconds
+        self._grace_period_seconds = grace_period_seconds
 
     @property
     def preconditions(self):
@@ -149,27 +149,27 @@ class V1DeleteOptions(object):
         self._preconditions = preconditions
 
     @property
-    def orphanDependents(self):
+    def orphan_dependents(self):
         """
-        Gets the orphanDependents of this V1DeleteOptions.
+        Gets the orphan_dependents of this V1DeleteOptions.
         Should the dependent objects be orphaned. If true/false, the \"orphan\" finalizer will be added to/removed from the object's finalizers list.
 
-        :return: The orphanDependents of this V1DeleteOptions.
+        :return: The orphan_dependents of this V1DeleteOptions.
         :rtype: bool
         """
-        return self._orphanDependents
+        return self._orphan_dependents
 
-    @orphanDependents.setter
-    def orphanDependents(self, orphanDependents):
+    @orphan_dependents.setter
+    def orphan_dependents(self, orphan_dependents):
         """
-        Sets the orphanDependents of this V1DeleteOptions.
+        Sets the orphan_dependents of this V1DeleteOptions.
         Should the dependent objects be orphaned. If true/false, the \"orphan\" finalizer will be added to/removed from the object's finalizers list.
 
-        :param orphanDependents: The orphanDependents of this V1DeleteOptions.
+        :param orphan_dependents: The orphan_dependents of this V1DeleteOptions.
         :type: bool
         """
 
-        self._orphanDependents = orphanDependents
+        self._orphan_dependents = orphan_dependents
 
     def to_dict(self):
         """

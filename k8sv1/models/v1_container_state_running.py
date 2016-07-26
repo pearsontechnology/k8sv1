@@ -40,7 +40,7 @@ class V1ContainerStateRunning(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'startedAt': 'datetime'
+            'started_at': 'datetime'
         }
 
         self.attribute_map = {
@@ -49,27 +49,27 @@ class V1ContainerStateRunning(object):
 
 
     @property
-    def startedAt(self):
+    def started_at(self):
         """
-        Gets the startedAt of this V1ContainerStateRunning.
+        Gets the started_at of this V1ContainerStateRunning.
         Time at which the container was last (re-)started
 
-        :return: The startedAt of this V1ContainerStateRunning.
+        :return: The started_at of this V1ContainerStateRunning.
         :rtype: datetime
         """
-        return self._startedAt
+        return self._started_at
 
-    @startedAt.setter
-    def startedAt(self, startedAt):
+    @started_at.setter
+    def started_at(self, started_at):
         """
-        Sets the startedAt of this V1ContainerStateRunning.
+        Sets the started_at of this V1ContainerStateRunning.
         Time at which the container was last (re-)started
 
-        :param startedAt: The startedAt of this V1ContainerStateRunning.
+        :param started_at: The started_at of this V1ContainerStateRunning.
         :type: datetime
         """
 
-        self._startedAt = startedAt
+        self._started_at = started_at
 
     def to_dict(self):
         """

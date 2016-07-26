@@ -40,9 +40,9 @@ class V1Handler(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'exec': 'V1ExecAction',
-            'httpGet': 'V1HTTPGetAction',
-            'tcpSocket': 'V1TCPSocketAction'
+            '_exec': 'V1ExecAction',
+            'http_get': 'V1HTTPGetAction',
+            'tcp_socket': 'V1TCPSocketAction'
         }
 
         self.attribute_map = {
@@ -53,73 +53,73 @@ class V1Handler(object):
 
 
     @property
-    def exec(self):
+    def _exec(self):
         """
-        Gets the exec of this V1Handler.
+        Gets the _exec of this V1Handler.
         One and only one of the following should be specified. Exec specifies the action to take.
 
-        :return: The exec of this V1Handler.
+        :return: The _exec of this V1Handler.
         :rtype: V1ExecAction
         """
-        return self._exec
+        return self.__exec
 
-    @exec.setter
-    def exec(self, exec):
+    @_exec.setter
+    def _exec(self, _exec):
         """
-        Sets the exec of this V1Handler.
+        Sets the _exec of this V1Handler.
         One and only one of the following should be specified. Exec specifies the action to take.
 
-        :param exec: The exec of this V1Handler.
+        :param _exec: The _exec of this V1Handler.
         :type: V1ExecAction
         """
 
-        self._exec = exec
+        self.__exec = _exec
 
     @property
-    def httpGet(self):
+    def http_get(self):
         """
-        Gets the httpGet of this V1Handler.
+        Gets the http_get of this V1Handler.
         HTTPGet specifies the http request to perform.
 
-        :return: The httpGet of this V1Handler.
+        :return: The http_get of this V1Handler.
         :rtype: V1HTTPGetAction
         """
-        return self._httpGet
+        return self._http_get
 
-    @httpGet.setter
-    def httpGet(self, httpGet):
+    @http_get.setter
+    def http_get(self, http_get):
         """
-        Sets the httpGet of this V1Handler.
+        Sets the http_get of this V1Handler.
         HTTPGet specifies the http request to perform.
 
-        :param httpGet: The httpGet of this V1Handler.
+        :param http_get: The http_get of this V1Handler.
         :type: V1HTTPGetAction
         """
 
-        self._httpGet = httpGet
+        self._http_get = http_get
 
     @property
-    def tcpSocket(self):
+    def tcp_socket(self):
         """
-        Gets the tcpSocket of this V1Handler.
+        Gets the tcp_socket of this V1Handler.
         TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
 
-        :return: The tcpSocket of this V1Handler.
+        :return: The tcp_socket of this V1Handler.
         :rtype: V1TCPSocketAction
         """
-        return self._tcpSocket
+        return self._tcp_socket
 
-    @tcpSocket.setter
-    def tcpSocket(self, tcpSocket):
+    @tcp_socket.setter
+    def tcp_socket(self, tcp_socket):
         """
-        Sets the tcpSocket of this V1Handler.
+        Sets the tcp_socket of this V1Handler.
         TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
 
-        :param tcpSocket: The tcpSocket of this V1Handler.
+        :param tcp_socket: The tcp_socket of this V1Handler.
         :type: V1TCPSocketAction
         """
 
-        self._tcpSocket = tcpSocket
+        self._tcp_socket = tcp_socket
 
     def to_dict(self):
         """

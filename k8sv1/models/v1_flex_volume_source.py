@@ -41,9 +41,9 @@ class V1FlexVolumeSource(object):
         """
         self.swagger_types = {
             'driver': 'str',
-            'fsType': 'str',
-            'secretRef': 'V1LocalObjectReference',
-            'readOnly': 'bool',
+            'fs_type': 'str',
+            'secret_ref': 'V1LocalObjectReference',
+            'read_only': 'bool',
             'options': 'object'
         }
 
@@ -80,73 +80,73 @@ class V1FlexVolumeSource(object):
         self._driver = driver
 
     @property
-    def fsType(self):
+    def fs_type(self):
         """
-        Gets the fsType of this V1FlexVolumeSource.
+        Gets the fs_type of this V1FlexVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default filesystem depends on FlexVolume script.
 
-        :return: The fsType of this V1FlexVolumeSource.
+        :return: The fs_type of this V1FlexVolumeSource.
         :rtype: str
         """
-        return self._fsType
+        return self._fs_type
 
-    @fsType.setter
-    def fsType(self, fsType):
+    @fs_type.setter
+    def fs_type(self, fs_type):
         """
-        Sets the fsType of this V1FlexVolumeSource.
+        Sets the fs_type of this V1FlexVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default filesystem depends on FlexVolume script.
 
-        :param fsType: The fsType of this V1FlexVolumeSource.
+        :param fs_type: The fs_type of this V1FlexVolumeSource.
         :type: str
         """
 
-        self._fsType = fsType
+        self._fs_type = fs_type
 
     @property
-    def secretRef(self):
+    def secret_ref(self):
         """
-        Gets the secretRef of this V1FlexVolumeSource.
+        Gets the secret_ref of this V1FlexVolumeSource.
         Optional: SecretRef is reference to the secret object containing sensitive information to pass to the plugin scripts. This may be empty if no secret object is specified. If the secret object contains more than one secret, all secrets are passed to the plugin scripts.
 
-        :return: The secretRef of this V1FlexVolumeSource.
+        :return: The secret_ref of this V1FlexVolumeSource.
         :rtype: V1LocalObjectReference
         """
-        return self._secretRef
+        return self._secret_ref
 
-    @secretRef.setter
-    def secretRef(self, secretRef):
+    @secret_ref.setter
+    def secret_ref(self, secret_ref):
         """
-        Sets the secretRef of this V1FlexVolumeSource.
+        Sets the secret_ref of this V1FlexVolumeSource.
         Optional: SecretRef is reference to the secret object containing sensitive information to pass to the plugin scripts. This may be empty if no secret object is specified. If the secret object contains more than one secret, all secrets are passed to the plugin scripts.
 
-        :param secretRef: The secretRef of this V1FlexVolumeSource.
+        :param secret_ref: The secret_ref of this V1FlexVolumeSource.
         :type: V1LocalObjectReference
         """
 
-        self._secretRef = secretRef
+        self._secret_ref = secret_ref
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1FlexVolumeSource.
+        Gets the read_only of this V1FlexVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
 
-        :return: The readOnly of this V1FlexVolumeSource.
+        :return: The read_only of this V1FlexVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1FlexVolumeSource.
+        Sets the read_only of this V1FlexVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
 
-        :param readOnly: The readOnly of this V1FlexVolumeSource.
+        :param read_only: The read_only of this V1FlexVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     @property
     def options(self):

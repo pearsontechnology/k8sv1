@@ -40,10 +40,10 @@ class V1FCVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'targetWWNs': 'list[str]',
+            'target_ww_ns': 'list[str]',
             'lun': 'int',
-            'fsType': 'str',
-            'readOnly': 'bool'
+            'fs_type': 'str',
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -55,27 +55,27 @@ class V1FCVolumeSource(object):
 
 
     @property
-    def targetWWNs(self):
+    def target_ww_ns(self):
         """
-        Gets the targetWWNs of this V1FCVolumeSource.
+        Gets the target_ww_ns of this V1FCVolumeSource.
         Required: FC target world wide names (WWNs)
 
-        :return: The targetWWNs of this V1FCVolumeSource.
+        :return: The target_ww_ns of this V1FCVolumeSource.
         :rtype: list[str]
         """
-        return self._targetWWNs
+        return self._target_ww_ns
 
-    @targetWWNs.setter
-    def targetWWNs(self, targetWWNs):
+    @target_ww_ns.setter
+    def target_ww_ns(self, target_ww_ns):
         """
-        Sets the targetWWNs of this V1FCVolumeSource.
+        Sets the target_ww_ns of this V1FCVolumeSource.
         Required: FC target world wide names (WWNs)
 
-        :param targetWWNs: The targetWWNs of this V1FCVolumeSource.
+        :param target_ww_ns: The target_ww_ns of this V1FCVolumeSource.
         :type: list[str]
         """
 
-        self._targetWWNs = targetWWNs
+        self._target_ww_ns = target_ww_ns
 
     @property
     def lun(self):
@@ -101,50 +101,50 @@ class V1FCVolumeSource(object):
         self._lun = lun
 
     @property
-    def fsType(self):
+    def fs_type(self):
         """
-        Gets the fsType of this V1FCVolumeSource.
+        Gets the fs_type of this V1FCVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.
 
-        :return: The fsType of this V1FCVolumeSource.
+        :return: The fs_type of this V1FCVolumeSource.
         :rtype: str
         """
-        return self._fsType
+        return self._fs_type
 
-    @fsType.setter
-    def fsType(self, fsType):
+    @fs_type.setter
+    def fs_type(self, fs_type):
         """
-        Sets the fsType of this V1FCVolumeSource.
+        Sets the fs_type of this V1FCVolumeSource.
         Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.
 
-        :param fsType: The fsType of this V1FCVolumeSource.
+        :param fs_type: The fs_type of this V1FCVolumeSource.
         :type: str
         """
 
-        self._fsType = fsType
+        self._fs_type = fs_type
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1FCVolumeSource.
+        Gets the read_only of this V1FCVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
 
-        :return: The readOnly of this V1FCVolumeSource.
+        :return: The read_only of this V1FCVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1FCVolumeSource.
+        Sets the read_only of this V1FCVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
 
-        :param readOnly: The readOnly of this V1FCVolumeSource.
+        :param read_only: The read_only of this V1FCVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """

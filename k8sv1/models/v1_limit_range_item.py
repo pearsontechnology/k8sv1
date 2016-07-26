@@ -44,8 +44,8 @@ class V1LimitRangeItem(object):
             'max': 'object',
             'min': 'object',
             'default': 'object',
-            'defaultRequest': 'object',
-            'maxLimitRequestRatio': 'object'
+            'default_request': 'object',
+            'max_limit_request_ratio': 'object'
         }
 
         self.attribute_map = {
@@ -151,50 +151,50 @@ class V1LimitRangeItem(object):
         self._default = default
 
     @property
-    def defaultRequest(self):
+    def default_request(self):
         """
-        Gets the defaultRequest of this V1LimitRangeItem.
+        Gets the default_request of this V1LimitRangeItem.
         DefaultRequest is the default resource requirement request value by resource name if resource request is omitted.
 
-        :return: The defaultRequest of this V1LimitRangeItem.
+        :return: The default_request of this V1LimitRangeItem.
         :rtype: object
         """
-        return self._defaultRequest
+        return self._default_request
 
-    @defaultRequest.setter
-    def defaultRequest(self, defaultRequest):
+    @default_request.setter
+    def default_request(self, default_request):
         """
-        Sets the defaultRequest of this V1LimitRangeItem.
+        Sets the default_request of this V1LimitRangeItem.
         DefaultRequest is the default resource requirement request value by resource name if resource request is omitted.
 
-        :param defaultRequest: The defaultRequest of this V1LimitRangeItem.
+        :param default_request: The default_request of this V1LimitRangeItem.
         :type: object
         """
 
-        self._defaultRequest = defaultRequest
+        self._default_request = default_request
 
     @property
-    def maxLimitRequestRatio(self):
+    def max_limit_request_ratio(self):
         """
-        Gets the maxLimitRequestRatio of this V1LimitRangeItem.
+        Gets the max_limit_request_ratio of this V1LimitRangeItem.
         MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource.
 
-        :return: The maxLimitRequestRatio of this V1LimitRangeItem.
+        :return: The max_limit_request_ratio of this V1LimitRangeItem.
         :rtype: object
         """
-        return self._maxLimitRequestRatio
+        return self._max_limit_request_ratio
 
-    @maxLimitRequestRatio.setter
-    def maxLimitRequestRatio(self, maxLimitRequestRatio):
+    @max_limit_request_ratio.setter
+    def max_limit_request_ratio(self, max_limit_request_ratio):
         """
-        Sets the maxLimitRequestRatio of this V1LimitRangeItem.
+        Sets the max_limit_request_ratio of this V1LimitRangeItem.
         MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource.
 
-        :param maxLimitRequestRatio: The maxLimitRequestRatio of this V1LimitRangeItem.
+        :param max_limit_request_ratio: The max_limit_request_ratio of this V1LimitRangeItem.
         :type: object
         """
 
-        self._maxLimitRequestRatio = maxLimitRequestRatio
+        self._max_limit_request_ratio = max_limit_request_ratio
 
     def to_dict(self):
         """

@@ -41,14 +41,14 @@ class V1Event(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'apiVersion': 'str',
+            'api_version': 'str',
             'metadata': 'V1ObjectMeta',
-            'involvedObject': 'V1ObjectReference',
+            'involved_object': 'V1ObjectReference',
             'reason': 'str',
             'message': 'str',
             'source': 'V1EventSource',
-            'firstTimestamp': 'datetime',
-            'lastTimestamp': 'datetime',
+            'first_timestamp': 'datetime',
+            'last_timestamp': 'datetime',
             'count': 'int',
             'type': 'str'
         }
@@ -92,27 +92,27 @@ class V1Event(object):
         self._kind = kind
 
     @property
-    def apiVersion(self):
+    def api_version(self):
         """
-        Gets the apiVersion of this V1Event.
+        Gets the api_version of this V1Event.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :return: The apiVersion of this V1Event.
+        :return: The api_version of this V1Event.
         :rtype: str
         """
-        return self._apiVersion
+        return self._api_version
 
-    @apiVersion.setter
-    def apiVersion(self, apiVersion):
+    @api_version.setter
+    def api_version(self, api_version):
         """
-        Sets the apiVersion of this V1Event.
+        Sets the api_version of this V1Event.
         APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources
 
-        :param apiVersion: The apiVersion of this V1Event.
+        :param api_version: The api_version of this V1Event.
         :type: str
         """
 
-        self._apiVersion = apiVersion
+        self._api_version = api_version
 
     @property
     def metadata(self):
@@ -138,27 +138,27 @@ class V1Event(object):
         self._metadata = metadata
 
     @property
-    def involvedObject(self):
+    def involved_object(self):
         """
-        Gets the involvedObject of this V1Event.
+        Gets the involved_object of this V1Event.
         The object that this event is about.
 
-        :return: The involvedObject of this V1Event.
+        :return: The involved_object of this V1Event.
         :rtype: V1ObjectReference
         """
-        return self._involvedObject
+        return self._involved_object
 
-    @involvedObject.setter
-    def involvedObject(self, involvedObject):
+    @involved_object.setter
+    def involved_object(self, involved_object):
         """
-        Sets the involvedObject of this V1Event.
+        Sets the involved_object of this V1Event.
         The object that this event is about.
 
-        :param involvedObject: The involvedObject of this V1Event.
+        :param involved_object: The involved_object of this V1Event.
         :type: V1ObjectReference
         """
 
-        self._involvedObject = involvedObject
+        self._involved_object = involved_object
 
     @property
     def reason(self):
@@ -230,50 +230,50 @@ class V1Event(object):
         self._source = source
 
     @property
-    def firstTimestamp(self):
+    def first_timestamp(self):
         """
-        Gets the firstTimestamp of this V1Event.
+        Gets the first_timestamp of this V1Event.
         The time at which the event was first recorded. (Time of server receipt is in TypeMeta.)
 
-        :return: The firstTimestamp of this V1Event.
+        :return: The first_timestamp of this V1Event.
         :rtype: datetime
         """
-        return self._firstTimestamp
+        return self._first_timestamp
 
-    @firstTimestamp.setter
-    def firstTimestamp(self, firstTimestamp):
+    @first_timestamp.setter
+    def first_timestamp(self, first_timestamp):
         """
-        Sets the firstTimestamp of this V1Event.
+        Sets the first_timestamp of this V1Event.
         The time at which the event was first recorded. (Time of server receipt is in TypeMeta.)
 
-        :param firstTimestamp: The firstTimestamp of this V1Event.
+        :param first_timestamp: The first_timestamp of this V1Event.
         :type: datetime
         """
 
-        self._firstTimestamp = firstTimestamp
+        self._first_timestamp = first_timestamp
 
     @property
-    def lastTimestamp(self):
+    def last_timestamp(self):
         """
-        Gets the lastTimestamp of this V1Event.
+        Gets the last_timestamp of this V1Event.
         The time at which the most recent occurrence of this event was recorded.
 
-        :return: The lastTimestamp of this V1Event.
+        :return: The last_timestamp of this V1Event.
         :rtype: datetime
         """
-        return self._lastTimestamp
+        return self._last_timestamp
 
-    @lastTimestamp.setter
-    def lastTimestamp(self, lastTimestamp):
+    @last_timestamp.setter
+    def last_timestamp(self, last_timestamp):
         """
-        Sets the lastTimestamp of this V1Event.
+        Sets the last_timestamp of this V1Event.
         The time at which the most recent occurrence of this event was recorded.
 
-        :param lastTimestamp: The lastTimestamp of this V1Event.
+        :param last_timestamp: The last_timestamp of this V1Event.
         :type: datetime
         """
 
-        self._lastTimestamp = lastTimestamp
+        self._last_timestamp = last_timestamp
 
     @property
     def count(self):

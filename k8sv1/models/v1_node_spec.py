@@ -40,9 +40,9 @@ class V1NodeSpec(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'podCIDR': 'str',
-            'externalID': 'str',
-            'providerID': 'str',
+            'pod_cidr': 'str',
+            'external_id': 'str',
+            'provider_id': 'str',
             'unschedulable': 'bool'
         }
 
@@ -55,73 +55,73 @@ class V1NodeSpec(object):
 
 
     @property
-    def podCIDR(self):
+    def pod_cidr(self):
         """
-        Gets the podCIDR of this V1NodeSpec.
+        Gets the pod_cidr of this V1NodeSpec.
         PodCIDR represents the pod IP range assigned to the node.
 
-        :return: The podCIDR of this V1NodeSpec.
+        :return: The pod_cidr of this V1NodeSpec.
         :rtype: str
         """
-        return self._podCIDR
+        return self._pod_cidr
 
-    @podCIDR.setter
-    def podCIDR(self, podCIDR):
+    @pod_cidr.setter
+    def pod_cidr(self, pod_cidr):
         """
-        Sets the podCIDR of this V1NodeSpec.
+        Sets the pod_cidr of this V1NodeSpec.
         PodCIDR represents the pod IP range assigned to the node.
 
-        :param podCIDR: The podCIDR of this V1NodeSpec.
+        :param pod_cidr: The pod_cidr of this V1NodeSpec.
         :type: str
         """
 
-        self._podCIDR = podCIDR
+        self._pod_cidr = pod_cidr
 
     @property
-    def externalID(self):
+    def external_id(self):
         """
-        Gets the externalID of this V1NodeSpec.
+        Gets the external_id of this V1NodeSpec.
         External ID of the node assigned by some machine database (e.g. a cloud provider). Deprecated.
 
-        :return: The externalID of this V1NodeSpec.
+        :return: The external_id of this V1NodeSpec.
         :rtype: str
         """
-        return self._externalID
+        return self._external_id
 
-    @externalID.setter
-    def externalID(self, externalID):
+    @external_id.setter
+    def external_id(self, external_id):
         """
-        Sets the externalID of this V1NodeSpec.
+        Sets the external_id of this V1NodeSpec.
         External ID of the node assigned by some machine database (e.g. a cloud provider). Deprecated.
 
-        :param externalID: The externalID of this V1NodeSpec.
+        :param external_id: The external_id of this V1NodeSpec.
         :type: str
         """
 
-        self._externalID = externalID
+        self._external_id = external_id
 
     @property
-    def providerID(self):
+    def provider_id(self):
         """
-        Gets the providerID of this V1NodeSpec.
+        Gets the provider_id of this V1NodeSpec.
         ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>
 
-        :return: The providerID of this V1NodeSpec.
+        :return: The provider_id of this V1NodeSpec.
         :rtype: str
         """
-        return self._providerID
+        return self._provider_id
 
-    @providerID.setter
-    def providerID(self, providerID):
+    @provider_id.setter
+    def provider_id(self, provider_id):
         """
-        Sets the providerID of this V1NodeSpec.
+        Sets the provider_id of this V1NodeSpec.
         ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>
 
-        :param providerID: The providerID of this V1NodeSpec.
+        :param provider_id: The provider_id of this V1NodeSpec.
         :type: str
         """
 
-        self._providerID = providerID
+        self._provider_id = provider_id
 
     @property
     def unschedulable(self):

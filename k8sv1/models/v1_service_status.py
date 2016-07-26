@@ -40,7 +40,7 @@ class V1ServiceStatus(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'loadBalancer': 'V1LoadBalancerStatus'
+            'load_balancer': 'V1LoadBalancerStatus'
         }
 
         self.attribute_map = {
@@ -49,27 +49,27 @@ class V1ServiceStatus(object):
 
 
     @property
-    def loadBalancer(self):
+    def load_balancer(self):
         """
-        Gets the loadBalancer of this V1ServiceStatus.
+        Gets the load_balancer of this V1ServiceStatus.
         LoadBalancer contains the current status of the load-balancer, if one is present.
 
-        :return: The loadBalancer of this V1ServiceStatus.
+        :return: The load_balancer of this V1ServiceStatus.
         :rtype: V1LoadBalancerStatus
         """
-        return self._loadBalancer
+        return self._load_balancer
 
-    @loadBalancer.setter
-    def loadBalancer(self, loadBalancer):
+    @load_balancer.setter
+    def load_balancer(self, load_balancer):
         """
-        Sets the loadBalancer of this V1ServiceStatus.
+        Sets the load_balancer of this V1ServiceStatus.
         LoadBalancer contains the current status of the load-balancer, if one is present.
 
-        :param loadBalancer: The loadBalancer of this V1ServiceStatus.
+        :param load_balancer: The load_balancer of this V1ServiceStatus.
         :type: V1LoadBalancerStatus
         """
 
-        self._loadBalancer = loadBalancer
+        self._load_balancer = load_balancer
 
     def to_dict(self):
         """

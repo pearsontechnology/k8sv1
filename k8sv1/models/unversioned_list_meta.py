@@ -40,8 +40,8 @@ class UnversionedListMeta(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'selfLink': 'str',
-            'resourceVersion': 'str'
+            'self_link': 'str',
+            'resource_version': 'str'
         }
 
         self.attribute_map = {
@@ -51,50 +51,50 @@ class UnversionedListMeta(object):
 
 
     @property
-    def selfLink(self):
+    def self_link(self):
         """
-        Gets the selfLink of this UnversionedListMeta.
+        Gets the self_link of this UnversionedListMeta.
         SelfLink is a URL representing this object. Populated by the system. Read-only.
 
-        :return: The selfLink of this UnversionedListMeta.
+        :return: The self_link of this UnversionedListMeta.
         :rtype: str
         """
-        return self._selfLink
+        return self._self_link
 
-    @selfLink.setter
-    def selfLink(self, selfLink):
+    @self_link.setter
+    def self_link(self, self_link):
         """
-        Sets the selfLink of this UnversionedListMeta.
+        Sets the self_link of this UnversionedListMeta.
         SelfLink is a URL representing this object. Populated by the system. Read-only.
 
-        :param selfLink: The selfLink of this UnversionedListMeta.
+        :param self_link: The self_link of this UnversionedListMeta.
         :type: str
         """
 
-        self._selfLink = selfLink
+        self._self_link = self_link
 
     @property
-    def resourceVersion(self):
+    def resource_version(self):
         """
-        Gets the resourceVersion of this UnversionedListMeta.
+        Gets the resource_version of this UnversionedListMeta.
         String that identifies the server's internal version of this object that can be used by clients to determine when objects have changed. Value must be treated as opaque by clients and passed unmodified back to the server. Populated by the system. Read-only. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#concurrency-control-and-consistency
 
-        :return: The resourceVersion of this UnversionedListMeta.
+        :return: The resource_version of this UnversionedListMeta.
         :rtype: str
         """
-        return self._resourceVersion
+        return self._resource_version
 
-    @resourceVersion.setter
-    def resourceVersion(self, resourceVersion):
+    @resource_version.setter
+    def resource_version(self, resource_version):
         """
-        Sets the resourceVersion of this UnversionedListMeta.
+        Sets the resource_version of this UnversionedListMeta.
         String that identifies the server's internal version of this object that can be used by clients to determine when objects have changed. Value must be treated as opaque by clients and passed unmodified back to the server. Populated by the system. Read-only. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#concurrency-control-and-consistency
 
-        :param resourceVersion: The resourceVersion of this UnversionedListMeta.
+        :param resource_version: The resource_version of this UnversionedListMeta.
         :type: str
         """
 
-        self._resourceVersion = resourceVersion
+        self._resource_version = resource_version
 
     def to_dict(self):
         """

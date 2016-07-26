@@ -44,7 +44,7 @@ class UnversionedStatusDetails(object):
             'group': 'str',
             'kind': 'str',
             'causes': 'list[UnversionedStatusCause]',
-            'retryAfterSeconds': 'int'
+            'retry_after_seconds': 'int'
         }
 
         self.attribute_map = {
@@ -149,27 +149,27 @@ class UnversionedStatusDetails(object):
         self._causes = causes
 
     @property
-    def retryAfterSeconds(self):
+    def retry_after_seconds(self):
         """
-        Gets the retryAfterSeconds of this UnversionedStatusDetails.
+        Gets the retry_after_seconds of this UnversionedStatusDetails.
         If specified, the time in seconds before the operation should be retried.
 
-        :return: The retryAfterSeconds of this UnversionedStatusDetails.
+        :return: The retry_after_seconds of this UnversionedStatusDetails.
         :rtype: int
         """
-        return self._retryAfterSeconds
+        return self._retry_after_seconds
 
-    @retryAfterSeconds.setter
-    def retryAfterSeconds(self, retryAfterSeconds):
+    @retry_after_seconds.setter
+    def retry_after_seconds(self, retry_after_seconds):
         """
-        Sets the retryAfterSeconds of this UnversionedStatusDetails.
+        Sets the retry_after_seconds of this UnversionedStatusDetails.
         If specified, the time in seconds before the operation should be retried.
 
-        :param retryAfterSeconds: The retryAfterSeconds of this UnversionedStatusDetails.
+        :param retry_after_seconds: The retry_after_seconds of this UnversionedStatusDetails.
         :type: int
         """
 
-        self._retryAfterSeconds = retryAfterSeconds
+        self._retry_after_seconds = retry_after_seconds
 
     def to_dict(self):
         """

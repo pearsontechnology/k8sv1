@@ -42,8 +42,8 @@ class V1PodCondition(object):
         self.swagger_types = {
             'type': 'str',
             'status': 'str',
-            'lastProbeTime': 'datetime',
-            'lastTransitionTime': 'datetime',
+            'last_probe_time': 'datetime',
+            'last_transition_time': 'datetime',
             'reason': 'str',
             'message': 'str'
         }
@@ -105,50 +105,50 @@ class V1PodCondition(object):
         self._status = status
 
     @property
-    def lastProbeTime(self):
+    def last_probe_time(self):
         """
-        Gets the lastProbeTime of this V1PodCondition.
+        Gets the last_probe_time of this V1PodCondition.
         Last time we probed the condition.
 
-        :return: The lastProbeTime of this V1PodCondition.
+        :return: The last_probe_time of this V1PodCondition.
         :rtype: datetime
         """
-        return self._lastProbeTime
+        return self._last_probe_time
 
-    @lastProbeTime.setter
-    def lastProbeTime(self, lastProbeTime):
+    @last_probe_time.setter
+    def last_probe_time(self, last_probe_time):
         """
-        Sets the lastProbeTime of this V1PodCondition.
+        Sets the last_probe_time of this V1PodCondition.
         Last time we probed the condition.
 
-        :param lastProbeTime: The lastProbeTime of this V1PodCondition.
+        :param last_probe_time: The last_probe_time of this V1PodCondition.
         :type: datetime
         """
 
-        self._lastProbeTime = lastProbeTime
+        self._last_probe_time = last_probe_time
 
     @property
-    def lastTransitionTime(self):
+    def last_transition_time(self):
         """
-        Gets the lastTransitionTime of this V1PodCondition.
+        Gets the last_transition_time of this V1PodCondition.
         Last time the condition transitioned from one status to another.
 
-        :return: The lastTransitionTime of this V1PodCondition.
+        :return: The last_transition_time of this V1PodCondition.
         :rtype: datetime
         """
-        return self._lastTransitionTime
+        return self._last_transition_time
 
-    @lastTransitionTime.setter
-    def lastTransitionTime(self, lastTransitionTime):
+    @last_transition_time.setter
+    def last_transition_time(self, last_transition_time):
         """
-        Sets the lastTransitionTime of this V1PodCondition.
+        Sets the last_transition_time of this V1PodCondition.
         Last time the condition transitioned from one status to another.
 
-        :param lastTransitionTime: The lastTransitionTime of this V1PodCondition.
+        :param last_transition_time: The last_transition_time of this V1PodCondition.
         :type: datetime
         """
 
-        self._lastTransitionTime = lastTransitionTime
+        self._last_transition_time = last_transition_time
 
     @property
     def reason(self):

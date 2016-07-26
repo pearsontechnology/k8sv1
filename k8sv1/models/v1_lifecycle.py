@@ -40,8 +40,8 @@ class V1Lifecycle(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'postStart': 'V1Handler',
-            'preStop': 'V1Handler'
+            'post_start': 'V1Handler',
+            'pre_stop': 'V1Handler'
         }
 
         self.attribute_map = {
@@ -51,50 +51,50 @@ class V1Lifecycle(object):
 
 
     @property
-    def postStart(self):
+    def post_start(self):
         """
-        Gets the postStart of this V1Lifecycle.
+        Gets the post_start of this V1Lifecycle.
         PostStart is called immediately after a container is created. If the handler fails, the container is terminated and restarted according to its restart policy. Other management of the container blocks until the hook completes. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#hook-details
 
-        :return: The postStart of this V1Lifecycle.
+        :return: The post_start of this V1Lifecycle.
         :rtype: V1Handler
         """
-        return self._postStart
+        return self._post_start
 
-    @postStart.setter
-    def postStart(self, postStart):
+    @post_start.setter
+    def post_start(self, post_start):
         """
-        Sets the postStart of this V1Lifecycle.
+        Sets the post_start of this V1Lifecycle.
         PostStart is called immediately after a container is created. If the handler fails, the container is terminated and restarted according to its restart policy. Other management of the container blocks until the hook completes. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#hook-details
 
-        :param postStart: The postStart of this V1Lifecycle.
+        :param post_start: The post_start of this V1Lifecycle.
         :type: V1Handler
         """
 
-        self._postStart = postStart
+        self._post_start = post_start
 
     @property
-    def preStop(self):
+    def pre_stop(self):
         """
-        Gets the preStop of this V1Lifecycle.
+        Gets the pre_stop of this V1Lifecycle.
         PreStop is called immediately before a container is terminated. The container is terminated after the handler completes. The reason for termination is passed to the handler. Regardless of the outcome of the handler, the container is eventually terminated. Other management of the container blocks until the hook completes. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#hook-details
 
-        :return: The preStop of this V1Lifecycle.
+        :return: The pre_stop of this V1Lifecycle.
         :rtype: V1Handler
         """
-        return self._preStop
+        return self._pre_stop
 
-    @preStop.setter
-    def preStop(self, preStop):
+    @pre_stop.setter
+    def pre_stop(self, pre_stop):
         """
-        Sets the preStop of this V1Lifecycle.
+        Sets the pre_stop of this V1Lifecycle.
         PreStop is called immediately before a container is terminated. The container is terminated after the handler completes. The reason for termination is passed to the handler. Regardless of the outcome of the handler, the container is eventually terminated. Other management of the container blocks until the hook completes. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#hook-details
 
-        :param preStop: The preStop of this V1Lifecycle.
+        :param pre_stop: The pre_stop of this V1Lifecycle.
         :type: V1Handler
         """
 
-        self._preStop = preStop
+        self._pre_stop = pre_stop
 
     def to_dict(self):
         """

@@ -42,7 +42,7 @@ class V1EndpointAddress(object):
         self.swagger_types = {
             'ip': 'str',
             'hostname': 'str',
-            'targetRef': 'V1ObjectReference'
+            'target_ref': 'V1ObjectReference'
         }
 
         self.attribute_map = {
@@ -99,27 +99,27 @@ class V1EndpointAddress(object):
         self._hostname = hostname
 
     @property
-    def targetRef(self):
+    def target_ref(self):
         """
-        Gets the targetRef of this V1EndpointAddress.
+        Gets the target_ref of this V1EndpointAddress.
         Reference to object providing the endpoint.
 
-        :return: The targetRef of this V1EndpointAddress.
+        :return: The target_ref of this V1EndpointAddress.
         :rtype: V1ObjectReference
         """
-        return self._targetRef
+        return self._target_ref
 
-    @targetRef.setter
-    def targetRef(self, targetRef):
+    @target_ref.setter
+    def target_ref(self, target_ref):
         """
-        Sets the targetRef of this V1EndpointAddress.
+        Sets the target_ref of this V1EndpointAddress.
         Reference to object providing the endpoint.
 
-        :param targetRef: The targetRef of this V1EndpointAddress.
+        :param target_ref: The target_ref of this V1EndpointAddress.
         :type: V1ObjectReference
         """
 
-        self._targetRef = targetRef
+        self._target_ref = target_ref
 
     def to_dict(self):
         """

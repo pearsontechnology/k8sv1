@@ -43,9 +43,9 @@ class V1CephFSVolumeSource(object):
             'monitors': 'list[str]',
             'path': 'str',
             'user': 'str',
-            'secretFile': 'str',
-            'secretRef': 'V1LocalObjectReference',
-            'readOnly': 'bool'
+            'secret_file': 'str',
+            'secret_ref': 'V1LocalObjectReference',
+            'read_only': 'bool'
         }
 
         self.attribute_map = {
@@ -128,73 +128,73 @@ class V1CephFSVolumeSource(object):
         self._user = user
 
     @property
-    def secretFile(self):
+    def secret_file(self):
         """
-        Gets the secretFile of this V1CephFSVolumeSource.
+        Gets the secret_file of this V1CephFSVolumeSource.
         Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
 
-        :return: The secretFile of this V1CephFSVolumeSource.
+        :return: The secret_file of this V1CephFSVolumeSource.
         :rtype: str
         """
-        return self._secretFile
+        return self._secret_file
 
-    @secretFile.setter
-    def secretFile(self, secretFile):
+    @secret_file.setter
+    def secret_file(self, secret_file):
         """
-        Sets the secretFile of this V1CephFSVolumeSource.
+        Sets the secret_file of this V1CephFSVolumeSource.
         Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
 
-        :param secretFile: The secretFile of this V1CephFSVolumeSource.
+        :param secret_file: The secret_file of this V1CephFSVolumeSource.
         :type: str
         """
 
-        self._secretFile = secretFile
+        self._secret_file = secret_file
 
     @property
-    def secretRef(self):
+    def secret_ref(self):
         """
-        Gets the secretRef of this V1CephFSVolumeSource.
+        Gets the secret_ref of this V1CephFSVolumeSource.
         Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
 
-        :return: The secretRef of this V1CephFSVolumeSource.
+        :return: The secret_ref of this V1CephFSVolumeSource.
         :rtype: V1LocalObjectReference
         """
-        return self._secretRef
+        return self._secret_ref
 
-    @secretRef.setter
-    def secretRef(self, secretRef):
+    @secret_ref.setter
+    def secret_ref(self, secret_ref):
         """
-        Sets the secretRef of this V1CephFSVolumeSource.
+        Sets the secret_ref of this V1CephFSVolumeSource.
         Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
 
-        :param secretRef: The secretRef of this V1CephFSVolumeSource.
+        :param secret_ref: The secret_ref of this V1CephFSVolumeSource.
         :type: V1LocalObjectReference
         """
 
-        self._secretRef = secretRef
+        self._secret_ref = secret_ref
 
     @property
-    def readOnly(self):
+    def read_only(self):
         """
-        Gets the readOnly of this V1CephFSVolumeSource.
+        Gets the read_only of this V1CephFSVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
 
-        :return: The readOnly of this V1CephFSVolumeSource.
+        :return: The read_only of this V1CephFSVolumeSource.
         :rtype: bool
         """
-        return self._readOnly
+        return self._read_only
 
-    @readOnly.setter
-    def readOnly(self, readOnly):
+    @read_only.setter
+    def read_only(self, read_only):
         """
-        Sets the readOnly of this V1CephFSVolumeSource.
+        Sets the read_only of this V1CephFSVolumeSource.
         Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
 
-        :param readOnly: The readOnly of this V1CephFSVolumeSource.
+        :param read_only: The read_only of this V1CephFSVolumeSource.
         :type: bool
         """
 
-        self._readOnly = readOnly
+        self._read_only = read_only
 
     def to_dict(self):
         """
