@@ -41,7 +41,7 @@ class V1NodeList(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'UnversionedListMeta',
             'items': 'list[V1Node]'
         }

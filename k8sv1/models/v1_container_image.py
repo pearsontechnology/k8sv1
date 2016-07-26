@@ -41,7 +41,7 @@ class V1ContainerImage(object):
         """
         self.swagger_types = {
             'names': 'list[str]',
-            'size_bytes': 'int'
+            'sizeBytes': 'int'
         }
 
         self.attribute_map = {

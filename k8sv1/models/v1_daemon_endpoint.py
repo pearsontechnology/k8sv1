@@ -40,7 +40,7 @@ class V1DaemonEndpoint(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'port': 'int'
+            'Port': 'int'
         }
 
         self.attribute_map = {

@@ -40,8 +40,8 @@ class V1VsphereVirtualDiskVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'volume_path': 'str',
-            'fs_type': 'str'
+            'volumePath': 'str',
+            'fsType': 'str'
         }
 
         self.attribute_map = {

@@ -41,10 +41,10 @@ class V1DeleteOptions(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
-            'grace_period_seconds': 'int',
+            'apiVersion': 'str',
+            'gracePeriodSeconds': 'int',
             'preconditions': 'V1Preconditions',
-            'orphan_dependents': 'bool'
+            'orphanDependents': 'bool'
         }
 
         self.attribute_map = {

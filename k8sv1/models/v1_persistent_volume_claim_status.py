@@ -41,7 +41,7 @@ class V1PersistentVolumeClaimStatus(object):
         """
         self.swagger_types = {
             'phase': 'str',
-            'access_modes': 'list[V1PersistentVolumeAccessMode]',
+            'accessModes': 'list[V1PersistentVolumeAccessMode]',
             'capacity': 'object'
         }
 

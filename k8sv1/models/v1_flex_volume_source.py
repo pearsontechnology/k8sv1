@@ -41,9 +41,9 @@ class V1FlexVolumeSource(object):
         """
         self.swagger_types = {
             'driver': 'str',
-            'fs_type': 'str',
-            'secret_ref': 'V1LocalObjectReference',
-            'read_only': 'bool',
+            'fsType': 'str',
+            'secretRef': 'V1LocalObjectReference',
+            'readOnly': 'bool',
             'options': 'object'
         }
 

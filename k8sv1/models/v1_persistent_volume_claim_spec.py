@@ -40,10 +40,10 @@ class V1PersistentVolumeClaimSpec(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'access_modes': 'list[V1PersistentVolumeAccessMode]',
+            'accessModes': 'list[V1PersistentVolumeAccessMode]',
             'selector': 'UnversionedLabelSelector',
             'resources': 'V1ResourceRequirements',
-            'volume_name': 'str'
+            'volumeName': 'str'
         }
 
         self.attribute_map = {

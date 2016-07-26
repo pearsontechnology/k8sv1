@@ -41,8 +41,8 @@ class UnversionedAPIResourceList(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
-            'group_version': 'str',
+            'apiVersion': 'str',
+            'groupVersion': 'str',
             'resources': 'list[UnversionedAPIResource]'
         }
 

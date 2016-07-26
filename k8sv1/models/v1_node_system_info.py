@@ -40,15 +40,15 @@ class V1NodeSystemInfo(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'machine_id': 'str',
-            'system_uuid': 'str',
-            'boot_id': 'str',
-            'kernel_version': 'str',
-            'os_image': 'str',
-            'container_runtime_version': 'str',
-            'kubelet_version': 'str',
-            'kube_proxy_version': 'str',
-            'operating_system': 'str',
+            'machineID': 'str',
+            'systemUUID': 'str',
+            'bootID': 'str',
+            'kernelVersion': 'str',
+            'osImage': 'str',
+            'containerRuntimeVersion': 'str',
+            'kubeletVersion': 'str',
+            'kubeProxyVersion': 'str',
+            'operatingSystem': 'str',
             'architecture': 'str'
         }
 

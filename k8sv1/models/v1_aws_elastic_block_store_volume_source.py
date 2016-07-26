@@ -40,10 +40,10 @@ class V1AWSElasticBlockStoreVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'volume_id': 'str',
-            'fs_type': 'str',
+            'volumeID': 'str',
+            'fsType': 'str',
             'partition': 'int',
-            'read_only': 'bool'
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

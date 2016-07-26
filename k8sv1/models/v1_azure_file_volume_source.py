@@ -40,9 +40,9 @@ class V1AzureFileVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'secret_name': 'str',
-            'share_name': 'str',
-            'read_only': 'bool'
+            'secretName': 'str',
+            'shareName': 'str',
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

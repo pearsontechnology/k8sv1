@@ -41,7 +41,7 @@ class V1EndpointSubset(object):
         """
         self.swagger_types = {
             'addresses': 'list[V1EndpointAddress]',
-            'not_ready_addresses': 'list[V1EndpointAddress]',
+            'notReadyAddresses': 'list[V1EndpointAddress]',
             'ports': 'list[V1EndpointPort]'
         }
 

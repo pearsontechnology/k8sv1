@@ -40,7 +40,7 @@ class V1OwnerReference(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'api_version': 'str',
+            'apiVersion': 'str',
             'kind': 'str',
             'name': 'str',
             'uid': 'str',

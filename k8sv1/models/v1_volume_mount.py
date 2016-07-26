@@ -41,9 +41,9 @@ class V1VolumeMount(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'read_only': 'bool',
-            'mount_path': 'str',
-            'sub_path': 'str'
+            'readOnly': 'bool',
+            'mountPath': 'str',
+            'subPath': 'str'
         }
 
         self.attribute_map = {

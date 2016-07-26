@@ -40,9 +40,9 @@ class V1Handler(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            '_exec': 'V1ExecAction',
-            'http_get': 'V1HTTPGetAction',
-            'tcp_socket': 'V1TCPSocketAction'
+            'exec': 'V1ExecAction',
+            'httpGet': 'V1HTTPGetAction',
+            'tcpSocket': 'V1TCPSocketAction'
         }
 
         self.attribute_map = {

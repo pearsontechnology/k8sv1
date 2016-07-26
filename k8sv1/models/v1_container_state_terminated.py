@@ -40,13 +40,13 @@ class V1ContainerStateTerminated(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'exit_code': 'int',
+            'exitCode': 'int',
             'signal': 'int',
             'reason': 'str',
             'message': 'str',
-            'started_at': 'datetime',
-            'finished_at': 'datetime',
-            'container_id': 'str'
+            'startedAt': 'datetime',
+            'finishedAt': 'datetime',
+            'containerID': 'str'
         }
 
         self.attribute_map = {

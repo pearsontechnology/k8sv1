@@ -42,7 +42,7 @@ class V1NFSVolumeSource(object):
         self.swagger_types = {
             'server': 'str',
             'path': 'str',
-            'read_only': 'bool'
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

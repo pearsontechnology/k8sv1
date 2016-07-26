@@ -40,8 +40,8 @@ class UnversionedLabelSelector(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'match_labels': 'object',
-            'match_expressions': 'list[UnversionedLabelSelectorRequirement]'
+            'matchLabels': 'object',
+            'matchExpressions': 'list[UnversionedLabelSelectorRequirement]'
         }
 
         self.attribute_map = {

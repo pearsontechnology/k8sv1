@@ -40,7 +40,7 @@ class V1ServiceStatus(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'load_balancer': 'V1LoadBalancerStatus'
+            'loadBalancer': 'V1LoadBalancerStatus'
         }
 
         self.attribute_map = {

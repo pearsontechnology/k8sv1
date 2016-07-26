@@ -43,8 +43,8 @@ class V1ServicePort(object):
             'name': 'str',
             'protocol': 'str',
             'port': 'int',
-            'target_port': 'str',
-            'node_port': 'int'
+            'targetPort': 'str',
+            'nodePort': 'int'
         }
 
         self.attribute_map = {

@@ -41,7 +41,7 @@ class V1ComponentStatus(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'V1ObjectMeta',
             'conditions': 'list[V1ComponentCondition]'
         }

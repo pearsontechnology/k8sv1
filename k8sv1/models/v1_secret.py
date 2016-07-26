@@ -41,10 +41,10 @@ class V1Secret(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'V1ObjectMeta',
             'data': 'object',
-            'string_data': 'object',
+            'stringData': 'object',
             'type': 'str'
         }
 

@@ -41,26 +41,26 @@ class V1Volume(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'host_path': 'V1HostPathVolumeSource',
-            'empty_dir': 'V1EmptyDirVolumeSource',
-            'gce_persistent_disk': 'V1GCEPersistentDiskVolumeSource',
-            'aws_elastic_block_store': 'V1AWSElasticBlockStoreVolumeSource',
-            'git_repo': 'V1GitRepoVolumeSource',
+            'hostPath': 'V1HostPathVolumeSource',
+            'emptyDir': 'V1EmptyDirVolumeSource',
+            'gcePersistentDisk': 'V1GCEPersistentDiskVolumeSource',
+            'awsElasticBlockStore': 'V1AWSElasticBlockStoreVolumeSource',
+            'gitRepo': 'V1GitRepoVolumeSource',
             'secret': 'V1SecretVolumeSource',
             'nfs': 'V1NFSVolumeSource',
             'iscsi': 'V1ISCSIVolumeSource',
             'glusterfs': 'V1GlusterfsVolumeSource',
-            'persistent_volume_claim': 'V1PersistentVolumeClaimVolumeSource',
+            'persistentVolumeClaim': 'V1PersistentVolumeClaimVolumeSource',
             'rbd': 'V1RBDVolumeSource',
-            'flex_volume': 'V1FlexVolumeSource',
+            'flexVolume': 'V1FlexVolumeSource',
             'cinder': 'V1CinderVolumeSource',
             'cephfs': 'V1CephFSVolumeSource',
             'flocker': 'V1FlockerVolumeSource',
-            'downward_api': 'V1DownwardAPIVolumeSource',
+            'downwardAPI': 'V1DownwardAPIVolumeSource',
             'fc': 'V1FCVolumeSource',
-            'azure_file': 'V1AzureFileVolumeSource',
-            'config_map': 'V1ConfigMapVolumeSource',
-            'vsphere_volume': 'V1VsphereVirtualDiskVolumeSource'
+            'azureFile': 'V1AzureFileVolumeSource',
+            'configMap': 'V1ConfigMapVolumeSource',
+            'vsphereVolume': 'V1VsphereVirtualDiskVolumeSource'
         }
 
         self.attribute_map = {

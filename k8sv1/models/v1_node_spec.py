@@ -40,9 +40,9 @@ class V1NodeSpec(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'pod_cidr': 'str',
-            'external_id': 'str',
-            'provider_id': 'str',
+            'podCIDR': 'str',
+            'externalID': 'str',
+            'providerID': 'str',
             'unschedulable': 'bool'
         }
 

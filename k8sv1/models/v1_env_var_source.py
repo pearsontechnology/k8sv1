@@ -40,10 +40,10 @@ class V1EnvVarSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'field_ref': 'V1ObjectFieldSelector',
-            'resource_field_ref': 'V1ResourceFieldSelector',
-            'config_map_key_ref': 'V1ConfigMapKeySelector',
-            'secret_key_ref': 'V1SecretKeySelector'
+            'fieldRef': 'V1ObjectFieldSelector',
+            'resourceFieldRef': 'V1ResourceFieldSelector',
+            'configMapKeyRef': 'V1ConfigMapKeySelector',
+            'secretKeyRef': 'V1SecretKeySelector'
         }
 
         self.attribute_map = {

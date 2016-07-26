@@ -40,7 +40,7 @@ class V1ContainerStateRunning(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'started_at': 'datetime'
+            'startedAt': 'datetime'
         }
 
         self.attribute_map = {

@@ -40,8 +40,8 @@ class V1ObjectFieldSelector(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'api_version': 'str',
-            'field_path': 'str'
+            'apiVersion': 'str',
+            'fieldPath': 'str'
         }
 
         self.attribute_map = {

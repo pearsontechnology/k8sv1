@@ -40,7 +40,7 @@ class V1NodeDaemonEndpoints(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'kubelet_endpoint': 'V1DaemonEndpoint'
+            'kubeletEndpoint': 'V1DaemonEndpoint'
         }
 
         self.attribute_map = {

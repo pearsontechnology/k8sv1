@@ -41,18 +41,18 @@ class V1ObjectMeta(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'generate_name': 'str',
+            'generateName': 'str',
             'namespace': 'str',
-            'self_link': 'str',
+            'selfLink': 'str',
             'uid': 'str',
-            'resource_version': 'str',
+            'resourceVersion': 'str',
             'generation': 'int',
-            'creation_timestamp': 'datetime',
-            'deletion_timestamp': 'datetime',
-            'deletion_grace_period_seconds': 'int',
+            'creationTimestamp': 'datetime',
+            'deletionTimestamp': 'datetime',
+            'deletionGracePeriodSeconds': 'int',
             'labels': 'object',
             'annotations': 'object',
-            'owner_references': 'list[V1OwnerReference]',
+            'ownerReferences': 'list[V1OwnerReference]',
             'finalizers': 'list[str]'
         }
 

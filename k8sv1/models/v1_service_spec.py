@@ -42,13 +42,13 @@ class V1ServiceSpec(object):
         self.swagger_types = {
             'ports': 'list[V1ServicePort]',
             'selector': 'object',
-            'cluster_ip': 'str',
+            'clusterIP': 'str',
             'type': 'str',
-            'external_i_ps': 'list[str]',
-            'deprecated_public_i_ps': 'list[str]',
-            'session_affinity': 'str',
-            'load_balancer_ip': 'str',
-            'load_balancer_source_ranges': 'list[str]'
+            'externalIPs': 'list[str]',
+            'deprecatedPublicIPs': 'list[str]',
+            'sessionAffinity': 'str',
+            'loadBalancerIP': 'str',
+            'loadBalancerSourceRanges': 'list[str]'
         }
 
         self.attribute_map = {

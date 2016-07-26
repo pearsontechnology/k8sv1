@@ -42,7 +42,7 @@ class V1GlusterfsVolumeSource(object):
         self.swagger_types = {
             'endpoints': 'str',
             'path': 'str',
-            'read_only': 'bool'
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

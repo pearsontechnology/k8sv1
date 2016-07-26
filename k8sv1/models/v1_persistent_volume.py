@@ -41,7 +41,7 @@ class V1PersistentVolume(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'V1ObjectMeta',
             'spec': 'V1PersistentVolumeSpec',
             'status': 'V1PersistentVolumeStatus'

@@ -42,10 +42,10 @@ class V1SecurityContext(object):
         self.swagger_types = {
             'capabilities': 'V1Capabilities',
             'privileged': 'bool',
-            'se_linux_options': 'V1SELinuxOptions',
-            'run_as_user': 'int',
-            'run_as_non_root': 'bool',
-            'read_only_root_filesystem': 'bool'
+            'seLinuxOptions': 'V1SELinuxOptions',
+            'runAsUser': 'int',
+            'runAsNonRoot': 'bool',
+            'readOnlyRootFilesystem': 'bool'
         }
 
         self.attribute_map = {

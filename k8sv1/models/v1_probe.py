@@ -40,14 +40,14 @@ class V1Probe(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            '_exec': 'V1ExecAction',
-            'http_get': 'V1HTTPGetAction',
-            'tcp_socket': 'V1TCPSocketAction',
-            'initial_delay_seconds': 'int',
-            'timeout_seconds': 'int',
-            'period_seconds': 'int',
-            'success_threshold': 'int',
-            'failure_threshold': 'int'
+            'exec': 'V1ExecAction',
+            'httpGet': 'V1HTTPGetAction',
+            'tcpSocket': 'V1TCPSocketAction',
+            'initialDelaySeconds': 'int',
+            'timeoutSeconds': 'int',
+            'periodSeconds': 'int',
+            'successThreshold': 'int',
+            'failureThreshold': 'int'
         }
 
         self.attribute_map = {

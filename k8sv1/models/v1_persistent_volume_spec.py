@@ -41,9 +41,9 @@ class V1PersistentVolumeSpec(object):
         """
         self.swagger_types = {
             'capacity': 'object',
-            'gce_persistent_disk': 'V1GCEPersistentDiskVolumeSource',
-            'aws_elastic_block_store': 'V1AWSElasticBlockStoreVolumeSource',
-            'host_path': 'V1HostPathVolumeSource',
+            'gcePersistentDisk': 'V1GCEPersistentDiskVolumeSource',
+            'awsElasticBlockStore': 'V1AWSElasticBlockStoreVolumeSource',
+            'hostPath': 'V1HostPathVolumeSource',
             'glusterfs': 'V1GlusterfsVolumeSource',
             'nfs': 'V1NFSVolumeSource',
             'rbd': 'V1RBDVolumeSource',
@@ -52,12 +52,12 @@ class V1PersistentVolumeSpec(object):
             'cephfs': 'V1CephFSVolumeSource',
             'fc': 'V1FCVolumeSource',
             'flocker': 'V1FlockerVolumeSource',
-            'flex_volume': 'V1FlexVolumeSource',
-            'azure_file': 'V1AzureFileVolumeSource',
-            'vsphere_volume': 'V1VsphereVirtualDiskVolumeSource',
-            'access_modes': 'list[V1PersistentVolumeAccessMode]',
-            'claim_ref': 'V1ObjectReference',
-            'persistent_volume_reclaim_policy': 'str'
+            'flexVolume': 'V1FlexVolumeSource',
+            'azureFile': 'V1AzureFileVolumeSource',
+            'vsphereVolume': 'V1VsphereVirtualDiskVolumeSource',
+            'accessModes': 'list[V1PersistentVolumeAccessMode]',
+            'claimRef': 'V1ObjectReference',
+            'persistentVolumeReclaimPolicy': 'str'
         }
 
         self.attribute_map = {

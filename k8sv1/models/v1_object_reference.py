@@ -44,9 +44,9 @@ class V1ObjectReference(object):
             'namespace': 'str',
             'name': 'str',
             'uid': 'str',
-            'api_version': 'str',
-            'resource_version': 'str',
-            'field_path': 'str'
+            'apiVersion': 'str',
+            'resourceVersion': 'str',
+            'fieldPath': 'str'
         }
 
         self.attribute_map = {

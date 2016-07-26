@@ -40,8 +40,8 @@ class V1PersistentVolumeClaimVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'claim_name': 'str',
-            'read_only': 'bool'
+            'claimName': 'str',
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

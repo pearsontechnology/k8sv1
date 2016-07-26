@@ -42,8 +42,8 @@ class V1PodCondition(object):
         self.swagger_types = {
             'type': 'str',
             'status': 'str',
-            'last_probe_time': 'datetime',
-            'last_transition_time': 'datetime',
+            'lastProbeTime': 'datetime',
+            'lastTransitionTime': 'datetime',
             'reason': 'str',
             'message': 'str'
         }

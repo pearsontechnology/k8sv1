@@ -40,7 +40,7 @@ class V1ResourceFieldSelector(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'container_name': 'str',
+            'containerName': 'str',
             'resource': 'str',
             'divisor': 'str'
         }

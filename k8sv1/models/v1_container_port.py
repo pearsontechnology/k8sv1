@@ -41,10 +41,10 @@ class V1ContainerPort(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'host_port': 'int',
-            'container_port': 'int',
+            'hostPort': 'int',
+            'containerPort': 'int',
             'protocol': 'str',
-            'host_ip': 'str'
+            'hostIP': 'str'
         }
 
         self.attribute_map = {

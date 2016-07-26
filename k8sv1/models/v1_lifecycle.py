@@ -40,8 +40,8 @@ class V1Lifecycle(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'post_start': 'V1Handler',
-            'pre_stop': 'V1Handler'
+            'postStart': 'V1Handler',
+            'preStop': 'V1Handler'
         }
 
         self.attribute_map = {

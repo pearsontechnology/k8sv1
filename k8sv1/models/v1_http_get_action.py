@@ -44,7 +44,7 @@ class V1HTTPGetAction(object):
             'port': 'str',
             'host': 'str',
             'scheme': 'str',
-            'http_headers': 'list[V1HTTPHeader]'
+            'httpHeaders': 'list[V1HTTPHeader]'
         }
 
         self.attribute_map = {

@@ -41,8 +41,8 @@ class V1ReplicationControllerStatus(object):
         """
         self.swagger_types = {
             'replicas': 'int',
-            'fully_labeled_replicas': 'int',
-            'observed_generation': 'int'
+            'fullyLabeledReplicas': 'int',
+            'observedGeneration': 'int'
         }
 
         self.attribute_map = {

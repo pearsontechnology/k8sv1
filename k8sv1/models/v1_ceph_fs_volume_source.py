@@ -43,9 +43,9 @@ class V1CephFSVolumeSource(object):
             'monitors': 'list[str]',
             'path': 'str',
             'user': 'str',
-            'secret_file': 'str',
-            'secret_ref': 'V1LocalObjectReference',
-            'read_only': 'bool'
+            'secretFile': 'str',
+            'secretRef': 'V1LocalObjectReference',
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

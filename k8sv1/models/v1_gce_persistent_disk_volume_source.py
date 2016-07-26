@@ -40,10 +40,10 @@ class V1GCEPersistentDiskVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'pd_name': 'str',
-            'fs_type': 'str',
+            'pdName': 'str',
+            'fsType': 'str',
             'partition': 'int',
-            'read_only': 'bool'
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

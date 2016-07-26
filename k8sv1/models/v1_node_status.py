@@ -45,11 +45,11 @@ class V1NodeStatus(object):
             'phase': 'str',
             'conditions': 'list[V1NodeCondition]',
             'addresses': 'list[V1NodeAddress]',
-            'daemon_endpoints': 'V1NodeDaemonEndpoints',
-            'node_info': 'V1NodeSystemInfo',
+            'daemonEndpoints': 'V1NodeDaemonEndpoints',
+            'nodeInfo': 'V1NodeSystemInfo',
             'images': 'list[V1ContainerImage]',
-            'volumes_in_use': 'list[V1UniqueVolumeName]',
-            'volumes_attached': 'list[V1AttachedVolume]'
+            'volumesInUse': 'list[V1UniqueVolumeName]',
+            'volumesAttached': 'list[V1AttachedVolume]'
         }
 
         self.attribute_map = {

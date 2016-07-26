@@ -44,7 +44,7 @@ class UnversionedStatusDetails(object):
             'group': 'str',
             'kind': 'str',
             'causes': 'list[UnversionedStatusCause]',
-            'retry_after_seconds': 'int'
+            'retryAfterSeconds': 'int'
         }
 
         self.attribute_map = {

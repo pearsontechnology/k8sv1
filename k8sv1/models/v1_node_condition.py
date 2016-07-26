@@ -42,8 +42,8 @@ class V1NodeCondition(object):
         self.swagger_types = {
             'type': 'str',
             'status': 'str',
-            'last_heartbeat_time': 'datetime',
-            'last_transition_time': 'datetime',
+            'lastHeartbeatTime': 'datetime',
+            'lastTransitionTime': 'datetime',
             'reason': 'str',
             'message': 'str'
         }

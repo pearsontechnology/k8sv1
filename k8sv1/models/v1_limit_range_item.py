@@ -44,8 +44,8 @@ class V1LimitRangeItem(object):
             'max': 'object',
             'min': 'object',
             'default': 'object',
-            'default_request': 'object',
-            'max_limit_request_ratio': 'object'
+            'defaultRequest': 'object',
+            'maxLimitRequestRatio': 'object'
         }
 
         self.attribute_map = {

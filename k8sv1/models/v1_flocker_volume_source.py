@@ -40,7 +40,7 @@ class V1FlockerVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'dataset_name': 'str'
+            'datasetName': 'str'
         }
 
         self.attribute_map = {

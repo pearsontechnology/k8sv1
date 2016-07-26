@@ -42,7 +42,7 @@ class V1EndpointAddress(object):
         self.swagger_types = {
             'ip': 'str',
             'hostname': 'str',
-            'target_ref': 'V1ObjectReference'
+            'targetRef': 'V1ObjectReference'
         }
 
         self.attribute_map = {

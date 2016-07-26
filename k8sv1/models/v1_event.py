@@ -41,14 +41,14 @@ class V1Event(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'V1ObjectMeta',
-            'involved_object': 'V1ObjectReference',
+            'involvedObject': 'V1ObjectReference',
             'reason': 'str',
             'message': 'str',
             'source': 'V1EventSource',
-            'first_timestamp': 'datetime',
-            'last_timestamp': 'datetime',
+            'firstTimestamp': 'datetime',
+            'lastTimestamp': 'datetime',
             'count': 'int',
             'type': 'str'
         }

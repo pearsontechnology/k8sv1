@@ -41,7 +41,7 @@ class V1PodTemplate(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'V1ObjectMeta',
             'template': 'V1PodTemplateSpec'
         }

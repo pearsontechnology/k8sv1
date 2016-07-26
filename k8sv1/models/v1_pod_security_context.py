@@ -40,11 +40,11 @@ class V1PodSecurityContext(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'se_linux_options': 'V1SELinuxOptions',
-            'run_as_user': 'int',
-            'run_as_non_root': 'bool',
-            'supplemental_groups': 'list[int]',
-            'fs_group': 'int'
+            'seLinuxOptions': 'V1SELinuxOptions',
+            'runAsUser': 'int',
+            'runAsNonRoot': 'bool',
+            'supplementalGroups': 'list[int]',
+            'fsGroup': 'int'
         }
 
         self.attribute_map = {

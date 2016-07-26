@@ -40,7 +40,7 @@ class V1SecretVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'secret_name': 'str',
+            'secretName': 'str',
             'items': 'list[V1KeyToPath]'
         }
 

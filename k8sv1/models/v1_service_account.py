@@ -41,10 +41,10 @@ class V1ServiceAccount(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'V1ObjectMeta',
             'secrets': 'list[V1ObjectReference]',
-            'image_pull_secrets': 'list[V1LocalObjectReference]'
+            'imagePullSecrets': 'list[V1LocalObjectReference]'
         }
 
         self.attribute_map = {

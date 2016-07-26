@@ -42,12 +42,12 @@ class V1RBDVolumeSource(object):
         self.swagger_types = {
             'monitors': 'list[str]',
             'image': 'str',
-            'fs_type': 'str',
+            'fsType': 'str',
             'pool': 'str',
             'user': 'str',
             'keyring': 'str',
-            'secret_ref': 'V1LocalObjectReference',
-            'read_only': 'bool'
+            'secretRef': 'V1LocalObjectReference',
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

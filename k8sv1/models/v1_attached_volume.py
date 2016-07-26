@@ -41,7 +41,7 @@ class V1AttachedVolume(object):
         """
         self.swagger_types = {
             'name': 'str',
-            'device_path': 'str'
+            'devicePath': 'str'
         }
 
         self.attribute_map = {

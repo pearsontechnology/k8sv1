@@ -40,8 +40,8 @@ class UnversionedListMeta(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'self_link': 'str',
-            'resource_version': 'str'
+            'selfLink': 'str',
+            'resourceVersion': 'str'
         }
 
         self.attribute_map = {

@@ -44,10 +44,10 @@ class V1PodStatus(object):
             'conditions': 'list[V1PodCondition]',
             'message': 'str',
             'reason': 'str',
-            'host_ip': 'str',
-            'pod_ip': 'str',
-            'start_time': 'datetime',
-            'container_statuses': 'list[V1ContainerStatus]'
+            'hostIP': 'str',
+            'podIP': 'str',
+            'startTime': 'datetime',
+            'containerStatuses': 'list[V1ContainerStatus]'
         }
 
         self.attribute_map = {

@@ -41,7 +41,7 @@ class UnversionedStatus(object):
         """
         self.swagger_types = {
             'kind': 'str',
-            'api_version': 'str',
+            'apiVersion': 'str',
             'metadata': 'UnversionedListMeta',
             'status': 'str',
             'message': 'str',

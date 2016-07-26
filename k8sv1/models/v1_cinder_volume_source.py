@@ -40,9 +40,9 @@ class V1CinderVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'volume_id': 'str',
-            'fs_type': 'str',
-            'read_only': 'bool'
+            'volumeID': 'str',
+            'fsType': 'str',
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

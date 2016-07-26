@@ -40,10 +40,10 @@ class V1FCVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'target_ww_ns': 'list[str]',
+            'targetWWNs': 'list[str]',
             'lun': 'int',
-            'fs_type': 'str',
-            'read_only': 'bool'
+            'fsType': 'str',
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

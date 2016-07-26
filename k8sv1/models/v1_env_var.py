@@ -42,7 +42,7 @@ class V1EnvVar(object):
         self.swagger_types = {
             'name': 'str',
             'value': 'str',
-            'value_from': 'V1EnvVarSource'
+            'valueFrom': 'V1EnvVarSource'
         }
 
         self.attribute_map = {

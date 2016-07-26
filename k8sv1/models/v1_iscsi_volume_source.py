@@ -40,12 +40,12 @@ class V1ISCSIVolumeSource(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'target_portal': 'str',
+            'targetPortal': 'str',
             'iqn': 'str',
             'lun': 'int',
-            'iscsi_interface': 'str',
-            'fs_type': 'str',
-            'read_only': 'bool'
+            'iscsiInterface': 'str',
+            'fsType': 'str',
+            'readOnly': 'bool'
         }
 
         self.attribute_map = {

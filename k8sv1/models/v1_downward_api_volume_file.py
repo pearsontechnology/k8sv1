@@ -41,8 +41,8 @@ class V1DownwardAPIVolumeFile(object):
         """
         self.swagger_types = {
             'path': 'str',
-            'field_ref': 'V1ObjectFieldSelector',
-            'resource_field_ref': 'V1ResourceFieldSelector'
+            'fieldRef': 'V1ObjectFieldSelector',
+            'resourceFieldRef': 'V1ResourceFieldSelector'
         }
 
         self.attribute_map = {

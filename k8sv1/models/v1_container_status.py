@@ -42,12 +42,12 @@ class V1ContainerStatus(object):
         self.swagger_types = {
             'name': 'str',
             'state': 'V1ContainerState',
-            'last_state': 'V1ContainerState',
+            'lastState': 'V1ContainerState',
             'ready': 'bool',
-            'restart_count': 'int',
+            'restartCount': 'int',
             'image': 'str',
-            'image_id': 'str',
-            'container_id': 'str'
+            'imageID': 'str',
+            'containerID': 'str'
         }
 
         self.attribute_map = {
