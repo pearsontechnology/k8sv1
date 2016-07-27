@@ -1,4 +1,5 @@
 {
   "packageName" : "k8sv1",
-  "packageVersion" : "0.0.4"
+  "packageVersion" : "0.0.5",
+  "variableNamingConvention" : "camel"
 }
