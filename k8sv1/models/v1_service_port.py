@@ -44,7 +44,7 @@ class V1ServicePort(object):
             'name': 'str',
             'protocol': 'str',
             'port': 'int',
-            'targetPort': 'str',
+            'targetPort': 'int',
             'nodePort': 'int'
         }
 
@@ -138,7 +138,7 @@ class V1ServicePort(object):
         Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of the 'port' field is used (an identity map). This field is ignored for services with clusterIP=None, and should be omitted or set equal to the 'port' field. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service
 
         :return: The targetPort of this V1ServicePort.
-        :rtype: str
+        :rtype: int
         """
         return self._targetPort
 
@@ -149,7 +149,7 @@ class V1ServicePort(object):
         Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of the 'port' field is used (an identity map). This field is ignored for services with clusterIP=None, and should be omitted or set equal to the 'port' field. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service
 
         :param targetPort: The targetPort of this V1ServicePort.
-        :type: str
+        :type: int
         """
 
         self._targetPort = targetPort
