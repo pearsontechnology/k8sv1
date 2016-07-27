@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Type** | **str** | Type of condition for a component. Valid value: \&quot;Healthy\&quot; | 
-**Status** | **str** | Status of the condition for a component. Valid values for \&quot;Healthy\&quot;: \&quot;True\&quot;, \&quot;False\&quot;, or \&quot;Unknown\&quot;. | 
-**Message** | **str** | Message about the condition for a component. For example, information about a health check. | [optional] 
-**Error** | **str** | Condition error code for a component. For example, a health check error code. | [optional] 
+**type** | **str** | Type of condition for a component. Valid value: \&quot;Healthy\&quot; | 
+**status** | **str** | Status of the condition for a component. Valid values for \&quot;Healthy\&quot;: \&quot;True\&quot;, \&quot;False\&quot;, or \&quot;Unknown\&quot;. | 
+**message** | **str** | Message about the condition for a component. For example, information about a health check. | [optional] 
+**error** | **str** | Condition error code for a component. For example, a health check error code. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

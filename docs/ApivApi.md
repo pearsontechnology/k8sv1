@@ -277,7 +277,7 @@ Method | HTTP request | Description
 
 
 # **connect_delete_namespaced_pod_proxy**
-> str connect_delete_namespaced_pod_proxy(Namespace, Name, Path=Path)
+> str connect_delete_namespaced_pod_proxy(namespace, name, path=path)
 
 connect DELETE requests to proxy of Pod
 
@@ -290,13 +290,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect DELETE requests to proxy of Pod
-    api_response = api_instance.connect_delete_namespaced_pod_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_delete_namespaced_pod_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_delete_namespaced_pod_proxy: %s\n" % e
@@ -306,9 +306,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -326,7 +326,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_delete_namespaced_pod_proxy_0**
-> str connect_delete_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_delete_namespaced_pod_proxy_0(namespace, name, path2, path=path)
 
 connect DELETE requests to proxy of Pod
 
@@ -339,14 +339,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect DELETE requests to proxy of Pod
-    api_response = api_instance.connect_delete_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_delete_namespaced_pod_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_delete_namespaced_pod_proxy_0: %s\n" % e
@@ -356,10 +356,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -377,7 +377,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_delete_namespaced_service_proxy**
-> str connect_delete_namespaced_service_proxy(Namespace, Name, Path=Path)
+> str connect_delete_namespaced_service_proxy(namespace, name, path=path)
 
 connect DELETE requests to proxy of Service
 
@@ -390,13 +390,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect DELETE requests to proxy of Service
-    api_response = api_instance.connect_delete_namespaced_service_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_delete_namespaced_service_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_delete_namespaced_service_proxy: %s\n" % e
@@ -406,9 +406,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -426,7 +426,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_delete_namespaced_service_proxy_0**
-> str connect_delete_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_delete_namespaced_service_proxy_0(namespace, name, path2, path=path)
 
 connect DELETE requests to proxy of Service
 
@@ -439,14 +439,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect DELETE requests to proxy of Service
-    api_response = api_instance.connect_delete_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_delete_namespaced_service_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_delete_namespaced_service_proxy_0: %s\n" % e
@@ -456,10 +456,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -477,7 +477,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_delete_node_proxy**
-> str connect_delete_node_proxy(Name, Path=Path)
+> str connect_delete_node_proxy(name, path=path)
 
 connect DELETE requests to proxy of Node
 
@@ -490,12 +490,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect DELETE requests to proxy of Node
-    api_response = api_instance.connect_delete_node_proxy(Name, Path=Path)
+    api_response = api_instance.connect_delete_node_proxy(name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_delete_node_proxy: %s\n" % e
@@ -505,8 +505,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -524,7 +524,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_delete_node_proxy_0**
-> str connect_delete_node_proxy_0(Name, Path2, Path=Path)
+> str connect_delete_node_proxy_0(name, path2, path=path)
 
 connect DELETE requests to proxy of Node
 
@@ -537,13 +537,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect DELETE requests to proxy of Node
-    api_response = api_instance.connect_delete_node_proxy_0(Name, Path2, Path=Path)
+    api_response = api_instance.connect_delete_node_proxy_0(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_delete_node_proxy_0: %s\n" % e
@@ -553,9 +553,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -573,7 +573,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_namespaced_pod_attach**
-> str connect_get_namespaced_pod_attach(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container)
+> str connect_get_namespaced_pod_attach(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container)
 
 connect GET requests to attach of Pod
 
@@ -586,17 +586,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Stdin = true # bool | Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. (optional)
-Stdout = true # bool | Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. (optional)
-Stderr = true # bool | Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. (optional)
-Tty = true # bool | TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. (optional)
-Container = 'Container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+stdin = true # bool | Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. (optional)
+stdout = true # bool | Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. (optional)
+stderr = true # bool | Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. (optional)
+tty = true # bool | TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. (optional)
+container = 'container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
 
 try: 
     # connect GET requests to attach of Pod
-    api_response = api_instance.connect_get_namespaced_pod_attach(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container)
+    api_response = api_instance.connect_get_namespaced_pod_attach(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_namespaced_pod_attach: %s\n" % e
@@ -606,13 +606,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Stdin** | **bool**| Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. | [optional] 
- **Stdout** | **bool**| Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. | [optional] 
- **Stderr** | **bool**| Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. | [optional] 
- **Tty** | **bool**| TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. | [optional] 
- **Container** | **str**| The container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **stdin** | **bool**| Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. | [optional] 
+ **stdout** | **bool**| Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. | [optional] 
+ **stderr** | **bool**| Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. | [optional] 
+ **tty** | **bool**| TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. | [optional] 
+ **container** | **str**| The container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
 
 ### Return type
 
@@ -630,7 +630,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_namespaced_pod_exec**
-> str connect_get_namespaced_pod_exec(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container, Command=Command)
+> str connect_get_namespaced_pod_exec(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container, command=command)
 
 connect GET requests to exec of Pod
 
@@ -643,18 +643,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Stdin = true # bool | Redirect the standard input stream of the pod for this call. Defaults to false. (optional)
-Stdout = true # bool | Redirect the standard output stream of the pod for this call. Defaults to true. (optional)
-Stderr = true # bool | Redirect the standard error stream of the pod for this call. Defaults to true. (optional)
-Tty = true # bool | TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. (optional)
-Container = 'Container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
-Command = 'Command_example' # str | Command is the remote command to execute. argv array. Not executed within a shell. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+stdin = true # bool | Redirect the standard input stream of the pod for this call. Defaults to false. (optional)
+stdout = true # bool | Redirect the standard output stream of the pod for this call. Defaults to true. (optional)
+stderr = true # bool | Redirect the standard error stream of the pod for this call. Defaults to true. (optional)
+tty = true # bool | TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. (optional)
+container = 'container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
+command = 'command_example' # str | Command is the remote command to execute. argv array. Not executed within a shell. (optional)
 
 try: 
     # connect GET requests to exec of Pod
-    api_response = api_instance.connect_get_namespaced_pod_exec(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container, Command=Command)
+    api_response = api_instance.connect_get_namespaced_pod_exec(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container, command=command)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_namespaced_pod_exec: %s\n" % e
@@ -664,14 +664,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Stdin** | **bool**| Redirect the standard input stream of the pod for this call. Defaults to false. | [optional] 
- **Stdout** | **bool**| Redirect the standard output stream of the pod for this call. Defaults to true. | [optional] 
- **Stderr** | **bool**| Redirect the standard error stream of the pod for this call. Defaults to true. | [optional] 
- **Tty** | **bool**| TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. | [optional] 
- **Container** | **str**| Container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
- **Command** | **str**| Command is the remote command to execute. argv array. Not executed within a shell. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **stdin** | **bool**| Redirect the standard input stream of the pod for this call. Defaults to false. | [optional] 
+ **stdout** | **bool**| Redirect the standard output stream of the pod for this call. Defaults to true. | [optional] 
+ **stderr** | **bool**| Redirect the standard error stream of the pod for this call. Defaults to true. | [optional] 
+ **tty** | **bool**| TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. | [optional] 
+ **container** | **str**| Container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
+ **command** | **str**| Command is the remote command to execute. argv array. Not executed within a shell. | [optional] 
 
 ### Return type
 
@@ -689,7 +689,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_namespaced_pod_portforward**
-> str connect_get_namespaced_pod_portforward(Namespace, Name)
+> str connect_get_namespaced_pod_portforward(namespace, name)
 
 connect GET requests to portforward of Pod
 
@@ -702,12 +702,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # connect GET requests to portforward of Pod
-    api_response = api_instance.connect_get_namespaced_pod_portforward(Namespace, Name)
+    api_response = api_instance.connect_get_namespaced_pod_portforward(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_namespaced_pod_portforward: %s\n" % e
@@ -717,8 +717,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -736,7 +736,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_namespaced_pod_proxy**
-> str connect_get_namespaced_pod_proxy(Namespace, Name, Path=Path)
+> str connect_get_namespaced_pod_proxy(namespace, name, path=path)
 
 connect GET requests to proxy of Pod
 
@@ -749,13 +749,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect GET requests to proxy of Pod
-    api_response = api_instance.connect_get_namespaced_pod_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_get_namespaced_pod_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_namespaced_pod_proxy: %s\n" % e
@@ -765,9 +765,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -785,7 +785,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_namespaced_pod_proxy_0**
-> str connect_get_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_get_namespaced_pod_proxy_0(namespace, name, path2, path=path)
 
 connect GET requests to proxy of Pod
 
@@ -798,14 +798,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect GET requests to proxy of Pod
-    api_response = api_instance.connect_get_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_get_namespaced_pod_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_namespaced_pod_proxy_0: %s\n" % e
@@ -815,10 +815,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -836,7 +836,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_namespaced_service_proxy**
-> str connect_get_namespaced_service_proxy(Namespace, Name, Path=Path)
+> str connect_get_namespaced_service_proxy(namespace, name, path=path)
 
 connect GET requests to proxy of Service
 
@@ -849,13 +849,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect GET requests to proxy of Service
-    api_response = api_instance.connect_get_namespaced_service_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_get_namespaced_service_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_namespaced_service_proxy: %s\n" % e
@@ -865,9 +865,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -885,7 +885,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_namespaced_service_proxy_0**
-> str connect_get_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_get_namespaced_service_proxy_0(namespace, name, path2, path=path)
 
 connect GET requests to proxy of Service
 
@@ -898,14 +898,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect GET requests to proxy of Service
-    api_response = api_instance.connect_get_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_get_namespaced_service_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_namespaced_service_proxy_0: %s\n" % e
@@ -915,10 +915,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -936,7 +936,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_node_proxy**
-> str connect_get_node_proxy(Name, Path=Path)
+> str connect_get_node_proxy(name, path=path)
 
 connect GET requests to proxy of Node
 
@@ -949,12 +949,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect GET requests to proxy of Node
-    api_response = api_instance.connect_get_node_proxy(Name, Path=Path)
+    api_response = api_instance.connect_get_node_proxy(name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_node_proxy: %s\n" % e
@@ -964,8 +964,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -983,7 +983,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_get_node_proxy_0**
-> str connect_get_node_proxy_0(Name, Path2, Path=Path)
+> str connect_get_node_proxy_0(name, path2, path=path)
 
 connect GET requests to proxy of Node
 
@@ -996,13 +996,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect GET requests to proxy of Node
-    api_response = api_instance.connect_get_node_proxy_0(Name, Path2, Path=Path)
+    api_response = api_instance.connect_get_node_proxy_0(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_get_node_proxy_0: %s\n" % e
@@ -1012,9 +1012,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -1032,7 +1032,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_head_namespaced_pod_proxy**
-> str connect_head_namespaced_pod_proxy(Namespace, Name, Path=Path)
+> str connect_head_namespaced_pod_proxy(namespace, name, path=path)
 
 connect HEAD requests to proxy of Pod
 
@@ -1045,13 +1045,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect HEAD requests to proxy of Pod
-    api_response = api_instance.connect_head_namespaced_pod_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_head_namespaced_pod_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_head_namespaced_pod_proxy: %s\n" % e
@@ -1061,9 +1061,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -1081,7 +1081,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_head_namespaced_pod_proxy_0**
-> str connect_head_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_head_namespaced_pod_proxy_0(namespace, name, path2, path=path)
 
 connect HEAD requests to proxy of Pod
 
@@ -1094,14 +1094,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect HEAD requests to proxy of Pod
-    api_response = api_instance.connect_head_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_head_namespaced_pod_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_head_namespaced_pod_proxy_0: %s\n" % e
@@ -1111,10 +1111,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -1132,7 +1132,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_head_namespaced_service_proxy**
-> str connect_head_namespaced_service_proxy(Namespace, Name, Path=Path)
+> str connect_head_namespaced_service_proxy(namespace, name, path=path)
 
 connect HEAD requests to proxy of Service
 
@@ -1145,13 +1145,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect HEAD requests to proxy of Service
-    api_response = api_instance.connect_head_namespaced_service_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_head_namespaced_service_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_head_namespaced_service_proxy: %s\n" % e
@@ -1161,9 +1161,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -1181,7 +1181,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_head_namespaced_service_proxy_0**
-> str connect_head_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_head_namespaced_service_proxy_0(namespace, name, path2, path=path)
 
 connect HEAD requests to proxy of Service
 
@@ -1194,14 +1194,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect HEAD requests to proxy of Service
-    api_response = api_instance.connect_head_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_head_namespaced_service_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_head_namespaced_service_proxy_0: %s\n" % e
@@ -1211,10 +1211,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -1232,7 +1232,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_head_node_proxy**
-> str connect_head_node_proxy(Name, Path=Path)
+> str connect_head_node_proxy(name, path=path)
 
 connect HEAD requests to proxy of Node
 
@@ -1245,12 +1245,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect HEAD requests to proxy of Node
-    api_response = api_instance.connect_head_node_proxy(Name, Path=Path)
+    api_response = api_instance.connect_head_node_proxy(name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_head_node_proxy: %s\n" % e
@@ -1260,8 +1260,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -1279,7 +1279,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_head_node_proxy_0**
-> str connect_head_node_proxy_0(Name, Path2, Path=Path)
+> str connect_head_node_proxy_0(name, path2, path=path)
 
 connect HEAD requests to proxy of Node
 
@@ -1292,13 +1292,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect HEAD requests to proxy of Node
-    api_response = api_instance.connect_head_node_proxy_0(Name, Path2, Path=Path)
+    api_response = api_instance.connect_head_node_proxy_0(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_head_node_proxy_0: %s\n" % e
@@ -1308,9 +1308,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -1328,7 +1328,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_options_namespaced_pod_proxy**
-> str connect_options_namespaced_pod_proxy(Namespace, Name, Path=Path)
+> str connect_options_namespaced_pod_proxy(namespace, name, path=path)
 
 connect OPTIONS requests to proxy of Pod
 
@@ -1341,13 +1341,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect OPTIONS requests to proxy of Pod
-    api_response = api_instance.connect_options_namespaced_pod_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_options_namespaced_pod_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_options_namespaced_pod_proxy: %s\n" % e
@@ -1357,9 +1357,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -1377,7 +1377,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_options_namespaced_pod_proxy_0**
-> str connect_options_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_options_namespaced_pod_proxy_0(namespace, name, path2, path=path)
 
 connect OPTIONS requests to proxy of Pod
 
@@ -1390,14 +1390,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect OPTIONS requests to proxy of Pod
-    api_response = api_instance.connect_options_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_options_namespaced_pod_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_options_namespaced_pod_proxy_0: %s\n" % e
@@ -1407,10 +1407,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -1428,7 +1428,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_options_namespaced_service_proxy**
-> str connect_options_namespaced_service_proxy(Namespace, Name, Path=Path)
+> str connect_options_namespaced_service_proxy(namespace, name, path=path)
 
 connect OPTIONS requests to proxy of Service
 
@@ -1441,13 +1441,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect OPTIONS requests to proxy of Service
-    api_response = api_instance.connect_options_namespaced_service_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_options_namespaced_service_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_options_namespaced_service_proxy: %s\n" % e
@@ -1457,9 +1457,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -1477,7 +1477,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_options_namespaced_service_proxy_0**
-> str connect_options_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_options_namespaced_service_proxy_0(namespace, name, path2, path=path)
 
 connect OPTIONS requests to proxy of Service
 
@@ -1490,14 +1490,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect OPTIONS requests to proxy of Service
-    api_response = api_instance.connect_options_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_options_namespaced_service_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_options_namespaced_service_proxy_0: %s\n" % e
@@ -1507,10 +1507,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -1528,7 +1528,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_options_node_proxy**
-> str connect_options_node_proxy(Name, Path=Path)
+> str connect_options_node_proxy(name, path=path)
 
 connect OPTIONS requests to proxy of Node
 
@@ -1541,12 +1541,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect OPTIONS requests to proxy of Node
-    api_response = api_instance.connect_options_node_proxy(Name, Path=Path)
+    api_response = api_instance.connect_options_node_proxy(name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_options_node_proxy: %s\n" % e
@@ -1556,8 +1556,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -1575,7 +1575,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_options_node_proxy_0**
-> str connect_options_node_proxy_0(Name, Path2, Path=Path)
+> str connect_options_node_proxy_0(name, path2, path=path)
 
 connect OPTIONS requests to proxy of Node
 
@@ -1588,13 +1588,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect OPTIONS requests to proxy of Node
-    api_response = api_instance.connect_options_node_proxy_0(Name, Path2, Path=Path)
+    api_response = api_instance.connect_options_node_proxy_0(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_options_node_proxy_0: %s\n" % e
@@ -1604,9 +1604,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -1624,7 +1624,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_namespaced_pod_attach**
-> str connect_post_namespaced_pod_attach(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container)
+> str connect_post_namespaced_pod_attach(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container)
 
 connect POST requests to attach of Pod
 
@@ -1637,17 +1637,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Stdin = true # bool | Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. (optional)
-Stdout = true # bool | Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. (optional)
-Stderr = true # bool | Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. (optional)
-Tty = true # bool | TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. (optional)
-Container = 'Container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+stdin = true # bool | Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. (optional)
+stdout = true # bool | Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. (optional)
+stderr = true # bool | Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. (optional)
+tty = true # bool | TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. (optional)
+container = 'container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
 
 try: 
     # connect POST requests to attach of Pod
-    api_response = api_instance.connect_post_namespaced_pod_attach(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container)
+    api_response = api_instance.connect_post_namespaced_pod_attach(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_namespaced_pod_attach: %s\n" % e
@@ -1657,13 +1657,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Stdin** | **bool**| Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. | [optional] 
- **Stdout** | **bool**| Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. | [optional] 
- **Stderr** | **bool**| Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. | [optional] 
- **Tty** | **bool**| TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. | [optional] 
- **Container** | **str**| The container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **stdin** | **bool**| Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. | [optional] 
+ **stdout** | **bool**| Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. | [optional] 
+ **stderr** | **bool**| Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. | [optional] 
+ **tty** | **bool**| TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. | [optional] 
+ **container** | **str**| The container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
 
 ### Return type
 
@@ -1681,7 +1681,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_namespaced_pod_exec**
-> str connect_post_namespaced_pod_exec(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container, Command=Command)
+> str connect_post_namespaced_pod_exec(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container, command=command)
 
 connect POST requests to exec of Pod
 
@@ -1694,18 +1694,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Stdin = true # bool | Redirect the standard input stream of the pod for this call. Defaults to false. (optional)
-Stdout = true # bool | Redirect the standard output stream of the pod for this call. Defaults to true. (optional)
-Stderr = true # bool | Redirect the standard error stream of the pod for this call. Defaults to true. (optional)
-Tty = true # bool | TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. (optional)
-Container = 'Container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
-Command = 'Command_example' # str | Command is the remote command to execute. argv array. Not executed within a shell. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+stdin = true # bool | Redirect the standard input stream of the pod for this call. Defaults to false. (optional)
+stdout = true # bool | Redirect the standard output stream of the pod for this call. Defaults to true. (optional)
+stderr = true # bool | Redirect the standard error stream of the pod for this call. Defaults to true. (optional)
+tty = true # bool | TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. (optional)
+container = 'container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
+command = 'command_example' # str | Command is the remote command to execute. argv array. Not executed within a shell. (optional)
 
 try: 
     # connect POST requests to exec of Pod
-    api_response = api_instance.connect_post_namespaced_pod_exec(Namespace, Name, Stdin=Stdin, Stdout=Stdout, Stderr=Stderr, Tty=Tty, Container=Container, Command=Command)
+    api_response = api_instance.connect_post_namespaced_pod_exec(namespace, name, stdin=stdin, stdout=stdout, stderr=stderr, tty=tty, container=container, command=command)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_namespaced_pod_exec: %s\n" % e
@@ -1715,14 +1715,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Stdin** | **bool**| Redirect the standard input stream of the pod for this call. Defaults to false. | [optional] 
- **Stdout** | **bool**| Redirect the standard output stream of the pod for this call. Defaults to true. | [optional] 
- **Stderr** | **bool**| Redirect the standard error stream of the pod for this call. Defaults to true. | [optional] 
- **Tty** | **bool**| TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. | [optional] 
- **Container** | **str**| Container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
- **Command** | **str**| Command is the remote command to execute. argv array. Not executed within a shell. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **stdin** | **bool**| Redirect the standard input stream of the pod for this call. Defaults to false. | [optional] 
+ **stdout** | **bool**| Redirect the standard output stream of the pod for this call. Defaults to true. | [optional] 
+ **stderr** | **bool**| Redirect the standard error stream of the pod for this call. Defaults to true. | [optional] 
+ **tty** | **bool**| TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. | [optional] 
+ **container** | **str**| Container in which to execute the command. Defaults to only container if there is only one container in the pod. | [optional] 
+ **command** | **str**| Command is the remote command to execute. argv array. Not executed within a shell. | [optional] 
 
 ### Return type
 
@@ -1740,7 +1740,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_namespaced_pod_portforward**
-> str connect_post_namespaced_pod_portforward(Namespace, Name)
+> str connect_post_namespaced_pod_portforward(namespace, name)
 
 connect POST requests to portforward of Pod
 
@@ -1753,12 +1753,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # connect POST requests to portforward of Pod
-    api_response = api_instance.connect_post_namespaced_pod_portforward(Namespace, Name)
+    api_response = api_instance.connect_post_namespaced_pod_portforward(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_namespaced_pod_portforward: %s\n" % e
@@ -1768,8 +1768,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -1787,7 +1787,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_namespaced_pod_proxy**
-> str connect_post_namespaced_pod_proxy(Namespace, Name, Path=Path)
+> str connect_post_namespaced_pod_proxy(namespace, name, path=path)
 
 connect POST requests to proxy of Pod
 
@@ -1800,13 +1800,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect POST requests to proxy of Pod
-    api_response = api_instance.connect_post_namespaced_pod_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_post_namespaced_pod_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_namespaced_pod_proxy: %s\n" % e
@@ -1816,9 +1816,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -1836,7 +1836,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_namespaced_pod_proxy_0**
-> str connect_post_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_post_namespaced_pod_proxy_0(namespace, name, path2, path=path)
 
 connect POST requests to proxy of Pod
 
@@ -1849,14 +1849,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect POST requests to proxy of Pod
-    api_response = api_instance.connect_post_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_post_namespaced_pod_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_namespaced_pod_proxy_0: %s\n" % e
@@ -1866,10 +1866,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -1887,7 +1887,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_namespaced_service_proxy**
-> str connect_post_namespaced_service_proxy(Namespace, Name, Path=Path)
+> str connect_post_namespaced_service_proxy(namespace, name, path=path)
 
 connect POST requests to proxy of Service
 
@@ -1900,13 +1900,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect POST requests to proxy of Service
-    api_response = api_instance.connect_post_namespaced_service_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_post_namespaced_service_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_namespaced_service_proxy: %s\n" % e
@@ -1916,9 +1916,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -1936,7 +1936,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_namespaced_service_proxy_0**
-> str connect_post_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_post_namespaced_service_proxy_0(namespace, name, path2, path=path)
 
 connect POST requests to proxy of Service
 
@@ -1949,14 +1949,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect POST requests to proxy of Service
-    api_response = api_instance.connect_post_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_post_namespaced_service_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_namespaced_service_proxy_0: %s\n" % e
@@ -1966,10 +1966,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -1987,7 +1987,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_node_proxy**
-> str connect_post_node_proxy(Name, Path=Path)
+> str connect_post_node_proxy(name, path=path)
 
 connect POST requests to proxy of Node
 
@@ -2000,12 +2000,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect POST requests to proxy of Node
-    api_response = api_instance.connect_post_node_proxy(Name, Path=Path)
+    api_response = api_instance.connect_post_node_proxy(name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_node_proxy: %s\n" % e
@@ -2015,8 +2015,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -2034,7 +2034,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_post_node_proxy_0**
-> str connect_post_node_proxy_0(Name, Path2, Path=Path)
+> str connect_post_node_proxy_0(name, path2, path=path)
 
 connect POST requests to proxy of Node
 
@@ -2047,13 +2047,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect POST requests to proxy of Node
-    api_response = api_instance.connect_post_node_proxy_0(Name, Path2, Path=Path)
+    api_response = api_instance.connect_post_node_proxy_0(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_post_node_proxy_0: %s\n" % e
@@ -2063,9 +2063,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -2083,7 +2083,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_put_namespaced_pod_proxy**
-> str connect_put_namespaced_pod_proxy(Namespace, Name, Path=Path)
+> str connect_put_namespaced_pod_proxy(namespace, name, path=path)
 
 connect PUT requests to proxy of Pod
 
@@ -2096,13 +2096,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect PUT requests to proxy of Pod
-    api_response = api_instance.connect_put_namespaced_pod_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_put_namespaced_pod_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_put_namespaced_pod_proxy: %s\n" % e
@@ -2112,9 +2112,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -2132,7 +2132,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_put_namespaced_pod_proxy_0**
-> str connect_put_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_put_namespaced_pod_proxy_0(namespace, name, path2, path=path)
 
 connect PUT requests to proxy of Pod
 
@@ -2145,14 +2145,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
 
 try: 
     # connect PUT requests to proxy of Pod
-    api_response = api_instance.connect_put_namespaced_pod_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_put_namespaced_pod_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_put_namespaced_pod_proxy_0: %s\n" % e
@@ -2162,10 +2162,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to pod. | [optional] 
 
 ### Return type
 
@@ -2183,7 +2183,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_put_namespaced_service_proxy**
-> str connect_put_namespaced_service_proxy(Namespace, Name, Path=Path)
+> str connect_put_namespaced_service_proxy(namespace, name, path=path)
 
 connect PUT requests to proxy of Service
 
@@ -2196,13 +2196,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect PUT requests to proxy of Service
-    api_response = api_instance.connect_put_namespaced_service_proxy(Namespace, Name, Path=Path)
+    api_response = api_instance.connect_put_namespaced_service_proxy(namespace, name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_put_namespaced_service_proxy: %s\n" % e
@@ -2212,9 +2212,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -2232,7 +2232,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_put_namespaced_service_proxy_0**
-> str connect_put_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+> str connect_put_namespaced_service_proxy_0(namespace, name, path2, path=path)
 
 connect PUT requests to proxy of Service
 
@@ -2245,14 +2245,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy. (optional)
 
 try: 
     # connect PUT requests to proxy of Service
-    api_response = api_instance.connect_put_namespaced_service_proxy_0(Namespace, Name, Path2, Path=Path)
+    api_response = api_instance.connect_put_namespaced_service_proxy_0(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_put_namespaced_service_proxy_0: %s\n" % e
@@ -2262,10 +2262,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q&#x3D;user:kimchy. Path is _search?q&#x3D;user:kimchy. | [optional] 
 
 ### Return type
 
@@ -2283,7 +2283,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_put_node_proxy**
-> str connect_put_node_proxy(Name, Path=Path)
+> str connect_put_node_proxy(name, path=path)
 
 connect PUT requests to proxy of Node
 
@@ -2296,12 +2296,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect PUT requests to proxy of Node
-    api_response = api_instance.connect_put_node_proxy(Name, Path=Path)
+    api_response = api_instance.connect_put_node_proxy(name, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_put_node_proxy: %s\n" % e
@@ -2311,8 +2311,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -2330,7 +2330,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **connect_put_node_proxy_0**
-> str connect_put_node_proxy_0(Name, Path2, Path=Path)
+> str connect_put_node_proxy_0(name, path2, path=path)
 
 connect PUT requests to proxy of Node
 
@@ -2343,13 +2343,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path2 = 'Path_example' # str | path to the resource
-Path = 'Path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
+name = 'name_example' # str | name of the Node
+path2 = 'path_example' # str | path to the resource
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to node. (optional)
 
 try: 
     # connect PUT requests to proxy of Node
-    api_response = api_instance.connect_put_node_proxy_0(Name, Path2, Path=Path)
+    api_response = api_instance.connect_put_node_proxy_0(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->connect_put_node_proxy_0: %s\n" % e
@@ -2359,9 +2359,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path2** | **str**| path to the resource | 
- **Path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
+ **name** | **str**| name of the Node | 
+ **path2** | **str**| path to the resource | 
+ **path** | **str**| Path is the URL path to use for the current proxy request to node. | [optional] 
 
 ### Return type
 
@@ -2379,7 +2379,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespace**
-> V1Namespace create_namespace(Body, Pretty=Pretty)
+> V1Namespace create_namespace(body, pretty=pretty)
 
 create a Namespace
 
@@ -2392,12 +2392,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Namespace() # V1Namespace | 
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Namespace() # V1Namespace | 
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Namespace
-    api_response = api_instance.create_namespace(Body, Pretty=Pretty)
+    api_response = api_instance.create_namespace(body, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespace: %s\n" % e
@@ -2407,8 +2407,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Namespace**](V1Namespace.md)|  | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Namespace**](V1Namespace.md)|  | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2426,7 +2426,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_binding**
-> V1Binding create_namespaced_binding(Body, Namespace, Pretty=Pretty)
+> V1Binding create_namespaced_binding(body, namespace, pretty=pretty)
 
 create a Binding
 
@@ -2439,13 +2439,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Binding() # V1Binding | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Binding() # V1Binding | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Binding
-    api_response = api_instance.create_namespaced_binding(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_binding(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_binding: %s\n" % e
@@ -2455,9 +2455,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Binding**](V1Binding.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Binding**](V1Binding.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2475,7 +2475,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_binding_binding**
-> V1Binding create_namespaced_binding_binding(Body, Namespace, Name, Pretty=Pretty)
+> V1Binding create_namespaced_binding_binding(body, namespace, name, pretty=pretty)
 
 create binding of a Binding
 
@@ -2488,14 +2488,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Binding() # V1Binding | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Binding
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Binding() # V1Binding | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Binding
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create binding of a Binding
-    api_response = api_instance.create_namespaced_binding_binding(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_binding_binding(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_binding_binding: %s\n" % e
@@ -2505,10 +2505,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Binding**](V1Binding.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Binding | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Binding**](V1Binding.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Binding | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2526,7 +2526,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_config_map**
-> V1ConfigMap create_namespaced_config_map(Body, Namespace, Pretty=Pretty)
+> V1ConfigMap create_namespaced_config_map(body, namespace, pretty=pretty)
 
 create a ConfigMap
 
@@ -2539,13 +2539,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ConfigMap() # V1ConfigMap | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ConfigMap() # V1ConfigMap | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a ConfigMap
-    api_response = api_instance.create_namespaced_config_map(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_config_map(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_config_map: %s\n" % e
@@ -2555,9 +2555,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ConfigMap**](V1ConfigMap.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ConfigMap**](V1ConfigMap.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2575,7 +2575,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_endpoints**
-> V1Endpoints create_namespaced_endpoints(Body, Namespace, Pretty=Pretty)
+> V1Endpoints create_namespaced_endpoints(body, namespace, pretty=pretty)
 
 create a Endpoints
 
@@ -2588,13 +2588,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Endpoints() # V1Endpoints | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Endpoints() # V1Endpoints | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Endpoints
-    api_response = api_instance.create_namespaced_endpoints(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_endpoints(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_endpoints: %s\n" % e
@@ -2604,9 +2604,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Endpoints**](V1Endpoints.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Endpoints**](V1Endpoints.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2624,7 +2624,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_event**
-> V1Event create_namespaced_event(Body, Namespace, Pretty=Pretty)
+> V1Event create_namespaced_event(body, namespace, pretty=pretty)
 
 create a Event
 
@@ -2637,13 +2637,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Event() # V1Event | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Event() # V1Event | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Event
-    api_response = api_instance.create_namespaced_event(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_event(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_event: %s\n" % e
@@ -2653,9 +2653,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Event**](V1Event.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Event**](V1Event.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2673,7 +2673,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_limit_range**
-> V1LimitRange create_namespaced_limit_range(Body, Namespace, Pretty=Pretty)
+> V1LimitRange create_namespaced_limit_range(body, namespace, pretty=pretty)
 
 create a LimitRange
 
@@ -2686,13 +2686,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1LimitRange() # V1LimitRange | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1LimitRange() # V1LimitRange | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a LimitRange
-    api_response = api_instance.create_namespaced_limit_range(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_limit_range(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_limit_range: %s\n" % e
@@ -2702,9 +2702,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1LimitRange**](V1LimitRange.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1LimitRange**](V1LimitRange.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2722,7 +2722,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_persistent_volume_claim**
-> V1PersistentVolumeClaim create_namespaced_persistent_volume_claim(Body, Namespace, Pretty=Pretty)
+> V1PersistentVolumeClaim create_namespaced_persistent_volume_claim(body, namespace, pretty=pretty)
 
 create a PersistentVolumeClaim
 
@@ -2735,13 +2735,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PersistentVolumeClaim() # V1PersistentVolumeClaim | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PersistentVolumeClaim() # V1PersistentVolumeClaim | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a PersistentVolumeClaim
-    api_response = api_instance.create_namespaced_persistent_volume_claim(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_persistent_volume_claim(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_persistent_volume_claim: %s\n" % e
@@ -2751,9 +2751,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PersistentVolumeClaim**](V1PersistentVolumeClaim.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PersistentVolumeClaim**](V1PersistentVolumeClaim.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2771,7 +2771,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_pod**
-> V1Pod create_namespaced_pod(Body, Namespace, Pretty=Pretty)
+> V1Pod create_namespaced_pod(body, namespace, pretty=pretty)
 
 create a Pod
 
@@ -2784,13 +2784,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Pod() # V1Pod | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Pod() # V1Pod | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Pod
-    api_response = api_instance.create_namespaced_pod(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_pod(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_pod: %s\n" % e
@@ -2800,9 +2800,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Pod**](V1Pod.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Pod**](V1Pod.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2820,7 +2820,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_pod_template**
-> V1PodTemplate create_namespaced_pod_template(Body, Namespace, Pretty=Pretty)
+> V1PodTemplate create_namespaced_pod_template(body, namespace, pretty=pretty)
 
 create a PodTemplate
 
@@ -2833,13 +2833,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PodTemplate() # V1PodTemplate | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PodTemplate() # V1PodTemplate | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a PodTemplate
-    api_response = api_instance.create_namespaced_pod_template(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_pod_template(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_pod_template: %s\n" % e
@@ -2849,9 +2849,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PodTemplate**](V1PodTemplate.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PodTemplate**](V1PodTemplate.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2869,7 +2869,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_replication_controller**
-> V1ReplicationController create_namespaced_replication_controller(Body, Namespace, Pretty=Pretty)
+> V1ReplicationController create_namespaced_replication_controller(body, namespace, pretty=pretty)
 
 create a ReplicationController
 
@@ -2882,13 +2882,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ReplicationController() # V1ReplicationController | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ReplicationController() # V1ReplicationController | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a ReplicationController
-    api_response = api_instance.create_namespaced_replication_controller(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_replication_controller(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_replication_controller: %s\n" % e
@@ -2898,9 +2898,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ReplicationController**](V1ReplicationController.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ReplicationController**](V1ReplicationController.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2918,7 +2918,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_resource_quota**
-> V1ResourceQuota create_namespaced_resource_quota(Body, Namespace, Pretty=Pretty)
+> V1ResourceQuota create_namespaced_resource_quota(body, namespace, pretty=pretty)
 
 create a ResourceQuota
 
@@ -2931,13 +2931,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ResourceQuota() # V1ResourceQuota | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ResourceQuota() # V1ResourceQuota | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a ResourceQuota
-    api_response = api_instance.create_namespaced_resource_quota(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_resource_quota(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_resource_quota: %s\n" % e
@@ -2947,9 +2947,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ResourceQuota**](V1ResourceQuota.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ResourceQuota**](V1ResourceQuota.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -2967,7 +2967,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_secret**
-> V1Secret create_namespaced_secret(Body, Namespace, Pretty=Pretty)
+> V1Secret create_namespaced_secret(body, namespace, pretty=pretty)
 
 create a Secret
 
@@ -2980,13 +2980,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Secret() # V1Secret | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Secret() # V1Secret | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Secret
-    api_response = api_instance.create_namespaced_secret(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_secret(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_secret: %s\n" % e
@@ -2996,9 +2996,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Secret**](V1Secret.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Secret**](V1Secret.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3016,7 +3016,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_service**
-> V1Service create_namespaced_service(Body, Namespace, Pretty=Pretty)
+> V1Service create_namespaced_service(body, namespace, pretty=pretty)
 
 create a Service
 
@@ -3029,13 +3029,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Service() # V1Service | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Service() # V1Service | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Service
-    api_response = api_instance.create_namespaced_service(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_service(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_service: %s\n" % e
@@ -3045,9 +3045,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Service**](V1Service.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Service**](V1Service.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3065,7 +3065,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_namespaced_service_account**
-> V1ServiceAccount create_namespaced_service_account(Body, Namespace, Pretty=Pretty)
+> V1ServiceAccount create_namespaced_service_account(body, namespace, pretty=pretty)
 
 create a ServiceAccount
 
@@ -3078,13 +3078,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ServiceAccount() # V1ServiceAccount | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ServiceAccount() # V1ServiceAccount | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a ServiceAccount
-    api_response = api_instance.create_namespaced_service_account(Body, Namespace, Pretty=Pretty)
+    api_response = api_instance.create_namespaced_service_account(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_namespaced_service_account: %s\n" % e
@@ -3094,9 +3094,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ServiceAccount**](V1ServiceAccount.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ServiceAccount**](V1ServiceAccount.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3114,7 +3114,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_node**
-> V1Node create_node(Body, Pretty=Pretty)
+> V1Node create_node(body, pretty=pretty)
 
 create a Node
 
@@ -3127,12 +3127,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Node() # V1Node | 
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Node() # V1Node | 
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a Node
-    api_response = api_instance.create_node(Body, Pretty=Pretty)
+    api_response = api_instance.create_node(body, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_node: %s\n" % e
@@ -3142,8 +3142,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Node**](V1Node.md)|  | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Node**](V1Node.md)|  | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3161,7 +3161,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_persistent_volume**
-> V1PersistentVolume create_persistent_volume(Body, Pretty=Pretty)
+> V1PersistentVolume create_persistent_volume(body, pretty=pretty)
 
 create a PersistentVolume
 
@@ -3174,12 +3174,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PersistentVolume() # V1PersistentVolume | 
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PersistentVolume() # V1PersistentVolume | 
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # create a PersistentVolume
-    api_response = api_instance.create_persistent_volume(Body, Pretty=Pretty)
+    api_response = api_instance.create_persistent_volume(body, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->create_persistent_volume: %s\n" % e
@@ -3189,8 +3189,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PersistentVolume**](V1PersistentVolume.md)|  | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PersistentVolume**](V1PersistentVolume.md)|  | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3208,7 +3208,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespace**
-> UnversionedStatus delete_namespace(Body, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespace(body, name, pretty=pretty)
 
 delete a Namespace
 
@@ -3221,13 +3221,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a Namespace
-    api_response = api_instance.delete_namespace(Body, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespace(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespace: %s\n" % e
@@ -3237,9 +3237,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3257,7 +3257,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_config_map**
-> UnversionedStatus delete_namespaced_config_map(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_config_map(body, namespace, name, pretty=pretty)
 
 delete a ConfigMap
 
@@ -3270,14 +3270,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ConfigMap
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ConfigMap
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a ConfigMap
-    api_response = api_instance.delete_namespaced_config_map(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_config_map(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_config_map: %s\n" % e
@@ -3287,10 +3287,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ConfigMap | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ConfigMap | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3308,7 +3308,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_endpoints**
-> UnversionedStatus delete_namespaced_endpoints(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_endpoints(body, namespace, name, pretty=pretty)
 
 delete a Endpoints
 
@@ -3321,14 +3321,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Endpoints
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Endpoints
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a Endpoints
-    api_response = api_instance.delete_namespaced_endpoints(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_endpoints(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_endpoints: %s\n" % e
@@ -3338,10 +3338,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Endpoints | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Endpoints | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3359,7 +3359,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_event**
-> UnversionedStatus delete_namespaced_event(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_event(body, namespace, name, pretty=pretty)
 
 delete a Event
 
@@ -3372,14 +3372,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Event
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Event
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a Event
-    api_response = api_instance.delete_namespaced_event(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_event(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_event: %s\n" % e
@@ -3389,10 +3389,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Event | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Event | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3410,7 +3410,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_limit_range**
-> UnversionedStatus delete_namespaced_limit_range(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_limit_range(body, namespace, name, pretty=pretty)
 
 delete a LimitRange
 
@@ -3423,14 +3423,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the LimitRange
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the LimitRange
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a LimitRange
-    api_response = api_instance.delete_namespaced_limit_range(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_limit_range(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_limit_range: %s\n" % e
@@ -3440,10 +3440,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the LimitRange | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the LimitRange | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3461,7 +3461,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_persistent_volume_claim**
-> UnversionedStatus delete_namespaced_persistent_volume_claim(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_persistent_volume_claim(body, namespace, name, pretty=pretty)
 
 delete a PersistentVolumeClaim
 
@@ -3474,14 +3474,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a PersistentVolumeClaim
-    api_response = api_instance.delete_namespaced_persistent_volume_claim(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_persistent_volume_claim(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_persistent_volume_claim: %s\n" % e
@@ -3491,10 +3491,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3512,7 +3512,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_pod**
-> UnversionedStatus delete_namespaced_pod(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_pod(body, namespace, name, pretty=pretty)
 
 delete a Pod
 
@@ -3525,14 +3525,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a Pod
-    api_response = api_instance.delete_namespaced_pod(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_pod(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_pod: %s\n" % e
@@ -3542,10 +3542,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3563,7 +3563,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_pod_template**
-> UnversionedStatus delete_namespaced_pod_template(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_pod_template(body, namespace, name, pretty=pretty)
 
 delete a PodTemplate
 
@@ -3576,14 +3576,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PodTemplate
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PodTemplate
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a PodTemplate
-    api_response = api_instance.delete_namespaced_pod_template(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_pod_template(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_pod_template: %s\n" % e
@@ -3593,10 +3593,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PodTemplate | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PodTemplate | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3614,7 +3614,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_replication_controller**
-> UnversionedStatus delete_namespaced_replication_controller(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_replication_controller(body, namespace, name, pretty=pretty)
 
 delete a ReplicationController
 
@@ -3627,14 +3627,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a ReplicationController
-    api_response = api_instance.delete_namespaced_replication_controller(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_replication_controller(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_replication_controller: %s\n" % e
@@ -3644,10 +3644,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3665,7 +3665,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_resource_quota**
-> UnversionedStatus delete_namespaced_resource_quota(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_resource_quota(body, namespace, name, pretty=pretty)
 
 delete a ResourceQuota
 
@@ -3678,14 +3678,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a ResourceQuota
-    api_response = api_instance.delete_namespaced_resource_quota(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_resource_quota(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_resource_quota: %s\n" % e
@@ -3695,10 +3695,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3716,7 +3716,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_secret**
-> UnversionedStatus delete_namespaced_secret(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_secret(body, namespace, name, pretty=pretty)
 
 delete a Secret
 
@@ -3729,14 +3729,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Secret
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Secret
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a Secret
-    api_response = api_instance.delete_namespaced_secret(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_secret(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_secret: %s\n" % e
@@ -3746,10 +3746,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Secret | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Secret | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3767,7 +3767,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_service**
-> UnversionedStatus delete_namespaced_service(Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_service(namespace, name, pretty=pretty)
 
 delete a Service
 
@@ -3780,13 +3780,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a Service
-    api_response = api_instance.delete_namespaced_service(Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_service(namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_service: %s\n" % e
@@ -3796,9 +3796,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3816,7 +3816,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_namespaced_service_account**
-> UnversionedStatus delete_namespaced_service_account(Body, Namespace, Name, Pretty=Pretty)
+> UnversionedStatus delete_namespaced_service_account(body, namespace, name, pretty=pretty)
 
 delete a ServiceAccount
 
@@ -3829,14 +3829,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ServiceAccount
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ServiceAccount
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a ServiceAccount
-    api_response = api_instance.delete_namespaced_service_account(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.delete_namespaced_service_account(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_namespaced_service_account: %s\n" % e
@@ -3846,10 +3846,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ServiceAccount | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ServiceAccount | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3867,7 +3867,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_node**
-> UnversionedStatus delete_node(Body, Name, Pretty=Pretty)
+> UnversionedStatus delete_node(body, name, pretty=pretty)
 
 delete a Node
 
@@ -3880,13 +3880,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a Node
-    api_response = api_instance.delete_node(Body, Name, Pretty=Pretty)
+    api_response = api_instance.delete_node(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_node: %s\n" % e
@@ -3896,9 +3896,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3916,7 +3916,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_persistent_volume**
-> UnversionedStatus delete_persistent_volume(Body, Name, Pretty=Pretty)
+> UnversionedStatus delete_persistent_volume(body, name, pretty=pretty)
 
 delete a PersistentVolume
 
@@ -3929,13 +3929,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1DeleteOptions() # V1DeleteOptions | 
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # delete a PersistentVolume
-    api_response = api_instance.delete_persistent_volume(Body, Name, Pretty=Pretty)
+    api_response = api_instance.delete_persistent_volume(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->delete_persistent_volume: %s\n" % e
@@ -3945,9 +3945,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1DeleteOptions**](V1DeleteOptions.md)|  | 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -3965,7 +3965,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespace**
-> UnversionedStatus deletecollection_namespace(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespace(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of Namespace
 
@@ -3978,16 +3978,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of Namespace
-    api_response = api_instance.deletecollection_namespace(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespace(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespace: %s\n" % e
@@ -3997,12 +3997,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4020,7 +4020,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_config_map**
-> UnversionedStatus deletecollection_namespaced_config_map(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_config_map(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of ConfigMap
 
@@ -4033,17 +4033,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of ConfigMap
-    api_response = api_instance.deletecollection_namespaced_config_map(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_config_map(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_config_map: %s\n" % e
@@ -4053,13 +4053,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4077,7 +4077,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_endpoints**
-> UnversionedStatus deletecollection_namespaced_endpoints(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_endpoints(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of Endpoints
 
@@ -4090,17 +4090,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of Endpoints
-    api_response = api_instance.deletecollection_namespaced_endpoints(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_endpoints(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_endpoints: %s\n" % e
@@ -4110,13 +4110,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4134,7 +4134,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_event**
-> UnversionedStatus deletecollection_namespaced_event(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_event(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of Event
 
@@ -4147,17 +4147,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of Event
-    api_response = api_instance.deletecollection_namespaced_event(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_event(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_event: %s\n" % e
@@ -4167,13 +4167,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4191,7 +4191,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_limit_range**
-> UnversionedStatus deletecollection_namespaced_limit_range(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_limit_range(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of LimitRange
 
@@ -4204,17 +4204,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of LimitRange
-    api_response = api_instance.deletecollection_namespaced_limit_range(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_limit_range(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_limit_range: %s\n" % e
@@ -4224,13 +4224,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4248,7 +4248,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_persistent_volume_claim**
-> UnversionedStatus deletecollection_namespaced_persistent_volume_claim(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_persistent_volume_claim(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of PersistentVolumeClaim
 
@@ -4261,17 +4261,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of PersistentVolumeClaim
-    api_response = api_instance.deletecollection_namespaced_persistent_volume_claim(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_persistent_volume_claim(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_persistent_volume_claim: %s\n" % e
@@ -4281,13 +4281,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4305,7 +4305,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_pod**
-> UnversionedStatus deletecollection_namespaced_pod(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_pod(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of Pod
 
@@ -4318,17 +4318,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of Pod
-    api_response = api_instance.deletecollection_namespaced_pod(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_pod(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_pod: %s\n" % e
@@ -4338,13 +4338,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4362,7 +4362,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_pod_template**
-> UnversionedStatus deletecollection_namespaced_pod_template(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_pod_template(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of PodTemplate
 
@@ -4375,17 +4375,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of PodTemplate
-    api_response = api_instance.deletecollection_namespaced_pod_template(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_pod_template(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_pod_template: %s\n" % e
@@ -4395,13 +4395,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4419,7 +4419,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_replication_controller**
-> UnversionedStatus deletecollection_namespaced_replication_controller(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_replication_controller(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of ReplicationController
 
@@ -4432,17 +4432,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of ReplicationController
-    api_response = api_instance.deletecollection_namespaced_replication_controller(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_replication_controller(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_replication_controller: %s\n" % e
@@ -4452,13 +4452,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4476,7 +4476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_resource_quota**
-> UnversionedStatus deletecollection_namespaced_resource_quota(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_resource_quota(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of ResourceQuota
 
@@ -4489,17 +4489,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of ResourceQuota
-    api_response = api_instance.deletecollection_namespaced_resource_quota(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_resource_quota(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_resource_quota: %s\n" % e
@@ -4509,13 +4509,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4533,7 +4533,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_secret**
-> UnversionedStatus deletecollection_namespaced_secret(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_secret(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of Secret
 
@@ -4546,17 +4546,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of Secret
-    api_response = api_instance.deletecollection_namespaced_secret(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_secret(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_secret: %s\n" % e
@@ -4566,13 +4566,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4590,7 +4590,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_namespaced_service_account**
-> UnversionedStatus deletecollection_namespaced_service_account(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_namespaced_service_account(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of ServiceAccount
 
@@ -4603,17 +4603,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of ServiceAccount
-    api_response = api_instance.deletecollection_namespaced_service_account(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_namespaced_service_account(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_namespaced_service_account: %s\n" % e
@@ -4623,13 +4623,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4647,7 +4647,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_node**
-> UnversionedStatus deletecollection_node(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_node(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of Node
 
@@ -4660,16 +4660,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of Node
-    api_response = api_instance.deletecollection_node(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_node(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_node: %s\n" % e
@@ -4679,12 +4679,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4702,7 +4702,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletecollection_persistent_volume**
-> UnversionedStatus deletecollection_persistent_volume(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> UnversionedStatus deletecollection_persistent_volume(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 delete collection of PersistentVolume
 
@@ -4715,16 +4715,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # delete collection of PersistentVolume
-    api_response = api_instance.deletecollection_persistent_volume(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.deletecollection_persistent_volume(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->deletecollection_persistent_volume: %s\n" % e
@@ -4734,12 +4734,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4798,7 +4798,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_component_status**
-> V1ComponentStatusList list_component_status(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ComponentStatusList list_component_status(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list objects of kind ComponentStatus
 
@@ -4811,16 +4811,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list objects of kind ComponentStatus
-    api_response = api_instance.list_component_status(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_component_status(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_component_status: %s\n" % e
@@ -4830,12 +4830,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4853,7 +4853,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespace**
-> V1NamespaceList list_namespace(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1NamespaceList list_namespace(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Namespace
 
@@ -4866,16 +4866,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Namespace
-    api_response = api_instance.list_namespace(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespace(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespace: %s\n" % e
@@ -4885,12 +4885,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4908,7 +4908,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_config_map**
-> V1ConfigMapList list_namespaced_config_map(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ConfigMapList list_namespaced_config_map(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ConfigMap
 
@@ -4921,16 +4921,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ConfigMap
-    api_response = api_instance.list_namespaced_config_map(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_config_map(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_config_map: %s\n" % e
@@ -4940,12 +4940,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -4963,7 +4963,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_config_map_0**
-> V1ConfigMapList list_namespaced_config_map_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ConfigMapList list_namespaced_config_map_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ConfigMap
 
@@ -4976,17 +4976,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ConfigMap
-    api_response = api_instance.list_namespaced_config_map_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_config_map_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_config_map_0: %s\n" % e
@@ -4996,13 +4996,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5020,7 +5020,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_endpoints**
-> V1EndpointsList list_namespaced_endpoints(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1EndpointsList list_namespaced_endpoints(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Endpoints
 
@@ -5033,16 +5033,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Endpoints
-    api_response = api_instance.list_namespaced_endpoints(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_endpoints(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_endpoints: %s\n" % e
@@ -5052,12 +5052,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5075,7 +5075,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_endpoints_0**
-> V1EndpointsList list_namespaced_endpoints_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1EndpointsList list_namespaced_endpoints_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Endpoints
 
@@ -5088,17 +5088,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Endpoints
-    api_response = api_instance.list_namespaced_endpoints_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_endpoints_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_endpoints_0: %s\n" % e
@@ -5108,13 +5108,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5132,7 +5132,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_event**
-> V1EventList list_namespaced_event(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1EventList list_namespaced_event(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Event
 
@@ -5145,16 +5145,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Event
-    api_response = api_instance.list_namespaced_event(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_event(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_event: %s\n" % e
@@ -5164,12 +5164,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5187,7 +5187,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_event_0**
-> V1EventList list_namespaced_event_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1EventList list_namespaced_event_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Event
 
@@ -5200,17 +5200,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Event
-    api_response = api_instance.list_namespaced_event_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_event_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_event_0: %s\n" % e
@@ -5220,13 +5220,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5244,7 +5244,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_limit_range**
-> V1LimitRangeList list_namespaced_limit_range(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1LimitRangeList list_namespaced_limit_range(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind LimitRange
 
@@ -5257,16 +5257,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind LimitRange
-    api_response = api_instance.list_namespaced_limit_range(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_limit_range(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_limit_range: %s\n" % e
@@ -5276,12 +5276,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5299,7 +5299,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_limit_range_0**
-> V1LimitRangeList list_namespaced_limit_range_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1LimitRangeList list_namespaced_limit_range_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind LimitRange
 
@@ -5312,17 +5312,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind LimitRange
-    api_response = api_instance.list_namespaced_limit_range_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_limit_range_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_limit_range_0: %s\n" % e
@@ -5332,13 +5332,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5356,7 +5356,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_persistent_volume_claim**
-> V1PersistentVolumeClaimList list_namespaced_persistent_volume_claim(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1PersistentVolumeClaimList list_namespaced_persistent_volume_claim(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind PersistentVolumeClaim
 
@@ -5369,17 +5369,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind PersistentVolumeClaim
-    api_response = api_instance.list_namespaced_persistent_volume_claim(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_persistent_volume_claim(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_persistent_volume_claim: %s\n" % e
@@ -5389,13 +5389,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5413,7 +5413,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_persistent_volume_claim_0**
-> V1PersistentVolumeClaimList list_namespaced_persistent_volume_claim_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1PersistentVolumeClaimList list_namespaced_persistent_volume_claim_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind PersistentVolumeClaim
 
@@ -5426,16 +5426,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind PersistentVolumeClaim
-    api_response = api_instance.list_namespaced_persistent_volume_claim_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_persistent_volume_claim_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_persistent_volume_claim_0: %s\n" % e
@@ -5445,12 +5445,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5468,7 +5468,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_pod**
-> V1PodList list_namespaced_pod(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1PodList list_namespaced_pod(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Pod
 
@@ -5481,17 +5481,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Pod
-    api_response = api_instance.list_namespaced_pod(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_pod(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_pod: %s\n" % e
@@ -5501,13 +5501,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5525,7 +5525,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_pod_0**
-> V1PodList list_namespaced_pod_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1PodList list_namespaced_pod_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Pod
 
@@ -5538,16 +5538,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Pod
-    api_response = api_instance.list_namespaced_pod_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_pod_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_pod_0: %s\n" % e
@@ -5557,12 +5557,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5580,7 +5580,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_pod_template**
-> V1PodTemplateList list_namespaced_pod_template(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1PodTemplateList list_namespaced_pod_template(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind PodTemplate
 
@@ -5593,17 +5593,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind PodTemplate
-    api_response = api_instance.list_namespaced_pod_template(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_pod_template(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_pod_template: %s\n" % e
@@ -5613,13 +5613,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5637,7 +5637,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_pod_template_0**
-> V1PodTemplateList list_namespaced_pod_template_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1PodTemplateList list_namespaced_pod_template_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind PodTemplate
 
@@ -5650,16 +5650,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind PodTemplate
-    api_response = api_instance.list_namespaced_pod_template_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_pod_template_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_pod_template_0: %s\n" % e
@@ -5669,12 +5669,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5692,7 +5692,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_replication_controller**
-> V1ReplicationControllerList list_namespaced_replication_controller(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ReplicationControllerList list_namespaced_replication_controller(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ReplicationController
 
@@ -5705,17 +5705,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ReplicationController
-    api_response = api_instance.list_namespaced_replication_controller(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_replication_controller(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_replication_controller: %s\n" % e
@@ -5725,13 +5725,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5749,7 +5749,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_replication_controller_0**
-> V1ReplicationControllerList list_namespaced_replication_controller_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ReplicationControllerList list_namespaced_replication_controller_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ReplicationController
 
@@ -5762,16 +5762,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ReplicationController
-    api_response = api_instance.list_namespaced_replication_controller_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_replication_controller_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_replication_controller_0: %s\n" % e
@@ -5781,12 +5781,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5804,7 +5804,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_resource_quota**
-> V1ResourceQuotaList list_namespaced_resource_quota(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ResourceQuotaList list_namespaced_resource_quota(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ResourceQuota
 
@@ -5817,17 +5817,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ResourceQuota
-    api_response = api_instance.list_namespaced_resource_quota(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_resource_quota(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_resource_quota: %s\n" % e
@@ -5837,13 +5837,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5861,7 +5861,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_resource_quota_0**
-> V1ResourceQuotaList list_namespaced_resource_quota_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ResourceQuotaList list_namespaced_resource_quota_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ResourceQuota
 
@@ -5874,16 +5874,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ResourceQuota
-    api_response = api_instance.list_namespaced_resource_quota_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_resource_quota_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_resource_quota_0: %s\n" % e
@@ -5893,12 +5893,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5916,7 +5916,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_secret**
-> V1SecretList list_namespaced_secret(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1SecretList list_namespaced_secret(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Secret
 
@@ -5929,17 +5929,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Secret
-    api_response = api_instance.list_namespaced_secret(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_secret(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_secret: %s\n" % e
@@ -5949,13 +5949,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -5973,7 +5973,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_secret_0**
-> V1SecretList list_namespaced_secret_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1SecretList list_namespaced_secret_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Secret
 
@@ -5986,16 +5986,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Secret
-    api_response = api_instance.list_namespaced_secret_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_secret_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_secret_0: %s\n" % e
@@ -6005,12 +6005,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -6028,7 +6028,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_service**
-> V1ServiceList list_namespaced_service(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ServiceList list_namespaced_service(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Service
 
@@ -6041,17 +6041,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Service
-    api_response = api_instance.list_namespaced_service(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_service(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_service: %s\n" % e
@@ -6061,13 +6061,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -6085,7 +6085,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_service_0**
-> V1ServiceList list_namespaced_service_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ServiceList list_namespaced_service_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Service
 
@@ -6098,16 +6098,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Service
-    api_response = api_instance.list_namespaced_service_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_service_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_service_0: %s\n" % e
@@ -6117,12 +6117,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -6140,7 +6140,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_service_account**
-> V1ServiceAccountList list_namespaced_service_account(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ServiceAccountList list_namespaced_service_account(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ServiceAccount
 
@@ -6153,17 +6153,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ServiceAccount
-    api_response = api_instance.list_namespaced_service_account(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_service_account(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_service_account: %s\n" % e
@@ -6173,13 +6173,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -6197,7 +6197,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_service_account_0**
-> V1ServiceAccountList list_namespaced_service_account_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1ServiceAccountList list_namespaced_service_account_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ServiceAccount
 
@@ -6210,16 +6210,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ServiceAccount
-    api_response = api_instance.list_namespaced_service_account_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_namespaced_service_account_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_service_account_0: %s\n" % e
@@ -6229,12 +6229,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -6252,7 +6252,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_node**
-> V1NodeList list_node(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1NodeList list_node(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Node
 
@@ -6265,16 +6265,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Node
-    api_response = api_instance.list_node(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_node(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_node: %s\n" % e
@@ -6284,12 +6284,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -6307,7 +6307,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_persistent_volume**
-> V1PersistentVolumeList list_persistent_volume(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> V1PersistentVolumeList list_persistent_volume(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind PersistentVolume
 
@@ -6320,16 +6320,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind PersistentVolume
-    api_response = api_instance.list_persistent_volume(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.list_persistent_volume(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_persistent_volume: %s\n" % e
@@ -6339,12 +6339,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -6362,7 +6362,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespace**
-> V1Namespace patch_namespace(Body, Name, Pretty=Pretty)
+> V1Namespace patch_namespace(body, name, pretty=pretty)
 
 partially update the specified Namespace
 
@@ -6375,13 +6375,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified Namespace
-    api_response = api_instance.patch_namespace(Body, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespace(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespace: %s\n" % e
@@ -6391,9 +6391,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6411,7 +6411,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespace_status**
-> V1Namespace patch_namespace_status(Body, Name, Pretty=Pretty)
+> V1Namespace patch_namespace_status(body, name, pretty=pretty)
 
 partially update status of the specified Namespace
 
@@ -6424,13 +6424,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified Namespace
-    api_response = api_instance.patch_namespace_status(Body, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespace_status(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespace_status: %s\n" % e
@@ -6440,9 +6440,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6460,7 +6460,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_config_map**
-> V1ConfigMap patch_namespaced_config_map(Body, Namespace, Name, Pretty=Pretty)
+> V1ConfigMap patch_namespaced_config_map(body, namespace, name, pretty=pretty)
 
 partially update the specified ConfigMap
 
@@ -6473,14 +6473,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ConfigMap
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ConfigMap
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified ConfigMap
-    api_response = api_instance.patch_namespaced_config_map(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_config_map(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_config_map: %s\n" % e
@@ -6490,10 +6490,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ConfigMap | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ConfigMap | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6511,7 +6511,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_endpoints**
-> V1Endpoints patch_namespaced_endpoints(Body, Namespace, Name, Pretty=Pretty)
+> V1Endpoints patch_namespaced_endpoints(body, namespace, name, pretty=pretty)
 
 partially update the specified Endpoints
 
@@ -6524,14 +6524,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Endpoints
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Endpoints
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified Endpoints
-    api_response = api_instance.patch_namespaced_endpoints(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_endpoints(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_endpoints: %s\n" % e
@@ -6541,10 +6541,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Endpoints | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Endpoints | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6562,7 +6562,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_event**
-> V1Event patch_namespaced_event(Body, Namespace, Name, Pretty=Pretty)
+> V1Event patch_namespaced_event(body, namespace, name, pretty=pretty)
 
 partially update the specified Event
 
@@ -6575,14 +6575,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Event
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Event
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified Event
-    api_response = api_instance.patch_namespaced_event(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_event(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_event: %s\n" % e
@@ -6592,10 +6592,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Event | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Event | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6613,7 +6613,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_limit_range**
-> V1LimitRange patch_namespaced_limit_range(Body, Namespace, Name, Pretty=Pretty)
+> V1LimitRange patch_namespaced_limit_range(body, namespace, name, pretty=pretty)
 
 partially update the specified LimitRange
 
@@ -6626,14 +6626,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the LimitRange
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the LimitRange
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified LimitRange
-    api_response = api_instance.patch_namespaced_limit_range(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_limit_range(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_limit_range: %s\n" % e
@@ -6643,10 +6643,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the LimitRange | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the LimitRange | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6664,7 +6664,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_persistent_volume_claim**
-> V1PersistentVolumeClaim patch_namespaced_persistent_volume_claim(Body, Namespace, Name, Pretty=Pretty)
+> V1PersistentVolumeClaim patch_namespaced_persistent_volume_claim(body, namespace, name, pretty=pretty)
 
 partially update the specified PersistentVolumeClaim
 
@@ -6677,14 +6677,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified PersistentVolumeClaim
-    api_response = api_instance.patch_namespaced_persistent_volume_claim(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_persistent_volume_claim(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_persistent_volume_claim: %s\n" % e
@@ -6694,10 +6694,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6715,7 +6715,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_persistent_volume_claim_status**
-> V1PersistentVolumeClaim patch_namespaced_persistent_volume_claim_status(Body, Namespace, Name, Pretty=Pretty)
+> V1PersistentVolumeClaim patch_namespaced_persistent_volume_claim_status(body, namespace, name, pretty=pretty)
 
 partially update status of the specified PersistentVolumeClaim
 
@@ -6728,14 +6728,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified PersistentVolumeClaim
-    api_response = api_instance.patch_namespaced_persistent_volume_claim_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_persistent_volume_claim_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_persistent_volume_claim_status: %s\n" % e
@@ -6745,10 +6745,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6766,7 +6766,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_pod**
-> V1Pod patch_namespaced_pod(Body, Namespace, Name, Pretty=Pretty)
+> V1Pod patch_namespaced_pod(body, namespace, name, pretty=pretty)
 
 partially update the specified Pod
 
@@ -6779,14 +6779,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified Pod
-    api_response = api_instance.patch_namespaced_pod(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_pod(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_pod: %s\n" % e
@@ -6796,10 +6796,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6817,7 +6817,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_pod_status**
-> V1Pod patch_namespaced_pod_status(Body, Namespace, Name, Pretty=Pretty)
+> V1Pod patch_namespaced_pod_status(body, namespace, name, pretty=pretty)
 
 partially update status of the specified Pod
 
@@ -6830,14 +6830,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified Pod
-    api_response = api_instance.patch_namespaced_pod_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_pod_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_pod_status: %s\n" % e
@@ -6847,10 +6847,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6868,7 +6868,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_pod_template**
-> V1PodTemplate patch_namespaced_pod_template(Body, Namespace, Name, Pretty=Pretty)
+> V1PodTemplate patch_namespaced_pod_template(body, namespace, name, pretty=pretty)
 
 partially update the specified PodTemplate
 
@@ -6881,14 +6881,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PodTemplate
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PodTemplate
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified PodTemplate
-    api_response = api_instance.patch_namespaced_pod_template(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_pod_template(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_pod_template: %s\n" % e
@@ -6898,10 +6898,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PodTemplate | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PodTemplate | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6919,7 +6919,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_replication_controller**
-> V1ReplicationController patch_namespaced_replication_controller(Body, Namespace, Name, Pretty=Pretty)
+> V1ReplicationController patch_namespaced_replication_controller(body, namespace, name, pretty=pretty)
 
 partially update the specified ReplicationController
 
@@ -6932,14 +6932,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified ReplicationController
-    api_response = api_instance.patch_namespaced_replication_controller(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_replication_controller(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_replication_controller: %s\n" % e
@@ -6949,10 +6949,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -6970,7 +6970,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_replication_controller_status**
-> V1ReplicationController patch_namespaced_replication_controller_status(Body, Namespace, Name, Pretty=Pretty)
+> V1ReplicationController patch_namespaced_replication_controller_status(body, namespace, name, pretty=pretty)
 
 partially update status of the specified ReplicationController
 
@@ -6983,14 +6983,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified ReplicationController
-    api_response = api_instance.patch_namespaced_replication_controller_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_replication_controller_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_replication_controller_status: %s\n" % e
@@ -7000,10 +7000,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7021,7 +7021,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_resource_quota**
-> V1ResourceQuota patch_namespaced_resource_quota(Body, Namespace, Name, Pretty=Pretty)
+> V1ResourceQuota patch_namespaced_resource_quota(body, namespace, name, pretty=pretty)
 
 partially update the specified ResourceQuota
 
@@ -7034,14 +7034,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified ResourceQuota
-    api_response = api_instance.patch_namespaced_resource_quota(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_resource_quota(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_resource_quota: %s\n" % e
@@ -7051,10 +7051,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7072,7 +7072,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_resource_quota_status**
-> V1ResourceQuota patch_namespaced_resource_quota_status(Body, Namespace, Name, Pretty=Pretty)
+> V1ResourceQuota patch_namespaced_resource_quota_status(body, namespace, name, pretty=pretty)
 
 partially update status of the specified ResourceQuota
 
@@ -7085,14 +7085,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified ResourceQuota
-    api_response = api_instance.patch_namespaced_resource_quota_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_resource_quota_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_resource_quota_status: %s\n" % e
@@ -7102,10 +7102,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7123,7 +7123,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_scale_scale**
-> V1Scale patch_namespaced_scale_scale(Body, Namespace, Name, Pretty=Pretty)
+> V1Scale patch_namespaced_scale_scale(body, namespace, name, pretty=pretty)
 
 partially update scale of the specified Scale
 
@@ -7136,14 +7136,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Scale
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Scale
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update scale of the specified Scale
-    api_response = api_instance.patch_namespaced_scale_scale(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_scale_scale(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_scale_scale: %s\n" % e
@@ -7153,10 +7153,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Scale | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Scale | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7174,7 +7174,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_secret**
-> V1Secret patch_namespaced_secret(Body, Namespace, Name, Pretty=Pretty)
+> V1Secret patch_namespaced_secret(body, namespace, name, pretty=pretty)
 
 partially update the specified Secret
 
@@ -7187,14 +7187,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Secret
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Secret
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified Secret
-    api_response = api_instance.patch_namespaced_secret(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_secret(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_secret: %s\n" % e
@@ -7204,10 +7204,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Secret | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Secret | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7225,7 +7225,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_service**
-> V1Service patch_namespaced_service(Body, Namespace, Name, Pretty=Pretty)
+> V1Service patch_namespaced_service(body, namespace, name, pretty=pretty)
 
 partially update the specified Service
 
@@ -7238,14 +7238,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified Service
-    api_response = api_instance.patch_namespaced_service(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_service(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_service: %s\n" % e
@@ -7255,10 +7255,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7276,7 +7276,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_service_account**
-> V1ServiceAccount patch_namespaced_service_account(Body, Namespace, Name, Pretty=Pretty)
+> V1ServiceAccount patch_namespaced_service_account(body, namespace, name, pretty=pretty)
 
 partially update the specified ServiceAccount
 
@@ -7289,14 +7289,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ServiceAccount
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ServiceAccount
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified ServiceAccount
-    api_response = api_instance.patch_namespaced_service_account(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_service_account(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_service_account: %s\n" % e
@@ -7306,10 +7306,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ServiceAccount | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ServiceAccount | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7327,7 +7327,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_namespaced_service_status**
-> V1Service patch_namespaced_service_status(Body, Namespace, Name, Pretty=Pretty)
+> V1Service patch_namespaced_service_status(body, namespace, name, pretty=pretty)
 
 partially update status of the specified Service
 
@@ -7340,14 +7340,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified Service
-    api_response = api_instance.patch_namespaced_service_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.patch_namespaced_service_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_namespaced_service_status: %s\n" % e
@@ -7357,10 +7357,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7378,7 +7378,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_node**
-> V1Node patch_node(Body, Name, Pretty=Pretty)
+> V1Node patch_node(body, name, pretty=pretty)
 
 partially update the specified Node
 
@@ -7391,13 +7391,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified Node
-    api_response = api_instance.patch_node(Body, Name, Pretty=Pretty)
+    api_response = api_instance.patch_node(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_node: %s\n" % e
@@ -7407,9 +7407,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7427,7 +7427,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_node_status**
-> V1Node patch_node_status(Body, Name, Pretty=Pretty)
+> V1Node patch_node_status(body, name, pretty=pretty)
 
 partially update status of the specified Node
 
@@ -7440,13 +7440,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified Node
-    api_response = api_instance.patch_node_status(Body, Name, Pretty=Pretty)
+    api_response = api_instance.patch_node_status(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_node_status: %s\n" % e
@@ -7456,9 +7456,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7476,7 +7476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_persistent_volume**
-> V1PersistentVolume patch_persistent_volume(Body, Name, Pretty=Pretty)
+> V1PersistentVolume patch_persistent_volume(body, name, pretty=pretty)
 
 partially update the specified PersistentVolume
 
@@ -7489,13 +7489,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update the specified PersistentVolume
-    api_response = api_instance.patch_persistent_volume(Body, Name, Pretty=Pretty)
+    api_response = api_instance.patch_persistent_volume(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_persistent_volume: %s\n" % e
@@ -7505,9 +7505,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7525,7 +7525,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_persistent_volume_status**
-> V1PersistentVolume patch_persistent_volume_status(Body, Name, Pretty=Pretty)
+> V1PersistentVolume patch_persistent_volume_status(body, name, pretty=pretty)
 
 partially update status of the specified PersistentVolume
 
@@ -7538,13 +7538,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.UnversionedPatch() # UnversionedPatch | 
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.UnversionedPatch() # UnversionedPatch | 
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # partially update status of the specified PersistentVolume
-    api_response = api_instance.patch_persistent_volume_status(Body, Name, Pretty=Pretty)
+    api_response = api_instance.patch_persistent_volume_status(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->patch_persistent_volume_status: %s\n" % e
@@ -7554,9 +7554,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**UnversionedPatch**](UnversionedPatch.md)|  | 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -7574,7 +7574,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_delete_namespaced_pod**
-> str proxy_delete_namespaced_pod(Namespace, Name)
+> str proxy_delete_namespaced_pod(namespace, name)
 
 proxy DELETE requests to Pod
 
@@ -7587,12 +7587,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # proxy DELETE requests to Pod
-    api_response = api_instance.proxy_delete_namespaced_pod(Namespace, Name)
+    api_response = api_instance.proxy_delete_namespaced_pod(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_delete_namespaced_pod: %s\n" % e
@@ -7602,8 +7602,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -7621,7 +7621,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_delete_namespaced_pod_0**
-> str proxy_delete_namespaced_pod_0(Namespace, Name, Path)
+> str proxy_delete_namespaced_pod_0(namespace, name, path)
 
 proxy DELETE requests to Pod
 
@@ -7634,13 +7634,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy DELETE requests to Pod
-    api_response = api_instance.proxy_delete_namespaced_pod_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_delete_namespaced_pod_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_delete_namespaced_pod_0: %s\n" % e
@@ -7650,9 +7650,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -7670,7 +7670,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_delete_namespaced_service**
-> str proxy_delete_namespaced_service(Namespace, Name)
+> str proxy_delete_namespaced_service(namespace, name)
 
 proxy DELETE requests to Service
 
@@ -7683,12 +7683,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
 
 try: 
     # proxy DELETE requests to Service
-    api_response = api_instance.proxy_delete_namespaced_service(Namespace, Name)
+    api_response = api_instance.proxy_delete_namespaced_service(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_delete_namespaced_service: %s\n" % e
@@ -7698,8 +7698,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
 
 ### Return type
 
@@ -7717,7 +7717,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_delete_namespaced_service_0**
-> str proxy_delete_namespaced_service_0(Namespace, Name, Path)
+> str proxy_delete_namespaced_service_0(namespace, name, path)
 
 proxy DELETE requests to Service
 
@@ -7730,13 +7730,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy DELETE requests to Service
-    api_response = api_instance.proxy_delete_namespaced_service_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_delete_namespaced_service_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_delete_namespaced_service_0: %s\n" % e
@@ -7746,9 +7746,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -7766,7 +7766,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_delete_node**
-> str proxy_delete_node(Name)
+> str proxy_delete_node(name)
 
 proxy DELETE requests to Node
 
@@ -7779,11 +7779,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
+name = 'name_example' # str | name of the Node
 
 try: 
     # proxy DELETE requests to Node
-    api_response = api_instance.proxy_delete_node(Name)
+    api_response = api_instance.proxy_delete_node(name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_delete_node: %s\n" % e
@@ -7793,7 +7793,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
+ **name** | **str**| name of the Node | 
 
 ### Return type
 
@@ -7811,7 +7811,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_delete_node_0**
-> str proxy_delete_node_0(Name, Path)
+> str proxy_delete_node_0(name, path)
 
 proxy DELETE requests to Node
 
@@ -7824,12 +7824,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | path to the resource
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy DELETE requests to Node
-    api_response = api_instance.proxy_delete_node_0(Name, Path)
+    api_response = api_instance.proxy_delete_node_0(name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_delete_node_0: %s\n" % e
@@ -7839,8 +7839,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| path to the resource | 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -7858,7 +7858,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_get_namespaced_pod**
-> str proxy_get_namespaced_pod(Namespace, Name)
+> str proxy_get_namespaced_pod(namespace, name)
 
 proxy GET requests to Pod
 
@@ -7871,12 +7871,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # proxy GET requests to Pod
-    api_response = api_instance.proxy_get_namespaced_pod(Namespace, Name)
+    api_response = api_instance.proxy_get_namespaced_pod(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_get_namespaced_pod: %s\n" % e
@@ -7886,8 +7886,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -7905,7 +7905,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_get_namespaced_pod_0**
-> str proxy_get_namespaced_pod_0(Namespace, Name, Path)
+> str proxy_get_namespaced_pod_0(namespace, name, path)
 
 proxy GET requests to Pod
 
@@ -7918,13 +7918,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy GET requests to Pod
-    api_response = api_instance.proxy_get_namespaced_pod_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_get_namespaced_pod_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_get_namespaced_pod_0: %s\n" % e
@@ -7934,9 +7934,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -7954,7 +7954,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_get_namespaced_service**
-> str proxy_get_namespaced_service(Namespace, Name)
+> str proxy_get_namespaced_service(namespace, name)
 
 proxy GET requests to Service
 
@@ -7967,12 +7967,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
 
 try: 
     # proxy GET requests to Service
-    api_response = api_instance.proxy_get_namespaced_service(Namespace, Name)
+    api_response = api_instance.proxy_get_namespaced_service(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_get_namespaced_service: %s\n" % e
@@ -7982,8 +7982,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
 
 ### Return type
 
@@ -8001,7 +8001,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_get_namespaced_service_0**
-> str proxy_get_namespaced_service_0(Namespace, Name, Path)
+> str proxy_get_namespaced_service_0(namespace, name, path)
 
 proxy GET requests to Service
 
@@ -8014,13 +8014,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy GET requests to Service
-    api_response = api_instance.proxy_get_namespaced_service_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_get_namespaced_service_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_get_namespaced_service_0: %s\n" % e
@@ -8030,9 +8030,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8050,7 +8050,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_get_node**
-> str proxy_get_node(Name)
+> str proxy_get_node(name)
 
 proxy GET requests to Node
 
@@ -8063,11 +8063,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
+name = 'name_example' # str | name of the Node
 
 try: 
     # proxy GET requests to Node
-    api_response = api_instance.proxy_get_node(Name)
+    api_response = api_instance.proxy_get_node(name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_get_node: %s\n" % e
@@ -8077,7 +8077,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
+ **name** | **str**| name of the Node | 
 
 ### Return type
 
@@ -8095,7 +8095,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_get_node_0**
-> str proxy_get_node_0(Name, Path)
+> str proxy_get_node_0(name, path)
 
 proxy GET requests to Node
 
@@ -8108,12 +8108,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | path to the resource
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy GET requests to Node
-    api_response = api_instance.proxy_get_node_0(Name, Path)
+    api_response = api_instance.proxy_get_node_0(name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_get_node_0: %s\n" % e
@@ -8123,8 +8123,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| path to the resource | 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8142,7 +8142,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_head_namespaced_pod**
-> str proxy_head_namespaced_pod(Namespace, Name)
+> str proxy_head_namespaced_pod(namespace, name)
 
 proxy HEAD requests to Pod
 
@@ -8155,12 +8155,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # proxy HEAD requests to Pod
-    api_response = api_instance.proxy_head_namespaced_pod(Namespace, Name)
+    api_response = api_instance.proxy_head_namespaced_pod(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_head_namespaced_pod: %s\n" % e
@@ -8170,8 +8170,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -8189,7 +8189,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_head_namespaced_pod_0**
-> str proxy_head_namespaced_pod_0(Namespace, Name, Path)
+> str proxy_head_namespaced_pod_0(namespace, name, path)
 
 proxy HEAD requests to Pod
 
@@ -8202,13 +8202,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy HEAD requests to Pod
-    api_response = api_instance.proxy_head_namespaced_pod_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_head_namespaced_pod_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_head_namespaced_pod_0: %s\n" % e
@@ -8218,9 +8218,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8238,7 +8238,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_head_namespaced_service**
-> str proxy_head_namespaced_service(Namespace, Name)
+> str proxy_head_namespaced_service(namespace, name)
 
 proxy HEAD requests to Service
 
@@ -8251,12 +8251,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
 
 try: 
     # proxy HEAD requests to Service
-    api_response = api_instance.proxy_head_namespaced_service(Namespace, Name)
+    api_response = api_instance.proxy_head_namespaced_service(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_head_namespaced_service: %s\n" % e
@@ -8266,8 +8266,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
 
 ### Return type
 
@@ -8285,7 +8285,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_head_namespaced_service_0**
-> str proxy_head_namespaced_service_0(Namespace, Name, Path)
+> str proxy_head_namespaced_service_0(namespace, name, path)
 
 proxy HEAD requests to Service
 
@@ -8298,13 +8298,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy HEAD requests to Service
-    api_response = api_instance.proxy_head_namespaced_service_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_head_namespaced_service_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_head_namespaced_service_0: %s\n" % e
@@ -8314,9 +8314,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8334,7 +8334,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_head_node**
-> str proxy_head_node(Name)
+> str proxy_head_node(name)
 
 proxy HEAD requests to Node
 
@@ -8347,11 +8347,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
+name = 'name_example' # str | name of the Node
 
 try: 
     # proxy HEAD requests to Node
-    api_response = api_instance.proxy_head_node(Name)
+    api_response = api_instance.proxy_head_node(name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_head_node: %s\n" % e
@@ -8361,7 +8361,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
+ **name** | **str**| name of the Node | 
 
 ### Return type
 
@@ -8379,7 +8379,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_head_node_0**
-> str proxy_head_node_0(Name, Path)
+> str proxy_head_node_0(name, path)
 
 proxy HEAD requests to Node
 
@@ -8392,12 +8392,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | path to the resource
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy HEAD requests to Node
-    api_response = api_instance.proxy_head_node_0(Name, Path)
+    api_response = api_instance.proxy_head_node_0(name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_head_node_0: %s\n" % e
@@ -8407,8 +8407,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| path to the resource | 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8426,7 +8426,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_options_namespaced_pod**
-> str proxy_options_namespaced_pod(Namespace, Name)
+> str proxy_options_namespaced_pod(namespace, name)
 
 proxy OPTIONS requests to Pod
 
@@ -8439,12 +8439,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # proxy OPTIONS requests to Pod
-    api_response = api_instance.proxy_options_namespaced_pod(Namespace, Name)
+    api_response = api_instance.proxy_options_namespaced_pod(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_options_namespaced_pod: %s\n" % e
@@ -8454,8 +8454,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -8473,7 +8473,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_options_namespaced_pod_0**
-> str proxy_options_namespaced_pod_0(Namespace, Name, Path)
+> str proxy_options_namespaced_pod_0(namespace, name, path)
 
 proxy OPTIONS requests to Pod
 
@@ -8486,13 +8486,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy OPTIONS requests to Pod
-    api_response = api_instance.proxy_options_namespaced_pod_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_options_namespaced_pod_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_options_namespaced_pod_0: %s\n" % e
@@ -8502,9 +8502,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8522,7 +8522,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_options_namespaced_service**
-> str proxy_options_namespaced_service(Namespace, Name)
+> str proxy_options_namespaced_service(namespace, name)
 
 proxy OPTIONS requests to Service
 
@@ -8535,12 +8535,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
 
 try: 
     # proxy OPTIONS requests to Service
-    api_response = api_instance.proxy_options_namespaced_service(Namespace, Name)
+    api_response = api_instance.proxy_options_namespaced_service(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_options_namespaced_service: %s\n" % e
@@ -8550,8 +8550,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
 
 ### Return type
 
@@ -8569,7 +8569,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_options_namespaced_service_0**
-> str proxy_options_namespaced_service_0(Namespace, Name, Path)
+> str proxy_options_namespaced_service_0(namespace, name, path)
 
 proxy OPTIONS requests to Service
 
@@ -8582,13 +8582,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy OPTIONS requests to Service
-    api_response = api_instance.proxy_options_namespaced_service_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_options_namespaced_service_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_options_namespaced_service_0: %s\n" % e
@@ -8598,9 +8598,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8618,7 +8618,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_options_node**
-> str proxy_options_node(Name)
+> str proxy_options_node(name)
 
 proxy OPTIONS requests to Node
 
@@ -8631,11 +8631,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
+name = 'name_example' # str | name of the Node
 
 try: 
     # proxy OPTIONS requests to Node
-    api_response = api_instance.proxy_options_node(Name)
+    api_response = api_instance.proxy_options_node(name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_options_node: %s\n" % e
@@ -8645,7 +8645,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
+ **name** | **str**| name of the Node | 
 
 ### Return type
 
@@ -8663,7 +8663,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_options_node_0**
-> str proxy_options_node_0(Name, Path)
+> str proxy_options_node_0(name, path)
 
 proxy OPTIONS requests to Node
 
@@ -8676,12 +8676,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | path to the resource
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy OPTIONS requests to Node
-    api_response = api_instance.proxy_options_node_0(Name, Path)
+    api_response = api_instance.proxy_options_node_0(name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_options_node_0: %s\n" % e
@@ -8691,8 +8691,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| path to the resource | 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8710,7 +8710,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_post_namespaced_pod**
-> str proxy_post_namespaced_pod(Namespace, Name)
+> str proxy_post_namespaced_pod(namespace, name)
 
 proxy POST requests to Pod
 
@@ -8723,12 +8723,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # proxy POST requests to Pod
-    api_response = api_instance.proxy_post_namespaced_pod(Namespace, Name)
+    api_response = api_instance.proxy_post_namespaced_pod(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_post_namespaced_pod: %s\n" % e
@@ -8738,8 +8738,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -8757,7 +8757,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_post_namespaced_pod_0**
-> str proxy_post_namespaced_pod_0(Namespace, Name, Path)
+> str proxy_post_namespaced_pod_0(namespace, name, path)
 
 proxy POST requests to Pod
 
@@ -8770,13 +8770,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy POST requests to Pod
-    api_response = api_instance.proxy_post_namespaced_pod_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_post_namespaced_pod_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_post_namespaced_pod_0: %s\n" % e
@@ -8786,9 +8786,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8806,7 +8806,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_post_namespaced_service**
-> str proxy_post_namespaced_service(Namespace, Name)
+> str proxy_post_namespaced_service(namespace, name)
 
 proxy POST requests to Service
 
@@ -8819,12 +8819,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
 
 try: 
     # proxy POST requests to Service
-    api_response = api_instance.proxy_post_namespaced_service(Namespace, Name)
+    api_response = api_instance.proxy_post_namespaced_service(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_post_namespaced_service: %s\n" % e
@@ -8834,8 +8834,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
 
 ### Return type
 
@@ -8853,7 +8853,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_post_namespaced_service_0**
-> str proxy_post_namespaced_service_0(Namespace, Name, Path)
+> str proxy_post_namespaced_service_0(namespace, name, path)
 
 proxy POST requests to Service
 
@@ -8866,13 +8866,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy POST requests to Service
-    api_response = api_instance.proxy_post_namespaced_service_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_post_namespaced_service_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_post_namespaced_service_0: %s\n" % e
@@ -8882,9 +8882,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8902,7 +8902,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_post_node**
-> str proxy_post_node(Name)
+> str proxy_post_node(name)
 
 proxy POST requests to Node
 
@@ -8915,11 +8915,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
+name = 'name_example' # str | name of the Node
 
 try: 
     # proxy POST requests to Node
-    api_response = api_instance.proxy_post_node(Name)
+    api_response = api_instance.proxy_post_node(name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_post_node: %s\n" % e
@@ -8929,7 +8929,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
+ **name** | **str**| name of the Node | 
 
 ### Return type
 
@@ -8947,7 +8947,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_post_node_0**
-> str proxy_post_node_0(Name, Path)
+> str proxy_post_node_0(name, path)
 
 proxy POST requests to Node
 
@@ -8960,12 +8960,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | path to the resource
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy POST requests to Node
-    api_response = api_instance.proxy_post_node_0(Name, Path)
+    api_response = api_instance.proxy_post_node_0(name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_post_node_0: %s\n" % e
@@ -8975,8 +8975,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| path to the resource | 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -8994,7 +8994,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_put_namespaced_pod**
-> str proxy_put_namespaced_pod(Namespace, Name)
+> str proxy_put_namespaced_pod(namespace, name)
 
 proxy PUT requests to Pod
 
@@ -9007,12 +9007,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
 
 try: 
     # proxy PUT requests to Pod
-    api_response = api_instance.proxy_put_namespaced_pod(Namespace, Name)
+    api_response = api_instance.proxy_put_namespaced_pod(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_put_namespaced_pod: %s\n" % e
@@ -9022,8 +9022,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
 
 ### Return type
 
@@ -9041,7 +9041,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_put_namespaced_pod_0**
-> str proxy_put_namespaced_pod_0(Namespace, Name, Path)
+> str proxy_put_namespaced_pod_0(namespace, name, path)
 
 proxy PUT requests to Pod
 
@@ -9054,13 +9054,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy PUT requests to Pod
-    api_response = api_instance.proxy_put_namespaced_pod_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_put_namespaced_pod_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_put_namespaced_pod_0: %s\n" % e
@@ -9070,9 +9070,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -9090,7 +9090,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_put_namespaced_service**
-> str proxy_put_namespaced_service(Namespace, Name)
+> str proxy_put_namespaced_service(namespace, name)
 
 proxy PUT requests to Service
 
@@ -9103,12 +9103,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
 
 try: 
     # proxy PUT requests to Service
-    api_response = api_instance.proxy_put_namespaced_service(Namespace, Name)
+    api_response = api_instance.proxy_put_namespaced_service(namespace, name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_put_namespaced_service: %s\n" % e
@@ -9118,8 +9118,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
 
 ### Return type
 
@@ -9137,7 +9137,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_put_namespaced_service_0**
-> str proxy_put_namespaced_service_0(Namespace, Name, Path)
+> str proxy_put_namespaced_service_0(namespace, name, path)
 
 proxy PUT requests to Service
 
@@ -9150,13 +9150,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Path = 'Path_example' # str | path to the resource
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy PUT requests to Service
-    api_response = api_instance.proxy_put_namespaced_service_0(Namespace, Name, Path)
+    api_response = api_instance.proxy_put_namespaced_service_0(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_put_namespaced_service_0: %s\n" % e
@@ -9166,9 +9166,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Path** | **str**| path to the resource | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -9186,7 +9186,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_put_node**
-> str proxy_put_node(Name)
+> str proxy_put_node(name)
 
 proxy PUT requests to Node
 
@@ -9199,11 +9199,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
+name = 'name_example' # str | name of the Node
 
 try: 
     # proxy PUT requests to Node
-    api_response = api_instance.proxy_put_node(Name)
+    api_response = api_instance.proxy_put_node(name)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_put_node: %s\n" % e
@@ -9213,7 +9213,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
+ **name** | **str**| name of the Node | 
 
 ### Return type
 
@@ -9231,7 +9231,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **proxy_put_node_0**
-> str proxy_put_node_0(Name, Path)
+> str proxy_put_node_0(name, path)
 
 proxy PUT requests to Node
 
@@ -9244,12 +9244,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Path = 'Path_example' # str | path to the resource
+name = 'name_example' # str | name of the Node
+path = 'path_example' # str | path to the resource
 
 try: 
     # proxy PUT requests to Node
-    api_response = api_instance.proxy_put_node_0(Name, Path)
+    api_response = api_instance.proxy_put_node_0(name, path)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->proxy_put_node_0: %s\n" % e
@@ -9259,8 +9259,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Path** | **str**| path to the resource | 
+ **name** | **str**| name of the Node | 
+ **path** | **str**| path to the resource | 
 
 ### Return type
 
@@ -9278,7 +9278,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_component_status**
-> V1ComponentStatus read_component_status(Name, Pretty=Pretty)
+> V1ComponentStatus read_component_status(name, pretty=pretty)
 
 read the specified ComponentStatus
 
@@ -9291,12 +9291,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the ComponentStatus
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+name = 'name_example' # str | name of the ComponentStatus
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read the specified ComponentStatus
-    api_response = api_instance.read_component_status(Name, Pretty=Pretty)
+    api_response = api_instance.read_component_status(name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_component_status: %s\n" % e
@@ -9306,8 +9306,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the ComponentStatus | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **name** | **str**| name of the ComponentStatus | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -9325,7 +9325,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespace**
-> V1Namespace read_namespace(Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1Namespace read_namespace(name, pretty=pretty, export=export, exact=exact)
 
 read the specified Namespace
 
@@ -9338,14 +9338,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified Namespace
-    api_response = api_instance.read_namespace(Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespace(name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespace: %s\n" % e
@@ -9355,10 +9355,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9376,7 +9376,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespace_status**
-> V1Namespace read_namespace_status(Name, Pretty=Pretty)
+> V1Namespace read_namespace_status(name, pretty=pretty)
 
 read status of the specified Namespace
 
@@ -9389,12 +9389,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified Namespace
-    api_response = api_instance.read_namespace_status(Name, Pretty=Pretty)
+    api_response = api_instance.read_namespace_status(name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespace_status: %s\n" % e
@@ -9404,8 +9404,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -9423,7 +9423,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_config_map**
-> V1ConfigMap read_namespaced_config_map(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1ConfigMap read_namespaced_config_map(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified ConfigMap
 
@@ -9436,15 +9436,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ConfigMap
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ConfigMap
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified ConfigMap
-    api_response = api_instance.read_namespaced_config_map(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_config_map(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_config_map: %s\n" % e
@@ -9454,11 +9454,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ConfigMap | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ConfigMap | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9476,7 +9476,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_endpoints**
-> V1Endpoints read_namespaced_endpoints(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1Endpoints read_namespaced_endpoints(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified Endpoints
 
@@ -9489,15 +9489,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Endpoints
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Endpoints
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified Endpoints
-    api_response = api_instance.read_namespaced_endpoints(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_endpoints(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_endpoints: %s\n" % e
@@ -9507,11 +9507,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Endpoints | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Endpoints | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9529,7 +9529,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_event**
-> V1Event read_namespaced_event(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1Event read_namespaced_event(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified Event
 
@@ -9542,15 +9542,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Event
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Event
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified Event
-    api_response = api_instance.read_namespaced_event(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_event(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_event: %s\n" % e
@@ -9560,11 +9560,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Event | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Event | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9582,7 +9582,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_limit_range**
-> V1LimitRange read_namespaced_limit_range(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1LimitRange read_namespaced_limit_range(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified LimitRange
 
@@ -9595,15 +9595,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the LimitRange
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the LimitRange
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified LimitRange
-    api_response = api_instance.read_namespaced_limit_range(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_limit_range(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_limit_range: %s\n" % e
@@ -9613,11 +9613,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the LimitRange | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the LimitRange | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9635,7 +9635,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_persistent_volume_claim**
-> V1PersistentVolumeClaim read_namespaced_persistent_volume_claim(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1PersistentVolumeClaim read_namespaced_persistent_volume_claim(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified PersistentVolumeClaim
 
@@ -9648,15 +9648,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified PersistentVolumeClaim
-    api_response = api_instance.read_namespaced_persistent_volume_claim(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_persistent_volume_claim(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_persistent_volume_claim: %s\n" % e
@@ -9666,11 +9666,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9688,7 +9688,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_persistent_volume_claim_status**
-> V1PersistentVolumeClaim read_namespaced_persistent_volume_claim_status(Namespace, Name, Pretty=Pretty)
+> V1PersistentVolumeClaim read_namespaced_persistent_volume_claim_status(namespace, name, pretty=pretty)
 
 read status of the specified PersistentVolumeClaim
 
@@ -9701,13 +9701,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified PersistentVolumeClaim
-    api_response = api_instance.read_namespaced_persistent_volume_claim_status(Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.read_namespaced_persistent_volume_claim_status(namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_persistent_volume_claim_status: %s\n" % e
@@ -9717,9 +9717,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -9737,7 +9737,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_pod**
-> V1Pod read_namespaced_pod(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1Pod read_namespaced_pod(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified Pod
 
@@ -9750,15 +9750,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified Pod
-    api_response = api_instance.read_namespaced_pod(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_pod(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_pod: %s\n" % e
@@ -9768,11 +9768,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9790,7 +9790,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_pod_log**
-> V1Pod read_namespaced_pod_log(Namespace, Name, Pretty=Pretty, Container=Container, Follow=Follow, Previous=Previous, SinceSeconds=SinceSeconds, SinceTime=SinceTime, Timestamps=Timestamps, TailLines=TailLines, LimitBytes=LimitBytes)
+> V1Pod read_namespaced_pod_log(namespace, name, pretty=pretty, container=container, follow=follow, previous=previous, sinceSeconds=sinceSeconds, sinceTime=sinceTime, timestamps=timestamps, tailLines=tailLines, limitBytes=limitBytes)
 
 read log of the specified Pod
 
@@ -9803,21 +9803,21 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Container = 'Container_example' # str | The container for which to stream logs. Defaults to only container if there is one container in the pod. (optional)
-Follow = true # bool | Follow the log stream of the pod. Defaults to false. (optional)
-Previous = true # bool | Return previous terminated container logs. Defaults to false. (optional)
-SinceSeconds = 56 # int | A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. (optional)
-SinceTime = 'SinceTime_example' # str | An RFC3339 timestamp from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. (optional)
-Timestamps = true # bool | If true, add an RFC3339 or RFC3339Nano timestamp at the beginning of every line of log output. Defaults to false. (optional)
-TailLines = 56 # int | If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime (optional)
-LimitBytes = 56 # int | If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+container = 'container_example' # str | The container for which to stream logs. Defaults to only container if there is one container in the pod. (optional)
+follow = true # bool | Follow the log stream of the pod. Defaults to false. (optional)
+previous = true # bool | Return previous terminated container logs. Defaults to false. (optional)
+sinceSeconds = 56 # int | A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. (optional)
+sinceTime = 'sinceTime_example' # str | An RFC3339 timestamp from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. (optional)
+timestamps = true # bool | If true, add an RFC3339 or RFC3339Nano timestamp at the beginning of every line of log output. Defaults to false. (optional)
+tailLines = 56 # int | If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime (optional)
+limitBytes = 56 # int | If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit. (optional)
 
 try: 
     # read log of the specified Pod
-    api_response = api_instance.read_namespaced_pod_log(Namespace, Name, Pretty=Pretty, Container=Container, Follow=Follow, Previous=Previous, SinceSeconds=SinceSeconds, SinceTime=SinceTime, Timestamps=Timestamps, TailLines=TailLines, LimitBytes=LimitBytes)
+    api_response = api_instance.read_namespaced_pod_log(namespace, name, pretty=pretty, container=container, follow=follow, previous=previous, sinceSeconds=sinceSeconds, sinceTime=sinceTime, timestamps=timestamps, tailLines=tailLines, limitBytes=limitBytes)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_pod_log: %s\n" % e
@@ -9827,17 +9827,17 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Container** | **str**| The container for which to stream logs. Defaults to only container if there is one container in the pod. | [optional] 
- **Follow** | **bool**| Follow the log stream of the pod. Defaults to false. | [optional] 
- **Previous** | **bool**| Return previous terminated container logs. Defaults to false. | [optional] 
- **SinceSeconds** | **int**| A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. | [optional] 
- **SinceTime** | **str**| An RFC3339 timestamp from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. | [optional] 
- **Timestamps** | **bool**| If true, add an RFC3339 or RFC3339Nano timestamp at the beginning of every line of log output. Defaults to false. | [optional] 
- **TailLines** | **int**| If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime | [optional] 
- **LimitBytes** | **int**| If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **container** | **str**| The container for which to stream logs. Defaults to only container if there is one container in the pod. | [optional] 
+ **follow** | **bool**| Follow the log stream of the pod. Defaults to false. | [optional] 
+ **previous** | **bool**| Return previous terminated container logs. Defaults to false. | [optional] 
+ **sinceSeconds** | **int**| A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. | [optional] 
+ **sinceTime** | **str**| An RFC3339 timestamp from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. | [optional] 
+ **timestamps** | **bool**| If true, add an RFC3339 or RFC3339Nano timestamp at the beginning of every line of log output. Defaults to false. | [optional] 
+ **tailLines** | **int**| If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime | [optional] 
+ **limitBytes** | **int**| If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit. | [optional] 
 
 ### Return type
 
@@ -9855,7 +9855,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_pod_status**
-> V1Pod read_namespaced_pod_status(Namespace, Name, Pretty=Pretty)
+> V1Pod read_namespaced_pod_status(namespace, name, pretty=pretty)
 
 read status of the specified Pod
 
@@ -9868,13 +9868,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified Pod
-    api_response = api_instance.read_namespaced_pod_status(Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.read_namespaced_pod_status(namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_pod_status: %s\n" % e
@@ -9884,9 +9884,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -9904,7 +9904,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_pod_template**
-> V1PodTemplate read_namespaced_pod_template(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1PodTemplate read_namespaced_pod_template(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified PodTemplate
 
@@ -9917,15 +9917,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PodTemplate
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PodTemplate
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified PodTemplate
-    api_response = api_instance.read_namespaced_pod_template(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_pod_template(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_pod_template: %s\n" % e
@@ -9935,11 +9935,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PodTemplate | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PodTemplate | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -9957,7 +9957,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_replication_controller**
-> V1ReplicationController read_namespaced_replication_controller(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1ReplicationController read_namespaced_replication_controller(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified ReplicationController
 
@@ -9970,15 +9970,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified ReplicationController
-    api_response = api_instance.read_namespaced_replication_controller(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_replication_controller(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_replication_controller: %s\n" % e
@@ -9988,11 +9988,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -10010,7 +10010,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_replication_controller_status**
-> V1ReplicationController read_namespaced_replication_controller_status(Namespace, Name, Pretty=Pretty)
+> V1ReplicationController read_namespaced_replication_controller_status(namespace, name, pretty=pretty)
 
 read status of the specified ReplicationController
 
@@ -10023,13 +10023,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified ReplicationController
-    api_response = api_instance.read_namespaced_replication_controller_status(Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.read_namespaced_replication_controller_status(namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_replication_controller_status: %s\n" % e
@@ -10039,9 +10039,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10059,7 +10059,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_resource_quota**
-> V1ResourceQuota read_namespaced_resource_quota(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1ResourceQuota read_namespaced_resource_quota(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified ResourceQuota
 
@@ -10072,15 +10072,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified ResourceQuota
-    api_response = api_instance.read_namespaced_resource_quota(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_resource_quota(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_resource_quota: %s\n" % e
@@ -10090,11 +10090,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -10112,7 +10112,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_resource_quota_status**
-> V1ResourceQuota read_namespaced_resource_quota_status(Namespace, Name, Pretty=Pretty)
+> V1ResourceQuota read_namespaced_resource_quota_status(namespace, name, pretty=pretty)
 
 read status of the specified ResourceQuota
 
@@ -10125,13 +10125,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified ResourceQuota
-    api_response = api_instance.read_namespaced_resource_quota_status(Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.read_namespaced_resource_quota_status(namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_resource_quota_status: %s\n" % e
@@ -10141,9 +10141,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10161,7 +10161,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_scale_scale**
-> V1Scale read_namespaced_scale_scale(Namespace, Name, Pretty=Pretty)
+> V1Scale read_namespaced_scale_scale(namespace, name, pretty=pretty)
 
 read scale of the specified Scale
 
@@ -10174,13 +10174,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Scale
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Scale
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read scale of the specified Scale
-    api_response = api_instance.read_namespaced_scale_scale(Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.read_namespaced_scale_scale(namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_scale_scale: %s\n" % e
@@ -10190,9 +10190,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Scale | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Scale | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10210,7 +10210,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_secret**
-> V1Secret read_namespaced_secret(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1Secret read_namespaced_secret(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified Secret
 
@@ -10223,15 +10223,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Secret
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Secret
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified Secret
-    api_response = api_instance.read_namespaced_secret(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_secret(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_secret: %s\n" % e
@@ -10241,11 +10241,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Secret | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Secret | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -10263,7 +10263,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_service**
-> V1Service read_namespaced_service(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1Service read_namespaced_service(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified Service
 
@@ -10276,15 +10276,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified Service
-    api_response = api_instance.read_namespaced_service(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_service(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_service: %s\n" % e
@@ -10294,11 +10294,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -10316,7 +10316,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_service_account**
-> V1ServiceAccount read_namespaced_service_account(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1ServiceAccount read_namespaced_service_account(namespace, name, pretty=pretty, export=export, exact=exact)
 
 read the specified ServiceAccount
 
@@ -10329,15 +10329,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ServiceAccount
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ServiceAccount
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified ServiceAccount
-    api_response = api_instance.read_namespaced_service_account(Namespace, Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_namespaced_service_account(namespace, name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_service_account: %s\n" % e
@@ -10347,11 +10347,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ServiceAccount | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ServiceAccount | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -10369,7 +10369,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_namespaced_service_status**
-> V1Service read_namespaced_service_status(Namespace, Name, Pretty=Pretty)
+> V1Service read_namespaced_service_status(namespace, name, pretty=pretty)
 
 read status of the specified Service
 
@@ -10382,13 +10382,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified Service
-    api_response = api_instance.read_namespaced_service_status(Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.read_namespaced_service_status(namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_namespaced_service_status: %s\n" % e
@@ -10398,9 +10398,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10418,7 +10418,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_node**
-> V1Node read_node(Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1Node read_node(name, pretty=pretty, export=export, exact=exact)
 
 read the specified Node
 
@@ -10431,14 +10431,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified Node
-    api_response = api_instance.read_node(Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_node(name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_node: %s\n" % e
@@ -10448,10 +10448,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -10469,7 +10469,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_node_status**
-> V1Node read_node_status(Name, Pretty=Pretty)
+> V1Node read_node_status(name, pretty=pretty)
 
 read status of the specified Node
 
@@ -10482,12 +10482,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified Node
-    api_response = api_instance.read_node_status(Name, Pretty=Pretty)
+    api_response = api_instance.read_node_status(name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_node_status: %s\n" % e
@@ -10497,8 +10497,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10516,7 +10516,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_persistent_volume**
-> V1PersistentVolume read_persistent_volume(Name, Pretty=Pretty, Export=Export, Exact=Exact)
+> V1PersistentVolume read_persistent_volume(name, pretty=pretty, export=export, exact=exact)
 
 read the specified PersistentVolume
 
@@ -10529,14 +10529,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-Export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
-Exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+export = true # bool | Should this value be exported.  Export strips fields that a user can not specify. (optional)
+exact = true # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace' (optional)
 
 try: 
     # read the specified PersistentVolume
-    api_response = api_instance.read_persistent_volume(Name, Pretty=Pretty, Export=Export, Exact=Exact)
+    api_response = api_instance.read_persistent_volume(name, pretty=pretty, export=export, exact=exact)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_persistent_volume: %s\n" % e
@@ -10546,10 +10546,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **Export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
- **Exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **export** | **bool**| Should this value be exported.  Export strips fields that a user can not specify. | [optional] 
+ **exact** | **bool**| Should the export be exact.  Exact export maintains cluster-specific fields like &#39;Namespace&#39; | [optional] 
 
 ### Return type
 
@@ -10567,7 +10567,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **read_persistent_volume_status**
-> V1PersistentVolume read_persistent_volume_status(Name, Pretty=Pretty)
+> V1PersistentVolume read_persistent_volume_status(name, pretty=pretty)
 
 read status of the specified PersistentVolume
 
@@ -10580,12 +10580,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # read status of the specified PersistentVolume
-    api_response = api_instance.read_persistent_volume_status(Name, Pretty=Pretty)
+    api_response = api_instance.read_persistent_volume_status(name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->read_persistent_volume_status: %s\n" % e
@@ -10595,8 +10595,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10614,7 +10614,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespace**
-> V1Namespace replace_namespace(Body, Name, Pretty=Pretty)
+> V1Namespace replace_namespace(body, name, pretty=pretty)
 
 replace the specified Namespace
 
@@ -10627,13 +10627,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Namespace() # V1Namespace | 
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Namespace() # V1Namespace | 
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified Namespace
-    api_response = api_instance.replace_namespace(Body, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespace(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespace: %s\n" % e
@@ -10643,9 +10643,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Namespace**](V1Namespace.md)|  | 
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Namespace**](V1Namespace.md)|  | 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10663,7 +10663,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespace_finalize**
-> V1Namespace replace_namespace_finalize(Body, Name, Pretty=Pretty)
+> V1Namespace replace_namespace_finalize(body, name, pretty=pretty)
 
 replace finalize of the specified Namespace
 
@@ -10676,13 +10676,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Namespace() # V1Namespace | 
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Namespace() # V1Namespace | 
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace finalize of the specified Namespace
-    api_response = api_instance.replace_namespace_finalize(Body, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespace_finalize(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespace_finalize: %s\n" % e
@@ -10692,9 +10692,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Namespace**](V1Namespace.md)|  | 
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Namespace**](V1Namespace.md)|  | 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10712,7 +10712,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespace_status**
-> V1Namespace replace_namespace_status(Body, Name, Pretty=Pretty)
+> V1Namespace replace_namespace_status(body, name, pretty=pretty)
 
 replace status of the specified Namespace
 
@@ -10725,13 +10725,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Namespace() # V1Namespace | 
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Namespace() # V1Namespace | 
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified Namespace
-    api_response = api_instance.replace_namespace_status(Body, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespace_status(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespace_status: %s\n" % e
@@ -10741,9 +10741,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Namespace**](V1Namespace.md)|  | 
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Namespace**](V1Namespace.md)|  | 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10761,7 +10761,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_config_map**
-> V1ConfigMap replace_namespaced_config_map(Body, Namespace, Name, Pretty=Pretty)
+> V1ConfigMap replace_namespaced_config_map(body, namespace, name, pretty=pretty)
 
 replace the specified ConfigMap
 
@@ -10774,14 +10774,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ConfigMap() # V1ConfigMap | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ConfigMap
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ConfigMap() # V1ConfigMap | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ConfigMap
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified ConfigMap
-    api_response = api_instance.replace_namespaced_config_map(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_config_map(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_config_map: %s\n" % e
@@ -10791,10 +10791,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ConfigMap**](V1ConfigMap.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ConfigMap | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ConfigMap**](V1ConfigMap.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ConfigMap | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10812,7 +10812,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_endpoints**
-> V1Endpoints replace_namespaced_endpoints(Body, Namespace, Name, Pretty=Pretty)
+> V1Endpoints replace_namespaced_endpoints(body, namespace, name, pretty=pretty)
 
 replace the specified Endpoints
 
@@ -10825,14 +10825,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Endpoints() # V1Endpoints | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Endpoints
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Endpoints() # V1Endpoints | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Endpoints
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified Endpoints
-    api_response = api_instance.replace_namespaced_endpoints(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_endpoints(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_endpoints: %s\n" % e
@@ -10842,10 +10842,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Endpoints**](V1Endpoints.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Endpoints | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Endpoints**](V1Endpoints.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Endpoints | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10863,7 +10863,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_event**
-> V1Event replace_namespaced_event(Body, Namespace, Name, Pretty=Pretty)
+> V1Event replace_namespaced_event(body, namespace, name, pretty=pretty)
 
 replace the specified Event
 
@@ -10876,14 +10876,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Event() # V1Event | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Event
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Event() # V1Event | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Event
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified Event
-    api_response = api_instance.replace_namespaced_event(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_event(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_event: %s\n" % e
@@ -10893,10 +10893,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Event**](V1Event.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Event | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Event**](V1Event.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Event | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10914,7 +10914,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_limit_range**
-> V1LimitRange replace_namespaced_limit_range(Body, Namespace, Name, Pretty=Pretty)
+> V1LimitRange replace_namespaced_limit_range(body, namespace, name, pretty=pretty)
 
 replace the specified LimitRange
 
@@ -10927,14 +10927,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1LimitRange() # V1LimitRange | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the LimitRange
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1LimitRange() # V1LimitRange | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the LimitRange
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified LimitRange
-    api_response = api_instance.replace_namespaced_limit_range(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_limit_range(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_limit_range: %s\n" % e
@@ -10944,10 +10944,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1LimitRange**](V1LimitRange.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the LimitRange | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1LimitRange**](V1LimitRange.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the LimitRange | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -10965,7 +10965,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_persistent_volume_claim**
-> V1PersistentVolumeClaim replace_namespaced_persistent_volume_claim(Body, Namespace, Name, Pretty=Pretty)
+> V1PersistentVolumeClaim replace_namespaced_persistent_volume_claim(body, namespace, name, pretty=pretty)
 
 replace the specified PersistentVolumeClaim
 
@@ -10978,14 +10978,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PersistentVolumeClaim() # V1PersistentVolumeClaim | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PersistentVolumeClaim() # V1PersistentVolumeClaim | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified PersistentVolumeClaim
-    api_response = api_instance.replace_namespaced_persistent_volume_claim(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_persistent_volume_claim(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_persistent_volume_claim: %s\n" % e
@@ -10995,10 +10995,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PersistentVolumeClaim**](V1PersistentVolumeClaim.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PersistentVolumeClaim**](V1PersistentVolumeClaim.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11016,7 +11016,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_persistent_volume_claim_status**
-> V1PersistentVolumeClaim replace_namespaced_persistent_volume_claim_status(Body, Namespace, Name, Pretty=Pretty)
+> V1PersistentVolumeClaim replace_namespaced_persistent_volume_claim_status(body, namespace, name, pretty=pretty)
 
 replace status of the specified PersistentVolumeClaim
 
@@ -11029,14 +11029,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PersistentVolumeClaim() # V1PersistentVolumeClaim | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PersistentVolumeClaim() # V1PersistentVolumeClaim | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified PersistentVolumeClaim
-    api_response = api_instance.replace_namespaced_persistent_volume_claim_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_persistent_volume_claim_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_persistent_volume_claim_status: %s\n" % e
@@ -11046,10 +11046,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PersistentVolumeClaim**](V1PersistentVolumeClaim.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PersistentVolumeClaim**](V1PersistentVolumeClaim.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11067,7 +11067,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_pod**
-> V1Pod replace_namespaced_pod(Body, Namespace, Name, Pretty=Pretty)
+> V1Pod replace_namespaced_pod(body, namespace, name, pretty=pretty)
 
 replace the specified Pod
 
@@ -11080,14 +11080,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Pod() # V1Pod | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Pod() # V1Pod | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified Pod
-    api_response = api_instance.replace_namespaced_pod(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_pod(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_pod: %s\n" % e
@@ -11097,10 +11097,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Pod**](V1Pod.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Pod**](V1Pod.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11118,7 +11118,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_pod_status**
-> V1Pod replace_namespaced_pod_status(Body, Namespace, Name, Pretty=Pretty)
+> V1Pod replace_namespaced_pod_status(body, namespace, name, pretty=pretty)
 
 replace status of the specified Pod
 
@@ -11131,14 +11131,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Pod() # V1Pod | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Pod() # V1Pod | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified Pod
-    api_response = api_instance.replace_namespaced_pod_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_pod_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_pod_status: %s\n" % e
@@ -11148,10 +11148,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Pod**](V1Pod.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Pod**](V1Pod.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11169,7 +11169,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_pod_template**
-> V1PodTemplate replace_namespaced_pod_template(Body, Namespace, Name, Pretty=Pretty)
+> V1PodTemplate replace_namespaced_pod_template(body, namespace, name, pretty=pretty)
 
 replace the specified PodTemplate
 
@@ -11182,14 +11182,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PodTemplate() # V1PodTemplate | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PodTemplate
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PodTemplate() # V1PodTemplate | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PodTemplate
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified PodTemplate
-    api_response = api_instance.replace_namespaced_pod_template(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_pod_template(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_pod_template: %s\n" % e
@@ -11199,10 +11199,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PodTemplate**](V1PodTemplate.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PodTemplate | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PodTemplate**](V1PodTemplate.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PodTemplate | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11220,7 +11220,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_replication_controller**
-> V1ReplicationController replace_namespaced_replication_controller(Body, Namespace, Name, Pretty=Pretty)
+> V1ReplicationController replace_namespaced_replication_controller(body, namespace, name, pretty=pretty)
 
 replace the specified ReplicationController
 
@@ -11233,14 +11233,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ReplicationController() # V1ReplicationController | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ReplicationController() # V1ReplicationController | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified ReplicationController
-    api_response = api_instance.replace_namespaced_replication_controller(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_replication_controller(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_replication_controller: %s\n" % e
@@ -11250,10 +11250,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ReplicationController**](V1ReplicationController.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ReplicationController**](V1ReplicationController.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11271,7 +11271,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_replication_controller_status**
-> V1ReplicationController replace_namespaced_replication_controller_status(Body, Namespace, Name, Pretty=Pretty)
+> V1ReplicationController replace_namespaced_replication_controller_status(body, namespace, name, pretty=pretty)
 
 replace status of the specified ReplicationController
 
@@ -11284,14 +11284,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ReplicationController() # V1ReplicationController | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ReplicationController() # V1ReplicationController | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified ReplicationController
-    api_response = api_instance.replace_namespaced_replication_controller_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_replication_controller_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_replication_controller_status: %s\n" % e
@@ -11301,10 +11301,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ReplicationController**](V1ReplicationController.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ReplicationController**](V1ReplicationController.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11322,7 +11322,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_resource_quota**
-> V1ResourceQuota replace_namespaced_resource_quota(Body, Namespace, Name, Pretty=Pretty)
+> V1ResourceQuota replace_namespaced_resource_quota(body, namespace, name, pretty=pretty)
 
 replace the specified ResourceQuota
 
@@ -11335,14 +11335,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ResourceQuota() # V1ResourceQuota | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ResourceQuota() # V1ResourceQuota | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified ResourceQuota
-    api_response = api_instance.replace_namespaced_resource_quota(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_resource_quota(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_resource_quota: %s\n" % e
@@ -11352,10 +11352,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ResourceQuota**](V1ResourceQuota.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ResourceQuota**](V1ResourceQuota.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11373,7 +11373,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_resource_quota_status**
-> V1ResourceQuota replace_namespaced_resource_quota_status(Body, Namespace, Name, Pretty=Pretty)
+> V1ResourceQuota replace_namespaced_resource_quota_status(body, namespace, name, pretty=pretty)
 
 replace status of the specified ResourceQuota
 
@@ -11386,14 +11386,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ResourceQuota() # V1ResourceQuota | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ResourceQuota() # V1ResourceQuota | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified ResourceQuota
-    api_response = api_instance.replace_namespaced_resource_quota_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_resource_quota_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_resource_quota_status: %s\n" % e
@@ -11403,10 +11403,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ResourceQuota**](V1ResourceQuota.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ResourceQuota**](V1ResourceQuota.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11424,7 +11424,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_scale_scale**
-> V1Scale replace_namespaced_scale_scale(Body, Namespace, Name, Pretty=Pretty)
+> V1Scale replace_namespaced_scale_scale(body, namespace, name, pretty=pretty)
 
 replace scale of the specified Scale
 
@@ -11437,14 +11437,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Scale() # V1Scale | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Scale
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Scale() # V1Scale | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Scale
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace scale of the specified Scale
-    api_response = api_instance.replace_namespaced_scale_scale(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_scale_scale(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_scale_scale: %s\n" % e
@@ -11454,10 +11454,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Scale**](V1Scale.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Scale | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Scale**](V1Scale.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Scale | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11475,7 +11475,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_secret**
-> V1Secret replace_namespaced_secret(Body, Namespace, Name, Pretty=Pretty)
+> V1Secret replace_namespaced_secret(body, namespace, name, pretty=pretty)
 
 replace the specified Secret
 
@@ -11488,14 +11488,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Secret() # V1Secret | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Secret
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Secret() # V1Secret | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Secret
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified Secret
-    api_response = api_instance.replace_namespaced_secret(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_secret(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_secret: %s\n" % e
@@ -11505,10 +11505,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Secret**](V1Secret.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Secret | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Secret**](V1Secret.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Secret | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11526,7 +11526,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_service**
-> V1Service replace_namespaced_service(Body, Namespace, Name, Pretty=Pretty)
+> V1Service replace_namespaced_service(body, namespace, name, pretty=pretty)
 
 replace the specified Service
 
@@ -11539,14 +11539,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Service() # V1Service | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Service() # V1Service | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified Service
-    api_response = api_instance.replace_namespaced_service(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_service(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_service: %s\n" % e
@@ -11556,10 +11556,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Service**](V1Service.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Service**](V1Service.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11577,7 +11577,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_service_account**
-> V1ServiceAccount replace_namespaced_service_account(Body, Namespace, Name, Pretty=Pretty)
+> V1ServiceAccount replace_namespaced_service_account(body, namespace, name, pretty=pretty)
 
 replace the specified ServiceAccount
 
@@ -11590,14 +11590,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1ServiceAccount() # V1ServiceAccount | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ServiceAccount
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1ServiceAccount() # V1ServiceAccount | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ServiceAccount
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified ServiceAccount
-    api_response = api_instance.replace_namespaced_service_account(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_service_account(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_service_account: %s\n" % e
@@ -11607,10 +11607,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1ServiceAccount**](V1ServiceAccount.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ServiceAccount | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1ServiceAccount**](V1ServiceAccount.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ServiceAccount | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11628,7 +11628,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_namespaced_service_status**
-> V1Service replace_namespaced_service_status(Body, Namespace, Name, Pretty=Pretty)
+> V1Service replace_namespaced_service_status(body, namespace, name, pretty=pretty)
 
 replace status of the specified Service
 
@@ -11641,14 +11641,14 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Service() # V1Service | 
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Service() # V1Service | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified Service
-    api_response = api_instance.replace_namespaced_service_status(Body, Namespace, Name, Pretty=Pretty)
+    api_response = api_instance.replace_namespaced_service_status(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_namespaced_service_status: %s\n" % e
@@ -11658,10 +11658,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Service**](V1Service.md)|  | 
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Service**](V1Service.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11679,7 +11679,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_node**
-> V1Node replace_node(Body, Name, Pretty=Pretty)
+> V1Node replace_node(body, name, pretty=pretty)
 
 replace the specified Node
 
@@ -11692,13 +11692,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Node() # V1Node | 
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Node() # V1Node | 
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified Node
-    api_response = api_instance.replace_node(Body, Name, Pretty=Pretty)
+    api_response = api_instance.replace_node(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_node: %s\n" % e
@@ -11708,9 +11708,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Node**](V1Node.md)|  | 
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Node**](V1Node.md)|  | 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11728,7 +11728,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_node_status**
-> V1Node replace_node_status(Body, Name, Pretty=Pretty)
+> V1Node replace_node_status(body, name, pretty=pretty)
 
 replace status of the specified Node
 
@@ -11741,13 +11741,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1Node() # V1Node | 
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1Node() # V1Node | 
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified Node
-    api_response = api_instance.replace_node_status(Body, Name, Pretty=Pretty)
+    api_response = api_instance.replace_node_status(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_node_status: %s\n" % e
@@ -11757,9 +11757,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1Node**](V1Node.md)|  | 
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1Node**](V1Node.md)|  | 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11777,7 +11777,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_persistent_volume**
-> V1PersistentVolume replace_persistent_volume(Body, Name, Pretty=Pretty)
+> V1PersistentVolume replace_persistent_volume(body, name, pretty=pretty)
 
 replace the specified PersistentVolume
 
@@ -11790,13 +11790,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PersistentVolume() # V1PersistentVolume | 
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PersistentVolume() # V1PersistentVolume | 
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace the specified PersistentVolume
-    api_response = api_instance.replace_persistent_volume(Body, Name, Pretty=Pretty)
+    api_response = api_instance.replace_persistent_volume(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_persistent_volume: %s\n" % e
@@ -11806,9 +11806,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PersistentVolume**](V1PersistentVolume.md)|  | 
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PersistentVolume**](V1PersistentVolume.md)|  | 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11826,7 +11826,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_persistent_volume_status**
-> V1PersistentVolume replace_persistent_volume_status(Body, Name, Pretty=Pretty)
+> V1PersistentVolume replace_persistent_volume_status(body, name, pretty=pretty)
 
 replace status of the specified PersistentVolume
 
@@ -11839,13 +11839,13 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Body = k8sv1.V1PersistentVolume() # V1PersistentVolume | 
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+body = k8sv1.V1PersistentVolume() # V1PersistentVolume | 
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
     # replace status of the specified PersistentVolume
-    api_response = api_instance.replace_persistent_volume_status(Body, Name, Pretty=Pretty)
+    api_response = api_instance.replace_persistent_volume_status(body, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->replace_persistent_volume_status: %s\n" % e
@@ -11855,9 +11855,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Body** | [**V1PersistentVolume**](V1PersistentVolume.md)|  | 
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **body** | [**V1PersistentVolume**](V1PersistentVolume.md)|  | 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
 
 ### Return type
 
@@ -11875,7 +11875,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespace**
-> VersionedEvent watch_namespace(Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespace(name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind Namespace
 
@@ -11888,17 +11888,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Namespace
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+name = 'name_example' # str | name of the Namespace
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind Namespace
-    api_response = api_instance.watch_namespace(Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespace(name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespace: %s\n" % e
@@ -11908,13 +11908,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Namespace | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **name** | **str**| name of the Namespace | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -11932,7 +11932,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespace_list**
-> VersionedEvent watch_namespace_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespace_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Namespace
 
@@ -11945,16 +11945,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Namespace
-    api_response = api_instance.watch_namespace_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespace_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespace_list: %s\n" % e
@@ -11964,12 +11964,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -11987,7 +11987,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_config_map**
-> VersionedEvent watch_namespaced_config_map(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_config_map(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind ConfigMap
 
@@ -12000,18 +12000,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ConfigMap
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ConfigMap
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind ConfigMap
-    api_response = api_instance.watch_namespaced_config_map(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_config_map(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_config_map: %s\n" % e
@@ -12021,14 +12021,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ConfigMap | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ConfigMap | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12046,7 +12046,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_config_map_list**
-> VersionedEvent watch_namespaced_config_map_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_config_map_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ConfigMap
 
@@ -12059,16 +12059,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ConfigMap
-    api_response = api_instance.watch_namespaced_config_map_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_config_map_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_config_map_list: %s\n" % e
@@ -12078,12 +12078,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12101,7 +12101,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_config_map_list_0**
-> VersionedEvent watch_namespaced_config_map_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_config_map_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ConfigMap
 
@@ -12114,17 +12114,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ConfigMap
-    api_response = api_instance.watch_namespaced_config_map_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_config_map_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_config_map_list_0: %s\n" % e
@@ -12134,13 +12134,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12158,7 +12158,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_endpoints**
-> VersionedEvent watch_namespaced_endpoints(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_endpoints(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind Endpoints
 
@@ -12171,18 +12171,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Endpoints
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Endpoints
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind Endpoints
-    api_response = api_instance.watch_namespaced_endpoints(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_endpoints(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_endpoints: %s\n" % e
@@ -12192,14 +12192,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Endpoints | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Endpoints | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12217,7 +12217,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_endpoints_list**
-> VersionedEvent watch_namespaced_endpoints_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_endpoints_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Endpoints
 
@@ -12230,16 +12230,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Endpoints
-    api_response = api_instance.watch_namespaced_endpoints_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_endpoints_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_endpoints_list: %s\n" % e
@@ -12249,12 +12249,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12272,7 +12272,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_endpoints_list_0**
-> VersionedEvent watch_namespaced_endpoints_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_endpoints_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Endpoints
 
@@ -12285,17 +12285,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Endpoints
-    api_response = api_instance.watch_namespaced_endpoints_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_endpoints_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_endpoints_list_0: %s\n" % e
@@ -12305,13 +12305,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12329,7 +12329,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_event**
-> VersionedEvent watch_namespaced_event(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_event(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind Event
 
@@ -12342,18 +12342,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Event
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Event
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind Event
-    api_response = api_instance.watch_namespaced_event(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_event(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_event: %s\n" % e
@@ -12363,14 +12363,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Event | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Event | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12388,7 +12388,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_event_list**
-> VersionedEvent watch_namespaced_event_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_event_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Event
 
@@ -12401,16 +12401,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Event
-    api_response = api_instance.watch_namespaced_event_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_event_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_event_list: %s\n" % e
@@ -12420,12 +12420,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12443,7 +12443,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_event_list_0**
-> VersionedEvent watch_namespaced_event_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_event_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Event
 
@@ -12456,17 +12456,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Event
-    api_response = api_instance.watch_namespaced_event_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_event_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_event_list_0: %s\n" % e
@@ -12476,13 +12476,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12500,7 +12500,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_limit_range**
-> VersionedEvent watch_namespaced_limit_range(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_limit_range(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind LimitRange
 
@@ -12513,18 +12513,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the LimitRange
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the LimitRange
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind LimitRange
-    api_response = api_instance.watch_namespaced_limit_range(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_limit_range(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_limit_range: %s\n" % e
@@ -12534,14 +12534,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the LimitRange | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the LimitRange | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12559,7 +12559,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_limit_range_list**
-> VersionedEvent watch_namespaced_limit_range_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_limit_range_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of LimitRange
 
@@ -12572,16 +12572,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of LimitRange
-    api_response = api_instance.watch_namespaced_limit_range_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_limit_range_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_limit_range_list: %s\n" % e
@@ -12591,12 +12591,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12614,7 +12614,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_limit_range_list_0**
-> VersionedEvent watch_namespaced_limit_range_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_limit_range_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of LimitRange
 
@@ -12627,17 +12627,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of LimitRange
-    api_response = api_instance.watch_namespaced_limit_range_list_0(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_limit_range_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_limit_range_list_0: %s\n" % e
@@ -12647,13 +12647,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12671,7 +12671,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_persistent_volume_claim**
-> VersionedEvent watch_namespaced_persistent_volume_claim(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_persistent_volume_claim(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind PersistentVolumeClaim
 
@@ -12684,18 +12684,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PersistentVolumeClaim
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PersistentVolumeClaim
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind PersistentVolumeClaim
-    api_response = api_instance.watch_namespaced_persistent_volume_claim(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_persistent_volume_claim(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_persistent_volume_claim: %s\n" % e
@@ -12705,14 +12705,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PersistentVolumeClaim | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PersistentVolumeClaim | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12730,7 +12730,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_persistent_volume_claim_list**
-> VersionedEvent watch_namespaced_persistent_volume_claim_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_persistent_volume_claim_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of PersistentVolumeClaim
 
@@ -12743,17 +12743,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of PersistentVolumeClaim
-    api_response = api_instance.watch_namespaced_persistent_volume_claim_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_persistent_volume_claim_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_persistent_volume_claim_list: %s\n" % e
@@ -12763,13 +12763,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12787,7 +12787,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_persistent_volume_claim_list_0**
-> VersionedEvent watch_namespaced_persistent_volume_claim_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_persistent_volume_claim_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of PersistentVolumeClaim
 
@@ -12800,16 +12800,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of PersistentVolumeClaim
-    api_response = api_instance.watch_namespaced_persistent_volume_claim_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_persistent_volume_claim_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_persistent_volume_claim_list_0: %s\n" % e
@@ -12819,12 +12819,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12842,7 +12842,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_pod**
-> VersionedEvent watch_namespaced_pod(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_pod(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind Pod
 
@@ -12855,18 +12855,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Pod
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Pod
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind Pod
-    api_response = api_instance.watch_namespaced_pod(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_pod(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_pod: %s\n" % e
@@ -12876,14 +12876,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Pod | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Pod | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12901,7 +12901,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_pod_list**
-> VersionedEvent watch_namespaced_pod_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_pod_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Pod
 
@@ -12914,17 +12914,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Pod
-    api_response = api_instance.watch_namespaced_pod_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_pod_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_pod_list: %s\n" % e
@@ -12934,13 +12934,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -12958,7 +12958,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_pod_list_0**
-> VersionedEvent watch_namespaced_pod_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_pod_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Pod
 
@@ -12971,16 +12971,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Pod
-    api_response = api_instance.watch_namespaced_pod_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_pod_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_pod_list_0: %s\n" % e
@@ -12990,12 +12990,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13013,7 +13013,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_pod_template**
-> VersionedEvent watch_namespaced_pod_template(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_pod_template(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind PodTemplate
 
@@ -13026,18 +13026,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the PodTemplate
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the PodTemplate
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind PodTemplate
-    api_response = api_instance.watch_namespaced_pod_template(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_pod_template(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_pod_template: %s\n" % e
@@ -13047,14 +13047,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the PodTemplate | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the PodTemplate | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13072,7 +13072,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_pod_template_list**
-> VersionedEvent watch_namespaced_pod_template_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_pod_template_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of PodTemplate
 
@@ -13085,17 +13085,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of PodTemplate
-    api_response = api_instance.watch_namespaced_pod_template_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_pod_template_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_pod_template_list: %s\n" % e
@@ -13105,13 +13105,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13129,7 +13129,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_pod_template_list_0**
-> VersionedEvent watch_namespaced_pod_template_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_pod_template_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of PodTemplate
 
@@ -13142,16 +13142,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of PodTemplate
-    api_response = api_instance.watch_namespaced_pod_template_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_pod_template_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_pod_template_list_0: %s\n" % e
@@ -13161,12 +13161,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13184,7 +13184,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_replication_controller**
-> VersionedEvent watch_namespaced_replication_controller(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_replication_controller(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind ReplicationController
 
@@ -13197,18 +13197,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ReplicationController
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ReplicationController
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind ReplicationController
-    api_response = api_instance.watch_namespaced_replication_controller(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_replication_controller(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_replication_controller: %s\n" % e
@@ -13218,14 +13218,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ReplicationController | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ReplicationController | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13243,7 +13243,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_replication_controller_list**
-> VersionedEvent watch_namespaced_replication_controller_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_replication_controller_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ReplicationController
 
@@ -13256,17 +13256,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ReplicationController
-    api_response = api_instance.watch_namespaced_replication_controller_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_replication_controller_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_replication_controller_list: %s\n" % e
@@ -13276,13 +13276,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13300,7 +13300,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_replication_controller_list_0**
-> VersionedEvent watch_namespaced_replication_controller_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_replication_controller_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ReplicationController
 
@@ -13313,16 +13313,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ReplicationController
-    api_response = api_instance.watch_namespaced_replication_controller_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_replication_controller_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_replication_controller_list_0: %s\n" % e
@@ -13332,12 +13332,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13355,7 +13355,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_resource_quota**
-> VersionedEvent watch_namespaced_resource_quota(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_resource_quota(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind ResourceQuota
 
@@ -13368,18 +13368,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ResourceQuota
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ResourceQuota
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind ResourceQuota
-    api_response = api_instance.watch_namespaced_resource_quota(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_resource_quota(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_resource_quota: %s\n" % e
@@ -13389,14 +13389,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ResourceQuota | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ResourceQuota | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13414,7 +13414,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_resource_quota_list**
-> VersionedEvent watch_namespaced_resource_quota_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_resource_quota_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ResourceQuota
 
@@ -13427,17 +13427,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ResourceQuota
-    api_response = api_instance.watch_namespaced_resource_quota_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_resource_quota_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_resource_quota_list: %s\n" % e
@@ -13447,13 +13447,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13471,7 +13471,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_resource_quota_list_0**
-> VersionedEvent watch_namespaced_resource_quota_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_resource_quota_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ResourceQuota
 
@@ -13484,16 +13484,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ResourceQuota
-    api_response = api_instance.watch_namespaced_resource_quota_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_resource_quota_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_resource_quota_list_0: %s\n" % e
@@ -13503,12 +13503,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13526,7 +13526,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_secret**
-> VersionedEvent watch_namespaced_secret(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_secret(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind Secret
 
@@ -13539,18 +13539,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Secret
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Secret
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind Secret
-    api_response = api_instance.watch_namespaced_secret(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_secret(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_secret: %s\n" % e
@@ -13560,14 +13560,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Secret | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Secret | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13585,7 +13585,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_secret_list**
-> VersionedEvent watch_namespaced_secret_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_secret_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Secret
 
@@ -13598,17 +13598,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Secret
-    api_response = api_instance.watch_namespaced_secret_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_secret_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_secret_list: %s\n" % e
@@ -13618,13 +13618,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13642,7 +13642,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_secret_list_0**
-> VersionedEvent watch_namespaced_secret_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_secret_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Secret
 
@@ -13655,16 +13655,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Secret
-    api_response = api_instance.watch_namespaced_secret_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_secret_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_secret_list_0: %s\n" % e
@@ -13674,12 +13674,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13697,7 +13697,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_service**
-> VersionedEvent watch_namespaced_service(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_service(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind Service
 
@@ -13710,18 +13710,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the Service
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Service
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind Service
-    api_response = api_instance.watch_namespaced_service(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_service(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_service: %s\n" % e
@@ -13731,14 +13731,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the Service | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Service | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13756,7 +13756,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_service_account**
-> VersionedEvent watch_namespaced_service_account(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_service_account(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind ServiceAccount
 
@@ -13769,18 +13769,18 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Name = 'Name_example' # str | name of the ServiceAccount
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the ServiceAccount
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind ServiceAccount
-    api_response = api_instance.watch_namespaced_service_account(Namespace, Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_service_account(namespace, name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_service_account: %s\n" % e
@@ -13790,14 +13790,14 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Name** | **str**| name of the ServiceAccount | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the ServiceAccount | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13815,7 +13815,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_service_account_list**
-> VersionedEvent watch_namespaced_service_account_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_service_account_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ServiceAccount
 
@@ -13828,17 +13828,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ServiceAccount
-    api_response = api_instance.watch_namespaced_service_account_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_service_account_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_service_account_list: %s\n" % e
@@ -13848,13 +13848,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13872,7 +13872,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_service_account_list_0**
-> VersionedEvent watch_namespaced_service_account_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_service_account_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ServiceAccount
 
@@ -13885,16 +13885,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ServiceAccount
-    api_response = api_instance.watch_namespaced_service_account_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_service_account_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_service_account_list_0: %s\n" % e
@@ -13904,12 +13904,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13927,7 +13927,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_service_list**
-> VersionedEvent watch_namespaced_service_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_service_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Service
 
@@ -13940,17 +13940,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Namespace = 'Namespace_example' # str | object name and auth scope, such as for teams and projects
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Service
-    api_response = api_instance.watch_namespaced_service_list(Namespace, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_service_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_service_list: %s\n" % e
@@ -13960,13 +13960,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Namespace** | **str**| object name and auth scope, such as for teams and projects | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -13984,7 +13984,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_service_list_0**
-> VersionedEvent watch_namespaced_service_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_namespaced_service_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Service
 
@@ -13997,16 +13997,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Service
-    api_response = api_instance.watch_namespaced_service_list_0(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_namespaced_service_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_namespaced_service_list_0: %s\n" % e
@@ -14016,12 +14016,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -14039,7 +14039,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_node**
-> VersionedEvent watch_node(Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_node(name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind Node
 
@@ -14052,17 +14052,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the Node
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+name = 'name_example' # str | name of the Node
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind Node
-    api_response = api_instance.watch_node(Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_node(name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_node: %s\n" % e
@@ -14072,13 +14072,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the Node | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **name** | **str**| name of the Node | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -14096,7 +14096,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_node_list**
-> VersionedEvent watch_node_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_node_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Node
 
@@ -14109,16 +14109,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Node
-    api_response = api_instance.watch_node_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_node_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_node_list: %s\n" % e
@@ -14128,12 +14128,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -14151,7 +14151,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_persistent_volume**
-> VersionedEvent watch_persistent_volume(Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_persistent_volume(name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch changes to an object of kind PersistentVolume
 
@@ -14164,17 +14164,17 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Name = 'Name_example' # str | name of the PersistentVolume
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+name = 'name_example' # str | name of the PersistentVolume
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch changes to an object of kind PersistentVolume
-    api_response = api_instance.watch_persistent_volume(Name, Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_persistent_volume(name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_persistent_volume: %s\n" % e
@@ -14184,13 +14184,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Name** | **str**| name of the PersistentVolume | 
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **name** | **str**| name of the PersistentVolume | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
@@ -14208,7 +14208,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_persistent_volume_list**
-> VersionedEvent watch_persistent_volume_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+> VersionedEvent watch_persistent_volume_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of PersistentVolume
 
@@ -14221,16 +14221,16 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
-Pretty = 'Pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-LabelSelector = 'LabelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-FieldSelector = 'FieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-Watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-ResourceVersion = 'ResourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-TimeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of PersistentVolume
-    api_response = api_instance.watch_persistent_volume_list(Pretty=Pretty, LabelSelector=LabelSelector, FieldSelector=FieldSelector, Watch=Watch, ResourceVersion=ResourceVersion, TimeoutSeconds=TimeoutSeconds)
+    api_response = api_instance.watch_persistent_volume_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->watch_persistent_volume_list: %s\n" % e
@@ -14240,12 +14240,12 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **Pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **LabelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **FieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **Watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **ResourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **TimeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
 
 ### Return type
 
