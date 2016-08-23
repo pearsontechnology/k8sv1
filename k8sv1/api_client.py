@@ -89,7 +89,7 @@ class ApiClient(object):
             self.host = host
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'Swagger-Codegen/0.0.9/python'
+        self.user_agent = 'Swagger-Codegen/0.0.10/python'
 
     @property
     def user_agent(self):
@@ -113,7 +113,7 @@ class ApiClient(object):
                    body=None, post_params=None, files=None,
                    response_type=None, auth_settings=None, callback=None, _return_http_data_only=None):
 
-        if 'Content-Type' in self.default_headers and self.default_headers['Content-Type'] is not "application/json":
+        if 'Content-Type' in self.default_headers and self.default_headers['Content-Type'] != "application/json":
             self.default_headers.pop('Content-Type', None)
 
         # headers parameters
