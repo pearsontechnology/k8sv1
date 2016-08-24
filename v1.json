@@ -650,9 +650,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -1432,9 +1432,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -2214,9 +2214,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -2996,9 +2996,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -4049,9 +4049,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -4471,9 +4471,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -5489,9 +5489,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -5967,9 +5967,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -6436,9 +6436,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -6858,9 +6858,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -7132,9 +7132,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -7610,9 +7610,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -9567,9 +9567,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -10045,9 +10045,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -10827,9 +10827,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -11296,9 +11296,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -11461,9 +11461,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -11939,9 +11939,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -12408,9 +12408,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
@@ -12886,9 +12886,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -13668,9 +13668,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -14371,9 +14371,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      },
      {
@@ -15768,9 +15768,9 @@
        "application/vnd.kubernetes.protobuf"
       ],
       "consumes": [
+       "application/strategic-merge-patch+json",
        "application/json-patch+json",
-       "application/merge-patch+json",
-       "application/strategic-merge-patch+json"
+       "application/merge-patch+json"
       ]
      }
     ]
