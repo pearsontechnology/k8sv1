@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **str** | Name of the attached volume | 
-**devicePath** | **str** | DevicePath represents the device path where the volume should be avilable | 
+**devicePath** | **str** | DevicePath represents the device path where the volume should be available | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

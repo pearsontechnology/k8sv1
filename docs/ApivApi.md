@@ -5,53 +5,54 @@ All URIs are relative to *https://10.10.10.10:6443/*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**connect_delete_namespaced_pod_proxy**](ApivApi.md#connect_delete_namespaced_pod_proxy) | **DELETE** /api/v1/namespaces/{namespace}/pods/{name}/proxy | connect DELETE requests to proxy of Pod
-[**connect_delete_namespaced_pod_proxy_0**](ApivApi.md#connect_delete_namespaced_pod_proxy_0) | **DELETE** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect DELETE requests to proxy of Pod
+[**connect_delete_namespaced_pod_proxy_with_path**](ApivApi.md#connect_delete_namespaced_pod_proxy_with_path) | **DELETE** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect DELETE requests to proxy of Pod
 [**connect_delete_namespaced_service_proxy**](ApivApi.md#connect_delete_namespaced_service_proxy) | **DELETE** /api/v1/namespaces/{namespace}/services/{name}/proxy | connect DELETE requests to proxy of Service
-[**connect_delete_namespaced_service_proxy_0**](ApivApi.md#connect_delete_namespaced_service_proxy_0) | **DELETE** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect DELETE requests to proxy of Service
+[**connect_delete_namespaced_service_proxy_with_path**](ApivApi.md#connect_delete_namespaced_service_proxy_with_path) | **DELETE** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect DELETE requests to proxy of Service
 [**connect_delete_node_proxy**](ApivApi.md#connect_delete_node_proxy) | **DELETE** /api/v1/nodes/{name}/proxy | connect DELETE requests to proxy of Node
-[**connect_delete_node_proxy_0**](ApivApi.md#connect_delete_node_proxy_0) | **DELETE** /api/v1/nodes/{name}/proxy/{path} | connect DELETE requests to proxy of Node
+[**connect_delete_node_proxy_with_path**](ApivApi.md#connect_delete_node_proxy_with_path) | **DELETE** /api/v1/nodes/{name}/proxy/{path} | connect DELETE requests to proxy of Node
 [**connect_get_namespaced_pod_attach**](ApivApi.md#connect_get_namespaced_pod_attach) | **GET** /api/v1/namespaces/{namespace}/pods/{name}/attach | connect GET requests to attach of Pod
 [**connect_get_namespaced_pod_exec**](ApivApi.md#connect_get_namespaced_pod_exec) | **GET** /api/v1/namespaces/{namespace}/pods/{name}/exec | connect GET requests to exec of Pod
 [**connect_get_namespaced_pod_portforward**](ApivApi.md#connect_get_namespaced_pod_portforward) | **GET** /api/v1/namespaces/{namespace}/pods/{name}/portforward | connect GET requests to portforward of Pod
 [**connect_get_namespaced_pod_proxy**](ApivApi.md#connect_get_namespaced_pod_proxy) | **GET** /api/v1/namespaces/{namespace}/pods/{name}/proxy | connect GET requests to proxy of Pod
-[**connect_get_namespaced_pod_proxy_0**](ApivApi.md#connect_get_namespaced_pod_proxy_0) | **GET** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect GET requests to proxy of Pod
+[**connect_get_namespaced_pod_proxy_with_path**](ApivApi.md#connect_get_namespaced_pod_proxy_with_path) | **GET** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect GET requests to proxy of Pod
 [**connect_get_namespaced_service_proxy**](ApivApi.md#connect_get_namespaced_service_proxy) | **GET** /api/v1/namespaces/{namespace}/services/{name}/proxy | connect GET requests to proxy of Service
-[**connect_get_namespaced_service_proxy_0**](ApivApi.md#connect_get_namespaced_service_proxy_0) | **GET** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect GET requests to proxy of Service
+[**connect_get_namespaced_service_proxy_with_path**](ApivApi.md#connect_get_namespaced_service_proxy_with_path) | **GET** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect GET requests to proxy of Service
 [**connect_get_node_proxy**](ApivApi.md#connect_get_node_proxy) | **GET** /api/v1/nodes/{name}/proxy | connect GET requests to proxy of Node
-[**connect_get_node_proxy_0**](ApivApi.md#connect_get_node_proxy_0) | **GET** /api/v1/nodes/{name}/proxy/{path} | connect GET requests to proxy of Node
+[**connect_get_node_proxy_with_path**](ApivApi.md#connect_get_node_proxy_with_path) | **GET** /api/v1/nodes/{name}/proxy/{path} | connect GET requests to proxy of Node
 [**connect_head_namespaced_pod_proxy**](ApivApi.md#connect_head_namespaced_pod_proxy) | **HEAD** /api/v1/namespaces/{namespace}/pods/{name}/proxy | connect HEAD requests to proxy of Pod
-[**connect_head_namespaced_pod_proxy_0**](ApivApi.md#connect_head_namespaced_pod_proxy_0) | **HEAD** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect HEAD requests to proxy of Pod
+[**connect_head_namespaced_pod_proxy_with_path**](ApivApi.md#connect_head_namespaced_pod_proxy_with_path) | **HEAD** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect HEAD requests to proxy of Pod
 [**connect_head_namespaced_service_proxy**](ApivApi.md#connect_head_namespaced_service_proxy) | **HEAD** /api/v1/namespaces/{namespace}/services/{name}/proxy | connect HEAD requests to proxy of Service
-[**connect_head_namespaced_service_proxy_0**](ApivApi.md#connect_head_namespaced_service_proxy_0) | **HEAD** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect HEAD requests to proxy of Service
+[**connect_head_namespaced_service_proxy_with_path**](ApivApi.md#connect_head_namespaced_service_proxy_with_path) | **HEAD** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect HEAD requests to proxy of Service
 [**connect_head_node_proxy**](ApivApi.md#connect_head_node_proxy) | **HEAD** /api/v1/nodes/{name}/proxy | connect HEAD requests to proxy of Node
-[**connect_head_node_proxy_0**](ApivApi.md#connect_head_node_proxy_0) | **HEAD** /api/v1/nodes/{name}/proxy/{path} | connect HEAD requests to proxy of Node
+[**connect_head_node_proxy_with_path**](ApivApi.md#connect_head_node_proxy_with_path) | **HEAD** /api/v1/nodes/{name}/proxy/{path} | connect HEAD requests to proxy of Node
 [**connect_options_namespaced_pod_proxy**](ApivApi.md#connect_options_namespaced_pod_proxy) | **OPTIONS** /api/v1/namespaces/{namespace}/pods/{name}/proxy | connect OPTIONS requests to proxy of Pod
-[**connect_options_namespaced_pod_proxy_0**](ApivApi.md#connect_options_namespaced_pod_proxy_0) | **OPTIONS** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect OPTIONS requests to proxy of Pod
+[**connect_options_namespaced_pod_proxy_with_path**](ApivApi.md#connect_options_namespaced_pod_proxy_with_path) | **OPTIONS** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect OPTIONS requests to proxy of Pod
 [**connect_options_namespaced_service_proxy**](ApivApi.md#connect_options_namespaced_service_proxy) | **OPTIONS** /api/v1/namespaces/{namespace}/services/{name}/proxy | connect OPTIONS requests to proxy of Service
-[**connect_options_namespaced_service_proxy_0**](ApivApi.md#connect_options_namespaced_service_proxy_0) | **OPTIONS** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect OPTIONS requests to proxy of Service
+[**connect_options_namespaced_service_proxy_with_path**](ApivApi.md#connect_options_namespaced_service_proxy_with_path) | **OPTIONS** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect OPTIONS requests to proxy of Service
 [**connect_options_node_proxy**](ApivApi.md#connect_options_node_proxy) | **OPTIONS** /api/v1/nodes/{name}/proxy | connect OPTIONS requests to proxy of Node
-[**connect_options_node_proxy_0**](ApivApi.md#connect_options_node_proxy_0) | **OPTIONS** /api/v1/nodes/{name}/proxy/{path} | connect OPTIONS requests to proxy of Node
+[**connect_options_node_proxy_with_path**](ApivApi.md#connect_options_node_proxy_with_path) | **OPTIONS** /api/v1/nodes/{name}/proxy/{path} | connect OPTIONS requests to proxy of Node
 [**connect_post_namespaced_pod_attach**](ApivApi.md#connect_post_namespaced_pod_attach) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/attach | connect POST requests to attach of Pod
 [**connect_post_namespaced_pod_exec**](ApivApi.md#connect_post_namespaced_pod_exec) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/exec | connect POST requests to exec of Pod
 [**connect_post_namespaced_pod_portforward**](ApivApi.md#connect_post_namespaced_pod_portforward) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/portforward | connect POST requests to portforward of Pod
 [**connect_post_namespaced_pod_proxy**](ApivApi.md#connect_post_namespaced_pod_proxy) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/proxy | connect POST requests to proxy of Pod
-[**connect_post_namespaced_pod_proxy_0**](ApivApi.md#connect_post_namespaced_pod_proxy_0) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect POST requests to proxy of Pod
+[**connect_post_namespaced_pod_proxy_with_path**](ApivApi.md#connect_post_namespaced_pod_proxy_with_path) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect POST requests to proxy of Pod
 [**connect_post_namespaced_service_proxy**](ApivApi.md#connect_post_namespaced_service_proxy) | **POST** /api/v1/namespaces/{namespace}/services/{name}/proxy | connect POST requests to proxy of Service
-[**connect_post_namespaced_service_proxy_0**](ApivApi.md#connect_post_namespaced_service_proxy_0) | **POST** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect POST requests to proxy of Service
+[**connect_post_namespaced_service_proxy_with_path**](ApivApi.md#connect_post_namespaced_service_proxy_with_path) | **POST** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect POST requests to proxy of Service
 [**connect_post_node_proxy**](ApivApi.md#connect_post_node_proxy) | **POST** /api/v1/nodes/{name}/proxy | connect POST requests to proxy of Node
-[**connect_post_node_proxy_0**](ApivApi.md#connect_post_node_proxy_0) | **POST** /api/v1/nodes/{name}/proxy/{path} | connect POST requests to proxy of Node
+[**connect_post_node_proxy_with_path**](ApivApi.md#connect_post_node_proxy_with_path) | **POST** /api/v1/nodes/{name}/proxy/{path} | connect POST requests to proxy of Node
 [**connect_put_namespaced_pod_proxy**](ApivApi.md#connect_put_namespaced_pod_proxy) | **PUT** /api/v1/namespaces/{namespace}/pods/{name}/proxy | connect PUT requests to proxy of Pod
-[**connect_put_namespaced_pod_proxy_0**](ApivApi.md#connect_put_namespaced_pod_proxy_0) | **PUT** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect PUT requests to proxy of Pod
+[**connect_put_namespaced_pod_proxy_with_path**](ApivApi.md#connect_put_namespaced_pod_proxy_with_path) | **PUT** /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path} | connect PUT requests to proxy of Pod
 [**connect_put_namespaced_service_proxy**](ApivApi.md#connect_put_namespaced_service_proxy) | **PUT** /api/v1/namespaces/{namespace}/services/{name}/proxy | connect PUT requests to proxy of Service
-[**connect_put_namespaced_service_proxy_0**](ApivApi.md#connect_put_namespaced_service_proxy_0) | **PUT** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect PUT requests to proxy of Service
+[**connect_put_namespaced_service_proxy_with_path**](ApivApi.md#connect_put_namespaced_service_proxy_with_path) | **PUT** /api/v1/namespaces/{namespace}/services/{name}/proxy/{path} | connect PUT requests to proxy of Service
 [**connect_put_node_proxy**](ApivApi.md#connect_put_node_proxy) | **PUT** /api/v1/nodes/{name}/proxy | connect PUT requests to proxy of Node
-[**connect_put_node_proxy_0**](ApivApi.md#connect_put_node_proxy_0) | **PUT** /api/v1/nodes/{name}/proxy/{path} | connect PUT requests to proxy of Node
+[**connect_put_node_proxy_with_path**](ApivApi.md#connect_put_node_proxy_with_path) | **PUT** /api/v1/nodes/{name}/proxy/{path} | connect PUT requests to proxy of Node
 [**create_namespace**](ApivApi.md#create_namespace) | **POST** /api/v1/namespaces | create a Namespace
 [**create_namespaced_binding**](ApivApi.md#create_namespaced_binding) | **POST** /api/v1/namespaces/{namespace}/bindings | create a Binding
 [**create_namespaced_binding_binding**](ApivApi.md#create_namespaced_binding_binding) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/binding | create binding of a Binding
 [**create_namespaced_config_map**](ApivApi.md#create_namespaced_config_map) | **POST** /api/v1/namespaces/{namespace}/configmaps | create a ConfigMap
-[**create_namespaced_endpoints**](ApivApi.md#create_namespaced_endpoints) | **POST** /api/v1/namespaces/{namespace}/endpoints | create a Endpoints
-[**create_namespaced_event**](ApivApi.md#create_namespaced_event) | **POST** /api/v1/namespaces/{namespace}/events | create a Event
+[**create_namespaced_endpoints**](ApivApi.md#create_namespaced_endpoints) | **POST** /api/v1/namespaces/{namespace}/endpoints | create Endpoints
+[**create_namespaced_event**](ApivApi.md#create_namespaced_event) | **POST** /api/v1/namespaces/{namespace}/events | create an Event
+[**create_namespaced_eviction_eviction**](ApivApi.md#create_namespaced_eviction_eviction) | **POST** /api/v1/namespaces/{namespace}/pods/{name}/eviction | create eviction of an Eviction
 [**create_namespaced_limit_range**](ApivApi.md#create_namespaced_limit_range) | **POST** /api/v1/namespaces/{namespace}/limitranges | create a LimitRange
 [**create_namespaced_persistent_volume_claim**](ApivApi.md#create_namespaced_persistent_volume_claim) | **POST** /api/v1/namespaces/{namespace}/persistentvolumeclaims | create a PersistentVolumeClaim
 [**create_namespaced_pod**](ApivApi.md#create_namespaced_pod) | **POST** /api/v1/namespaces/{namespace}/pods | create a Pod
@@ -65,8 +66,8 @@ Method | HTTP request | Description
 [**create_persistent_volume**](ApivApi.md#create_persistent_volume) | **POST** /api/v1/persistentvolumes | create a PersistentVolume
 [**delete_namespace**](ApivApi.md#delete_namespace) | **DELETE** /api/v1/namespaces/{name} | delete a Namespace
 [**delete_namespaced_config_map**](ApivApi.md#delete_namespaced_config_map) | **DELETE** /api/v1/namespaces/{namespace}/configmaps/{name} | delete a ConfigMap
-[**delete_namespaced_endpoints**](ApivApi.md#delete_namespaced_endpoints) | **DELETE** /api/v1/namespaces/{namespace}/endpoints/{name} | delete a Endpoints
-[**delete_namespaced_event**](ApivApi.md#delete_namespaced_event) | **DELETE** /api/v1/namespaces/{namespace}/events/{name} | delete a Event
+[**delete_namespaced_endpoints**](ApivApi.md#delete_namespaced_endpoints) | **DELETE** /api/v1/namespaces/{namespace}/endpoints/{name} | delete Endpoints
+[**delete_namespaced_event**](ApivApi.md#delete_namespaced_event) | **DELETE** /api/v1/namespaces/{namespace}/events/{name} | delete an Event
 [**delete_namespaced_limit_range**](ApivApi.md#delete_namespaced_limit_range) | **DELETE** /api/v1/namespaces/{namespace}/limitranges/{name} | delete a LimitRange
 [**delete_namespaced_persistent_volume_claim**](ApivApi.md#delete_namespaced_persistent_volume_claim) | **DELETE** /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name} | delete a PersistentVolumeClaim
 [**delete_namespaced_pod**](ApivApi.md#delete_namespaced_pod) | **DELETE** /api/v1/namespaces/{namespace}/pods/{name} | delete a Pod
@@ -94,33 +95,33 @@ Method | HTTP request | Description
 [**deletecollection_persistent_volume**](ApivApi.md#deletecollection_persistent_volume) | **DELETE** /api/v1/persistentvolumes | delete collection of PersistentVolume
 [**get_api_resources**](ApivApi.md#get_api_resources) | **GET** /api/v1 | get available resources
 [**list_component_status**](ApivApi.md#list_component_status) | **GET** /api/v1/componentstatuses | list objects of kind ComponentStatus
+[**list_config_map_for_all_namespaces**](ApivApi.md#list_config_map_for_all_namespaces) | **GET** /api/v1/configmaps | list or watch objects of kind ConfigMap
+[**list_endpoints_for_all_namespaces**](ApivApi.md#list_endpoints_for_all_namespaces) | **GET** /api/v1/endpoints | list or watch objects of kind Endpoints
+[**list_event_for_all_namespaces**](ApivApi.md#list_event_for_all_namespaces) | **GET** /api/v1/events | list or watch objects of kind Event
+[**list_limit_range_for_all_namespaces**](ApivApi.md#list_limit_range_for_all_namespaces) | **GET** /api/v1/limitranges | list or watch objects of kind LimitRange
 [**list_namespace**](ApivApi.md#list_namespace) | **GET** /api/v1/namespaces | list or watch objects of kind Namespace
-[**list_namespaced_config_map**](ApivApi.md#list_namespaced_config_map) | **GET** /api/v1/configmaps | list or watch objects of kind ConfigMap
-[**list_namespaced_config_map_0**](ApivApi.md#list_namespaced_config_map_0) | **GET** /api/v1/namespaces/{namespace}/configmaps | list or watch objects of kind ConfigMap
-[**list_namespaced_endpoints**](ApivApi.md#list_namespaced_endpoints) | **GET** /api/v1/endpoints | list or watch objects of kind Endpoints
-[**list_namespaced_endpoints_0**](ApivApi.md#list_namespaced_endpoints_0) | **GET** /api/v1/namespaces/{namespace}/endpoints | list or watch objects of kind Endpoints
-[**list_namespaced_event**](ApivApi.md#list_namespaced_event) | **GET** /api/v1/events | list or watch objects of kind Event
-[**list_namespaced_event_0**](ApivApi.md#list_namespaced_event_0) | **GET** /api/v1/namespaces/{namespace}/events | list or watch objects of kind Event
-[**list_namespaced_limit_range**](ApivApi.md#list_namespaced_limit_range) | **GET** /api/v1/limitranges | list or watch objects of kind LimitRange
-[**list_namespaced_limit_range_0**](ApivApi.md#list_namespaced_limit_range_0) | **GET** /api/v1/namespaces/{namespace}/limitranges | list or watch objects of kind LimitRange
+[**list_namespaced_config_map**](ApivApi.md#list_namespaced_config_map) | **GET** /api/v1/namespaces/{namespace}/configmaps | list or watch objects of kind ConfigMap
+[**list_namespaced_endpoints**](ApivApi.md#list_namespaced_endpoints) | **GET** /api/v1/namespaces/{namespace}/endpoints | list or watch objects of kind Endpoints
+[**list_namespaced_event**](ApivApi.md#list_namespaced_event) | **GET** /api/v1/namespaces/{namespace}/events | list or watch objects of kind Event
+[**list_namespaced_limit_range**](ApivApi.md#list_namespaced_limit_range) | **GET** /api/v1/namespaces/{namespace}/limitranges | list or watch objects of kind LimitRange
 [**list_namespaced_persistent_volume_claim**](ApivApi.md#list_namespaced_persistent_volume_claim) | **GET** /api/v1/namespaces/{namespace}/persistentvolumeclaims | list or watch objects of kind PersistentVolumeClaim
-[**list_namespaced_persistent_volume_claim_0**](ApivApi.md#list_namespaced_persistent_volume_claim_0) | **GET** /api/v1/persistentvolumeclaims | list or watch objects of kind PersistentVolumeClaim
 [**list_namespaced_pod**](ApivApi.md#list_namespaced_pod) | **GET** /api/v1/namespaces/{namespace}/pods | list or watch objects of kind Pod
-[**list_namespaced_pod_0**](ApivApi.md#list_namespaced_pod_0) | **GET** /api/v1/pods | list or watch objects of kind Pod
 [**list_namespaced_pod_template**](ApivApi.md#list_namespaced_pod_template) | **GET** /api/v1/namespaces/{namespace}/podtemplates | list or watch objects of kind PodTemplate
-[**list_namespaced_pod_template_0**](ApivApi.md#list_namespaced_pod_template_0) | **GET** /api/v1/podtemplates | list or watch objects of kind PodTemplate
 [**list_namespaced_replication_controller**](ApivApi.md#list_namespaced_replication_controller) | **GET** /api/v1/namespaces/{namespace}/replicationcontrollers | list or watch objects of kind ReplicationController
-[**list_namespaced_replication_controller_0**](ApivApi.md#list_namespaced_replication_controller_0) | **GET** /api/v1/replicationcontrollers | list or watch objects of kind ReplicationController
 [**list_namespaced_resource_quota**](ApivApi.md#list_namespaced_resource_quota) | **GET** /api/v1/namespaces/{namespace}/resourcequotas | list or watch objects of kind ResourceQuota
-[**list_namespaced_resource_quota_0**](ApivApi.md#list_namespaced_resource_quota_0) | **GET** /api/v1/resourcequotas | list or watch objects of kind ResourceQuota
 [**list_namespaced_secret**](ApivApi.md#list_namespaced_secret) | **GET** /api/v1/namespaces/{namespace}/secrets | list or watch objects of kind Secret
-[**list_namespaced_secret_0**](ApivApi.md#list_namespaced_secret_0) | **GET** /api/v1/secrets | list or watch objects of kind Secret
 [**list_namespaced_service**](ApivApi.md#list_namespaced_service) | **GET** /api/v1/namespaces/{namespace}/services | list or watch objects of kind Service
-[**list_namespaced_service_0**](ApivApi.md#list_namespaced_service_0) | **GET** /api/v1/services | list or watch objects of kind Service
 [**list_namespaced_service_account**](ApivApi.md#list_namespaced_service_account) | **GET** /api/v1/namespaces/{namespace}/serviceaccounts | list or watch objects of kind ServiceAccount
-[**list_namespaced_service_account_0**](ApivApi.md#list_namespaced_service_account_0) | **GET** /api/v1/serviceaccounts | list or watch objects of kind ServiceAccount
 [**list_node**](ApivApi.md#list_node) | **GET** /api/v1/nodes | list or watch objects of kind Node
 [**list_persistent_volume**](ApivApi.md#list_persistent_volume) | **GET** /api/v1/persistentvolumes | list or watch objects of kind PersistentVolume
+[**list_persistent_volume_claim_for_all_namespaces**](ApivApi.md#list_persistent_volume_claim_for_all_namespaces) | **GET** /api/v1/persistentvolumeclaims | list or watch objects of kind PersistentVolumeClaim
+[**list_pod_for_all_namespaces**](ApivApi.md#list_pod_for_all_namespaces) | **GET** /api/v1/pods | list or watch objects of kind Pod
+[**list_pod_template_for_all_namespaces**](ApivApi.md#list_pod_template_for_all_namespaces) | **GET** /api/v1/podtemplates | list or watch objects of kind PodTemplate
+[**list_replication_controller_for_all_namespaces**](ApivApi.md#list_replication_controller_for_all_namespaces) | **GET** /api/v1/replicationcontrollers | list or watch objects of kind ReplicationController
+[**list_resource_quota_for_all_namespaces**](ApivApi.md#list_resource_quota_for_all_namespaces) | **GET** /api/v1/resourcequotas | list or watch objects of kind ResourceQuota
+[**list_secret_for_all_namespaces**](ApivApi.md#list_secret_for_all_namespaces) | **GET** /api/v1/secrets | list or watch objects of kind Secret
+[**list_service_account_for_all_namespaces**](ApivApi.md#list_service_account_for_all_namespaces) | **GET** /api/v1/serviceaccounts | list or watch objects of kind ServiceAccount
+[**list_service_for_all_namespaces**](ApivApi.md#list_service_for_all_namespaces) | **GET** /api/v1/services | list or watch objects of kind Service
 [**patch_namespace**](ApivApi.md#patch_namespace) | **PATCH** /api/v1/namespaces/{name} | partially update the specified Namespace
 [**patch_namespace_status**](ApivApi.md#patch_namespace_status) | **PATCH** /api/v1/namespaces/{name}/status | partially update status of the specified Namespace
 [**patch_namespaced_config_map**](ApivApi.md#patch_namespaced_config_map) | **PATCH** /api/v1/namespaces/{namespace}/configmaps/{name} | partially update the specified ConfigMap
@@ -146,41 +147,41 @@ Method | HTTP request | Description
 [**patch_persistent_volume**](ApivApi.md#patch_persistent_volume) | **PATCH** /api/v1/persistentvolumes/{name} | partially update the specified PersistentVolume
 [**patch_persistent_volume_status**](ApivApi.md#patch_persistent_volume_status) | **PATCH** /api/v1/persistentvolumes/{name}/status | partially update status of the specified PersistentVolume
 [**proxy_delete_namespaced_pod**](ApivApi.md#proxy_delete_namespaced_pod) | **DELETE** /api/v1/proxy/namespaces/{namespace}/pods/{name} | proxy DELETE requests to Pod
-[**proxy_delete_namespaced_pod_0**](ApivApi.md#proxy_delete_namespaced_pod_0) | **DELETE** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy DELETE requests to Pod
+[**proxy_delete_namespaced_pod_with_path**](ApivApi.md#proxy_delete_namespaced_pod_with_path) | **DELETE** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy DELETE requests to Pod
 [**proxy_delete_namespaced_service**](ApivApi.md#proxy_delete_namespaced_service) | **DELETE** /api/v1/proxy/namespaces/{namespace}/services/{name} | proxy DELETE requests to Service
-[**proxy_delete_namespaced_service_0**](ApivApi.md#proxy_delete_namespaced_service_0) | **DELETE** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy DELETE requests to Service
+[**proxy_delete_namespaced_service_with_path**](ApivApi.md#proxy_delete_namespaced_service_with_path) | **DELETE** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy DELETE requests to Service
 [**proxy_delete_node**](ApivApi.md#proxy_delete_node) | **DELETE** /api/v1/proxy/nodes/{name} | proxy DELETE requests to Node
-[**proxy_delete_node_0**](ApivApi.md#proxy_delete_node_0) | **DELETE** /api/v1/proxy/nodes/{name}/{path} | proxy DELETE requests to Node
+[**proxy_delete_node_with_path**](ApivApi.md#proxy_delete_node_with_path) | **DELETE** /api/v1/proxy/nodes/{name}/{path} | proxy DELETE requests to Node
 [**proxy_get_namespaced_pod**](ApivApi.md#proxy_get_namespaced_pod) | **GET** /api/v1/proxy/namespaces/{namespace}/pods/{name} | proxy GET requests to Pod
-[**proxy_get_namespaced_pod_0**](ApivApi.md#proxy_get_namespaced_pod_0) | **GET** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy GET requests to Pod
+[**proxy_get_namespaced_pod_with_path**](ApivApi.md#proxy_get_namespaced_pod_with_path) | **GET** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy GET requests to Pod
 [**proxy_get_namespaced_service**](ApivApi.md#proxy_get_namespaced_service) | **GET** /api/v1/proxy/namespaces/{namespace}/services/{name} | proxy GET requests to Service
-[**proxy_get_namespaced_service_0**](ApivApi.md#proxy_get_namespaced_service_0) | **GET** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy GET requests to Service
+[**proxy_get_namespaced_service_with_path**](ApivApi.md#proxy_get_namespaced_service_with_path) | **GET** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy GET requests to Service
 [**proxy_get_node**](ApivApi.md#proxy_get_node) | **GET** /api/v1/proxy/nodes/{name} | proxy GET requests to Node
-[**proxy_get_node_0**](ApivApi.md#proxy_get_node_0) | **GET** /api/v1/proxy/nodes/{name}/{path} | proxy GET requests to Node
+[**proxy_get_node_with_path**](ApivApi.md#proxy_get_node_with_path) | **GET** /api/v1/proxy/nodes/{name}/{path} | proxy GET requests to Node
 [**proxy_head_namespaced_pod**](ApivApi.md#proxy_head_namespaced_pod) | **HEAD** /api/v1/proxy/namespaces/{namespace}/pods/{name} | proxy HEAD requests to Pod
-[**proxy_head_namespaced_pod_0**](ApivApi.md#proxy_head_namespaced_pod_0) | **HEAD** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy HEAD requests to Pod
+[**proxy_head_namespaced_pod_with_path**](ApivApi.md#proxy_head_namespaced_pod_with_path) | **HEAD** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy HEAD requests to Pod
 [**proxy_head_namespaced_service**](ApivApi.md#proxy_head_namespaced_service) | **HEAD** /api/v1/proxy/namespaces/{namespace}/services/{name} | proxy HEAD requests to Service
-[**proxy_head_namespaced_service_0**](ApivApi.md#proxy_head_namespaced_service_0) | **HEAD** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy HEAD requests to Service
+[**proxy_head_namespaced_service_with_path**](ApivApi.md#proxy_head_namespaced_service_with_path) | **HEAD** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy HEAD requests to Service
 [**proxy_head_node**](ApivApi.md#proxy_head_node) | **HEAD** /api/v1/proxy/nodes/{name} | proxy HEAD requests to Node
-[**proxy_head_node_0**](ApivApi.md#proxy_head_node_0) | **HEAD** /api/v1/proxy/nodes/{name}/{path} | proxy HEAD requests to Node
+[**proxy_head_node_with_path**](ApivApi.md#proxy_head_node_with_path) | **HEAD** /api/v1/proxy/nodes/{name}/{path} | proxy HEAD requests to Node
 [**proxy_options_namespaced_pod**](ApivApi.md#proxy_options_namespaced_pod) | **OPTIONS** /api/v1/proxy/namespaces/{namespace}/pods/{name} | proxy OPTIONS requests to Pod
-[**proxy_options_namespaced_pod_0**](ApivApi.md#proxy_options_namespaced_pod_0) | **OPTIONS** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy OPTIONS requests to Pod
+[**proxy_options_namespaced_pod_with_path**](ApivApi.md#proxy_options_namespaced_pod_with_path) | **OPTIONS** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy OPTIONS requests to Pod
 [**proxy_options_namespaced_service**](ApivApi.md#proxy_options_namespaced_service) | **OPTIONS** /api/v1/proxy/namespaces/{namespace}/services/{name} | proxy OPTIONS requests to Service
-[**proxy_options_namespaced_service_0**](ApivApi.md#proxy_options_namespaced_service_0) | **OPTIONS** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy OPTIONS requests to Service
+[**proxy_options_namespaced_service_with_path**](ApivApi.md#proxy_options_namespaced_service_with_path) | **OPTIONS** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy OPTIONS requests to Service
 [**proxy_options_node**](ApivApi.md#proxy_options_node) | **OPTIONS** /api/v1/proxy/nodes/{name} | proxy OPTIONS requests to Node
-[**proxy_options_node_0**](ApivApi.md#proxy_options_node_0) | **OPTIONS** /api/v1/proxy/nodes/{name}/{path} | proxy OPTIONS requests to Node
+[**proxy_options_node_with_path**](ApivApi.md#proxy_options_node_with_path) | **OPTIONS** /api/v1/proxy/nodes/{name}/{path} | proxy OPTIONS requests to Node
 [**proxy_post_namespaced_pod**](ApivApi.md#proxy_post_namespaced_pod) | **POST** /api/v1/proxy/namespaces/{namespace}/pods/{name} | proxy POST requests to Pod
-[**proxy_post_namespaced_pod_0**](ApivApi.md#proxy_post_namespaced_pod_0) | **POST** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy POST requests to Pod
+[**proxy_post_namespaced_pod_with_path**](ApivApi.md#proxy_post_namespaced_pod_with_path) | **POST** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy POST requests to Pod
 [**proxy_post_namespaced_service**](ApivApi.md#proxy_post_namespaced_service) | **POST** /api/v1/proxy/namespaces/{namespace}/services/{name} | proxy POST requests to Service
-[**proxy_post_namespaced_service_0**](ApivApi.md#proxy_post_namespaced_service_0) | **POST** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy POST requests to Service
+[**proxy_post_namespaced_service_with_path**](ApivApi.md#proxy_post_namespaced_service_with_path) | **POST** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy POST requests to Service
 [**proxy_post_node**](ApivApi.md#proxy_post_node) | **POST** /api/v1/proxy/nodes/{name} | proxy POST requests to Node
-[**proxy_post_node_0**](ApivApi.md#proxy_post_node_0) | **POST** /api/v1/proxy/nodes/{name}/{path} | proxy POST requests to Node
+[**proxy_post_node_with_path**](ApivApi.md#proxy_post_node_with_path) | **POST** /api/v1/proxy/nodes/{name}/{path} | proxy POST requests to Node
 [**proxy_put_namespaced_pod**](ApivApi.md#proxy_put_namespaced_pod) | **PUT** /api/v1/proxy/namespaces/{namespace}/pods/{name} | proxy PUT requests to Pod
-[**proxy_put_namespaced_pod_0**](ApivApi.md#proxy_put_namespaced_pod_0) | **PUT** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy PUT requests to Pod
+[**proxy_put_namespaced_pod_with_path**](ApivApi.md#proxy_put_namespaced_pod_with_path) | **PUT** /api/v1/proxy/namespaces/{namespace}/pods/{name}/{path} | proxy PUT requests to Pod
 [**proxy_put_namespaced_service**](ApivApi.md#proxy_put_namespaced_service) | **PUT** /api/v1/proxy/namespaces/{namespace}/services/{name} | proxy PUT requests to Service
-[**proxy_put_namespaced_service_0**](ApivApi.md#proxy_put_namespaced_service_0) | **PUT** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy PUT requests to Service
+[**proxy_put_namespaced_service_with_path**](ApivApi.md#proxy_put_namespaced_service_with_path) | **PUT** /api/v1/proxy/namespaces/{namespace}/services/{name}/{path} | proxy PUT requests to Service
 [**proxy_put_node**](ApivApi.md#proxy_put_node) | **PUT** /api/v1/proxy/nodes/{name} | proxy PUT requests to Node
-[**proxy_put_node_0**](ApivApi.md#proxy_put_node_0) | **PUT** /api/v1/proxy/nodes/{name}/{path} | proxy PUT requests to Node
+[**proxy_put_node_with_path**](ApivApi.md#proxy_put_node_with_path) | **PUT** /api/v1/proxy/nodes/{name}/{path} | proxy PUT requests to Node
 [**read_component_status**](ApivApi.md#read_component_status) | **GET** /api/v1/componentstatuses/{name} | read the specified ComponentStatus
 [**read_namespace**](ApivApi.md#read_namespace) | **GET** /api/v1/namespaces/{name} | read the specified Namespace
 [**read_namespace_status**](ApivApi.md#read_namespace_status) | **GET** /api/v1/namespaces/{name}/status | read status of the specified Namespace
@@ -232,48 +233,48 @@ Method | HTTP request | Description
 [**replace_node_status**](ApivApi.md#replace_node_status) | **PUT** /api/v1/nodes/{name}/status | replace status of the specified Node
 [**replace_persistent_volume**](ApivApi.md#replace_persistent_volume) | **PUT** /api/v1/persistentvolumes/{name} | replace the specified PersistentVolume
 [**replace_persistent_volume_status**](ApivApi.md#replace_persistent_volume_status) | **PUT** /api/v1/persistentvolumes/{name}/status | replace status of the specified PersistentVolume
+[**watch_config_map_list_for_all_namespaces**](ApivApi.md#watch_config_map_list_for_all_namespaces) | **GET** /api/v1/watch/configmaps | watch individual changes to a list of ConfigMap
+[**watch_endpoints_list_for_all_namespaces**](ApivApi.md#watch_endpoints_list_for_all_namespaces) | **GET** /api/v1/watch/endpoints | watch individual changes to a list of Endpoints
+[**watch_event_list_for_all_namespaces**](ApivApi.md#watch_event_list_for_all_namespaces) | **GET** /api/v1/watch/events | watch individual changes to a list of Event
+[**watch_limit_range_list_for_all_namespaces**](ApivApi.md#watch_limit_range_list_for_all_namespaces) | **GET** /api/v1/watch/limitranges | watch individual changes to a list of LimitRange
 [**watch_namespace**](ApivApi.md#watch_namespace) | **GET** /api/v1/watch/namespaces/{name} | watch changes to an object of kind Namespace
 [**watch_namespace_list**](ApivApi.md#watch_namespace_list) | **GET** /api/v1/watch/namespaces | watch individual changes to a list of Namespace
 [**watch_namespaced_config_map**](ApivApi.md#watch_namespaced_config_map) | **GET** /api/v1/watch/namespaces/{namespace}/configmaps/{name} | watch changes to an object of kind ConfigMap
-[**watch_namespaced_config_map_list**](ApivApi.md#watch_namespaced_config_map_list) | **GET** /api/v1/watch/configmaps | watch individual changes to a list of ConfigMap
-[**watch_namespaced_config_map_list_0**](ApivApi.md#watch_namespaced_config_map_list_0) | **GET** /api/v1/watch/namespaces/{namespace}/configmaps | watch individual changes to a list of ConfigMap
+[**watch_namespaced_config_map_list**](ApivApi.md#watch_namespaced_config_map_list) | **GET** /api/v1/watch/namespaces/{namespace}/configmaps | watch individual changes to a list of ConfigMap
 [**watch_namespaced_endpoints**](ApivApi.md#watch_namespaced_endpoints) | **GET** /api/v1/watch/namespaces/{namespace}/endpoints/{name} | watch changes to an object of kind Endpoints
-[**watch_namespaced_endpoints_list**](ApivApi.md#watch_namespaced_endpoints_list) | **GET** /api/v1/watch/endpoints | watch individual changes to a list of Endpoints
-[**watch_namespaced_endpoints_list_0**](ApivApi.md#watch_namespaced_endpoints_list_0) | **GET** /api/v1/watch/namespaces/{namespace}/endpoints | watch individual changes to a list of Endpoints
+[**watch_namespaced_endpoints_list**](ApivApi.md#watch_namespaced_endpoints_list) | **GET** /api/v1/watch/namespaces/{namespace}/endpoints | watch individual changes to a list of Endpoints
 [**watch_namespaced_event**](ApivApi.md#watch_namespaced_event) | **GET** /api/v1/watch/namespaces/{namespace}/events/{name} | watch changes to an object of kind Event
-[**watch_namespaced_event_list**](ApivApi.md#watch_namespaced_event_list) | **GET** /api/v1/watch/events | watch individual changes to a list of Event
-[**watch_namespaced_event_list_0**](ApivApi.md#watch_namespaced_event_list_0) | **GET** /api/v1/watch/namespaces/{namespace}/events | watch individual changes to a list of Event
+[**watch_namespaced_event_list**](ApivApi.md#watch_namespaced_event_list) | **GET** /api/v1/watch/namespaces/{namespace}/events | watch individual changes to a list of Event
 [**watch_namespaced_limit_range**](ApivApi.md#watch_namespaced_limit_range) | **GET** /api/v1/watch/namespaces/{namespace}/limitranges/{name} | watch changes to an object of kind LimitRange
-[**watch_namespaced_limit_range_list**](ApivApi.md#watch_namespaced_limit_range_list) | **GET** /api/v1/watch/limitranges | watch individual changes to a list of LimitRange
-[**watch_namespaced_limit_range_list_0**](ApivApi.md#watch_namespaced_limit_range_list_0) | **GET** /api/v1/watch/namespaces/{namespace}/limitranges | watch individual changes to a list of LimitRange
+[**watch_namespaced_limit_range_list**](ApivApi.md#watch_namespaced_limit_range_list) | **GET** /api/v1/watch/namespaces/{namespace}/limitranges | watch individual changes to a list of LimitRange
 [**watch_namespaced_persistent_volume_claim**](ApivApi.md#watch_namespaced_persistent_volume_claim) | **GET** /api/v1/watch/namespaces/{namespace}/persistentvolumeclaims/{name} | watch changes to an object of kind PersistentVolumeClaim
 [**watch_namespaced_persistent_volume_claim_list**](ApivApi.md#watch_namespaced_persistent_volume_claim_list) | **GET** /api/v1/watch/namespaces/{namespace}/persistentvolumeclaims | watch individual changes to a list of PersistentVolumeClaim
-[**watch_namespaced_persistent_volume_claim_list_0**](ApivApi.md#watch_namespaced_persistent_volume_claim_list_0) | **GET** /api/v1/watch/persistentvolumeclaims | watch individual changes to a list of PersistentVolumeClaim
 [**watch_namespaced_pod**](ApivApi.md#watch_namespaced_pod) | **GET** /api/v1/watch/namespaces/{namespace}/pods/{name} | watch changes to an object of kind Pod
 [**watch_namespaced_pod_list**](ApivApi.md#watch_namespaced_pod_list) | **GET** /api/v1/watch/namespaces/{namespace}/pods | watch individual changes to a list of Pod
-[**watch_namespaced_pod_list_0**](ApivApi.md#watch_namespaced_pod_list_0) | **GET** /api/v1/watch/pods | watch individual changes to a list of Pod
 [**watch_namespaced_pod_template**](ApivApi.md#watch_namespaced_pod_template) | **GET** /api/v1/watch/namespaces/{namespace}/podtemplates/{name} | watch changes to an object of kind PodTemplate
 [**watch_namespaced_pod_template_list**](ApivApi.md#watch_namespaced_pod_template_list) | **GET** /api/v1/watch/namespaces/{namespace}/podtemplates | watch individual changes to a list of PodTemplate
-[**watch_namespaced_pod_template_list_0**](ApivApi.md#watch_namespaced_pod_template_list_0) | **GET** /api/v1/watch/podtemplates | watch individual changes to a list of PodTemplate
 [**watch_namespaced_replication_controller**](ApivApi.md#watch_namespaced_replication_controller) | **GET** /api/v1/watch/namespaces/{namespace}/replicationcontrollers/{name} | watch changes to an object of kind ReplicationController
 [**watch_namespaced_replication_controller_list**](ApivApi.md#watch_namespaced_replication_controller_list) | **GET** /api/v1/watch/namespaces/{namespace}/replicationcontrollers | watch individual changes to a list of ReplicationController
-[**watch_namespaced_replication_controller_list_0**](ApivApi.md#watch_namespaced_replication_controller_list_0) | **GET** /api/v1/watch/replicationcontrollers | watch individual changes to a list of ReplicationController
 [**watch_namespaced_resource_quota**](ApivApi.md#watch_namespaced_resource_quota) | **GET** /api/v1/watch/namespaces/{namespace}/resourcequotas/{name} | watch changes to an object of kind ResourceQuota
 [**watch_namespaced_resource_quota_list**](ApivApi.md#watch_namespaced_resource_quota_list) | **GET** /api/v1/watch/namespaces/{namespace}/resourcequotas | watch individual changes to a list of ResourceQuota
-[**watch_namespaced_resource_quota_list_0**](ApivApi.md#watch_namespaced_resource_quota_list_0) | **GET** /api/v1/watch/resourcequotas | watch individual changes to a list of ResourceQuota
 [**watch_namespaced_secret**](ApivApi.md#watch_namespaced_secret) | **GET** /api/v1/watch/namespaces/{namespace}/secrets/{name} | watch changes to an object of kind Secret
 [**watch_namespaced_secret_list**](ApivApi.md#watch_namespaced_secret_list) | **GET** /api/v1/watch/namespaces/{namespace}/secrets | watch individual changes to a list of Secret
-[**watch_namespaced_secret_list_0**](ApivApi.md#watch_namespaced_secret_list_0) | **GET** /api/v1/watch/secrets | watch individual changes to a list of Secret
 [**watch_namespaced_service**](ApivApi.md#watch_namespaced_service) | **GET** /api/v1/watch/namespaces/{namespace}/services/{name} | watch changes to an object of kind Service
 [**watch_namespaced_service_account**](ApivApi.md#watch_namespaced_service_account) | **GET** /api/v1/watch/namespaces/{namespace}/serviceaccounts/{name} | watch changes to an object of kind ServiceAccount
 [**watch_namespaced_service_account_list**](ApivApi.md#watch_namespaced_service_account_list) | **GET** /api/v1/watch/namespaces/{namespace}/serviceaccounts | watch individual changes to a list of ServiceAccount
-[**watch_namespaced_service_account_list_0**](ApivApi.md#watch_namespaced_service_account_list_0) | **GET** /api/v1/watch/serviceaccounts | watch individual changes to a list of ServiceAccount
 [**watch_namespaced_service_list**](ApivApi.md#watch_namespaced_service_list) | **GET** /api/v1/watch/namespaces/{namespace}/services | watch individual changes to a list of Service
-[**watch_namespaced_service_list_0**](ApivApi.md#watch_namespaced_service_list_0) | **GET** /api/v1/watch/services | watch individual changes to a list of Service
 [**watch_node**](ApivApi.md#watch_node) | **GET** /api/v1/watch/nodes/{name} | watch changes to an object of kind Node
 [**watch_node_list**](ApivApi.md#watch_node_list) | **GET** /api/v1/watch/nodes | watch individual changes to a list of Node
 [**watch_persistent_volume**](ApivApi.md#watch_persistent_volume) | **GET** /api/v1/watch/persistentvolumes/{name} | watch changes to an object of kind PersistentVolume
+[**watch_persistent_volume_claim_list_for_all_namespaces**](ApivApi.md#watch_persistent_volume_claim_list_for_all_namespaces) | **GET** /api/v1/watch/persistentvolumeclaims | watch individual changes to a list of PersistentVolumeClaim
 [**watch_persistent_volume_list**](ApivApi.md#watch_persistent_volume_list) | **GET** /api/v1/watch/persistentvolumes | watch individual changes to a list of PersistentVolume
+[**watch_pod_list_for_all_namespaces**](ApivApi.md#watch_pod_list_for_all_namespaces) | **GET** /api/v1/watch/pods | watch individual changes to a list of Pod
+[**watch_pod_template_list_for_all_namespaces**](ApivApi.md#watch_pod_template_list_for_all_namespaces) | **GET** /api/v1/watch/podtemplates | watch individual changes to a list of PodTemplate
+[**watch_replication_controller_list_for_all_namespaces**](ApivApi.md#watch_replication_controller_list_for_all_namespaces) | **GET** /api/v1/watch/replicationcontrollers | watch individual changes to a list of ReplicationController
+[**watch_resource_quota_list_for_all_namespaces**](ApivApi.md#watch_resource_quota_list_for_all_namespaces) | **GET** /api/v1/watch/resourcequotas | watch individual changes to a list of ResourceQuota
+[**watch_secret_list_for_all_namespaces**](ApivApi.md#watch_secret_list_for_all_namespaces) | **GET** /api/v1/watch/secrets | watch individual changes to a list of Secret
+[**watch_service_account_list_for_all_namespaces**](ApivApi.md#watch_service_account_list_for_all_namespaces) | **GET** /api/v1/watch/serviceaccounts | watch individual changes to a list of ServiceAccount
+[**watch_service_list_for_all_namespaces**](ApivApi.md#watch_service_list_for_all_namespaces) | **GET** /api/v1/watch/services | watch individual changes to a list of Service
 
 
 # **connect_delete_namespaced_pod_proxy**
@@ -325,8 +326,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_delete_namespaced_pod_proxy_0**
-> str connect_delete_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+# **connect_delete_namespaced_pod_proxy_with_path**
+> str connect_delete_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
 
 connect DELETE requests to proxy of Pod
 
@@ -346,10 +347,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect DELETE requests to proxy of Pod
-    api_response = api_instance.connect_delete_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_delete_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_delete_namespaced_pod_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_delete_namespaced_pod_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -425,8 +426,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_delete_namespaced_service_proxy_0**
-> str connect_delete_namespaced_service_proxy_0(namespace, name, path2, path=path)
+# **connect_delete_namespaced_service_proxy_with_path**
+> str connect_delete_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
 
 connect DELETE requests to proxy of Service
 
@@ -446,10 +447,10 @@ path = 'path_example' # str | Path is the part of URLs that include service endp
 
 try: 
     # connect DELETE requests to proxy of Service
-    api_response = api_instance.connect_delete_namespaced_service_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_delete_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_delete_namespaced_service_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_delete_namespaced_service_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -523,8 +524,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_delete_node_proxy_0**
-> str connect_delete_node_proxy_0(name, path2, path=path)
+# **connect_delete_node_proxy_with_path**
+> str connect_delete_node_proxy_with_path(name, path2, path=path)
 
 connect DELETE requests to proxy of Node
 
@@ -543,10 +544,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect DELETE requests to proxy of Node
-    api_response = api_instance.connect_delete_node_proxy_0(name, path2, path=path)
+    api_response = api_instance.connect_delete_node_proxy_with_path(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_delete_node_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_delete_node_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -784,8 +785,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_get_namespaced_pod_proxy_0**
-> str connect_get_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+# **connect_get_namespaced_pod_proxy_with_path**
+> str connect_get_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
 
 connect GET requests to proxy of Pod
 
@@ -805,10 +806,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect GET requests to proxy of Pod
-    api_response = api_instance.connect_get_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_get_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_get_namespaced_pod_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_get_namespaced_pod_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -884,8 +885,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_get_namespaced_service_proxy_0**
-> str connect_get_namespaced_service_proxy_0(namespace, name, path2, path=path)
+# **connect_get_namespaced_service_proxy_with_path**
+> str connect_get_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
 
 connect GET requests to proxy of Service
 
@@ -905,10 +906,10 @@ path = 'path_example' # str | Path is the part of URLs that include service endp
 
 try: 
     # connect GET requests to proxy of Service
-    api_response = api_instance.connect_get_namespaced_service_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_get_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_get_namespaced_service_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_get_namespaced_service_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -982,8 +983,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_get_node_proxy_0**
-> str connect_get_node_proxy_0(name, path2, path=path)
+# **connect_get_node_proxy_with_path**
+> str connect_get_node_proxy_with_path(name, path2, path=path)
 
 connect GET requests to proxy of Node
 
@@ -1002,10 +1003,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect GET requests to proxy of Node
-    api_response = api_instance.connect_get_node_proxy_0(name, path2, path=path)
+    api_response = api_instance.connect_get_node_proxy_with_path(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_get_node_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_get_node_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1080,8 +1081,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_head_namespaced_pod_proxy_0**
-> str connect_head_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+# **connect_head_namespaced_pod_proxy_with_path**
+> str connect_head_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
 
 connect HEAD requests to proxy of Pod
 
@@ -1101,10 +1102,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect HEAD requests to proxy of Pod
-    api_response = api_instance.connect_head_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_head_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_head_namespaced_pod_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_head_namespaced_pod_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1180,8 +1181,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_head_namespaced_service_proxy_0**
-> str connect_head_namespaced_service_proxy_0(namespace, name, path2, path=path)
+# **connect_head_namespaced_service_proxy_with_path**
+> str connect_head_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
 
 connect HEAD requests to proxy of Service
 
@@ -1201,10 +1202,10 @@ path = 'path_example' # str | Path is the part of URLs that include service endp
 
 try: 
     # connect HEAD requests to proxy of Service
-    api_response = api_instance.connect_head_namespaced_service_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_head_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_head_namespaced_service_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_head_namespaced_service_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1278,8 +1279,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_head_node_proxy_0**
-> str connect_head_node_proxy_0(name, path2, path=path)
+# **connect_head_node_proxy_with_path**
+> str connect_head_node_proxy_with_path(name, path2, path=path)
 
 connect HEAD requests to proxy of Node
 
@@ -1298,10 +1299,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect HEAD requests to proxy of Node
-    api_response = api_instance.connect_head_node_proxy_0(name, path2, path=path)
+    api_response = api_instance.connect_head_node_proxy_with_path(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_head_node_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_head_node_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1376,8 +1377,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_options_namespaced_pod_proxy_0**
-> str connect_options_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+# **connect_options_namespaced_pod_proxy_with_path**
+> str connect_options_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
 
 connect OPTIONS requests to proxy of Pod
 
@@ -1397,10 +1398,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect OPTIONS requests to proxy of Pod
-    api_response = api_instance.connect_options_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_options_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_options_namespaced_pod_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_options_namespaced_pod_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1476,8 +1477,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_options_namespaced_service_proxy_0**
-> str connect_options_namespaced_service_proxy_0(namespace, name, path2, path=path)
+# **connect_options_namespaced_service_proxy_with_path**
+> str connect_options_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
 
 connect OPTIONS requests to proxy of Service
 
@@ -1497,10 +1498,10 @@ path = 'path_example' # str | Path is the part of URLs that include service endp
 
 try: 
     # connect OPTIONS requests to proxy of Service
-    api_response = api_instance.connect_options_namespaced_service_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_options_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_options_namespaced_service_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_options_namespaced_service_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1574,8 +1575,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_options_node_proxy_0**
-> str connect_options_node_proxy_0(name, path2, path=path)
+# **connect_options_node_proxy_with_path**
+> str connect_options_node_proxy_with_path(name, path2, path=path)
 
 connect OPTIONS requests to proxy of Node
 
@@ -1594,10 +1595,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect OPTIONS requests to proxy of Node
-    api_response = api_instance.connect_options_node_proxy_0(name, path2, path=path)
+    api_response = api_instance.connect_options_node_proxy_with_path(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_options_node_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_options_node_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1835,8 +1836,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_post_namespaced_pod_proxy_0**
-> str connect_post_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+# **connect_post_namespaced_pod_proxy_with_path**
+> str connect_post_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
 
 connect POST requests to proxy of Pod
 
@@ -1856,10 +1857,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect POST requests to proxy of Pod
-    api_response = api_instance.connect_post_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_post_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_post_namespaced_pod_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_post_namespaced_pod_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -1935,8 +1936,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_post_namespaced_service_proxy_0**
-> str connect_post_namespaced_service_proxy_0(namespace, name, path2, path=path)
+# **connect_post_namespaced_service_proxy_with_path**
+> str connect_post_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
 
 connect POST requests to proxy of Service
 
@@ -1956,10 +1957,10 @@ path = 'path_example' # str | Path is the part of URLs that include service endp
 
 try: 
     # connect POST requests to proxy of Service
-    api_response = api_instance.connect_post_namespaced_service_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_post_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_post_namespaced_service_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_post_namespaced_service_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -2033,8 +2034,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_post_node_proxy_0**
-> str connect_post_node_proxy_0(name, path2, path=path)
+# **connect_post_node_proxy_with_path**
+> str connect_post_node_proxy_with_path(name, path2, path=path)
 
 connect POST requests to proxy of Node
 
@@ -2053,10 +2054,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect POST requests to proxy of Node
-    api_response = api_instance.connect_post_node_proxy_0(name, path2, path=path)
+    api_response = api_instance.connect_post_node_proxy_with_path(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_post_node_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_post_node_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -2131,8 +2132,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_put_namespaced_pod_proxy_0**
-> str connect_put_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+# **connect_put_namespaced_pod_proxy_with_path**
+> str connect_put_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
 
 connect PUT requests to proxy of Pod
 
@@ -2152,10 +2153,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect PUT requests to proxy of Pod
-    api_response = api_instance.connect_put_namespaced_pod_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_put_namespaced_pod_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_put_namespaced_pod_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_put_namespaced_pod_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -2231,8 +2232,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_put_namespaced_service_proxy_0**
-> str connect_put_namespaced_service_proxy_0(namespace, name, path2, path=path)
+# **connect_put_namespaced_service_proxy_with_path**
+> str connect_put_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
 
 connect PUT requests to proxy of Service
 
@@ -2252,10 +2253,10 @@ path = 'path_example' # str | Path is the part of URLs that include service endp
 
 try: 
     # connect PUT requests to proxy of Service
-    api_response = api_instance.connect_put_namespaced_service_proxy_0(namespace, name, path2, path=path)
+    api_response = api_instance.connect_put_namespaced_service_proxy_with_path(namespace, name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_put_namespaced_service_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_put_namespaced_service_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -2329,8 +2330,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **connect_put_node_proxy_0**
-> str connect_put_node_proxy_0(name, path2, path=path)
+# **connect_put_node_proxy_with_path**
+> str connect_put_node_proxy_with_path(name, path2, path=path)
 
 connect PUT requests to proxy of Node
 
@@ -2349,10 +2350,10 @@ path = 'path_example' # str | Path is the URL path to use for the current proxy 
 
 try: 
     # connect PUT requests to proxy of Node
-    api_response = api_instance.connect_put_node_proxy_0(name, path2, path=path)
+    api_response = api_instance.connect_put_node_proxy_with_path(name, path2, path=path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->connect_put_node_proxy_0: %s\n" % e
+    print "Exception when calling ApivApi->connect_put_node_proxy_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -2577,7 +2578,7 @@ No authorization required
 # **create_namespaced_endpoints**
 > V1Endpoints create_namespaced_endpoints(body, namespace, pretty=pretty)
 
-create a Endpoints
+create Endpoints
 
 ### Example 
 ```python
@@ -2593,7 +2594,7 @@ namespace = 'namespace_example' # str | object name and auth scope, such as for 
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
-    # create a Endpoints
+    # create Endpoints
     api_response = api_instance.create_namespaced_endpoints(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
@@ -2626,7 +2627,7 @@ No authorization required
 # **create_namespaced_event**
 > V1Event create_namespaced_event(body, namespace, pretty=pretty)
 
-create a Event
+create an Event
 
 ### Example 
 ```python
@@ -2642,7 +2643,7 @@ namespace = 'namespace_example' # str | object name and auth scope, such as for 
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
-    # create a Event
+    # create an Event
     api_response = api_instance.create_namespaced_event(body, namespace, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
@@ -2660,6 +2661,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**V1Event**](V1Event.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_namespaced_eviction_eviction**
+> V1alpha1Eviction create_namespaced_eviction_eviction(body, namespace, name, pretty=pretty)
+
+create eviction of an Eviction
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+body = k8sv1.V1alpha1Eviction() # V1alpha1Eviction | 
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
+name = 'name_example' # str | name of the Eviction
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+
+try: 
+    # create eviction of an Eviction
+    api_response = api_instance.create_namespaced_eviction_eviction(body, namespace, name, pretty=pretty)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->create_namespaced_eviction_eviction: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**V1alpha1Eviction**](V1alpha1Eviction.md)|  | 
+ **namespace** | **str**| object name and auth scope, such as for teams and projects | 
+ **name** | **str**| name of the Eviction | 
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+
+### Return type
+
+[**V1alpha1Eviction**](V1alpha1Eviction.md)
 
 ### Authorization
 
@@ -3310,7 +3362,7 @@ No authorization required
 # **delete_namespaced_endpoints**
 > UnversionedStatus delete_namespaced_endpoints(body, namespace, name, pretty=pretty)
 
-delete a Endpoints
+delete Endpoints
 
 ### Example 
 ```python
@@ -3327,7 +3379,7 @@ name = 'name_example' # str | name of the Endpoints
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
-    # delete a Endpoints
+    # delete Endpoints
     api_response = api_instance.delete_namespaced_endpoints(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
@@ -3361,7 +3413,7 @@ No authorization required
 # **delete_namespaced_event**
 > UnversionedStatus delete_namespaced_event(body, namespace, name, pretty=pretty)
 
-delete a Event
+delete an Event
 
 ### Example 
 ```python
@@ -3378,7 +3430,7 @@ name = 'name_example' # str | name of the Event
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 
 try: 
-    # delete a Event
+    # delete an Event
     api_response = api_instance.delete_namespaced_event(body, namespace, name, pretty=pretty)
     pprint(api_response)
 except ApiException as e:
@@ -4848,7 +4900,227 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_config_map_for_all_namespaces**
+> V1ConfigMapList list_config_map_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind ConfigMap
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind ConfigMap
+    api_response = api_instance.list_config_map_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_config_map_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1ConfigMapList**](V1ConfigMapList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_endpoints_for_all_namespaces**
+> V1EndpointsList list_endpoints_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind Endpoints
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind Endpoints
+    api_response = api_instance.list_endpoints_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_endpoints_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1EndpointsList**](V1EndpointsList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_event_for_all_namespaces**
+> V1EventList list_event_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind Event
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind Event
+    api_response = api_instance.list_event_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_event_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1EventList**](V1EventList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_limit_range_for_all_namespaces**
+> V1LimitRangeList list_limit_range_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind LimitRange
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind LimitRange
+    api_response = api_instance.list_limit_range_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_limit_range_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1LimitRangeList**](V1LimitRangeList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -4903,12 +5175,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_config_map**
-> V1ConfigMapList list_namespaced_config_map(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> V1ConfigMapList list_namespaced_config_map(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind ConfigMap
 
@@ -4921,6 +5193,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
 fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
@@ -4930,7 +5203,7 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind ConfigMap
-    api_response = api_instance.list_namespaced_config_map(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.list_namespaced_config_map(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_config_map: %s\n" % e
@@ -4940,62 +5213,6 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1ConfigMapList**](V1ConfigMapList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_config_map_0**
-> V1ConfigMapList list_namespaced_config_map_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind ConfigMap
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind ConfigMap
-    api_response = api_instance.list_namespaced_config_map_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_config_map_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
  **namespace** | **str**| object name and auth scope, such as for teams and projects | 
  **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
  **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
@@ -5015,12 +5232,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_endpoints**
-> V1EndpointsList list_namespaced_endpoints(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> V1EndpointsList list_namespaced_endpoints(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Endpoints
 
@@ -5033,6 +5250,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
 fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
@@ -5042,7 +5260,7 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Endpoints
-    api_response = api_instance.list_namespaced_endpoints(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.list_namespaced_endpoints(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_endpoints: %s\n" % e
@@ -5052,62 +5270,6 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1EndpointsList**](V1EndpointsList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_endpoints_0**
-> V1EndpointsList list_namespaced_endpoints_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind Endpoints
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind Endpoints
-    api_response = api_instance.list_namespaced_endpoints_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_endpoints_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
  **namespace** | **str**| object name and auth scope, such as for teams and projects | 
  **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
  **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
@@ -5127,12 +5289,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_event**
-> V1EventList list_namespaced_event(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> V1EventList list_namespaced_event(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind Event
 
@@ -5145,6 +5307,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
 fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
@@ -5154,7 +5317,7 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind Event
-    api_response = api_instance.list_namespaced_event(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.list_namespaced_event(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_event: %s\n" % e
@@ -5164,62 +5327,6 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1EventList**](V1EventList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_event_0**
-> V1EventList list_namespaced_event_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind Event
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind Event
-    api_response = api_instance.list_namespaced_event_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_event_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
  **namespace** | **str**| object name and auth scope, such as for teams and projects | 
  **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
  **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
@@ -5239,12 +5346,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_namespaced_limit_range**
-> V1LimitRangeList list_namespaced_limit_range(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> V1LimitRangeList list_namespaced_limit_range(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 list or watch objects of kind LimitRange
 
@@ -5257,6 +5364,7 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = k8sv1.ApivApi()
+namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
 fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
@@ -5266,7 +5374,7 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # list or watch objects of kind LimitRange
-    api_response = api_instance.list_namespaced_limit_range(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.list_namespaced_limit_range(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling ApivApi->list_namespaced_limit_range: %s\n" % e
@@ -5276,62 +5384,6 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1LimitRangeList**](V1LimitRangeList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_limit_range_0**
-> V1LimitRangeList list_namespaced_limit_range_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind LimitRange
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind LimitRange
-    api_response = api_instance.list_namespaced_limit_range_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_limit_range_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
  **namespace** | **str**| object name and auth scope, such as for teams and projects | 
  **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
  **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
@@ -5351,7 +5403,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -5408,62 +5460,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_persistent_volume_claim_0**
-> V1PersistentVolumeClaimList list_namespaced_persistent_volume_claim_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind PersistentVolumeClaim
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind PersistentVolumeClaim
-    api_response = api_instance.list_namespaced_persistent_volume_claim_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_persistent_volume_claim_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1PersistentVolumeClaimList**](V1PersistentVolumeClaimList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -5520,62 +5517,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_pod_0**
-> V1PodList list_namespaced_pod_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind Pod
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind Pod
-    api_response = api_instance.list_namespaced_pod_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_pod_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1PodList**](V1PodList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -5632,62 +5574,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_pod_template_0**
-> V1PodTemplateList list_namespaced_pod_template_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind PodTemplate
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind PodTemplate
-    api_response = api_instance.list_namespaced_pod_template_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_pod_template_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1PodTemplateList**](V1PodTemplateList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -5744,62 +5631,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_replication_controller_0**
-> V1ReplicationControllerList list_namespaced_replication_controller_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind ReplicationController
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind ReplicationController
-    api_response = api_instance.list_namespaced_replication_controller_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_replication_controller_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1ReplicationControllerList**](V1ReplicationControllerList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -5856,62 +5688,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_resource_quota_0**
-> V1ResourceQuotaList list_namespaced_resource_quota_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind ResourceQuota
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind ResourceQuota
-    api_response = api_instance.list_namespaced_resource_quota_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_resource_quota_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1ResourceQuotaList**](V1ResourceQuotaList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -5968,62 +5745,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_secret_0**
-> V1SecretList list_namespaced_secret_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind Secret
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind Secret
-    api_response = api_instance.list_namespaced_secret_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_secret_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1SecretList**](V1SecretList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -6080,62 +5802,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_service_0**
-> V1ServiceList list_namespaced_service_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind Service
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind Service
-    api_response = api_instance.list_namespaced_service_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_service_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1ServiceList**](V1ServiceList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -6192,62 +5859,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **list_namespaced_service_account_0**
-> V1ServiceAccountList list_namespaced_service_account_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-list or watch objects of kind ServiceAccount
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # list or watch objects of kind ServiceAccount
-    api_response = api_instance.list_namespaced_service_account_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->list_namespaced_service_account_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**V1ServiceAccountList**](V1ServiceAccountList.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -6302,7 +5914,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -6357,7 +5969,447 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_persistent_volume_claim_for_all_namespaces**
+> V1PersistentVolumeClaimList list_persistent_volume_claim_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind PersistentVolumeClaim
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind PersistentVolumeClaim
+    api_response = api_instance.list_persistent_volume_claim_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_persistent_volume_claim_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1PersistentVolumeClaimList**](V1PersistentVolumeClaimList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_pod_for_all_namespaces**
+> V1PodList list_pod_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind Pod
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind Pod
+    api_response = api_instance.list_pod_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_pod_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1PodList**](V1PodList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_pod_template_for_all_namespaces**
+> V1PodTemplateList list_pod_template_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind PodTemplate
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind PodTemplate
+    api_response = api_instance.list_pod_template_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_pod_template_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1PodTemplateList**](V1PodTemplateList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_replication_controller_for_all_namespaces**
+> V1ReplicationControllerList list_replication_controller_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind ReplicationController
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind ReplicationController
+    api_response = api_instance.list_replication_controller_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_replication_controller_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1ReplicationControllerList**](V1ReplicationControllerList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_resource_quota_for_all_namespaces**
+> V1ResourceQuotaList list_resource_quota_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind ResourceQuota
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind ResourceQuota
+    api_response = api_instance.list_resource_quota_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_resource_quota_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1ResourceQuotaList**](V1ResourceQuotaList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_secret_for_all_namespaces**
+> V1SecretList list_secret_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind Secret
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind Secret
+    api_response = api_instance.list_secret_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_secret_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1SecretList**](V1SecretList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_service_account_for_all_namespaces**
+> V1ServiceAccountList list_service_account_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind ServiceAccount
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind ServiceAccount
+    api_response = api_instance.list_service_account_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_service_account_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1ServiceAccountList**](V1ServiceAccountList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_service_for_all_namespaces**
+> V1ServiceList list_service_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+list or watch objects of kind Service
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # list or watch objects of kind Service
+    api_response = api_instance.list_service_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->list_service_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**V1ServiceList**](V1ServiceList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -6405,7 +6457,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6454,7 +6506,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6505,7 +6557,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6556,7 +6608,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6607,7 +6659,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6658,7 +6710,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6709,7 +6761,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6760,7 +6812,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6811,7 +6863,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6862,7 +6914,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6913,7 +6965,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6964,7 +7016,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7015,7 +7067,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7066,7 +7118,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7117,7 +7169,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7168,7 +7220,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7219,7 +7271,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7270,7 +7322,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7321,7 +7373,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7372,7 +7424,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7421,7 +7473,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7470,7 +7522,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7519,7 +7571,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7568,7 +7620,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/strategic-merge-patch+json, application/json-patch+json, application/merge-patch+json
+ - **Content-Type**: application/json-patch+json, application/merge-patch+json, application/strategic-merge-patch+json
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -7620,8 +7672,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_delete_namespaced_pod_0**
-> str proxy_delete_namespaced_pod_0(namespace, name, path)
+# **proxy_delete_namespaced_pod_with_path**
+> str proxy_delete_namespaced_pod_with_path(namespace, name, path)
 
 proxy DELETE requests to Pod
 
@@ -7640,10 +7692,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy DELETE requests to Pod
-    api_response = api_instance.proxy_delete_namespaced_pod_0(namespace, name, path)
+    api_response = api_instance.proxy_delete_namespaced_pod_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_delete_namespaced_pod_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_delete_namespaced_pod_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -7716,8 +7768,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_delete_namespaced_service_0**
-> str proxy_delete_namespaced_service_0(namespace, name, path)
+# **proxy_delete_namespaced_service_with_path**
+> str proxy_delete_namespaced_service_with_path(namespace, name, path)
 
 proxy DELETE requests to Service
 
@@ -7736,10 +7788,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy DELETE requests to Service
-    api_response = api_instance.proxy_delete_namespaced_service_0(namespace, name, path)
+    api_response = api_instance.proxy_delete_namespaced_service_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_delete_namespaced_service_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_delete_namespaced_service_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -7810,8 +7862,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_delete_node_0**
-> str proxy_delete_node_0(name, path)
+# **proxy_delete_node_with_path**
+> str proxy_delete_node_with_path(name, path)
 
 proxy DELETE requests to Node
 
@@ -7829,10 +7881,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy DELETE requests to Node
-    api_response = api_instance.proxy_delete_node_0(name, path)
+    api_response = api_instance.proxy_delete_node_with_path(name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_delete_node_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_delete_node_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -7904,8 +7956,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_get_namespaced_pod_0**
-> str proxy_get_namespaced_pod_0(namespace, name, path)
+# **proxy_get_namespaced_pod_with_path**
+> str proxy_get_namespaced_pod_with_path(namespace, name, path)
 
 proxy GET requests to Pod
 
@@ -7924,10 +7976,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy GET requests to Pod
-    api_response = api_instance.proxy_get_namespaced_pod_0(namespace, name, path)
+    api_response = api_instance.proxy_get_namespaced_pod_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_get_namespaced_pod_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_get_namespaced_pod_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8000,8 +8052,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_get_namespaced_service_0**
-> str proxy_get_namespaced_service_0(namespace, name, path)
+# **proxy_get_namespaced_service_with_path**
+> str proxy_get_namespaced_service_with_path(namespace, name, path)
 
 proxy GET requests to Service
 
@@ -8020,10 +8072,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy GET requests to Service
-    api_response = api_instance.proxy_get_namespaced_service_0(namespace, name, path)
+    api_response = api_instance.proxy_get_namespaced_service_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_get_namespaced_service_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_get_namespaced_service_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8094,8 +8146,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_get_node_0**
-> str proxy_get_node_0(name, path)
+# **proxy_get_node_with_path**
+> str proxy_get_node_with_path(name, path)
 
 proxy GET requests to Node
 
@@ -8113,10 +8165,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy GET requests to Node
-    api_response = api_instance.proxy_get_node_0(name, path)
+    api_response = api_instance.proxy_get_node_with_path(name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_get_node_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_get_node_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8188,8 +8240,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_head_namespaced_pod_0**
-> str proxy_head_namespaced_pod_0(namespace, name, path)
+# **proxy_head_namespaced_pod_with_path**
+> str proxy_head_namespaced_pod_with_path(namespace, name, path)
 
 proxy HEAD requests to Pod
 
@@ -8208,10 +8260,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy HEAD requests to Pod
-    api_response = api_instance.proxy_head_namespaced_pod_0(namespace, name, path)
+    api_response = api_instance.proxy_head_namespaced_pod_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_head_namespaced_pod_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_head_namespaced_pod_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8284,8 +8336,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_head_namespaced_service_0**
-> str proxy_head_namespaced_service_0(namespace, name, path)
+# **proxy_head_namespaced_service_with_path**
+> str proxy_head_namespaced_service_with_path(namespace, name, path)
 
 proxy HEAD requests to Service
 
@@ -8304,10 +8356,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy HEAD requests to Service
-    api_response = api_instance.proxy_head_namespaced_service_0(namespace, name, path)
+    api_response = api_instance.proxy_head_namespaced_service_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_head_namespaced_service_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_head_namespaced_service_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8378,8 +8430,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_head_node_0**
-> str proxy_head_node_0(name, path)
+# **proxy_head_node_with_path**
+> str proxy_head_node_with_path(name, path)
 
 proxy HEAD requests to Node
 
@@ -8397,10 +8449,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy HEAD requests to Node
-    api_response = api_instance.proxy_head_node_0(name, path)
+    api_response = api_instance.proxy_head_node_with_path(name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_head_node_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_head_node_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8472,8 +8524,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_options_namespaced_pod_0**
-> str proxy_options_namespaced_pod_0(namespace, name, path)
+# **proxy_options_namespaced_pod_with_path**
+> str proxy_options_namespaced_pod_with_path(namespace, name, path)
 
 proxy OPTIONS requests to Pod
 
@@ -8492,10 +8544,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy OPTIONS requests to Pod
-    api_response = api_instance.proxy_options_namespaced_pod_0(namespace, name, path)
+    api_response = api_instance.proxy_options_namespaced_pod_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_options_namespaced_pod_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_options_namespaced_pod_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8568,8 +8620,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_options_namespaced_service_0**
-> str proxy_options_namespaced_service_0(namespace, name, path)
+# **proxy_options_namespaced_service_with_path**
+> str proxy_options_namespaced_service_with_path(namespace, name, path)
 
 proxy OPTIONS requests to Service
 
@@ -8588,10 +8640,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy OPTIONS requests to Service
-    api_response = api_instance.proxy_options_namespaced_service_0(namespace, name, path)
+    api_response = api_instance.proxy_options_namespaced_service_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_options_namespaced_service_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_options_namespaced_service_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8662,8 +8714,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_options_node_0**
-> str proxy_options_node_0(name, path)
+# **proxy_options_node_with_path**
+> str proxy_options_node_with_path(name, path)
 
 proxy OPTIONS requests to Node
 
@@ -8681,10 +8733,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy OPTIONS requests to Node
-    api_response = api_instance.proxy_options_node_0(name, path)
+    api_response = api_instance.proxy_options_node_with_path(name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_options_node_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_options_node_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8756,8 +8808,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_post_namespaced_pod_0**
-> str proxy_post_namespaced_pod_0(namespace, name, path)
+# **proxy_post_namespaced_pod_with_path**
+> str proxy_post_namespaced_pod_with_path(namespace, name, path)
 
 proxy POST requests to Pod
 
@@ -8776,10 +8828,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy POST requests to Pod
-    api_response = api_instance.proxy_post_namespaced_pod_0(namespace, name, path)
+    api_response = api_instance.proxy_post_namespaced_pod_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_post_namespaced_pod_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_post_namespaced_pod_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8852,8 +8904,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_post_namespaced_service_0**
-> str proxy_post_namespaced_service_0(namespace, name, path)
+# **proxy_post_namespaced_service_with_path**
+> str proxy_post_namespaced_service_with_path(namespace, name, path)
 
 proxy POST requests to Service
 
@@ -8872,10 +8924,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy POST requests to Service
-    api_response = api_instance.proxy_post_namespaced_service_0(namespace, name, path)
+    api_response = api_instance.proxy_post_namespaced_service_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_post_namespaced_service_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_post_namespaced_service_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -8946,8 +8998,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_post_node_0**
-> str proxy_post_node_0(name, path)
+# **proxy_post_node_with_path**
+> str proxy_post_node_with_path(name, path)
 
 proxy POST requests to Node
 
@@ -8965,10 +9017,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy POST requests to Node
-    api_response = api_instance.proxy_post_node_0(name, path)
+    api_response = api_instance.proxy_post_node_with_path(name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_post_node_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_post_node_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -9040,8 +9092,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_put_namespaced_pod_0**
-> str proxy_put_namespaced_pod_0(namespace, name, path)
+# **proxy_put_namespaced_pod_with_path**
+> str proxy_put_namespaced_pod_with_path(namespace, name, path)
 
 proxy PUT requests to Pod
 
@@ -9060,10 +9112,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy PUT requests to Pod
-    api_response = api_instance.proxy_put_namespaced_pod_0(namespace, name, path)
+    api_response = api_instance.proxy_put_namespaced_pod_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_put_namespaced_pod_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_put_namespaced_pod_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -9136,8 +9188,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_put_namespaced_service_0**
-> str proxy_put_namespaced_service_0(namespace, name, path)
+# **proxy_put_namespaced_service_with_path**
+> str proxy_put_namespaced_service_with_path(namespace, name, path)
 
 proxy PUT requests to Service
 
@@ -9156,10 +9208,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy PUT requests to Service
-    api_response = api_instance.proxy_put_namespaced_service_0(namespace, name, path)
+    api_response = api_instance.proxy_put_namespaced_service_with_path(namespace, name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_put_namespaced_service_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_put_namespaced_service_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -9230,8 +9282,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **proxy_put_node_0**
-> str proxy_put_node_0(name, path)
+# **proxy_put_node_with_path**
+> str proxy_put_node_with_path(name, path)
 
 proxy PUT requests to Node
 
@@ -9249,10 +9301,10 @@ path = 'path_example' # str | path to the resource
 
 try: 
     # proxy PUT requests to Node
-    api_response = api_instance.proxy_put_node_0(name, path)
+    api_response = api_instance.proxy_put_node_with_path(name, path)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->proxy_put_node_0: %s\n" % e
+    print "Exception when calling ApivApi->proxy_put_node_with_path: %s\n" % e
 ```
 
 ### Parameters
@@ -9850,7 +9902,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Accept**: text/plain, application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -11874,6 +11926,226 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **watch_config_map_list_for_all_namespaces**
+> VersionedEvent watch_config_map_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of ConfigMap
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of ConfigMap
+    api_response = api_instance.watch_config_map_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_config_map_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_endpoints_list_for_all_namespaces**
+> VersionedEvent watch_endpoints_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of Endpoints
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of Endpoints
+    api_response = api_instance.watch_endpoints_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_endpoints_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_event_list_for_all_namespaces**
+> VersionedEvent watch_event_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of Event
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of Event
+    api_response = api_instance.watch_event_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_event_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_limit_range_list_for_all_namespaces**
+> VersionedEvent watch_limit_range_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of LimitRange
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of LimitRange
+    api_response = api_instance.watch_limit_range_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_limit_range_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **watch_namespace**
 > VersionedEvent watch_namespace(name, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
@@ -11927,7 +12199,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -11982,7 +12254,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12041,67 +12313,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_config_map_list**
-> VersionedEvent watch_namespaced_config_map_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of ConfigMap
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of ConfigMap
-    api_response = api_instance.watch_namespaced_config_map_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_config_map_list: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_config_map_list_0**
-> VersionedEvent watch_namespaced_config_map_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> VersionedEvent watch_namespaced_config_map_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of ConfigMap
 
@@ -12124,10 +12341,10 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of ConfigMap
-    api_response = api_instance.watch_namespaced_config_map_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.watch_namespaced_config_map_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_config_map_list_0: %s\n" % e
+    print "Exception when calling ApivApi->watch_namespaced_config_map_list: %s\n" % e
 ```
 
 ### Parameters
@@ -12153,7 +12370,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12212,67 +12429,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_endpoints_list**
-> VersionedEvent watch_namespaced_endpoints_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of Endpoints
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of Endpoints
-    api_response = api_instance.watch_namespaced_endpoints_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_endpoints_list: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_endpoints_list_0**
-> VersionedEvent watch_namespaced_endpoints_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> VersionedEvent watch_namespaced_endpoints_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Endpoints
 
@@ -12295,10 +12457,10 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Endpoints
-    api_response = api_instance.watch_namespaced_endpoints_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.watch_namespaced_endpoints_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_endpoints_list_0: %s\n" % e
+    print "Exception when calling ApivApi->watch_namespaced_endpoints_list: %s\n" % e
 ```
 
 ### Parameters
@@ -12324,7 +12486,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12383,67 +12545,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_event_list**
-> VersionedEvent watch_namespaced_event_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of Event
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of Event
-    api_response = api_instance.watch_namespaced_event_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_event_list: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_event_list_0**
-> VersionedEvent watch_namespaced_event_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> VersionedEvent watch_namespaced_event_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of Event
 
@@ -12466,10 +12573,10 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of Event
-    api_response = api_instance.watch_namespaced_event_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.watch_namespaced_event_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_event_list_0: %s\n" % e
+    print "Exception when calling ApivApi->watch_namespaced_event_list: %s\n" % e
 ```
 
 ### Parameters
@@ -12495,7 +12602,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12554,67 +12661,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **watch_namespaced_limit_range_list**
-> VersionedEvent watch_namespaced_limit_range_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of LimitRange
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of LimitRange
-    api_response = api_instance.watch_namespaced_limit_range_list(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_limit_range_list: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_limit_range_list_0**
-> VersionedEvent watch_namespaced_limit_range_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+> VersionedEvent watch_namespaced_limit_range_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
 
 watch individual changes to a list of LimitRange
 
@@ -12637,10 +12689,10 @@ timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
 
 try: 
     # watch individual changes to a list of LimitRange
-    api_response = api_instance.watch_namespaced_limit_range_list_0(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    api_response = api_instance.watch_namespaced_limit_range_list(namespace, pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_limit_range_list_0: %s\n" % e
+    print "Exception when calling ApivApi->watch_namespaced_limit_range_list: %s\n" % e
 ```
 
 ### Parameters
@@ -12666,7 +12718,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12725,7 +12777,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12782,62 +12834,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_persistent_volume_claim_list_0**
-> VersionedEvent watch_namespaced_persistent_volume_claim_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of PersistentVolumeClaim
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of PersistentVolumeClaim
-    api_response = api_instance.watch_namespaced_persistent_volume_claim_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_persistent_volume_claim_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12896,7 +12893,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -12953,62 +12950,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_pod_list_0**
-> VersionedEvent watch_namespaced_pod_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of Pod
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of Pod
-    api_response = api_instance.watch_namespaced_pod_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_pod_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13067,7 +13009,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13124,62 +13066,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_pod_template_list_0**
-> VersionedEvent watch_namespaced_pod_template_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of PodTemplate
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of PodTemplate
-    api_response = api_instance.watch_namespaced_pod_template_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_pod_template_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13238,7 +13125,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13295,62 +13182,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_replication_controller_list_0**
-> VersionedEvent watch_namespaced_replication_controller_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of ReplicationController
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of ReplicationController
-    api_response = api_instance.watch_namespaced_replication_controller_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_replication_controller_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13409,7 +13241,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13466,62 +13298,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_resource_quota_list_0**
-> VersionedEvent watch_namespaced_resource_quota_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of ResourceQuota
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of ResourceQuota
-    api_response = api_instance.watch_namespaced_resource_quota_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_resource_quota_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13580,7 +13357,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13637,62 +13414,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_secret_list_0**
-> VersionedEvent watch_namespaced_secret_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of Secret
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of Secret
-    api_response = api_instance.watch_namespaced_secret_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_secret_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13751,7 +13473,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13810,7 +13532,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13867,62 +13589,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_service_account_list_0**
-> VersionedEvent watch_namespaced_service_account_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of ServiceAccount
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of ServiceAccount
-    api_response = api_instance.watch_namespaced_service_account_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_service_account_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -13979,62 +13646,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **watch_namespaced_service_list_0**
-> VersionedEvent watch_namespaced_service_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-
-watch individual changes to a list of Service
-
-### Example 
-```python
-import time
-import k8sv1
-from k8sv1.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = k8sv1.ApivApi()
-pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
-labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
-fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
-watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
-resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
-timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
-
-try: 
-    # watch individual changes to a list of Service
-    api_response = api_instance.watch_namespaced_service_list_0(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ApivApi->watch_namespaced_service_list_0: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
- **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
- **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
- **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
- **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
- **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
-
-### Return type
-
-[**VersionedEvent**](VersionedEvent.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -14091,7 +13703,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -14146,7 +13758,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -14203,7 +13815,62 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_persistent_volume_claim_list_for_all_namespaces**
+> VersionedEvent watch_persistent_volume_claim_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of PersistentVolumeClaim
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of PersistentVolumeClaim
+    api_response = api_instance.watch_persistent_volume_claim_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_persistent_volume_claim_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -14258,7 +13925,392 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: */*
- - **Accept**: application/json, application/json;stream=watch, application/vnd.kubernetes.protobuf, application/vnd.kubernetes.protobuf;stream=watch
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_pod_list_for_all_namespaces**
+> VersionedEvent watch_pod_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of Pod
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of Pod
+    api_response = api_instance.watch_pod_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_pod_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_pod_template_list_for_all_namespaces**
+> VersionedEvent watch_pod_template_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of PodTemplate
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of PodTemplate
+    api_response = api_instance.watch_pod_template_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_pod_template_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_replication_controller_list_for_all_namespaces**
+> VersionedEvent watch_replication_controller_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of ReplicationController
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of ReplicationController
+    api_response = api_instance.watch_replication_controller_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_replication_controller_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_resource_quota_list_for_all_namespaces**
+> VersionedEvent watch_resource_quota_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of ResourceQuota
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of ResourceQuota
+    api_response = api_instance.watch_resource_quota_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_resource_quota_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_secret_list_for_all_namespaces**
+> VersionedEvent watch_secret_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of Secret
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of Secret
+    api_response = api_instance.watch_secret_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_secret_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_service_account_list_for_all_namespaces**
+> VersionedEvent watch_service_account_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of ServiceAccount
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of ServiceAccount
+    api_response = api_instance.watch_service_account_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_service_account_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **watch_service_list_for_all_namespaces**
+> VersionedEvent watch_service_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+
+watch individual changes to a list of Service
+
+### Example 
+```python
+import time
+import k8sv1
+from k8sv1.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = k8sv1.ApivApi()
+pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
+labelSelector = 'labelSelector_example' # str | A selector to restrict the list of returned objects by their labels. Defaults to everything. (optional)
+fieldSelector = 'fieldSelector_example' # str | A selector to restrict the list of returned objects by their fields. Defaults to everything. (optional)
+watch = true # bool | Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. (optional)
+resourceVersion = 'resourceVersion_example' # str | When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. (optional)
+timeoutSeconds = 56 # int | Timeout for the list/watch call. (optional)
+
+try: 
+    # watch individual changes to a list of Service
+    api_response = api_instance.watch_service_list_for_all_namespaces(pretty=pretty, labelSelector=labelSelector, fieldSelector=fieldSelector, watch=watch, resourceVersion=resourceVersion, timeoutSeconds=timeoutSeconds)
+    pprint(api_response)
+except ApiException as e:
+    print "Exception when calling ApivApi->watch_service_list_for_all_namespaces: %s\n" % e
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pretty** | **str**| If &#39;true&#39;, then the output is pretty printed. | [optional] 
+ **labelSelector** | **str**| A selector to restrict the list of returned objects by their labels. Defaults to everything. | [optional] 
+ **fieldSelector** | **str**| A selector to restrict the list of returned objects by their fields. Defaults to everything. | [optional] 
+ **watch** | **bool**| Watch for changes to the described resources and return them as a stream of add, update, and remove notifications. Specify resourceVersion. | [optional] 
+ **resourceVersion** | **str**| When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history. | [optional] 
+ **timeoutSeconds** | **int**| Timeout for the list/watch call. | [optional] 
+
+### Return type
+
+[**VersionedEvent**](VersionedEvent.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: */*
+ - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
